@@ -7,6 +7,7 @@
 ## Minimum Viable Product
 TwinkieSet is a clone of PixieSet built on Rails and Backbone. Users can:
 
+<!-- Client photo gallery for modern photographers. -->
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
 - [ ] Create accounts
@@ -79,6 +80,3 @@ Admin users will be able to edit and delete their albums, subalbums, and photos 
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
 [phase-six]: ./docs/phases/phase6.md
-
-
-<!-- Client photo gallery for modern photographers. -->

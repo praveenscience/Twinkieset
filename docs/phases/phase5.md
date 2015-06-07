@@ -1,13 +1,15 @@
-# Phase 5: Searching for Blogs and Posts
+# Phase 5: Album, Subalbum, and Photo Views for Guests
 
 ## Rails
 ### Models
 
 ### Controllers
-Api::BlogsController (search)
-Api::PostsController (search)
+* UsersController (show)
+* AlbumsController (guest)
 
 ### Views
+* users/show.html.erb
+* albums/index.html.erb
 
 ## Backbone
 ### Models
@@ -15,8 +17,8 @@ Api::PostsController (search)
 ### Collections
 
 ### Views
-* BlogSearchItem
-* SearchShow (composite view, contains BlogsIndex and PostsIndex subviews)
+* GuestIndex
+* GuestAlbumLogin
+* GuestAlbumShow
 
 ## Gems/Libraries
-

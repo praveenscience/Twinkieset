@@ -1,13 +1,11 @@
-# Phase 4: User Feeds
+# Phase 4: Create and upload Photos
 
 ## Rails
 ### Models
 
 ### Controllers
-Api::PostsController (feed)
 
 ### Views
-posts/feed.json.jbuilder
 
 ## Backbone
 ### Models
@@ -15,6 +13,11 @@ posts/feed.json.jbuilder
 ### Collections
 
 ### Views
-* FeedShow (composite view, contains PostsIndex subview)
+* PhotoForm
 
 ## Gems/Libraries
+* CarrierWave
+* CarrierWaveDirect
+* Fog-AWS
+* AmazonS3
+* Resque or DelayedJob

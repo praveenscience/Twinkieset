@@ -1,4 +1,4 @@
-# Phase 3: Editing and Displaying Posts
+# Phase 3: Album, and Subalbum Creation
 
 ## Rails
 ### Models
@@ -13,9 +13,8 @@
 ### Collections
 
 ### Views
-* PostForm
+* AlbumForm
+* SubalbumForm
 
 ## Gems/Libraries
-* Filepicker
-* Markdown-js
-* Bootstrap Markdown
+* serializeJSON
