@@ -41,12 +41,12 @@ Ii'll implement the CRUD (create, read, update, destroy) for albums, subalbums, 
 
 [Details][phase-two]
 
-### Phase 3: Album, Subalbum, and Photo Creation (~1 day)
-I will add forms to allow admin users to create albums, subalbums, and photos individually. Admin users will then be able to create albums, subalbums, and photos without ever having to reload the page.
+### Phase 3: Album, and Subalbum Creation (~0.5 - 1 day)
+I will add forms to allow admin users to create albums, subalbums in a Backbone view. Admin users will then be able to create albums, and subalbums without ever having to reload the page.
 
 [Details][phase-three]
 
-### Phase 4: Uploading Photos (~1-2 days)
+### Phase 4: Create and upload Photos (~1-2 days)
 
 I will implement the ability to upload multiple photos through drag and drop using CarrierWave. Images will be stored on Amazon S3.
 
