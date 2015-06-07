@@ -3,20 +3,20 @@
 ## New Session
 ![new-session]
 
-## Feed Show (landing page)
+## Albums Index (landing page)
 ![feed-show]
 
-## Blog Show
+## Album Show
 ![blog-show]
 
-## Post Show
+## Album Form 
 ![post-show]
 
-## Post Form
-![post-form]
+## Photo Form
 
-## Search Results
-![search-results]
+## Guest Albums Index
+
+## Guest Album Show
 
 [new-session]: ./wireframes/new_session.png
 [feed-show]: ./wireframes/feed_show.png

@@ -1,25 +1,26 @@
-# Flux-capacitr
+# TwinkieSet
 
 [Heroku link][heroku]
 
-[heroku]: http://flux-capacitr.herokuapp.com
+[heroku]: http://twinkieset.herokuapp.com
 
 ## Minimum Viable Product
-Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
+TwinkieSet is a clone of PixieSet built on Rails and Backbone. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [x] Create accounts
-- [x] Create sessions (log in)
-- [x] Create blogs
-- [x] Create blog posts
-- [ ] View blogs and posts
-- [ ] Subscribe to blogs
-- [ ] View a feed of subscribed blogs
-- [ ] Tag blog posts
-- [ ] Search for blogs by title
-- [ ] Search for posts by tag
+- [ ] Create accounts
+- [ ] Create sessions (log in)
+- [ ] Create albums
+- [ ] Create subalbums
+- [ ] Create photos
+- [ ] View albums, galleries, and photos
+- [ ] Authorize albums
+- [ ] Categorize albums
+- [ ] Drag + drop to sort photos
 
+
+- [ ] Home page visiblity for each album
 ## Design Docs
 * [View Wireframes][views]
 * [DB schema][schema]
@@ -29,63 +30,56 @@ Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
 
 ## Implementation Timeline
 
-### Phase 1: User Authentication, Blog Creation (~1 day)
-I will implement user authentication in Rails based on the practices learned at
-App Academy. By the end of this phase, users will be able to create blogs using
-a simple text form in a Rails view. The most important part of this phase will
-be pushing the app to Heroku and ensuring that everything works before moving on
-to phase 2.
+### Phase 1: User Authentication (~0.5 day)
+I will implement authentication using BCrypt based on how I was taught at AppAcademy to create users and sessions. The goal for this phase will be to push a basic working application to Heroku that will allow users to sign up, sign in, and sign out.
 
 [Details][phase-one]
 
-### Phase 2: Viewing Blogs and Posts (~2 days)
-I will add API routes to serve blog and post data as JSON, then add Backbone
-models and collections that fetch data from those routes. By the end of this
-phase, users will be able to create blogs and view both blogs and posts, all
-inside a single Backbone app.
+### Phase 2: Album, Subalbum, and Photo View (~2 days)
+
+Ii'll implement the CRUD (create, read, update, destroy) for albums, subalbums, and photos under an API namespace which will serve JSON data. Then I will add Backbone models and collections to fetch the data from the API point. By the end of the days, admin users will be able to view albums, subalbums, and photos, all in a single Backbone app.
 
 [Details][phase-two]
 
-### Phase 3: Editing and Displaying Posts (~2 days)
-I plan to use third-party libraries to add functionality to the `PostForm` and
-`PostShow` views in this phase. First I'll need to add a Markdown editor to the
-`PostForm`, and make sure that the Markdown is properly escaped and formatted in
-the `PostShow` view. I also plan to integrate Filepicker for file upload so
-users can add images to blog posts.
+### Phase 3: Album, Subalbum, and Photo Creation (~1 day)
+I will add forms to allow admin users to create albums, subalbums, and photos individually. Admin users will then be able to create albums, subalbums, and photos without ever having to reload the page.
 
 [Details][phase-three]
 
-### Phase 4: User Feeds (~1-2 days)
-I'll start by adding a `feed` route that uses the `current_user`'s
-`subscribed_blogs` association to serve a list of blog posts ordered
-chronologically. On the Backbone side, I'll make a `FeedShow` view whose `posts`
-collection fetches from the new route.  Ultimately, this will be the page users
-see after logging in.
+### Phase 4: Uploading Photos (~1-2 days)
+
+I will implement the ability to upload multiple photos through drag and drop using CarrierWave. Images will be stored on Amazon S3.
 
 [Details][phase-four]
 
-### Phase 5: Searching for Blogs and Posts (~2 days)
-I'll need to add `search` routes to both the Blogs and Posts controllers. On the
-Backbone side, there will be a `SearchResults` composite view has `BlogsIndex`
-and `PostsIndex` subviews. These views will use plain old `blogs` and `posts`
-collections, but they will fetch from the new `search` routes.
+### Phase 5: Album, Subalbum, and Photo Views for Guests (~2 days)
+
+For this phase I will create Backbone views for the guest users. Users will be able to input a password if the admin for the album chose to password protect it. The landing page will allow users to click on an image, which will display as a full-page modal that essentially becomes a carousel. The landing page will be able to infinitely scroll.
 
 [Details][phase-five]
 
+### Phase 6: Editing Albums, Subalbums, and Photo Views (~2 days)
+
+Admin users will be able to edit and delete their albums, subalbums, and photos through Backbone. Photos will be drag and droppable using jQuery UI Sortable.
+
+[Details][phase-six]
+
+
 ### Bonus Features (TBD)
-- [ ] "Like" button and counter for posts
-- [ ] Custom blog urls
-- [ ] Pagination/infinite scroll
-- [ ] Activity history (e.g. likes, reblogs, taggings)
-- [ ] Post types (image posts, quote posts, etc)
-- [ ] Reblogging
-- [ ] Multiple sessions/session management
-- [ ] User avatars
-- [ ] Typeahead search bar
+- [ ] Friendly URL
+- [ ] Account Activation via email
+- [ ] Send password to clients via email
+- [ ] Choice of templates
+- [ ] RMagick or MiniMagick to resize and watermark images
+- [ ] Photo Lab Integration to order images using WHCC gem
+
 
 [phase-one]: ./docs/phases/phase1.md
 [phase-two]: ./docs/phases/phase2.md
 [phase-three]: ./docs/phases/phase3.md
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
+[phase-six]: ./docs/phases/phase6.md
 
+
+<!-- Client photo gallery for modern photographers. -->
