@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  root  'static_pages#root'
+  get 'albums' => 'albums#guest'
+
+  resources :users, only: [:new, :create, :show]
+  resources :session
+
+  namespace :api do
+    resources :albums, except: [:new, :edit]
+    resources :subalbums, only: [:create, :update, :destroy]
+    resources :photos, only: [:create, :update, :destroy]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
