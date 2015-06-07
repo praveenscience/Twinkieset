@@ -19,8 +19,6 @@ TwinkieSet is a clone of PixieSet built on Rails and Backbone. Users can:
 - [ ] Edit/delete albums, subalbums, photos
 - [ ] Drag + drop to sort photos
 
-
-- [ ] Home page visiblity for each album
 ## Design Docs
 * [View Wireframes][views]
 * [DB schema][schema]
