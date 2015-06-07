@@ -16,7 +16,7 @@ TwinkieSet is a clone of PixieSet built on Rails and Backbone. Users can:
 - [ ] Create photos
 - [ ] View albums, galleries, and photos
 - [ ] Authorize albums
-- [ ] Categorize albums
+- [ ] Edit/delete albums, subalbums, photos
 - [ ] Drag + drop to sort photos
 
 
@@ -70,6 +70,7 @@ Admin users will be able to edit and delete their albums, subalbums, and photos 
 - [ ] Account Activation via email
 - [ ] Send password to clients via email
 - [ ] Choice of templates
+- [ ] Subdomain for users
 - [ ] RMagick or MiniMagick to resize and watermark images
 - [ ] Photo Lab Integration to order images using WHCC gem
 
