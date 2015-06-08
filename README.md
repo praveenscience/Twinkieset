@@ -67,9 +67,9 @@ Admin users will be able to edit and delete their albums, subalbums, and photos 
 - [ ] Friendly URL
 - [ ] Account Activation via email
 - [ ] Send password to clients via email
-- [ ] Choice of templates
 - [ ] Subdomain for users
 - [ ] RMagick or MiniMagick to resize and watermark images
+- [ ] Choice of templates
 - [ ] Photo Lab Integration to order images using WHCC gem
 
 
