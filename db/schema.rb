@@ -11,15 +11,55 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150609180430) do
+ActiveRecord::Schema.define(version: 20150609204258) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "albums", force: :cascade do |t|
+    t.string   "title",                             null: false
+    t.date     "event_date",                        null: false
+    t.integer  "cover_image_id",                    null: false
+    t.string   "status",          default: "draft", null: false
+    t.string   "password_digest",                   null: false
+    t.string   "category"
+    t.integer  "user_id",                           null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "albums", ["title", "user_id"], name: "index_albums_on_title_and_user_id", unique: true, using: :btree
+  add_index "albums", ["user_id"], name: "index_albums_on_user_id", using: :btree
+
+  create_table "photos", force: :cascade do |t|
+    t.string   "image_url",                 null: false
+    t.float    "order",       default: 0.0, null: false
+    t.integer  "subalbum_id",               null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "photos", ["subalbum_id"], name: "index_photos_on_subalbum_id", using: :btree
+
+  create_table "subalbums", force: :cascade do |t|
+    t.string   "title",                  null: false
+    t.float    "order",                  null: false
+    t.integer  "album_id",   default: 0, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "subalbums", ["album_id"], name: "index_subalbums_on_album_id", using: :btree
+  add_index "subalbums", ["title", "album_id"], name: "index_subalbums_on_title_and_album_id", unique: true, using: :btree
+
   create_table "users", force: :cascade do |t|
-    t.string "email",           null: false
-    t.string "password_digest", null: false
-    t.string "session_token",   null: false
+    t.string   "email",           null: false
+    t.string   "password_digest", null: false
+    t.string   "session_token",   null: false
+    t.string   "business_name",   null: false
+    t.string   "website",         null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
