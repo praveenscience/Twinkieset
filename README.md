@@ -9,8 +9,8 @@ TwinkieSet is a clone of PixieSet (a client photo gallery for modern photographe
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [ ] Create accounts
-- [ ] Create sessions (log in)
+- [x] Create accounts
+- [x] Create sessions (log in)
 - [ ] Create albums
 - [ ] Create subalbums
 - [ ] Create photos
