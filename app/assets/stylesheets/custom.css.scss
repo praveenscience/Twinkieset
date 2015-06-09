@@ -1,0 +1,51 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+$teal: #1abc9c;
+
+body {
+  font: 14px 'Proxima Nova';
+  font-weight: 300;
+}
+
+.sign-up-page, .log-in-page {
+  .form-control::-webkit-input-placeholder { color: #bbb; }
+  .form-control:-moz-placeholder { color: #bbb; }
+  .form-control::-moz-placeholder { color: #bbb; }
+  .form-control:-ms-input-placeholder { color: #bbb; }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+  input {
+    font-size: 24px;
+    line-height: 25px;
+    border-radius: 0;
+    border: 1px solid #eee;
+    margin: 10px 0;
+    padding: 30px 20px;
+    outline: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+
+  }
+
+  .submit-user, .login-user {
+    padding: 10px 40px;
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    line-height: 19px;
+    background: $teal;
+  }
+}
+.sign-up-page {
+  margin-top: 100px;
+  text-align: center;
+
+
+
+}
