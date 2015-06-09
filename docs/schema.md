@@ -8,7 +8,7 @@ title             | string    | not null
 event_date        | date      | not null
 cover_image_id    | integer   | not null
 status            | string    | not null, default draft
-password_digest   | string    | not null
+password_digest   | string    | 
 category          | string    |
 user_id           | integer   | not null, foreign_key (reference user)
 
