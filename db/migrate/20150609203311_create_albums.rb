@@ -5,7 +5,7 @@ class CreateAlbums < ActiveRecord::Migration
       t.date    :event_date,      null: false
       t.integer :cover_image_id
       t.string  :status,          null: false, default: "draft"
-      t.string  :password_digest, null: false
+      t.string  :password_digest
       t.string  :category
       t.integer :user_id,         null: false
 

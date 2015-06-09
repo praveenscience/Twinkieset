@@ -7,7 +7,7 @@
 #  event_date      :date             not null
 #  cover_image_id  :integer
 #  status          :string           default("draft"), not null
-#  password_digest :string           not null
+#  password_digest :string
 #  category        :string
 #  user_id         :integer          not null
 #  created_at      :datetime
@@ -30,10 +30,17 @@ class Album < ActiveRecord::Base
 
   has_many(
     :photos,
-    through: :subalbums
+    through: :subalbums,
+    source: :photos
   )
-  
-  validates :title, :event_date, :status, :password_digest, :user_id, presence: true
+
+  validates :title, :event_date, :status, :user_id, presence: true
   validates :title, uniqueness: { scope: :user_id,
     message: "You already have an album of the same name" }
+
+  after_commit :create_highlights_subalbum
+
+  def create_highlights_subalbum
+    @subalbum = self.subalbums.create(title: "Highlights")
+  end
 end

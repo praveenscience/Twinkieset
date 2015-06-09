@@ -23,6 +23,7 @@ class Subalbum < ActiveRecord::Base
     class_name: 'Photo',
     foreign_key: :subalbum_id
   )
+
   validates :title, :order, :album_id, presence: true
   validates :title, uniqueness: { scope: :album_id,
     message: "This album already has a subalbum of the same name" }

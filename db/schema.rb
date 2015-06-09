@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20150609204258) do
     t.date     "event_date",                        null: false
     t.integer  "cover_image_id"
     t.string   "status",          default: "draft", null: false
-    t.string   "password_digest",                   null: false
+    t.string   "password_digest"
     t.string   "category"
     t.integer  "user_id",                           null: false
     t.datetime "created_at"
