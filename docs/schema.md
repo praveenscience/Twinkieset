@@ -6,7 +6,6 @@ column name       | data type | details
 id                | integer   | not null, primary key
 title             | string    | not null
 event_date        | date      | not null
-ord               | float     | not null, default 0.0
 cover_image_id    | integer   | not null
 status            | string    | not null, default draft
 password_digest   | string    | not null
@@ -31,7 +30,7 @@ column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 image_url   | string    | not null
-ord         | float     | not null, default 0.0
+order       | float     | not null, default 0.0
 subalbum_id | integer   | not null, foreign_key (reference subalbum)
 
 ## users
