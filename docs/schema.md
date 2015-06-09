@@ -42,3 +42,4 @@ password_digest | string    | not null
 session_token   | string    | not null, unique
 business_name   | string    | not null
 website         | string    | not null
+username        | string    | not null, unique
