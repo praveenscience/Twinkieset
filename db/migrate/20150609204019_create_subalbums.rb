@@ -2,8 +2,8 @@ class CreateSubalbums < ActiveRecord::Migration
   def change
     create_table :subalbums do |t|
       t.string :title,     null: false
-      t.float :order,      null: false
-      t.integer :album_id, null: false, default: 0.0
+      t.float :order,      null: false, default: 0.0
+      t.integer :album_id, null: false
 
       t.timestamps
     end
