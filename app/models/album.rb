@@ -16,6 +16,6 @@
 
 class Album < ActiveRecord::Base
   validates :title, :event_date, :status, :password_digest, :user_id, presence: true
-  validates :title, uniquness: { scope: :user_id,
+  validates :title, uniqueness: { scope: :user_id,
     message: "You already have an album of the same name" }
 end

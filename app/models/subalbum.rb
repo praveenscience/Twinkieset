@@ -12,6 +12,6 @@
 
 class Subalbum < ActiveRecord::Base
   validates :title, :order, :album_id, presence: true
-  validates :title, uniquness: { scope: :album_id,
+  validates :title, uniqeuness: { scope: :album_id,
     message: "This album already has a subalbum of the same name" }
 end
