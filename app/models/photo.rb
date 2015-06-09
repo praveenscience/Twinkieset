@@ -11,5 +11,23 @@
 #
 
 class Photo < ActiveRecord::Base
+  belongs_to(
+    :subalbum,
+    class_name: 'Subalbum',
+    foreign_key: :subalbum_id,
+    dependent: :destroy
+  )
+  has_one(
+    :album,
+    through: :subalbum,
+    source: :album
+  )
+  has_one(
+    :owner,
+    through: :album,
+    source: :owner
+  )
+
+
   validates :image_url, :order, :subalbum_id, presence: true
 end

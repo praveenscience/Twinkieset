@@ -8,11 +8,19 @@
 #  session_token   :string           not null
 #  business_name   :string           not null
 #  website         :string           not null
+#  username        :string
 #  created_at      :datetime
 #  updated_at      :datetime
 #
 
 class User < ActiveRecord::Base
+  has_many(
+    :albums,
+    class_name: 'Album',
+    foreign_key: :album_id
+  )
+
+
   attr_reader :password
   validates :email, :password_digest, :session_token, presence: true
   validates :email, :password_digest, :session_token, uniqueness: true

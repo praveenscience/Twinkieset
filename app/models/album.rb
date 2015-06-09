@@ -21,6 +21,17 @@ class Album < ActiveRecord::Base
     foreign_key: :user_id,
     dependent: :destroy
   )
+
+  has_many(
+    :subalbums,
+    class_name: 'Subalbum',
+    foreign_key: :album_id
+  )
+
+  has_many(
+    :photos,
+    through: :subalbums
+  )
   
   validates :title, :event_date, :status, :password_digest, :user_id, presence: true
   validates :title, uniqueness: { scope: :user_id,
