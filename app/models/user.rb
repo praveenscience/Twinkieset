@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
   has_many(
     :albums,
     class_name: 'Album',
-    foreign_key: :album_id
+    foreign_key: :user_id
   )
 
 
