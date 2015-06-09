@@ -20,7 +20,7 @@ column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 title       | string    | not null
-ord         | float     | not null, default 0.0
+order       | float     | not null, default 0.0
 album_id    | integer   | not null, foreign_key (reference album)
 
 <!-- add_index :subalbums, [:title, :album_id], unique: true -->
