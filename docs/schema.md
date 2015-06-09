@@ -4,7 +4,7 @@
 column name       | data type | details
 ------------------|-----------|-----------------------
 id                | integer   | not null, primary key
-title             | string    | not null, foreign key (references users)
+title             | string    | not null
 event_date        | date      | not null
 ord               | float     | not null, default 0.0
 cover_image_id    | integer   | not null
@@ -41,3 +41,5 @@ id              | integer   | not null, primary key
 email           | string    | not null, unique
 password_digest | string    | not null
 session_token   | string    | not null, unique
+business_name   | string    | not null
+website         | string    | not null
