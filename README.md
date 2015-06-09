@@ -1,11 +1,11 @@
-# TwinkieSet
+# TwinkieSetApp
 
 [Heroku link][heroku]
 
-[heroku]: http://twinkieset.herokuapp.com
+[heroku]: http://TwinkieSetApp.herokuapp.com
 
 ## Minimum Viable Product
-TwinkieSet is a clone of PixieSet (a client photo gallery for modern photographers) built on Rails and Backbone. Users can:
+TwinkieSetApp is a clone of PixieSet (a client photo gallery for modern photographers) built on Rails and Backbone. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
