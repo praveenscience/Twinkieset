@@ -15,6 +15,13 @@
 #
 
 class Album < ActiveRecord::Base
+  belongs_to(
+    :owner,
+    class_name: 'User',
+    foreign_key: :user_id,
+    dependent: :destroy
+  )
+  
   validates :title, :event_date, :status, :password_digest, :user_id, presence: true
   validates :title, uniqueness: { scope: :user_id,
     message: "You already have an album of the same name" }
