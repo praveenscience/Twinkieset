@@ -8,6 +8,14 @@
 </head>
 <body>
 
+<%= render 'shared/notice_and_errors' %>
+
+<% if logged_in? %>
+  Signed in as <%= current_user.email %> <%= button_to "sign out", session_url, method: "delete" %>
+<% else %>
+  <%= link_to "Please sign in.", new_session_url %>
+<% end %>
+
 <%= yield %>
 
 </body>

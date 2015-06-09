@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'albums' => 'albums#guest'
 
   resources :users, only: [:new, :create, :show]
-  resources :session
+  resource :session, only: [:new, :create, :destroy]
 
   namespace :api do
     resources :albums, except: [:new, :edit]
