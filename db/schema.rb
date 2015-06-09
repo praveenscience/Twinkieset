@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 20150609204258) do
     t.string   "session_token",   null: false
     t.string   "business_name",   null: false
     t.string   "website",         null: false
+    t.string   "username"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

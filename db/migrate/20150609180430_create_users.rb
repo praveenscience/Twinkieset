@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :session_token, null: false
       t.string :business_name, null: false
       t.string :website, null: false
+      t.string :username, unique: true
 
       t.timestamps
     end
