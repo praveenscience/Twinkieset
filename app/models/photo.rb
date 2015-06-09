@@ -11,4 +11,5 @@
 #
 
 class Photo < ActiveRecord::Base
+  validates :image_url, :order, :subalbum_id, presence: true
 end
