@@ -4,10 +4,14 @@ window.TwinkieSetApp = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+    console.log("got to initialize");
+    var router = new TwinkieSetApp.Routers.Router({
+      $rootEl: $('#content')
+    });
+    Backbone.history.start();
   }
 };
 
-$(document).ready(function(){
-  TwinkieSetApp.initialize();
-});
+// $(document).ready(function(){
+//   TwinkieSetApp.initialize();
+// });
