@@ -2,10 +2,47 @@
 @import "bootstrap";
 
 
+@font-face {
+  font-family: 'ProximaNovaT-Thin';
+  src: url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNovaT-Thin/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),  url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNovaT-Thin/ProximaNovaT-Thin.woff') format('woff'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNovaT-Thin/ProximaNovaT-Thin.ttf')  format('truetype'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNovaT-Thin/ProximaNovaT-Thin.svg#ProximaNovaT-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Light/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),  url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Light/ProximaNova-Light.woff') format('woff'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Light/ProximaNova-Light.ttf')  format('truetype'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Light/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Regular/ProximaNova-Regular.otf')  format('opentype'),
+	     url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Regular/ProximaNova-Regular.ttf')  format('truetype'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),  url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Semibold/ProximaNova-Semibold.woff') format('woff'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Semibold/ProximaNova-Semibold.ttf')  format('truetype'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Semibold/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ProximaNova-Extrabld';
+  src: url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),  url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.woff') format('woff'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.ttf')  format('truetype'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.svg#ProximaNova-Extrabld') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 $teal: #1abc9c;
 
 body {
-  font: 14px 'Roboto', 'Proxima Nova';
+  font: 14px 'ProximaNova-Light';
   font-weight: 300;
   margin: 0px;
 }
@@ -59,11 +96,12 @@ body {
   border-bottom: 1px solid #eeeeee;
 
   .albums-title {
-    font-weight: 500;
+    font-family: 'ProximaNova-Semibold';
     color: black;
     font-weight: 12px;
     position: relative;
     left: 50px;
+    color: #333;
   }
 }
 
