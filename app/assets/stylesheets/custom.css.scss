@@ -1,5 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 
 @font-face {
@@ -90,7 +92,7 @@ body {
 
 
 .navibar {
-
+  background: #fafafa;
   border-radius: 0;
   height: 60px;
   border-bottom: 1px solid #eeeeee;
