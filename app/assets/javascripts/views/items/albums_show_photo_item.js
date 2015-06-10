@@ -1,6 +1,7 @@
 TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
-  template: JST['items/albums_index_photo_item'],
+  template: JST['items/albums_show_photo_item'],
   className: 'photo-item',
+  tagName: 'li',
 
   initialize: function () {
     this.listenTo(this.model, "sync", this.render);

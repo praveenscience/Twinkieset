@@ -3,9 +3,11 @@ TwinkieSetApp.Views.AlbumsShowSubalbumItem = Backbone.View.extend({
   className: 'album-show-sidebar-subalbums-li',
   tagName: 'li',
 
-  initialize: function () {
+  initialize: function (options) {
+    this.album = options.album;
     this.listenTo(this.model, "sync", this.render);
 
+// now take in options.album
   },
 
   events: {
@@ -13,16 +15,8 @@ TwinkieSetApp.Views.AlbumsShowSubalbumItem = Backbone.View.extend({
   },
 
   changeSubalbums: function (event) {
-
-    var photoIndexView = new TwinkieSetApp.Views.PhotosIndex({
-      model: this.model,
-      collection: this.model.photos()
-    });
-    $('.album-show-items').html(photoIndexView.render().$el);
+    this.album.trigger("subalbumSelected", this.model);
   },
-
-
-
 
   render: function () {
     var content = this.template({ subalbum: this.model });
