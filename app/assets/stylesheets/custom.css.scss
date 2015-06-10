@@ -5,8 +5,9 @@
 $teal: #1abc9c;
 
 body {
-  font: 14px 'Proxima Nova';
+  font: 14px 'Roboto', 'Proxima Nova';
   font-weight: 300;
+  margin: 0px;
 }
 
 .sign-up-page, .log-in-page {
@@ -48,4 +49,35 @@ body {
 
 
 
+}
+
+
+.navibar {
+
+  border-radius: 0;
+  height: 60px;
+  border-bottom: 1px solid #eeeeee;
+
+  .albums-title {
+    font-weight: 500;
+    color: black;
+    font-weight: 12px;
+    position: relative;
+    left: 50px;
+  }
+}
+
+.album_index_item {
+  float: left;
+
+
+  .title {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .event_date {
+    color: #999;
+    font-size: 11px;
+  }
 }
