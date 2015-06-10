@@ -14,10 +14,7 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
     });
     this.listenTo(this.model,'subalbumSelected', this.renderSubalbum);
 
-    // console.log(options.subalbumID);
-    // console.log(this.currentSubalbum);
-    // listen for slected subalbum
-    // if no current selected subalbum use hilights
+
     this.navBarView = new TwinkieSetApp.Views.NavBar();
     this.addSubview("nav", this.navBarView);
     this.sidebar = new TwinkieSetApp.Views.AlbumsShowSidebar({

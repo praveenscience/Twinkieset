@@ -121,13 +121,25 @@ body {
 .album_index_item {
   float: left;
 
+    a {
+      color: #333;
+      text-decoration: none;
+    }
 
+    div:hover, .title:hover {
+      opacity: 0.9;
+    }
   .title {
     font: 14px 'ProximaNova-Semibold';
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 5px;
+
+
   }
+
+
+
 
   .event_date {
     font: 12px 'ProximaNova-Regular';
@@ -203,7 +215,7 @@ body {
   }
   .album-show-items {
     left: 50px;
-    
+
     .title {
       font: 26px 'ProximaNova-Regular';
       border-bottom: 1px solid #eee;

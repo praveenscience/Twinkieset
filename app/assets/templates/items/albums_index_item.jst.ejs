@@ -2,8 +2,10 @@
 
 
 
-<div class="cover_image_container"></div>
+<a href="#collection/<%= album.id %>">
+  <div class="cover_image_container"></div>
 
-<div class="title"><%= album.escape('title') %></div>
+  <div class="title"><%= album.escape('title') %></div>
+</a>
 
 <div class="event_date"><%= album.escape('event_date') %></div>
