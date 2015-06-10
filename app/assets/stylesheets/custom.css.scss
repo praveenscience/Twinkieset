@@ -34,7 +34,7 @@
 
 
 @font-face {
-  font-family: 'ProximaNova-Extrabld';
+  font-family: 'ProximaNova-Extrabold';
   src: url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),  url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.woff') format('woff'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.ttf')  format('truetype'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.svg#ProximaNova-Extrabld') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -50,28 +50,31 @@ body {
   margin: 0px;
 }
 
+.form-control {
+  font-size: 24px;
+  line-height: 25px;
+  border-radius: 0;
+  border: 1px solid #eee;
+  margin: 10px 0;
+  padding: 30px 20px;
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.form-control::-webkit-input-placeholder { color: #bbb; }
+.form-control:-moz-placeholder { color: #bbb; }
+.form-control::-moz-placeholder { color: #bbb; }
+.form-control:-ms-input-placeholder { color: #bbb; }
+
 .sign-up-page, .log-in-page {
-  .form-control::-webkit-input-placeholder { color: #bbb; }
-  .form-control:-moz-placeholder { color: #bbb; }
-  .form-control::-moz-placeholder { color: #bbb; }
-  .form-control:-ms-input-placeholder { color: #bbb; }
 
   .logo {
     margin-bottom: 30px;
   }
-  input {
-    font-size: 24px;
-    line-height: 25px;
-    border-radius: 0;
-    border: 1px solid #eee;
-    margin: 10px 0;
-    padding: 30px 20px;
-    outline: none;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
-    box-shadow: none !important;
 
-  }
+
 
   .submit-user, .login-user {
     padding: 10px 40px;
@@ -118,8 +121,81 @@ body {
   margin-top: 30px;
   font: 26px 'ProximaNova-Regular';
   border-bottom: 1px solid #eee;
-  padding-left: 29px;
-  padding-bottom: 10px;
+  padding: 0 29px 10px 29px;
+}
+
+.create-new-album {
+  font-family: 'ProximaNova-Regular';
+  font-size: 14px;
+  background-color: #1abc9c;
+  color: white;
+  padding: 8px 16px;
+  letter-spacing: 1px;
+  float: right;
+}
+
+.album-form-modal {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  .form-container {
+    background: white;
+    height: 345px;
+    width: 600px;
+    position: absolute;
+    margin-top: -173px;
+    margin-left: -300px;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+
+    .title {
+      font: 20px 'ProximaNova-Regular';
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      font: 18px 'ProximaNova-Regular';
+      color: #555555;
+      padding: 22px 17px;
+    }
+
+    label {
+      font: 14px 'ProximaNova-Semibold';
+      margin-bottom: 0;
+    }
+
+    .submit-album, .cancel-new-album {
+      padding: 10px 40px;
+      border: 0;
+      color: white;
+      font-family: 'ProximaNova-Regular';
+      font-size: 14px;
+
+      padding: 8px 16px;
+      letter-spacing: 1px;
+      line-height: 19px;
+      float: right;
+      margin-top: 20px;
+    }
+    .submit-album {
+      margin-right: 3px;
+      background-color: #1abc9c;
+      color: white;
+    }
+
+    .cancel-new-album {
+      background-color: #e8e8e8;
+
+      color: black;
+
+    }
+  }
 }
 .album_index_item {
   float: left;

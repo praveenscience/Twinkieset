@@ -18,14 +18,14 @@ class Album < ActiveRecord::Base
   belongs_to(
     :owner,
     class_name: 'User',
-    foreign_key: :user_id,
-    dependent: :destroy
+    foreign_key: :user_id
   )
 
   has_many(
     :subalbums,
     class_name: 'Subalbum',
-    foreign_key: :album_id
+    foreign_key: :album_id,
+    dependent: :destroy
   )
 
   has_many(
@@ -44,7 +44,7 @@ class Album < ActiveRecord::Base
   validates :title, uniqueness: { scope: :user_id,
     message: "You already have an album of the same name" }
 
-  after_commit :create_highlights_subalbum
+  after_save :create_highlights_subalbum
 
   def create_highlights_subalbum
     @subalbum = self.subalbums.create(title: "Highlights")

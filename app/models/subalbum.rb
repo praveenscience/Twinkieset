@@ -14,14 +14,14 @@ class Subalbum < ActiveRecord::Base
   belongs_to(
     :album,
     class_name: 'Album',
-    foreign_key: :album_id,
-    dependent: :destroy
+    foreign_key: :album_id
   )
 
   has_many(
     :photos,
     class_name: 'Photo',
-    foreign_key: :subalbum_id
+    foreign_key: :subalbum_id,
+    dependent: :destroy
   )
 
   validates :title, :order, :album_id, presence: true

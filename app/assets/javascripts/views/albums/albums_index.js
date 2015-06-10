@@ -7,6 +7,22 @@ TwinkieSetApp.Views.AlbumsIndex = Backbone.CompositeView.extend({
     // this.listenTo(this.collection, "sync", this.render);
     this.listenTo(this.collection, "add", this.addAlbumView);
     this.collection.each(this.addAlbumView.bind(this));
+    this.listenTo(this.collection, 'remove', this.removeAlbumView);
+  },
+
+  events: {
+    'click .create-new-album': 'openForm'
+  },
+
+  removeAlbumView: function (album) {
+    this.removeModelSubview('.albums', album);
+  },
+
+  openForm: function () {
+    var formView = new TwinkieSetApp.Views.Form({
+      collection: this.collection
+    });
+    $('body').append(formView.render().$el);
   },
 
   addAlbumView: function (album) {

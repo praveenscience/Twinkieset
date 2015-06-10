@@ -17,7 +17,8 @@ class User < ActiveRecord::Base
   has_many(
     :albums,
     class_name: 'Album',
-    foreign_key: :user_id
+    foreign_key: :user_id,
+    dependent: :destroy
   )
 
 
