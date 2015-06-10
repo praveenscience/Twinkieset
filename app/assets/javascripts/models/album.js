@@ -29,6 +29,3 @@ TwinkieSetApp.Models.Album = Backbone.Model.extend({
     return this._subalbums;
   }
 });
-
-
-this.subalbum.album

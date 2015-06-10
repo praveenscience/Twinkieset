@@ -42,6 +42,7 @@
 
 
 $teal: #1abc9c;
+$darkteal: #1bac9c;
 
 body {
   font: 14px 'ProximaNova-Light';
@@ -104,6 +105,8 @@ body {
     position: relative;
     left: 50px;
     color: #333;
+    padding: 0 10px 19px 10px;
+    border-bottom: 3px solid $darkteal;
   }
 }
 
