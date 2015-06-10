@@ -1,6 +1,7 @@
 TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   routes: {
-    "": "index"
+    "": "index",
+    "collection/:id": "show"
   },
 
   initialize: function (options) {
@@ -13,7 +14,14 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     this.collection.fetch();
     var indexView = new TwinkieSetApp.Views.AlbumsIndex({ collection: this.collection });
     this._swapView(indexView);
-    console.log("in the index file");
+    console.log("in the index route");
+  },
+
+  show: function (id) {
+    var album = this.collection.getOrFetch(id);
+    var showView = new TwinkieSetApp.Views.AlbumsShow({ model: album });
+    this._swapView(showView);
+    console.log("in the show route");
   },
 
   _swapView: function (newView) {
