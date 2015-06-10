@@ -34,6 +34,12 @@ class Album < ActiveRecord::Base
     source: :photos
   )
 
+  belongs_to(
+    :cover_image,
+    class_name: 'Photo',
+    foreign_key: 'cover_image_id'
+  )
+
   validates :title, :event_date, :status, :user_id, presence: true
   validates :title, uniqueness: { scope: :user_id,
     message: "You already have an album of the same name" }

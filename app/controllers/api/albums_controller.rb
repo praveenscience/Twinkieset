@@ -2,7 +2,7 @@ class Api::AlbumsController < ApplicationController
   def index
     @albums = current_user.albums
 
-    render json: @albums
+    render :index
   end
 
   def create
