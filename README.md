@@ -12,7 +12,7 @@ TwinkieSetApp is a clone of PixieSet (a client photo gallery for modern photogra
 - [x] Create accounts
 - [x] Create sessions (log in)
 - [x] View albums, galleries, and photos
-- [ ] Create albums
+- [x] Create albums
 - [ ] Create subalbums
 - [ ] Create photos
 - [ ] Edit/delete albums, subalbums, photos
