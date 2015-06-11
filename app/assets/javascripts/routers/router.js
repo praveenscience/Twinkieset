@@ -1,17 +1,24 @@
 TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   routes: {
     "": "index",
-    "collection/:id(/subalbum/:subalbumId)": "show"
+    "collection/:id(/set/:subalbumId)": "show"
   },
 
   initialize: function (options) {
+    // console.log(JSON.stringify(options.currentUserEmail));
+
+    // console.log(CURRENT_USER_EMAIL)
     console.log("got into router");
     this.$rootEl = options.$rootEl;
     this.collection = new TwinkieSetApp.Collections.Albums();
   },
 
   index: function () {
-    this.collection.fetch();
+    this.collection.fetch({
+      error: function () {
+        window.location.href = '/session/new';
+      }
+    });
     var indexView = new TwinkieSetApp.Views.AlbumsIndex({ collection: this.collection });
     this._swapView(indexView);
     console.log("in the index route");

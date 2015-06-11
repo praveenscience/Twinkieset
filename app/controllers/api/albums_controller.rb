@@ -1,4 +1,6 @@
 class Api::AlbumsController < ApplicationController
+  before_action :must_be_logged_in
+
   def index
     @albums = current_user.albums
 
@@ -7,6 +9,7 @@ class Api::AlbumsController < ApplicationController
 
   def create
     @album = current_user.albums.new(album_params)
+
 
     if @album.save
       render json: @album
@@ -44,5 +47,11 @@ class Api::AlbumsController < ApplicationController
   private
     def album_params
       params.require(:album).permit(:title, :event_date)
+    end
+
+    def must_be_logged_in
+      if !logged_in?
+        redirect_to new_session_url, status: :forbidden
+      end
     end
 end

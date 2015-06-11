@@ -10,7 +10,7 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
       } else {
         this.currentSubalbumId = this.model.subalbums().first().id;
       }
-      this.renderSubalbum(this.model.subalbums().get(this.currentSubalbumId))
+      this.renderSubalbum(this.model.subalbums().get(this.currentSubalbumId));
     });
     this.listenTo(this.model,'subalbumSelected', this.renderSubalbum);
 
