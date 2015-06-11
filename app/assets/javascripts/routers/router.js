@@ -5,20 +5,22 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   },
 
   initialize: function (options) {
-    // console.log(JSON.stringify(options.currentUserEmail));
 
-    // console.log(CURRENT_USER_EMAIL)
+    if (window.CURRENT_USER_EMAIL) {
+      window.location.href = '/session/new';
+    }
     console.log("got into router");
     this.$rootEl = options.$rootEl;
     this.collection = new TwinkieSetApp.Collections.Albums();
-  },
-
-  index: function () {
     this.collection.fetch({
-      error: function () {
+      error: function (models, response) {
         window.location.href = '/session/new';
       }
     });
+  },
+
+  index: function () {
+
     var indexView = new TwinkieSetApp.Views.AlbumsIndex({ collection: this.collection });
     this._swapView(indexView);
     console.log("in the index route");
