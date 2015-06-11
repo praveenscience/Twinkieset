@@ -28,6 +28,6 @@ class Api::SubalbumsController < ApplicationController
 
   private
     def subalbum_params
-      params.require(:photo).permit(:image_url, :order, :subalbum_id)
+      params.require(:subalbum).permit(:title, :order, :album_id)
     end
 end

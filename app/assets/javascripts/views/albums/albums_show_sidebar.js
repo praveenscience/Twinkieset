@@ -9,6 +9,18 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
 
   },
 
+  events: {
+    'click .new-set-button': 'openSubalbumForm'
+  },
+
+  openSubalbumForm: function () {
+    var subalbumForm = new TwinkieSetApp.Views.SubalbumForm({
+      model: this.model,
+      collection: this.model.subalbums()
+    });
+    $('body').append(subalbumForm.render().$el);
+  },
+
   addSubAlbumView: function (subalbum) {
     // pass in the album to the subalbum so it can trigger when a subalbum is selected
 

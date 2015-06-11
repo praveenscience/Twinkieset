@@ -142,16 +142,14 @@ body {
   left: 0px;
   right: 0px;
 
+
   .form-container {
     background: white;
-    height: 345px;
-    width: 600px;
     position: absolute;
-    margin-top: -173px;
-    margin-left: -300px;
     top: 50%;
     left: 50%;
     padding: 40px;
+
 
     .title {
       font: 20px 'ProximaNova-Regular';
@@ -170,7 +168,7 @@ body {
       margin-bottom: 0;
     }
 
-    .submit-album, .cancel-new-album {
+    .submit-button, .cancel-button {
       padding: 10px 40px;
       border: 0;
       color: white;
@@ -183,18 +181,31 @@ body {
       float: right;
       margin-top: 20px;
     }
-    .submit-album {
+    .submit-button {
       margin-right: 3px;
       background-color: #1abc9c;
       color: white;
     }
 
-    .cancel-new-album {
+    .cancel-button {
       background-color: #e8e8e8;
 
       color: black;
 
     }
+  }
+
+  .form-container.album-form {
+    height: 345px;
+    width: 600px;
+    margin-top: -173px;
+    margin-left: -300px;
+  }
+  .form-container.subalbum-form {
+    height: 250px;
+    width: 600px;
+    margin-top: -125px;
+    margin-left: -300px;
   }
 }
 .album_index_item {
@@ -276,13 +287,14 @@ body {
       list-style-type: none;
       margin-top: 20px;
       padding-left: 20px;
+      margin-bottom: 0px;
       li {
         padding-bottom: 20px;
 
       }
     }
 
-    .album-show-sidebar-subalbums-li {
+    .album-show-sidebar-subalbums-li, .new-set-button {
       font: 15px 'ProximaNova-Regular';
       color: #888;
 
@@ -290,6 +302,12 @@ body {
         padding-right: 10px;
       }
 
+    }
+
+    .new-set-button {
+      border: 0;
+      background: transparent;
+      padding-left: 19px;
     }
   }
   .album-show-items {

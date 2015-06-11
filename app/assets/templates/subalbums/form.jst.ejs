@@ -1,0 +1,16 @@
+<div class="form-container subalbum-form">
+
+  <div class="title">New Photo Set</div>
+
+  <form class="form-group">
+    <input type="hidden" name="subalbum[album_id]" value="<%= album.id %>">
+
+    <label for="subalbum-title">Photo Set Name</label>
+    <input id="subalbum-title" class="form-control" type="text" name="subalbum[title]" placeholder="e.g. Ceremony, Reception, Getting Ready">
+
+    <button class="cancel-button cancel-new-subalbum">Cancel</button>
+    <input type="submit" class="submit-button submit-subalbum" value="Save">
+  </form>
+
+
+</div>
