@@ -7,13 +7,14 @@
   <%= javascript_include_tag 'application' %>
 
   <script type="text/javascript">
-    if (<%= current_user %>) {
-      window.CURRENT_USER_EMAIL = "<%= current_user.email %>"
+    if (<%= current_user.nil? %>) {
+      CURRENT_USER = null;
+    } else {
+      CURRENT_USER = JSON.parse('<%= current_user.to_json.html_safe %>');
     }
   </script>
 </head>
 <body>
-
 
 
 <!-- <%= render 'shared/notice_and_errors' %>
