@@ -41,6 +41,14 @@
 }
 
 
+@mixin create-buttons($bg, $color) {
+  font-family: 'ProximaNova-Regular';
+  font-size: 14px;
+  background-color: $bg;
+  color: $color;
+  padding: 7px 12px;
+  letter-spacing: 1px;
+}
 $teal: #1abc9c;
 $darkteal: #1bac9c;
 
@@ -125,12 +133,7 @@ body {
 }
 
 .create-new-album {
-  font-family: 'ProximaNova-Regular';
-  font-size: 14px;
-  background-color: #1abc9c;
-  color: white;
-  padding: 8px 16px;
-  letter-spacing: 1px;
+  @include create-buttons($teal, #fff);
   float: right;
 }
 
@@ -313,11 +316,23 @@ body {
   .album-show-items {
     left: 50px;
 
+
     .title {
       font: 26px 'ProximaNova-Regular';
       border-bottom: 1px solid #eee;
       padding-left: 20px;
       padding-bottom: 10px;
+    }
+
+    .create-sort-buttons {
+      float: right;
+    }
+    .new-photo-button {
+      @include create-buttons($teal, #fff);
+      margin-right: 3px;
+    }
+    .sort-photo-button {
+      @include create-buttons(#e8e8e8, black)
     }
 
     ul.photo-items {

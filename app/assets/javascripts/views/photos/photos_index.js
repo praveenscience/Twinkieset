@@ -7,6 +7,11 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     this.collection.each(this.addPhotoView.bind(this));
   },
 
+  // TODO
+
+  sortPhotos: function(by) {
+    this.collection.comparator = by;
+  },
 
   addPhotoView: function (photo) {
     var subview = new TwinkieSetApp.Views.AlbumsShowPhotoItem({
