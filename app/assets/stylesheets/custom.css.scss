@@ -244,6 +244,18 @@ a:link {
     margin-left: -300px;
     text-align: center;
   }
+
+  .form-container.delete-photos-form {
+    height: 166px;
+    width: 600px;
+    margin-top: -83px;
+    margin-left: -300px;
+    text-align: center;
+
+    .title {
+      margin-bottom: 8px;
+    }
+  }
 }
 .album_index_item {
   float: left;

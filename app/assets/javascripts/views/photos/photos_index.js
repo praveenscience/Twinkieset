@@ -6,6 +6,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     this.selectedPhotosArr = [];
     this.listenTo(this.collection, 'sync', this.render);
     this.listenTo(this.collection, "add", this.addPhotoView);
+    this.listenTo(this.collection, 'remove', this.removePhotoView);
     this.collection.each(this.addPhotoView.bind(this));
   },
 
@@ -15,8 +16,12 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     // 'click .photo-item': 'selectedPhotos'
   },
 
+
   showPhotoDeleteModal: function (event) {
-    alert("something");
+    var deleteView = new TwinkieSetApp.Views.PhotosDelete({
+      selectedPhotosArray: this.selectedPhotosArr
+    });
+    $('body').append(deleteView.render().$el);
   },
 
   // selectedPhotos: function (event) {
@@ -90,6 +95,10 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
       selectedPhotosArr: this.selectedPhotosArr
     });
     this.addSubview('.photo-items', subview);
+  },
+
+  removePhotoView: function (photo) {
+    this.removeModelSubview('.photo-items', photo);
   },
 
   render: function () {

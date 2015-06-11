@@ -10,12 +10,8 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
 
   events: {
     "click": "addSelectedPhoto",
-    "click .trash-photos-button": "showPhotoDeleteModal"
   },
 
-  showPhotoDeleteModal: function (event) {
-    alert("something");
-  },
 
   addSelectedPhoto: function (event) {
     var photoItem = $(event.currentTarget);

@@ -14,8 +14,7 @@ class Photo < ActiveRecord::Base
   belongs_to(
     :subalbum,
     class_name: 'Subalbum',
-    foreign_key: :subalbum_id,
-    dependent: :destroy
+    foreign_key: :subalbum_id
   )
   has_one(
     :album,
