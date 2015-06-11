@@ -6,6 +6,22 @@ TwinkieSetApp.Views.AlbumsIndexView = Backbone.View.extend({
     this.listenTo(this.model, "sync", this.render);
   },
 
+  events: {
+    'click .delete-album-button': 'deleteAlbumConfirmation',
+
+  },
+
+  deleteAlbumConfirmation: function () {
+    var deleteAlbumModal = new TwinkieSetApp.Views.DeleteAlbum({
+      model: this.model
+    });
+    $('body').append(deleteAlbumModal.render().$el);
+  },
+
+
+
+
+
   render: function () {
 
 
