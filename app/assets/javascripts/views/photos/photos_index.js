@@ -3,14 +3,33 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   template: JST['photos/index'],
 
   initialize: function () {
+    this.selectedPhotosArr = [];
     this.listenTo(this.collection, 'sync', this.render);
     this.listenTo(this.collection, "add", this.addPhotoView);
     this.collection.each(this.addPhotoView.bind(this));
   },
 
   events: {
-    'click .new-photo-button': 'upload'
+    'click .new-photo-button': 'upload',
+    "click .trash-photos-button": "showPhotoDeleteModal"
+    // 'click .photo-item': 'selectedPhotos'
   },
+
+  showPhotoDeleteModal: function (event) {
+    alert("something");
+  },
+
+  // selectedPhotos: function (event) {
+  //   var photoItem = $(event.currentTarget);
+  //
+  //   if (photoItem.hasClass('selected')) {
+  //     photoItem.removeClass('selected').addClass('not-selected');
+  //
+  //   } else {
+  //     photoItem.addClass('selected').removeClass('not-selected');
+  //     this.selectedPhotos.push(photoItem);
+  //   }
+  // },
 
   upload: function (e) {
     cloudinary.openUploadWidget(CLOUDINARY_SETTINGS,
@@ -67,7 +86,8 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
   addPhotoView: function (photo) {
     var subview = new TwinkieSetApp.Views.AlbumsShowPhotoItem({
-      model: photo
+      model: photo,
+      selectedPhotosArr: this.selectedPhotosArr
     });
     this.addSubview('.photo-items', subview);
   },

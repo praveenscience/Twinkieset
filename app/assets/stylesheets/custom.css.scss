@@ -32,7 +32,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'ProximaNova-Extrabold';
   src: url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),  url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.woff') format('woff'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.ttf')  format('truetype'), url('https://dl.dropboxusercontent.com/u/2330299/capstone/ProximaNova-Extrabld/ProximaNova-Extrabld.svg#ProximaNova-Extrabld') format('svg');
@@ -40,6 +39,10 @@
   font-style: normal;
 }
 
+$teal: #1abc9c;
+$darkteal: #1bac9c;
+$darkred: #db0000;
+$blue: #3a99d9;
 
 @mixin create-buttons($bg, $color) {
   font-family: 'ProximaNova-Regular';
@@ -49,9 +52,20 @@
   padding: 7px 12px;
   letter-spacing: 1px;
 }
-$teal: #1abc9c;
-$darkteal: #1bac9c;
-$darkred: #db0000;
+
+@mixin grey-border {
+  border: 1px solid #eee;
+}
+
+@mixin blue-border {
+  border: 1px solid $blue;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 body {
   font: 14px 'ProximaNova-Light';
@@ -363,15 +377,42 @@ a:link {
       font: 12px 'ProximaNova-Regular';
       padding-top: 30px;
     }
+
+    .photo-buttons-container {
+      width: 100%;
+      float: left;
+      display: none;
+    }
+
+    .photo-buttons {
+      height: 45px;
+      padding-top: 16px;
+      float: right;
+    }
+
+
+    .view-photos-button, .move-photos-button, .trash-photos-button, .make-cover-button, .more-photo-button {
+      @include create-buttons(#e8e8e8, black);
+      padding: 7px 6px 7px 12px;
+      margin-left: 3px;
+    }
+
+    .make-cover-button {
+      padding-right: 9px;
+      padding-left: 17px;
+    }
+    .more-photo-button {
+      padding-right: 11px;
+    }
+
     ul.photo-items {
       list-style-type: none;
-      padding: 40px 20px;
+      padding: 45px 20px 40px 20px;
 
       li.photo-item {
         position: relative;
-        border: 1px solid #eee;
         float: left;
-        margin: 3px 21px 15px 0;
+        margin: 3px 10px 15px 10px;
         line-height: 165px;
         text-align: center;
         height: 165px;
@@ -392,6 +433,14 @@ a:link {
           max-width: 100px;
         }
       }
+      .not-selected {
+        @include grey-border;
+      }
+      .selected {
+        @include blue-border;
+      }
+
+
     }
 
   }
