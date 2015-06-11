@@ -51,6 +51,7 @@
 }
 $teal: #1abc9c;
 $darkteal: #1bac9c;
+$darkred: #db0000;
 
 body {
   font: 14px 'ProximaNova-Light';
@@ -204,7 +205,7 @@ a:link {
 
     .delete-button {
       margin-right: 3px;
-      background-color: #db0000;
+      background-color: $darkred;
     }
 
 
@@ -356,6 +357,12 @@ a:link {
       @include create-buttons(#e8e8e8, black)
     }
 
+    .upload-errors {
+      display: none;
+      color: $darkred;
+      font: 12px 'ProximaNova-Regular';
+      padding-top: 30px;
+    }
     ul.photo-items {
       list-style-type: none;
       padding: 40px 20px;

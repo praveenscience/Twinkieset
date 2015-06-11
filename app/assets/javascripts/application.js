@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
+//= require cloudinary
 //= require composite_view
 //= require jquery.serializejson
 //= require twinkie_set_app

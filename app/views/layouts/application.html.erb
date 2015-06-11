@@ -13,6 +13,10 @@
       "website": "<%= current_user.website %>",
       "username": "<%= current_user.username %>"
     };
+    CLOUDINARY_SETTINGS = {
+      "cloud_name": "<%= ENV['cloud_name'] %>",
+      "upload_preset": "<%= ENV['upload_preset'] %>"
+    }
   </script>
 <% end %>
 </head>
