@@ -335,11 +335,14 @@ body {
         width: 110px;
 
         .handle {
+          font-size: 10px;
           position: absolute;
           background: #CCC;
           opacity: .6;
-          line-height: 22px;
-          width: 22px;
+          line-height: 16px;
+          width: 16px;
+          top: 3px;
+          left: 3px;
         }
         img {
           max-height: 120px;
