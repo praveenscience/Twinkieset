@@ -16,7 +16,7 @@ TwinkieSetApp is a clone of PixieSet (a client photo gallery for modern photogra
 - [x] Create subalbums
 - [X] Delete albums, subalbums
 - [X] Edit albums, subalbums
-- [ ] Create/upload and delete photos
+- [x] Create/upload and delete photos
 - [ ] Client side albums
 - [ ] Authorize albums
 - [ ] Drag + drop to sort photos
@@ -61,7 +61,11 @@ For this phase I will create Backbone views for the guest users. Users will be a
 
 ### Phase 6: Editing Albums, Subalbums, and Photo Views (~2 days)
 
-Admin users will be able to edit and delete their albums, subalbums, and photos through Backbone. Photos will be drag and droppable using jQuery UI Sortable.
+Admin users will be able to edit their albums, subalbums, and photos through Backbone.
+
+### Phase 7: Sorting photos by drag and drop, by name, date, etc.
+
+Photos will be drag and droppable using jQuery UI Sortable.
 
 [Details][phase-six]
 
