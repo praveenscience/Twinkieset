@@ -23,13 +23,12 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
 
   addSubAlbumView: function (subalbum) {
     // pass in the album to the subalbum so it can trigger when a subalbum is selected
-    // debugger;
     var subview = new TwinkieSetApp.Views.AlbumsShowSubalbumItem({
       model: subalbum,
       album: this.model
     });
     this.addSubview('.album-show-subalbums', subview);
-    console.log(this.model.subalbums()); // this is generating another "highlights"
+    console.log(this.model.subalbums());
   },
 
   render: function () {
