@@ -1,6 +1,6 @@
 
 json.array!(@albums) do |album|
-  json.extract!(album, :id, :title, :event_date, :status, :category, :created_at, :updated_at)
+  json.extract!(album, :id, :title, :event_date, :status, :created_at, :updated_at)
 
 
 #user id also

@@ -2,7 +2,7 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   routes: {
     "": "index",
     "collection/:id(/set/:subalbumId)": "show",
-    "public/:id(/category/:category)": "publicIndex"
+    "public/:id": "publicIndex"
   },
 
   initialize: function (options) {
@@ -25,14 +25,13 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     this._swapView(showView);
   },
 
-  publicIndex: function (id, category) {
+  publicIndex: function (id) {
     var owner = new TwinkieSetApp.Models.Owner({
-      userID: id,
-      category: category
+      userID: id
     });
     owner.fetch();
     var userIndex = new TwinkieSetApp.Views.PublicAlbumIndex({
-      model: owner
+      model: owner,
     });
     this._swapView(userIndex);
   },

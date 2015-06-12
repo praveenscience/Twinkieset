@@ -1,4 +1,5 @@
-TwinkieSetApp.Models.OwnerCategory = Backbone.Model.extend({
+TwinkieSetApp.Models.OwnerAlbum = Backbone.Model.extend({
+  urlRoot: '/api/albums',
 
   parse: function (response) {
     if (response.albums) {
@@ -11,7 +12,7 @@ TwinkieSetApp.Models.OwnerCategory = Backbone.Model.extend({
 
   albums: function () {
     if (!this._albums) {
-      this._albums = new TwinkieSetApp.Collections.OwnerAlbums({ category: this });
+      this._albums = new TwinkieSetApp.Collections.OwnerAlbums([], { owner: this });
     }
     return this._albums;
   }

@@ -5,16 +5,6 @@
       <a href="#"><%= owner.get("business_name") %></a>
     </div>
 
-    <div class="span12 categories">
-      <% if (categories) { %>
-        <% (categories).forEach(function (category) { %>
-          <% if (category.get('title') !== null ) { %>
-            <a href="javascript:void(0)"><%= category.get('title') %></a>
-          <% } %>
-        <% }) %>
-      <% } %>
-    </div>
-  </div>
 
   <div class="row-fluid albums-container">
 
