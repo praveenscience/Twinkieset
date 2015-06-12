@@ -6,10 +6,10 @@
     </div>
 
     <div class="span12 categories">
-      <% if (owner.get("categories")) { %>
-        <% (owner.get("categories")).forEach(function (category) { %>
-          <% if (category !== null ) { %>
-            <a href="javascript.void(0)"><%= category %></a>
+      <% if (categories) { %>
+        <% (categories).forEach(function (category) { %>
+          <% if (category.get('title') !== null ) { %>
+            <a href="javascript:void(0)"><%= category.get('title') %></a>
           <% } %>
         <% }) %>
       <% } %>

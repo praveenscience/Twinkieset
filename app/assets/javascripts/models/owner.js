@@ -8,19 +8,19 @@ TwinkieSetApp.Models.Owner = Backbone.Model.extend({
   },
 
   parse: function (response) {
-    if (response.albums) {
-      this.albums().set(response.albums);
-      delete response.albums;
+    if (response.categories) {
+      this.categories().set(response.categories, { parse: true });
+      delete response.categories;
     }
 
     return response;
   },
 
-  albums: function () {
-    if (!this._albums) {
-      this._albums = new TwinkieSetApp.Collections.OwnerAlbums({ owner: this });
+  categories: function () {
+    if (!this._categories) {
+      this._categories = new TwinkieSetApp.Collections.OwnerCategories({ owner: this });
     }
-    return this._albums;
+    return this._categories;
   }
 
 });
