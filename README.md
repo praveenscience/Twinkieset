@@ -47,10 +47,9 @@ I will add forms to allow admin users to create albums, subalbums in a Backbone 
 
 [Details][phase-three]
 
-### Phase 4: Create and upload Photos (~1-2 days)
+### Phase 4: Create/upload photos (~1-2 days)
 
-I will implement the ability to upload multiple photos through drag and drop using CarrierWave. Images will be stored on Amazon S3.
-
+I will implement the ability to upload multiple photos through [Cloudinary](http://cloudinary.com/).  
 [Details][phase-four]
 
 ### Phase 5: Album, Subalbum, and Photo Views for Guests (~2 days)
