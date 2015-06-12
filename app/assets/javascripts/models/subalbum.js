@@ -7,6 +7,10 @@ TwinkieSetApp.Models.Subalbum = Backbone.Model.extend({
       delete jsonResponse.photos;
     }
 
+    this.photos().forEach( function (photo) {
+      photo._subalbum = this;
+    }.bind(this));
+
     return jsonResponse;
   },
 

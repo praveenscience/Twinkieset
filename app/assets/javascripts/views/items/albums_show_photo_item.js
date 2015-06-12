@@ -27,6 +27,13 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
 
     if (this.selectedPhotosArr.length > 0) {
       $('.photo-buttons-container').show();
+
+      if (this.selectedPhotosArr.length !== 1) {
+        $('.make-cover-button').addClass('disabled-gray-out');
+      } else if (this.selectedPhotosArr.length === 1) {
+        $('.make-cover-button').removeClass('disabled-gray-out');
+        $('.make-cover-button').on("click", this.makeCoverImage.bind(this));
+      }
     } else {
       $('.photo-buttons-container').hide();
     }
@@ -35,9 +42,25 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
 
   },
 
+  makeCoverImage: function (event) {
+    if(this.selectedPhotosArr.length !== 1){
+      // $('.make-cover-button').addClass('disabled-gray-out');
+      return;
+    }
+    var photoID = this.selectedPhotosArr[0].id;
+    var album = this.model._subalbum._album;
+    // album.set({ "cover_image_id": photoID });
+
+    album.save({ "cover_image_id": photoID });
+
+
+    // this.selectedPhotosArr;
+  },
+
   render: function () {
     var content = this.template({ photo: this.model });
     this.$el.html(content);
     return this;
-  }
+  },
+
 });

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     resources :albums, except: [:new, :edit]
-    resources :subalbums, only: [:create, :update, :destroy]
+    resources :subalbums, only: [:create, :update, :destroy, :show]
     resources :photos, only: [:create, :update, :destroy]
   end
   # The priority is based upon order of creation: first created -> highest priority.

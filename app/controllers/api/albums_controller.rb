@@ -29,10 +29,10 @@ class Api::AlbumsController < ApplicationController
   end
 
   def update
-    @album = current_user.ablums.find(params[:id])
+    @album = current_user.albums.find(params[:id])
 
     if @album.update(album_params)
-      render json: @album
+      render :show
     else
       render json: @album.errors.full_messages, status: :unprocessable_entity
     end
@@ -46,7 +46,7 @@ class Api::AlbumsController < ApplicationController
 
   private
     def album_params
-      params.require(:album).permit(:title, :event_date)
+      params.require(:album).permit(:title, :event_date, :cover_image_id)
     end
 
     def must_be_logged_in

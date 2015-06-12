@@ -10,14 +10,16 @@ else
   json.cover_image_url nil
 end
 
+json.first_subalbum_id @album.subalbum_ids.first
 json.subalbums do
   json.array!(@album.subalbums) do |subalbum|
-    json.extract!(subalbum, :id, :title, :order, :created_at, :updated_at)
-
-    json.photos do
-      json.array!(subalbum.photos) do |photo|
-        json.extract!(photo, :id, :image_url, :order, :created_at, :updated_at)
-      end
-    end
+    json.partial!('api/subalbums/subalbum', {subalbum: subalbum})
+  #   json.extract!(subalbum, :id, :title, :order, :created_at, :updated_at)
+  #
+  #   json.photos do
+  #     json.array!(subalbum.photos) do |photo|
+  #       json.extract!(photo, :id, :image_url, :order, :created_at, :updated_at)
+  #     end
+  #   end
   end
 end

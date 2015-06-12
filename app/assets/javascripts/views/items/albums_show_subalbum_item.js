@@ -13,7 +13,8 @@ TwinkieSetApp.Views.AlbumsShowSubalbumItem = Backbone.View.extend({
   },
 
   changeSubalbums: function (event) {
-    this.album.trigger("subalbumSelected", this.model);
+    var path = "#/collection/" + this.album.id + "/set/" + this.model.id;
+    Backbone.history.navigate(path);
   },
 
   render: function () {
