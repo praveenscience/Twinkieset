@@ -12,7 +12,7 @@ TwinkieSetApp.Views.PhotosDelete = Backbone.View.extend({
   },
 
   deletePhotos: function () {
-    ((TwinkieSetApp.selectedPhotosArray)).forEach(function (photoModel) {
+    ((TwinkieSetApp.selectedPhotosArr)).forEach(function (photoModel) {
       photoModel.destroy({
         success: function () {
           TwinkieSetApp.selectedPhotosArray = [];
