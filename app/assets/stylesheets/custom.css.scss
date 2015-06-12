@@ -368,12 +368,10 @@ a:link {
   .album-show-items {
     left: 50px;
 
-
     .title {
       font: 26px 'ProximaNova-Regular';
       border-bottom: 1px solid #eee;
-      padding-left: 20px;
-      padding-bottom: 10px;
+      padding: 0px 20px 10px 20px;
     }
 
     .create-sort-buttons {
@@ -398,6 +396,7 @@ a:link {
       width: 100%;
       float: left;
       display: none;
+      padding: 0 20px;
     }
 
     .photo-selection-options {
