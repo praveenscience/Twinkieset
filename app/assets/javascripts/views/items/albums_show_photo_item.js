@@ -38,7 +38,7 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
       $('.photo-buttons-container').hide();
     }
 
-    console.log(this.selectedPhotosArr);
+    // console.log(this.selectedPhotosArr);
 
   },
 
@@ -50,8 +50,9 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
     var photoID = this.selectedPhotosArr[0].id;
     var album = this.model._subalbum._album;
     // album.set({ "cover_image_id": photoID });
-
-    album.save({ "cover_image_id": photoID });
+    album.save({ "cover_image_id": photoID }); // why does this end up adding a subalbum???
+    console.log(album.subalbums());
+    // debugger;
 
 
     // this.selectedPhotosArr;
