@@ -48,9 +48,6 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    // console.log(this.model.subalbums().at(1));
-    // console.log(this.model.subalbums().first());
-
     this.createSubAlbumView();
 
     var content = this.template({ album: this.model });

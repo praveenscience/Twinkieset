@@ -6,7 +6,6 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
 
     this.listenTo(this.model.subalbums(), "add", this.addSubAlbumView);
     this.model.subalbums().each(this.addSubAlbumView.bind(this));
-
   },
 
   events: {
@@ -34,7 +33,6 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
     this.$el.html(content);
     this.attachSubviews();
 
-
     if (this.model.get('cover_image_url')) {
       cover_image = this.model.get('cover_image_url');
     } else {
@@ -43,18 +41,6 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
     this.$el.find('.collection-cover-image').css('background', 'url('+cover_image+')');
     this.$el.find('.collection-cover-image').css('background-size', 'cover');
     this.$el.find('.collection-cover-image').css('background-position', 'center center');
-
-
-    // var firstSubalbum = this.model;
-    // console.log(firstSubalbum.subalbums().first());
-    // console.log(firstSubalbum.subalbums().first().photos());
-    // var photoIndexView = new TwinkieSetApp.Views.PhotosIndex({
-    //   model: firstSubalbum.subalbums().first(),
-    //   collection: firstSubalbum.subalbums().first().photos()
-    // });
-    // $('.album-show-items').html(photoIndexView.render().$el);
-
-
 
     return this;
   }
