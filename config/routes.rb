@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root  'static_pages#root'
+
+  get '/:user_id' => 'static_pages#public_index'
   # get 'album' => 'albumsessions#login'
 
   # resources :album_sessions, only: [:new, :create, :destroy]
@@ -13,10 +15,14 @@ Rails.application.routes.draw do
   resource :session, only: [:new, :create, :destroy]
 
   namespace :api, defaults: { format: :json } do
+    # resources :public_albums, only: [:index, :show]
+    get '/:user_id/albums', to: 'public_albums#index', as: "user_albums"
     resources :albums, except: [:new, :edit]
     resources :subalbums, only: [:create, :update, :destroy, :show]
     resources :photos, only: [:create, :update, :destroy]
   end
+
+
   get '/:user_id/albums', to: 'albums#index', as: "user_albums"
   get '/:user_id/albums/:id', to: 'albums#show', as: "user_album"
   # The priority is based upon order of creation: first created -> highest priority.

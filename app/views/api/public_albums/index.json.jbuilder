@@ -1,9 +1,9 @@
 
-json.array!(@albums) do |album|
+json.extract! @owner, :email, :username, :business_name, :website
+json.categories @categories
+
+json.albums @albums.each do |album|
   json.extract!(album, :id, :title, :event_date, :status, :category, :created_at, :updated_at)
-
-
-#user id also
 
   time = Time.parse(album.event_date.to_s)
   json.string_date time.strftime("%B #{time.day.ordinalize}, %Y")
