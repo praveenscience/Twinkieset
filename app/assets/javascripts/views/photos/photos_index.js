@@ -35,9 +35,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   },
 
   successfulUpload: function (payload) {
-    var notUploaded = [];
     payload.forEach(function(image) {
-      if (image.format === "jpg" || image.format === "png" || image.format ==="gif") {
         var imageData = {
           "photo": {
             "image_url": image.url,
@@ -51,16 +49,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
             this.collection.add(photo);
           }.bind(this)
         });
-      } else {
-        // if not an image
-        notUploaded.push(image.original_filename);
-
-      }
     }.bind(this));
-
-
-    $('.upload-errors .files').html(notUploaded.join(", "));
-    $('.upload-errors').show();
   },
 
 

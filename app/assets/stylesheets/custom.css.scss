@@ -385,12 +385,7 @@ a:link {
       @include create-buttons(#e8e8e8, black)
     }
 
-    .upload-errors {
-      display: none;
-      color: $darkred;
-      font: 12px 'ProximaNova-Regular';
-      padding-top: 30px;
-    }
+
 
     .photo-buttons-container {
       width: 100%;
