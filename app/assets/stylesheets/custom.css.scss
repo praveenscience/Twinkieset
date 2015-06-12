@@ -74,7 +74,7 @@ body {
 }
 
 a:link {
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 .form-control {
@@ -95,6 +95,29 @@ a:link {
 .form-control::-moz-placeholder { color: #bbb; }
 .form-control:-ms-input-placeholder { color: #bbb; }
 
+
+
+/* ALBUM GUEST VIEW */
+
+.guest-album-index {
+  .title {
+    font: 24px 'ProximaNova-Semibold';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  a:link {
+    color: #333;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #555;
+  }
+}
+
+
+
+/* ADMIN VIEW */
 .sign-up-page, .log-in-page {
 
   .logo {
