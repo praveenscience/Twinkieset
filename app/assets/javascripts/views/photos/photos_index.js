@@ -13,7 +13,8 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   events: {
     'click .new-photo-button': 'upload',
     "click .trash-photos-button": "showPhotoDeleteModal",
-    'click .select-all': 'selectAllPhotos'
+    'click .select-all': 'selectAllPhotos',
+    'click .clear-selection': 'clearSelection'
   },
 
   selectAllPhotos: function (event) {
@@ -36,6 +37,18 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     $('.number-of-selected').html(photosCollection.length + " selected");
     console.log(TwinkieSetApp.selectedPhotosArr);
   },
+
+
+  clearSelection: function (event) {
+    // $('.photo-items')
+    // debugger;
+    TwinkieSetApp.selectedPhotosArr = []; // empty out the array
+    $('.photo-item').removeClass('selected').addClass('not-selected');
+
+    $('.number-of-selected').html("0 selected");
+    console.log(TwinkieSetApp.selectedPhotosArr);
+  },
+
 
   showPhotoDeleteModal: function (event) {
     alert("here");
