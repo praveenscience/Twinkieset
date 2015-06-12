@@ -40,7 +40,7 @@
 }
 
 $teal: #1abc9c;
-$darkteal: #1bac9c;
+$darkteal: #2a7869;
 $darkred: #db0000;
 $blue: #3a99d9;
 
@@ -400,6 +400,19 @@ a:link {
       display: none;
     }
 
+    .photo-selection-options {
+      height: 45px;
+      padding-top: 16px;
+      float: left;
+      font: 13px 'ProximaNova-Regular';
+      color: #333;
+      a {
+        color: $teal;
+        &:hover {
+          color: $darkteal;
+        }
+      }
+    }
     .photo-buttons {
       height: 45px;
       padding-top: 16px;
