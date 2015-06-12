@@ -1,16 +1,18 @@
 TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   routes: {
     "": "index",
+    "public/:id": "publicIndex",
     "collection/:id(/set/:subalbumId)": "show",
-    "public/:id": "publicIndex"
   },
 
   initialize: function (options) {
+
     this.$rootEl = options.$rootEl;
     this.collection = new TwinkieSetApp.Collections.Albums();
   },
 
   index: function () {
+
     this.collection.fetch();
     var indexView = new TwinkieSetApp.Views.AlbumsIndex({ collection: this.collection });
     this._swapView(indexView);

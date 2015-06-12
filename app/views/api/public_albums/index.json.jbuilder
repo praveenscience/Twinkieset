@@ -1,5 +1,4 @@
 json.extract! @owner, :email, :username, :business_name, :website
-json.categories @categories
 
 json.albums @albums.each do |album|
   json.extract!(album, :id, :title, :event_date, :status, :created_at, :updated_at)
@@ -12,5 +11,13 @@ json.albums @albums.each do |album|
     json.cover_image_url album.cover_image.image_url
   else
     json.cover_image_url nil
+  end
+
+  json.subalbums album.subalbums.each do |subalbum|
+    json.extract!(subalbum, :id, :title, :order, :album_id)
+
+    json.photos subalbum.photos.each do |photo|
+      json.extract!(photo, :id, :image_url, :order, :file_name)
+    end
   end
 end
