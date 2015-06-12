@@ -9,9 +9,11 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     this.listenTo(this.collection, "add", this.addPhotoView);
     this.listenTo(this.collection, 'remove', this.removePhotoView);
     this.collection.each(this.addPhotoView.bind(this));
+
   },
 
   events: {
+
     'click .new-photo-button': 'upload',
     "click .trash-photos-button": "showPhotoDeleteModal"
     // 'click .photo-item': 'selectedPhotos'
@@ -19,6 +21,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
 
   showPhotoDeleteModal: function (event) {
+    alert("here");
     var deleteView = new TwinkieSetApp.Views.PhotosDelete({
       selectedPhotosArray: this.selectedPhotosArr
     });

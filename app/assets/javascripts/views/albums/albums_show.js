@@ -42,6 +42,7 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
   attachPhotoIndex: function(){
     if(this.subAlbumViewCreated){
       this.$('.album-show-items').html(this.photoIndexView.$el);
+      this.photoIndexView.delegateEvents();
       this.photoIndexView.attachSubviews();
     }
   },
