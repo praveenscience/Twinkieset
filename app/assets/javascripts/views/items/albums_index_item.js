@@ -26,7 +26,7 @@ TwinkieSetApp.Views.AlbumsIndexView = Backbone.View.extend({
 
 
     var cover_image;
-    console.log(this.model.toJSON());
+    // console.log(this.model.toJSON());
     if (this.model.get('cover_image_url')) {
       cover_image = this.model.get('cover_image_url');
     } else {

@@ -44,7 +44,7 @@ class Album < ActiveRecord::Base
   validates :title, uniqueness: { scope: :user_id,
     message: "You already have an album of the same name" }
 
-  after_save :create_highlights_subalbum
+  after_create :create_highlights_subalbum
 
   def create_highlights_subalbum
     @subalbum = self.subalbums.create(title: "Highlights")

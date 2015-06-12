@@ -15,6 +15,7 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
     this.addSubview(".album-show-sidebar", this.sidebar);
     this.createSubAlbumView();
   },
+
   createSubAlbumView: function () {
     if(this.subAlbumViewCreated){
       return;
