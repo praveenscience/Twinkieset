@@ -4,50 +4,56 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
   tagName: 'li',
 
   initialize: function (options) {
-    this.selectedPhotosArr = options.selectedPhotosArr;
+    // this.TwinkieSetApp.selectedPhotosArr = options.TwinkieSetApp.selectedPhotosArr;
     this.listenTo(this.model, "sync", this.render);
+    // this.listenTo(this.model, "selectAllPhotos", this.addAllPhotos);
   },
 
   events: {
     "click": "addSelectedPhoto",
   },
 
+  // addAllPhotos: function (event) {
+  //   debugger;
+  // },
+  
+
   addSelectedPhoto: function (event) {
     var photoItem = $(event.currentTarget);
 
     if (photoItem.hasClass('selected')) {
       photoItem.removeClass('selected').addClass('not-selected');
-      var indexOfModel = this.selectedPhotosArr.indexOf(this.model);
-      this.selectedPhotosArr.splice(indexOfModel, 1);
+      var indexOfModel = TwinkieSetApp.selectedPhotosArr.indexOf(this.model);
+      TwinkieSetApp.selectedPhotosArr.splice(indexOfModel, 1);
     } else {
       photoItem.addClass('selected').removeClass('not-selected');
-      this.selectedPhotosArr.push(this.model);
+      TwinkieSetApp.selectedPhotosArr.push(this.model);
     }
 
-    if (this.selectedPhotosArr.length > 0) {
+    if (TwinkieSetApp.selectedPhotosArr.length > 0) {
       $('.photo-buttons-container').show();
-      if (this.selectedPhotosArr.length !== 1) {
+      if (TwinkieSetApp.selectedPhotosArr.length !== 1) {
         $('.make-cover-button').addClass('gray-out');
-      } else if (this.selectedPhotosArr.length === 1) {
+      } else if (TwinkieSetApp.selectedPhotosArr.length === 1) {
         $('.make-cover-button').removeClass('gray-out');
         $('.make-cover-button').on("click", this.makeCoverImage.bind(this));
       }
     } else {
       $('.photo-buttons-container').hide();
     }
-
+    console.log(TwinkieSetApp.selectedPhotosArr);
     this.updateSelectedPhotoCounter();
   },
 
   updateSelectedPhotoCounter: function () {
-    $('.number-of-selected').html(this.selectedPhotosArr.length + " selected");
+    $('.number-of-selected').html(TwinkieSetApp.selectedPhotosArr.length + " selected");
   },
 
   makeCoverImage: function (event) {
-    if(this.selectedPhotosArr.length !== 1){
+    if(TwinkieSetApp.selectedPhotosArr.length !== 1){
       return;
     }
-    var photoID = this.selectedPhotosArr[0].id;
+    var photoID = TwinkieSetApp.selectedPhotosArr[0].id;
     var album = this.model._subalbum._album;
 
     album.save({ "cover_image_id": photoID }, { patch: true });

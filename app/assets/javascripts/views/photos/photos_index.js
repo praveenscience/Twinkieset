@@ -3,7 +3,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   template: JST['photos/index'],
 
   initialize: function () {
-    this.selectedPhotosArr = [];
+    TwinkieSetApp.selectedPhotosArr = [];
     this.listenTo(this.model, 'sync', this.render);
     this.listenTo(this.collection, "add", this.addPhotoView);
     this.listenTo(this.collection, 'remove', this.removePhotoView);
@@ -12,20 +12,44 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
   events: {
     'click .new-photo-button': 'upload',
-    "click .trash-photos-button": "showPhotoDeleteModal"
+    "click .trash-photos-button": "showPhotoDeleteModal",
+    'click .select-all': 'selectAllPhotos'
   },
 
+  selectAllPhotos: function (event) {
+    // $('.photo-items')
+    // debugger;
+    TwinkieSetApp.selectedPhotosArr = []; // empty out the array
+    var photosCollection = this.collection;
+    $('.photo-item').each(function (idx, photoli) {
+      var imageURL = $(photoli).find('img').attr("src");
+
+      var photoModel = photosCollection.find(function(photo) {
+        return photo.get("image_url") === imageURL;
+      });
+
+      TwinkieSetApp.selectedPhotosArr.push(photoModel);
+      $(photoli).removeClass('not-selected').addClass('selected');
+
+    }.bind(this));
+
+    $('.number-of-selected').html(photosCollection.length + " selected");
+    console.log(TwinkieSetApp.selectedPhotosArr);
+  },
 
   showPhotoDeleteModal: function (event) {
     alert("here");
-    var deleteView = new TwinkieSetApp.Views.PhotosDelete({
-      selectedPhotosArray: this.selectedPhotosArr
-    });
+    console.log(TwinkieSetApp.selectedPhotosArr);
+    var deleteView = new TwinkieSetApp.Views.PhotosDelete();
     $('body').append(deleteView.render().$el);
   },
 
 
   upload: function (e) {
+    TwinkieSetApp.selectedPhotosArr = [];
+    $('.photo-item').addClass('not-selected').removeClass('selected');
+    $('.number-of-selected').html("0 selected");
+    console.log(TwinkieSetApp.selectedPhotosArr);
     cloudinary.openUploadWidget(CLOUDINARY_SETTINGS,
       function(error, payload) {
         if (!error) {
@@ -69,8 +93,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
   addPhotoView: function (photo) {
     var subview = new TwinkieSetApp.Views.AlbumsShowPhotoItem({
-      model: photo,
-      selectedPhotosArr: this.selectedPhotosArr
+      model: photo
     });
     this.addSubview('.photo-items', subview);
   },

@@ -3,7 +3,7 @@ TwinkieSetApp.Views.PhotosDelete = Backbone.View.extend({
   className: 'form-modal',
 
   initialize: function (options) {
-    this.selectedPhotosArray = options.selectedPhotosArray;
+    // this.TwinkieSetApp.selectedPhotosArray = options.TwinkieSetApp.selectedPhotosArray;
   },
 
   events: {
@@ -12,8 +12,13 @@ TwinkieSetApp.Views.PhotosDelete = Backbone.View.extend({
   },
 
   deletePhotos: function () {
-    this.selectedPhotosArray.forEach(function (photoModel) {
-      photoModel.destroy();
+    ((TwinkieSetApp.selectedPhotosArray)).forEach(function (photoModel) {
+      photoModel.destroy({
+        success: function () {
+          TwinkieSetApp.selectedPhotosArray = [];
+          $('.number-of-selected').html("0 selected");
+        }
+      });
     });
     this.remove();
   },
