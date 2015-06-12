@@ -35,6 +35,12 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
     } else {
       $('.photo-buttons-container').hide();
     }
+
+    this.updateSelectedPhotoCounter();
+  },
+
+  updateSelectedPhotoCounter: function () {
+    $('.number-of-selected').html(this.selectedPhotosArr.length + " selected");
   },
 
   makeCoverImage: function (event) {
