@@ -7,7 +7,7 @@ window.TwinkieSetApp = {
     var router = new TwinkieSetApp.Routers.Router({
       $rootEl: $('#content'),
     });
-    
+
 
     Backbone.history.start();
 

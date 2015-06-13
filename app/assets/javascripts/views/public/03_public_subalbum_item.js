@@ -1,7 +1,9 @@
 TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
   template: JST['public/public_subalbum_item'],
 
-  intialize: function () {
+  initialize: function (options) {
+    this.user_id = options.user_id
+    console.log(this.user_id)
     //this.model is a subalbum
   },
 
@@ -16,6 +18,14 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
       model: this.model
     });
     $('.holder').html(photosInSubalbum.render().$el);
+
+    // TODO implemnt backbone navigate trigger with assocation instead
+    var user_id = this.user_id;
+
+    var collection_id = this.model._album.id;
+    var set_id = this.model.id;
+    Backbone.history.navigate("#public/" + user_id + "/collection/" + collection_id + "/set/" + set_id);
+
   },
 
   render: function () {

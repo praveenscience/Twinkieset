@@ -17,6 +17,7 @@ TwinkieSetApp.Collections.Subalbums = Backbone.Collection.extend({
     }
 
     return subalbum;
+    
   }
 
 });

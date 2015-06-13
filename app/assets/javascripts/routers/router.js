@@ -41,7 +41,8 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
 
     var showView = new TwinkieSetApp.Views.PublicAlbumShow({
       model: album,
-      setID: set_id
+      setID: set_id,
+      userID: user_id
     });
     this._swapView(showView);
   },

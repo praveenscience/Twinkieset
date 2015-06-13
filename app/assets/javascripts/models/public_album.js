@@ -5,6 +5,11 @@ TwinkieSetApp.Models.PublicAlbum = Backbone.Model.extend({
     if (response.subalbums) {
       this.subalbums().set(response.subalbums, { parse: true });
       delete response.subalbums;
+
+      this.subalbums().forEach( function (subalbum) {
+        subalbum._album = this;
+      }.bind(this));
+
     }
 
     return response;

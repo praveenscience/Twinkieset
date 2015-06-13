@@ -7,6 +7,10 @@ TwinkieSetApp.Models.PublicSubalbum = Backbone.Model.extend({
       delete response.photos;
     }
 
+    this.photos().forEach( function (photo) {
+      photo._subalbum = this;
+    }.bind(this));
+
     return response;
   },
 

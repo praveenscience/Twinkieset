@@ -11,6 +11,11 @@ TwinkieSetApp.Models.Owner = Backbone.Model.extend({
     if (response.albums) {
       this.albums().set(response.albums, { parse: true });
       delete response.albums;
+
+
+      this.albums().forEach( function (album) {
+        album._owner = this;
+      }.bind(this));
     }
 
     return response;

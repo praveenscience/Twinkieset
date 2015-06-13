@@ -17,6 +17,7 @@ TwinkieSetApp.Collections.Photos = Backbone.Collection.extend({
     }
 
     return photo;
+
   }
 
 });
