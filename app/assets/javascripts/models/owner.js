@@ -18,7 +18,7 @@ TwinkieSetApp.Models.Owner = Backbone.Model.extend({
 
   albums: function () {
     if (!this._albums) {
-      this._albums = new TwinkieSetApp.Collections.OwnerAlbums([], { owner: this });
+      this._albums = new TwinkieSetApp.Collections.PublicAlbums([], { owner: this });
     }
     return this._albums;
   }
