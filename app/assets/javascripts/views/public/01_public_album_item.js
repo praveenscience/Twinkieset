@@ -8,6 +8,7 @@ TwinkieSetApp.Views.PublicAlbumItem = Backbone.View.extend({
 
 
   render: function () {
+    this.model.fetch();
     var content = this.template({
       album: this.model
     });

@@ -13,6 +13,8 @@ json.albums @albums.each do |album|
     json.cover_image_url nil
   end
 
+  json.first_subalbum_id album.subalbums.first.id
+
   json.subalbums album.subalbums.each do |subalbum|
     json.extract!(subalbum, :id, :title, :order, :album_id)
 
