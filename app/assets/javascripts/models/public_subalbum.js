@@ -3,7 +3,7 @@ TwinkieSetApp.Models.PublicSubalbum = Backbone.Model.extend({
 
   parse: function (response) {
     if (response.photos) {
-      this.photos.set(response.photos, { parse: true });
+      this.photos().set(response.photos);
       delete response.photos;
     }
 

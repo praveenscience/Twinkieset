@@ -10,7 +10,7 @@ TwinkieSetApp.Models.PublicAlbum = Backbone.Model.extend({
     return response;
   },
 
-  albums: function () {
+  subalbums: function () {
     if (!this._subalbums) {
       this._subalbums = new TwinkieSetApp.Collections.PublicSubalbums([], { album: this });
     }

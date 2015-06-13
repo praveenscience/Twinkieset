@@ -1,3 +1,3 @@
-TwinkieSetApp.Models.Photo = Backbone.Model.extend({
+TwinkieSetApp.Models.PublicPhoto = Backbone.Model.extend({
   urlRoot: '/api/photos'
 });

@@ -8,7 +8,7 @@ TwinkieSetApp.Collections.Photos = Backbone.Collection.extend({
     if (photo) {
       photo.fetch();
     } else {
-      photo = new TwinkieSetApp.Models.Album({ id: id });
+      photo = new TwinkieSetApp.Models.PublicAlbum({ id: id });
       photo.fetch({
         success: function () {
           this.add(photo);

@@ -6,4 +6,4 @@ TwinkieSetApp.Collections.PublicPhotos = Backbone.Collection.extend({
     this.subalbum = options.subalbum;
   }
 
-})
+});
