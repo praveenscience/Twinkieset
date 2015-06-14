@@ -6,6 +6,7 @@ window.TwinkieSetApp = {
   initialize: function() {
     var router = new TwinkieSetApp.Routers.Router({
       $rootEl: $('#content'),
+      $rootElPublic: $('#content-public')
     });
 
 
