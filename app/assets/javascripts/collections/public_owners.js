@@ -1,7 +1,7 @@
 TwinkieSetApp.Collections.PublicOwners = Backbone.Collection.extend({
-  url: function () {
-    return "/api/" + this.userID + "/albums";
-  },
+  // url: function () {
+  //   return "/api/" + this.userID + "/albums";
+  // },
 
 
   getOrFetch: function (id) {

@@ -1,3 +1,5 @@
 TwinkieSetApp.Models.PublicPhoto = Backbone.Model.extend({
-  urlRoot: '/api/photos'
+  urlRoot: function () {
+    return "/api/" + this.userID + "/albums";
+  },
 });

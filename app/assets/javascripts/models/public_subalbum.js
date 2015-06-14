@@ -1,5 +1,11 @@
 TwinkieSetApp.Models.PublicSubalbum = Backbone.Model.extend({
-  urlRoot: '/api/subalbums',
+  urlRoot: function () {
+    return "/api/" + this.userID + "/albums";
+  },
+
+  initialize: function (options) {
+    this.userID = options.userID;
+  },
 
   parse: function (response) {
     if (response.photos) {
@@ -16,7 +22,10 @@ TwinkieSetApp.Models.PublicSubalbum = Backbone.Model.extend({
 
   photos: function () {
     if (!this._photos) {
-      this._photos = new TwinkieSetApp.Collections.PublicPhotos([], { subalbum: this });
+      this._photos = new TwinkieSetApp.Collections.PublicPhotos([], {
+        subalbum: this,
+        userID: this.userID
+      });
     }
     return this._photos;
   }
