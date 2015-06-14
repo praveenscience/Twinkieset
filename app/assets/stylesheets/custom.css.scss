@@ -201,6 +201,11 @@ a:link {
     line-height: 19px;
     background: $teal;
   }
+
+  input {
+    border-radius: 0px;
+    font: 14px 'ProximaNova-Regular';
+  }
 }
 .sign-up-page {
   margin-top: 100px;
