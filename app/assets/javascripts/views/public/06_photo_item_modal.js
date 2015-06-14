@@ -14,22 +14,18 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
   },
 
   keyBinds: function (e) {
-    if (e.keyCode === 27) {
-      this.$el.hide();
-    } else if (e.keyCode === 39) {
-      if (!this.rendering) {
-        this.rendering = true;
-        this.displayNextImage();
-      }
 
-    } else if (e.keyCode === 37) {
-      if (!this.rendering) {
-        this.rendering = true;
+    if (!this.rendering) {
+      this.rendering = true;
+      if (e.keyCode === 27) {
+        this.$el.hide();
+      } else if (e.keyCode === 39) {
+          this.displayNextImage();
+      } else if (e.keyCode === 37) {
         this.displayPreviousImage();
       }
-    } else {
-      return;
     }
+
   },
 
   killKeys: function (e) {
@@ -66,7 +62,7 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
         }
         nextImage = allPhotos[newIndex];
 
-        console.log(idx + difference);
+        console.log(newIndex);
         return;
       }
     });
@@ -79,7 +75,7 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     this.remove();
     photoItem.displayModal();
 
-    this.rendering = false;
+
   },
 
 
@@ -103,7 +99,7 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     });
 
     $(window).resize();
-
+    this.rendering = false;
     return this;
   }
 });
