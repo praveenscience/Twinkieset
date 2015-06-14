@@ -660,6 +660,8 @@ a:link {
 }
 
 .information {
+  padding: 30px 24px;
+
   a:link, a:active, a:visited {
 
   }
@@ -680,7 +682,15 @@ a:link {
       color: #999;
     }
   }
-  .list-of-subalbums {
+  ul.list-of-subalbums {
+    font: 14px 'ProximaNova-Regular';
+    margin-left: 60px;
+
+    li {
+      display: inline-block;
+      padding-right: 20px;
+      line-height: 30px;
+    }
 
   }
 }

@@ -1,5 +1,6 @@
 TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
   template: JST['public/public_subalbum_item'],
+  tagName: 'li',
 
   initialize: function (options) {
     this.user_id = options.user_id;
