@@ -729,6 +729,14 @@ a:link {
   bottom: 0px;
   left: 0px;
   right: 0px;
+
+  .active-image {
+
+    img {
+      display: block;
+      margin: 50px auto;
+    }
+  }
 }
 // /* for larger than 1040px */
 // @media screen and (min-width: 1040px) {

@@ -4,8 +4,14 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
 
   render: function () {
     console.log('rendering');
-    var content = this.template();
+    var content = this.template({
+      photo: this.model
+    });
     this.$el.html(content);
+
+    var windowHeight = $(window).height();
+    var imageHeight = windowHeight - 100;
+    this.$el.find('.active-image img').css('height', imageHeight)
     return this;
   }
 });
