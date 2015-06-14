@@ -615,6 +615,7 @@ a:link {
   }
 
   .owner-business-name {
+
     font: 10px 'ProximaNova-Regular';
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -623,6 +624,10 @@ a:link {
     bottom: 3%;
     width: 100%;
     z-index: 1;
+
+    a {
+      color: #fff;
+    }
   }
 }
 .hero:before {
