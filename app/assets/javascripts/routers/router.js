@@ -7,8 +7,8 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   },
 
   initialize: function (options) {
-
     this.$rootEl = options.$rootEl;
+    this.$rootElPublic = options.$rootElPublic;
     this.collection = new TwinkieSetApp.Collections.Albums();
 
 
@@ -31,6 +31,26 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     this._swapView(showView);
   },
 
+  _swapView: function (newView) {
+    this._currentView && this._currentView.remove();
+    this._currentView = newView;
+    this.$rootEl.html(newView.render().$el);
+  },
+
+
+  publicIndex: function (id) {
+    this.owner = new TwinkieSetApp.Models.Owner({
+      userID: id
+    });
+    this.owner.fetch();
+
+    var userIndex = new TwinkieSetApp.Views.PublicAlbumIndex({
+      model: this.owner,
+    });
+
+    this._swapViewPublic(userIndex);
+  },
+
   publicShow: function(user_id, id, set_id) {
     var album_owner = new TwinkieSetApp.Models.Owner({
       userID: user_id
@@ -46,23 +66,12 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
       userID: user_id,
       album_owner: album_owner
     });
-    this._swapView(showView);
+    this._swapViewPublic(showView);
   },
 
-  publicIndex: function (id) {
-    this.owner = new TwinkieSetApp.Models.Owner({
-      userID: id
-    });
-    this.owner.fetch();
-    var userIndex = new TwinkieSetApp.Views.PublicAlbumIndex({
-      model: this.owner,
-    });
-    this._swapView(userIndex);
-  },
-
-  _swapView: function (newView) {
-    this._currentView && this._currentView.remove();
-    this._currentView = newView;
-    this.$rootEl.html(newView.render().$el);
+  _swapViewPublic: function (view) {
+    this._currentViewPublic && this._currentViewPublic.remove();
+    this._currentViewPublic = view;
+    this.$rootElPublic.html(view.render().$el);
   }
 });
