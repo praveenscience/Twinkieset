@@ -18,9 +18,10 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
     });
     $('.public-photos-index').html(photosInSubalbum.render().$el);
 
+    $('.list-of-subalbums li').removeClass("selected-subalbum");
+    this.$el.addClass("selected-subalbum");
     // TODO implemnt backbone navigate trigger with assocation instead ??? how??? don't want to pass the user_id if not necessary.
     var user_id = this.user_id;
-
     var collection_id = this.model._album.id;
     var set_id = this.model.id;
     Backbone.history.navigate("#public/" + user_id + "/collection/" + collection_id + "/set/" + set_id);

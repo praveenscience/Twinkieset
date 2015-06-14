@@ -690,6 +690,11 @@ a:link {
       display: inline-block;
       padding-right: 20px;
       line-height: 30px;
+      color: #aaa;
+    }
+
+    li.selected-subalbum {
+      color: #000;
     }
 
   }
