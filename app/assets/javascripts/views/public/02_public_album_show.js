@@ -9,12 +9,16 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     this.setID = options.setID;
     this.userID = options.userID;
     this.owner = options.album_owner;
+  },
 
+  events: {
+    'click .album-open-button': 'scrollToBeginning'
+  },
 
-
-
-
-
+  scrollToBeginning: function (event) {
+    $('html, body').animate({
+      scrollTop: $('.information').offset().top
+    }, 2000);
   },
 
   findFirstSubalbum: function () {
