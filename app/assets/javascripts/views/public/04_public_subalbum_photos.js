@@ -8,7 +8,6 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
 
   addPhotoView: function (photo) {
     var subview = new TwinkieSetApp.Views.PhotoItem({ model: photo });
-    debugger;
     this.addSubview('.public-subalbum-photos', subview);
   },
 
