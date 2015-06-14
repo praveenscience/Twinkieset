@@ -31,18 +31,19 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   },
 
   publicShow: function(user_id, id, set_id) {
-    var owner = new TwinkieSetApp.Models.Owner({
+    var album_owner = new TwinkieSetApp.Models.Owner({
       userID: user_id
     });
-    owner.fetch();
-    var albums = owner.albums();
+    album_owner.fetch();
+    var albums = album_owner.albums();
     albums.fetch();
     var album = albums.getOrFetch(id);
 
     var showView = new TwinkieSetApp.Views.PublicAlbumShow({
       model: album,
       setID: set_id,
-      userID: user_id
+      userID: user_id,
+      album_owner: album_owner
     });
     this._swapView(showView);
   },

@@ -580,9 +580,7 @@ a:link {
 
 
 .hero {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
+  position: relative;
   width: 100%;
   background-size: cover;
   color: #fff;
@@ -596,7 +594,7 @@ a:link {
 
     .album-title {
       font: 45px 'ProximaNova-Semibold';
-      line-height: 45px;
+      line-height: 90px;
       text-transform: uppercase;
       letter-spacing: 4px;
     }
@@ -610,12 +608,24 @@ a:link {
       text-transform: uppercase;
       letter-spacing: 2px;
       width: 135px;
-      margin: auto auto;
+      margin: 37px auto;
+      padding: 15px 0px;
     }
+  }
+
+  .owner-business-name {
+    font: 10px 'ProximaNova-Regular';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
   }
 }
 
-.container.subalbum-photos {
+.container.gallery-section {
   position: relative;
+
 
 }
