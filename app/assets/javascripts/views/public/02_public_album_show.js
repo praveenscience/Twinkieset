@@ -17,8 +17,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
   },
 
   ensureSubalbum: function () {
-    // this.listenTo(this.album, "add", this.addSubalbum);
-    // this.album.subalbums().each(this.addSubalbum.bind(this));
+
     this.findFirstSubalbum();
   },
 
@@ -31,6 +30,9 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
   findFirstSubalbum: function () {
     this.albums = this.album_owner.albums();
     this.album = this.albums.get(this.albumID);
+
+    this.listenTo(this.album, "add", this.addSubalbum);
+    this.album.subalbums().each(this.addSubalbum.bind(this));
 
     if (this.setID === null) {
       // if we don't have a route to determine our subalbum, we'll return the first one
