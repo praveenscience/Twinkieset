@@ -8,7 +8,7 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
 
   events: {
     'click .next-image': 'displayNextImage',
-    'click .prev-image': 'displayNextImage'
+    'click .prev-image': 'displayPreviousImage'
   },
 
 
@@ -32,6 +32,7 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     this.collection.forEach(function(photo, idx, allPhotos) {
       if (currentImage === photo) {
         nextImage = allPhotos[idx + difference];
+
         console.log(idx + difference);
         return;
       }
