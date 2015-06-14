@@ -22,12 +22,19 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
   },
 
   findFirstSubalbum: function () {
+
     if (this.setID === null) {
       // if we don't have a route to determine our subalbum, we'll return the first one
       this.setID = this.model.get('first_subalbum_id');
     }
     console.log(this.setID);
     this.render();
+
+
+    $('.list-of-subalbums li').removeClass("selected-subalbum");
+
+    // find the one
+    $('.list-of-subalbums li.subalbum-' + this.setID).addClass("selected-subalbum");
 
     var subalbum = this.model.subalbums().getOrFetch(this.setID);
     var photosInSubalbum = new TwinkieSetApp.Views.PublicSubalbumPhotos({

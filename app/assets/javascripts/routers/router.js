@@ -22,6 +22,7 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   },
 
   show: function (id, subalbumID) {
+    alert('ewjalfkewl');
     var album = this.collection.getOrFetch(id);
     var showView = new TwinkieSetApp.Views.AlbumsShow({
       model: album,
