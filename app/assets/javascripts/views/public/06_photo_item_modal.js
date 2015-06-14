@@ -15,11 +15,13 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
 
   keyBinds: function (e) {
 
+    if (e.keyCode === 27) {
+      this.$el.hide();
+    }
+    
     if (!this.rendering) {
       this.rendering = true;
-      if (e.keyCode === 27) {
-        this.$el.hide();
-      } else if (e.keyCode === 39) {
+      if (e.keyCode === 39) {
           this.displayNextImage();
       } else if (e.keyCode === 37) {
         this.displayPreviousImage();
