@@ -8,7 +8,8 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
 
   displayModal: function (event) {
     var content = new TwinkieSetApp.Views.PhotoItemModal({
-      model: this.model
+      model: this.model,
+      collection: this.collection
     });
     $('body').append(content.render().$el);
   },

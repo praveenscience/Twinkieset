@@ -6,6 +6,46 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     $('body').keyup(this.hideGalleryModal.bind(this));
   },
 
+  events: {
+    'click .next-image': 'displayNextImage',
+    'click .prev-image': 'displayNextImage'
+  },
+
+
+  displayNextImage: function (event) {
+    this.displayImage("next");
+  },
+
+  displayPreviousImage: function (event) {
+    this.displayImage("previous");
+  },
+
+  displayImage: function (direction) {
+    var difference = 0;
+    if (direction === "next") {
+      difference = 1;
+    } else if (direction === "previous") {
+      difference = -1;
+    }
+    var currentImage = this.model;
+    var nextImage = this.model;
+    this.collection.forEach(function(photo, idx, allPhotos) {
+      if (currentImage === photo) {
+        nextImage = allPhotos[idx + difference];
+        console.log(idx + difference);
+        return;
+      }
+    });
+
+    var photoItem = new TwinkieSetApp.Views.PhotoItem({
+      model: nextImage, // initialize with a new model
+      collection: this.collection
+    });
+
+    this.$el.hide();
+    photoItem.displayModal();
+  },
+
   hideGalleryModal: function (e) {
     if (e.keyCode === 27) {
       this.$el.hide();
