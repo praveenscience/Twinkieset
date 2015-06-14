@@ -54,7 +54,7 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     });
     this.owner.fetch();
     var userIndex = new TwinkieSetApp.Views.PublicAlbumIndex({
-      model: owner,
+      model: this.owner,
     });
     this._swapView(userIndex);
   },
