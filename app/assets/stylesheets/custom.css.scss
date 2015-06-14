@@ -702,5 +702,11 @@ a:link {
 .container.gallery-section {
   position: relative;
 
+  .grid-item {
+    width: 200px;
+    img {
+      width: 100%;
+    }
+  }
 
 }
