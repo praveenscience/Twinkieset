@@ -42,16 +42,12 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
   },
 
   render: function () {
-
     var content = this.template({
       subalbum: this.model
     });
 
-
-
     this.$el.html(content);
     this.$el.addClass('subalbum-' + this.model.id);
-
 
     return this;
   }
