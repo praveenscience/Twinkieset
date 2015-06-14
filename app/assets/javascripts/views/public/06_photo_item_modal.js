@@ -3,7 +3,9 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
   className: 'gallery-modal',
 
   initialize: function () {
-    $('body').keyup(this.hideGalleryModal.bind(this));
+    $('body').keydown(this.keyBinds.bind(this));
+    $('body').keyup(this.killKeys.bind(this));
+    this.rendering = false;
   },
 
   events: {
@@ -11,6 +13,28 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     'click .prev-image': 'displayPreviousImage'
   },
 
+  keyBinds: function (e) {
+    if (e.keyCode === 27) {
+      this.$el.hide();
+    } else if (e.keyCode === 39) {
+      if (!this.rendering) {
+        this.rendering = true;
+        this.displayNextImage();
+      }
+
+    } else if (e.keyCode === 37) {
+      if (!this.rendering) {
+        this.rendering = true;
+        this.displayPreviousImage();
+      }
+    } else {
+      return;
+    }
+  },
+
+  killKeys: function (e) {
+    return;
+  },
 
   displayNextImage: function (event) {
     this.displayImage("next");
@@ -21,6 +45,7 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
   },
 
   displayImage: function (direction) {
+
     var difference = 0;
     if (direction === "next") {
       difference = 1;
@@ -51,15 +76,12 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
       collection: this.collection
     });
 
-    this.$el.hide();
+    this.remove();
     photoItem.displayModal();
+
+    this.rendering = false;
   },
 
-  hideGalleryModal: function (e) {
-    if (e.keyCode === 27) {
-      this.$el.hide();
-    }
-  },
 
   render: function () {
     console.log('rendering');
