@@ -2,6 +2,16 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
   template: JST['public/06_photo_item_modal'],
   className: 'gallery-modal',
 
+  initialize: function () {
+    $('body').keyup(this.hideGalleryModal.bind(this));
+  },
+
+  hideGalleryModal: function (e) {
+    if (e.keyCode === 27) {
+      this.$el.hide();
+    }
+  },
+
   render: function () {
     console.log('rendering');
     var content = this.template({
