@@ -28,7 +28,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
       model: subalbum
     });
 
-    $('.holder').html(photosInSubalbum.render().$el);
+    $('.public-photos-index').html(photosInSubalbum.render().$el);
     var collectionID = this.model.id;
 
     // TODO find a way to get the owner from the album
