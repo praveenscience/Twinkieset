@@ -206,13 +206,16 @@ a:link {
     border-radius: 0px;
     font: 24px 'ProximaNova-Light';
 
-
+    .submit-user, .login-user {
+      font: 14px 'ProximaNova-Regular';
+      letter-spacing: 1px;
+    }
   }
 
-  input.submit-user, input.login-user {
-    font: 14px 'ProximaNova-Regular';
-    letter-spacing: 1px;
-  }
+    input.submit-user, input.login-user {
+      font: 14px 'ProximaNova-Regular';
+      letter-spacing: 1px;
+    }
 }
 .sign-up-page {
   margin-top: 100px;
