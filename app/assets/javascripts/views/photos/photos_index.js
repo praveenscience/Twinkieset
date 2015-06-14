@@ -51,7 +51,6 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
 
   showPhotoDeleteModal: function (event) {
-    alert("here");
     console.log(TwinkieSetApp.selectedPhotosArr);
     var deleteView = new TwinkieSetApp.Views.PhotosDelete();
     $('body').append(deleteView.render().$el);

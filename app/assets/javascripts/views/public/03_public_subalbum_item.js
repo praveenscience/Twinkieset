@@ -2,8 +2,7 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
   template: JST['public/public_subalbum_item'],
 
   initialize: function (options) {
-    this.user_id = options.user_id
-    console.log(this.user_id)
+    this.user_id = options.user_id;
     //this.model is a subalbum
   },
 
@@ -13,13 +12,12 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
   },
 
   changeSubalbum: function (event) {
-    alert('ewlafjwel');
     var photosInSubalbum = new TwinkieSetApp.Views.PublicSubalbumPhotos({
       model: this.model
     });
     $('.holder').html(photosInSubalbum.render().$el);
 
-    // TODO implemnt backbone navigate trigger with assocation instead
+    // TODO implemnt backbone navigate trigger with assocation instead ??? how??? don't want to pass the user_id if not necessary.
     var user_id = this.user_id;
 
     var collection_id = this.model._album.id;
