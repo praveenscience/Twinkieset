@@ -585,6 +585,18 @@ a:link {
   bottom: 0px;
   width: 100%;
   background-size: cover;
+  color: #fff;
+  text-align: center;
+
+  .album-title {
+    font: 45px 'ProximaNova-Semibold';
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  .album-event-date {
+    font: 18px 'Times New Roman';
+    font-style: italic;
+  }
 }
 
 .container.subalbum-photos {
