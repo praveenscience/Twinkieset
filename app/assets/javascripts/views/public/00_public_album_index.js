@@ -5,6 +5,7 @@ TwinkieSetApp.Views.PublicAlbumIndex = Backbone.CompositeView.extend({
     this.listenTo(this.model, "sync", this.render);
     this.listenTo(this.model.albums(), 'add', this.addAlbumView);
     this.model.albums().each(this.addAlbumView.bind(this));
+
   },
 
   addAlbumView: function (album) {
