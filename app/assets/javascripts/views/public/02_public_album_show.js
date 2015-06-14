@@ -7,22 +7,16 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     this.albumID = options.albumID;
     this.setID = options.setID;
     this.album_owner = options.album_owner;
-
     this.listenTo(this.album_owner, "sync", this.findFirstSubalbum);
-
-
-
     // this.listenTo(this.album, "add", this.addSubalbum);
     // this.album.subalbums().each(this.addSubalbum.bind(this));
   },
-
 
   events: {
     'click .album-open-button': 'scrollToBeginning'
   },
 
   ensureSubalbum: function () {
-
     // this.listenTo(this.album, "add", this.addSubalbum);
     // this.album.subalbums().each(this.addSubalbum.bind(this));
     this.findFirstSubalbum();
@@ -69,8 +63,6 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
   },
 
   render: function () {
-
-
     var content = this.template({
       album: this.album,
       owner: this.album_owner
