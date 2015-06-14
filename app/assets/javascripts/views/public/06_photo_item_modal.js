@@ -31,7 +31,15 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     var nextImage = this.model;
     this.collection.forEach(function(photo, idx, allPhotos) {
       if (currentImage === photo) {
-        nextImage = allPhotos[idx + difference];
+        var newIndex = idx + difference;
+
+        // ensure photos wrap
+        if (newIndex > allPhotos.length - 1) {
+          newIndex = 0;
+        } else if (newIndex < 0) {
+          newIndex = allPhotos.length - 1;
+        }
+        nextImage = allPhotos[newIndex];
 
         console.log(idx + difference);
         return;
