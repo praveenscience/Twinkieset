@@ -99,10 +99,10 @@ a:link {
   box-shadow: none !important;
 }
 
-.form-control::-webkit-input-placeholder { color: #bbb; }
-.form-control:-moz-placeholder { color: #bbb; }
-.form-control::-moz-placeholder { color: #bbb; }
-.form-control:-ms-input-placeholder { color: #bbb; }
+.form-control::-webkit-input-placeholder { color: #a9a9a9; }
+.form-control:-moz-placeholder { color: #a9a9a9; }
+.form-control::-moz-placeholder { color: #a9a9a9; }
+.form-control:-ms-input-placeholder { color: #a9a9a9; }
 
 
 
@@ -204,6 +204,12 @@ a:link {
 
   input {
     border-radius: 0px;
+    font: 24px 'ProximaNova-Light';
+
+
+  }
+
+  input.submit-user, input.login-user {
     font: 14px 'ProximaNova-Regular';
     letter-spacing: 1px;
   }
