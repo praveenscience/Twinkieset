@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
-  template: JST['public/public_subalbum_photos'],
+  template: JST['public/04_public_subalbum_photos'],
 
   initialize: function () {
     this.listenTo(this.model.photos(), 'add', this.addPhotoView);

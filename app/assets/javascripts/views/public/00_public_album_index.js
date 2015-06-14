@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.PublicAlbumIndex = Backbone.CompositeView.extend({
-  template: JST['public/public_album_index'],
+  template: JST['public/00_public_album_index'],
 
   initialize: function (options) {
     this.listenTo(this.model, "sync", this.render);

@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
-  template: JST['public/photo_item_modal'],
+  template: JST['public/06_photo_item_modal'],
   className: 'gallery-modal',
 
   render: function () {

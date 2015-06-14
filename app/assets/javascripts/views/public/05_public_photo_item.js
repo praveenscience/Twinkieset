@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
-  template: JST['public/public_photo_item'],
+  template: JST['public/05_public_photo_item'],
   className: 'grid-item',
 
   events: {

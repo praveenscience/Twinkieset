@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
-  template: JST['public/public_album_show'],
+  template: JST['public/02_public_album_show'],
 
   initialize: function (options) {
     // model is album
