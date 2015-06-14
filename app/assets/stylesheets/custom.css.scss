@@ -655,15 +655,20 @@ a:link {
 }
 
 .information {
-  .album-title {
+  a:link, a:active, a:visited {
+
+  }
+  .album-title a {
     font: 16px 'ProximaNova-SemiBold';
     letter-spacing: 1px;
     text-transform: uppercase;
+    color: #333;
   }
-  .album-event-date {
+  .album-event-date a {
     font: 9px 'ProximaNova-Regular';
     letter-spacing: 2px;
     text-transform: uppercase;
+    color: #999;
   }
 }
 .container.gallery-section {
