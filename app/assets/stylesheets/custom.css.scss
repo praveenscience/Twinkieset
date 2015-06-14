@@ -722,6 +722,14 @@ a:link {
   }
 }
 
+.gallery-modal {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
 // /* for larger than 1040px */
 // @media screen and (min-width: 1040px) {
 //   /* 4 */
