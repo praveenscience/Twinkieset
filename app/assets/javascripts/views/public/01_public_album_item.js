@@ -3,12 +3,12 @@ TwinkieSetApp.Views.PublicAlbumItem = Backbone.View.extend({
   className: 'one-album col-xs-4 col-sm-4',
 
   intialize: function () {
-    this.listenTo(this.model, "sync", this.render);
+
+    // this.listenTo(this.model, "sync", this.render);
   },
 
 
   render: function () {
-    this.model.fetch();
     var content = this.template({
       album: this.model
     });
