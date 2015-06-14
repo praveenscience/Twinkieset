@@ -91,13 +91,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     return this;
   },
 
-
-
   addMasonry: function (event) {
-
-
-
-
     var sizing = function () {
       console.log('something');
       var windowWidth = $(window).width() - 48;
@@ -114,29 +108,17 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
       }
     };
 
-
-
-
-    sizing();
-
     $(window).resize(function () {
       sizing();
     });
 
     $(window).load(function () {
-    // setTimeout(function () {
+      sizing();
       this.$el.find('.public-subalbum-photos').masonry({
         itemSelector: '.grid-item',
         gutter: 6
       });
 
-      sizing();
-      $('.public-subalbum-photos').masonry();
     }.bind(this)).trigger('resize');
-
-
-
-    // this.$el.on('mouseover', sizing);
-
   },
 });
