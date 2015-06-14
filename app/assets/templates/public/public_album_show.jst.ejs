@@ -5,13 +5,25 @@
     <div class="album-open-button">Open</div>
   </div>
   <div class="owner-business-name">
-    <%= owner.get('business_name') %>
+    <a href="<%= owner.get('website') %>"><%= owner.get('business_name') %></div>
   </div>
+</div>
+
+<div class="information">
+
+  <div class="album-title"><%= album.get('title') %></div>
+  <div class="album-event-date">
+    <a href="<%= owner.get('website') %>">
+      <%= owner.get('business_name') %>
+    </a>
+  </div>
+  <div class="list-of-subalbums"></div>
 </div>
 
 <div class="container gallery-section">
 
-  <div class="list-of-subalbums"></div>
+
+
 
   <div class="public-photos-index"></div>
 </div>
