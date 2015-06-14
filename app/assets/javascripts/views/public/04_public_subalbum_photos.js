@@ -17,16 +17,37 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     });
     this.$el.html(content);
     this.attachSubviews();
-    $(window).on('load', function () {
+    this.$el.find('.public-subalbum-photos').prepend('<div class="grid-sizer"></div>');
 
+    var sizing = function () {
+      var windowWidth = $(window).width() - 48;
+
+      if (windowWidth > 1040) {
+        $('.grid-item').css('width', (windowWidth-18)/4);
+      } else if (windowWidth > 820) {
+        $('.grid-item').css('width', (windowWidth-12)/3);
+      } else if (windowWidth > 600) {
+        $('.grid-item').css('width', (windowWidth-6)/2);
+      } else {
+        $('.grid-item').css('width', (windowWidth));
+      }
+    };
+
+    $(window).resize(function () {
+      sizing();
+    });
+
+    $(window).on('load', function () {
       this.$el.find('.public-subalbum-photos').masonry({
-      // options
-      itemSelector: '.grid-item',
-      columnWidth: 200
+        itemSelector: '.grid-item',
+        gutter: 6
       });
+
+      sizing();
+
     }.bind(this));
 
-    this.$el.find('.public-subalbum-photos').prepend('<div class="grid-sizer"></div>');
+
 
     return this;
   }
