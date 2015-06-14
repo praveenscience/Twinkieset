@@ -4,21 +4,21 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
 
   initialize: function () {
     $('body').keydown(this.keyBinds.bind(this));
-    $('body').keyup(this.killKeys.bind(this));
     this.rendering = false;
   },
 
   events: {
     'click .next-image': 'displayNextImage',
-    'click .prev-image': 'displayPreviousImage'
+    'click .prev-image': 'displayPreviousImage',
+    'click .close-gallery-modal': 'hideModal'
   },
 
   keyBinds: function (e) {
 
     if (e.keyCode === 27) {
-      this.$el.hide();
+      this.hideModal();
     }
-    
+
     if (!this.rendering) {
       this.rendering = true;
       if (e.keyCode === 39) {
@@ -30,8 +30,8 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
 
   },
 
-  killKeys: function (e) {
-    return;
+  hideModal: function (event) {
+    this.remove();
   },
 
   displayNextImage: function (event) {
