@@ -47,11 +47,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
 
   render: function () {
 
-    var windowHeight = $(window).height();
 
-    $(window).resize(function () {
-      var windowHeight = $(window).height();
-    });
     var content = this.template({
       album: this.model,
       owner: this.owner
@@ -63,7 +59,18 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     this.$el.find('.hero').css('background-size', "cover");
     this.$el.find('.hero').css('background-position', "center center");
 
-    this.$el.find('.hero').css('height', windowHeight);
+
+    $(window).resize(function () {
+      var windowHeight = $(window).height();
+      console.log(windowHeight);
+      this.$el.find('.hero').css('height', windowHeight);
+    }.bind(this));
+
+
+    $(window).resize();
+
+
+
 
     this.attachSubviews();
     return this;
