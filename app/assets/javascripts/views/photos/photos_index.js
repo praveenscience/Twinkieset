@@ -35,7 +35,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     }.bind(this));
 
     $('.number-of-selected').html(photosCollection.length + " selected");
-    console.log(TwinkieSetApp.selectedPhotosArr);
+    // console.log(TwinkieSetApp.selectedPhotosArr);
   },
 
 
@@ -46,12 +46,12 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     $('.photo-item').removeClass('selected').addClass('not-selected');
 
     $('.number-of-selected').html("0 selected");
-    console.log(TwinkieSetApp.selectedPhotosArr);
+    // console.log(TwinkieSetApp.selectedPhotosArr);
   },
 
 
   showPhotoDeleteModal: function (event) {
-    console.log(TwinkieSetApp.selectedPhotosArr);
+    // console.log(TwinkieSetApp.selectedPhotosArr);
     var deleteView = new TwinkieSetApp.Views.PhotosDelete();
     $('body').append(deleteView.render().$el);
   },
@@ -61,7 +61,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     TwinkieSetApp.selectedPhotosArr = [];
     $('.photo-item').addClass('not-selected').removeClass('selected');
     $('.number-of-selected').html("0 selected");
-    console.log(TwinkieSetApp.selectedPhotosArr);
+    // console.log(TwinkieSetApp.selectedPhotosArr);
     cloudinary.openUploadWidget(CLOUDINARY_SETTINGS,
       function(error, payload) {
         if (!error) {

@@ -69,7 +69,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
       album: this.album,
       owner: this.album_owner
     });
-    console.log(this.model);
+    // console.log(this.model);
     this.$el.html(content);
     var backgroundImage = this.album.get('cover_image_url');
     this.$el.find('.hero').css('background', "url(" + backgroundImage + ")");
@@ -79,7 +79,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
 
     $(window).resize(function () {
       var windowHeight = $(window).height();
-      console.log(windowHeight);
+      // console.log(windowHeight);
       this.$el.find('.hero').css('height', windowHeight);
     }.bind(this));
 
@@ -93,9 +93,9 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
 
   addMasonry: function (event) {
     var sizing = function () {
-      console.log('something');
+      // console.log('something');
       var windowWidth = $(window).width() - 48;
-      console.log(windowWidth);
+      // console.log(windowWidth);
 
       if (windowWidth > 1040) {
         $('.grid-item').css('width', (windowWidth-18)/4);
