@@ -18,6 +18,7 @@
 //= require composite_view
 //= require jquery.serializejson
 //= require twinkie_set_app
+//= require masonry.pkgd
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections
