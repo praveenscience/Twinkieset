@@ -588,14 +588,30 @@ a:link {
   color: #fff;
   text-align: center;
 
-  .album-title {
-    font: 45px 'ProximaNova-Semibold';
-    text-transform: uppercase;
-    letter-spacing: 4px;
-  }
-  .album-event-date {
-    font: 18px 'Times New Roman';
-    font-style: italic;
+  .details {
+    position: absolute;
+    top: 50%;
+    margin-top: -11%;
+    width: 100%;
+
+    .album-title {
+      font: 45px 'ProximaNova-Semibold';
+      line-height: 45px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+    }
+    .album-event-date {
+      font: 18px 'Times New Roman';
+      font-style: italic;
+    }
+    .album-open-button {
+      font: 10px 'ProximaNova-Regular';
+      border: 1px solid #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      width: 135px;
+      margin: auto auto;
+    }
   }
 }
 
