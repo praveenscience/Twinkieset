@@ -10,17 +10,21 @@
 </div>
 
 <a name="begin"></div>
+
+
 <div class="information">
 
-  <div class="album-title">
-    <a href="#<%= Backbone.history.getFragment() %>">
-      <%= album.get('title') %>
-    </a>
-  </div>
-  <div class="album-event-date">
-    <a href="<%= owner.get('website') %>">
-      <%= owner.get('business_name') %>
-    </a>
+  <div class="left-wrapper">
+    <div class="album-title">
+      <a href="#<%= Backbone.history.getFragment() %>">
+        <%= album.get('title') %>
+      </a>
+    </div>
+    <div class="album-event-date">
+      <a href="<%= owner.get('website') %>">
+        <%= owner.get('business_name') %>
+      </a>
+    </div>
   </div>
   <div class="list-of-subalbums"></div>
 </div>
