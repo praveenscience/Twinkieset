@@ -1,9 +1,12 @@
 TwinkieSetApp.Collections.PublicAlbums = Backbone.Collection.extend({
-  url: '/api/albums',
+  url: function () {
+    return "/api/" + this.userID + "/albums";
+  },
   model: TwinkieSetApp.Models.PublicAlbum,
 
   initialize: function (models, options) {
     this.owner = options.owner;
+    this.userID = options.userID
   },
 
   getOrFetch: function (id) {
@@ -12,7 +15,10 @@ TwinkieSetApp.Collections.PublicAlbums = Backbone.Collection.extend({
     if (album) {
       album.fetch();
     } else {
-      album = new TwinkieSetApp.Models.Album({ id: id });
+      album = new TwinkieSetApp.Models.PublicAlbum({
+        id: id,
+        userID: this.userID
+      });
       album.fetch({
         success: function () {
           this.add(album);
