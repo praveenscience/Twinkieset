@@ -24,7 +24,6 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
 
     var collection_id = this.model._album.id;
     var set_id = this.model.id;
-    debugger;
     Backbone.history.navigate("#public/" + user_id + "/collection/" + collection_id + "/set/" + set_id);
 
   },
