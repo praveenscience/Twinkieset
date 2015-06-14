@@ -91,7 +91,11 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     var galleryImagePositioning = function () {
       var windowHeight = $(window).height();
       var imageHeight = windowHeight - 100;
+
+      var windowWidth = $(window).width();
+      var maxImageWidth = windowWidth - 100;
       this.$el.find('.active-image img').css('height', imageHeight);
+      this.$el.find('.active-image img').css('max-width', maxImageWidth);
     }.bind(this);
 
     galleryImagePositioning();
