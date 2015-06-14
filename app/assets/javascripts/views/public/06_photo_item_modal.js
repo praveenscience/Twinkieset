@@ -9,9 +9,20 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     });
     this.$el.html(content);
 
-    var windowHeight = $(window).height();
-    var imageHeight = windowHeight - 100;
-    this.$el.find('.active-image img').css('height', imageHeight)
+    var galleryImagePositioning = function () {
+      var windowHeight = $(window).height();
+      var imageHeight = windowHeight - 100;
+      this.$el.find('.active-image img').css('height', imageHeight);
+    }.bind(this);
+
+    galleryImagePositioning();
+
+    $(window).resize(function () {
+      galleryImagePositioning();
+    });
+
+    $(window).resize();
+
     return this;
   }
 });
