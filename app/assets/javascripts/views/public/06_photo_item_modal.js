@@ -94,8 +94,19 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
 
       var windowWidth = $(window).width();
       var maxImageWidth = windowWidth - 100;
+
       this.$el.find('.active-image img').css('height', imageHeight);
       this.$el.find('.active-image img').css('max-width', maxImageWidth);
+      // if ( this.$el.find('.active-image img').width() > maxImageWidth ) {
+      //   this.$el.find('.active-image img').css('height', "auto");
+      //   this.$el.find('.active-image img').css('width', maxImageWidth);
+      // } else {
+      //   this.$el.find('.active-image img').css('height', imageHeight);
+      //   this.$el.find('.active-image img').css('width', 'auto');
+      //   var marginTop = (windowHeight - this.$el.find('.active-image img').height())/2;
+      //   debugger;
+      //   this.$el.find('.active-image img').css('margin-top', marginTop);
+      // }
     }.bind(this);
 
     galleryImagePositioning();
