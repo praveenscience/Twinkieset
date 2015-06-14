@@ -49,6 +49,14 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     });
     console.log(this.model);
     this.$el.html(content);
+
+    var backgroundImage = this.model.get('cover_image_url');
+    this.$el.find('.hero').css('background', "url(" + backgroundImage + ")");
+    this.$el.find('.hero').css('background-size', "cover");
+    this.$el.find('.hero').css('background-position', "center center");
+
+    this.$el.find('.container.subalbum-photos').css('top', $(window).height());
+
     this.attachSubviews();
     return this;
   }
