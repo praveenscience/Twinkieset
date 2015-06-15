@@ -29,6 +29,11 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
       }, 100);
     }
 
+    // give a fade in effect
+    this.$el.css('opacity',0);
+    setTimeout(function () {
+      this.$el.css('opacity', 1);
+    }.bind(this), 1000);
     return this;
   },
 
