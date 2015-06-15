@@ -136,7 +136,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
 
     $(window).load(function () {
       sizing();
-      this.$el.find('.public-subalbum-photos').masonry({
+      TwinkieSetApp.Views.masonryGallery = this.$el.find('.public-subalbum-photos').masonry({
         itemSelector: '.grid-item',
         gutter: 6
       });
