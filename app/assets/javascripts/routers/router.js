@@ -33,7 +33,8 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   _swapView: function (newView) {
     this._currentView && this._currentView.remove();
     this._currentView = newView;
-    this.$rootEl.html(newView.render().$el);
+    this.$rootEl.html(newView.$el);
+    newView.render();
   },
 
 
@@ -56,10 +57,20 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     });
     album_owner.fetch();
 
+    var album = new TwinkieSetApp.Models.PublicAlbum({
+      userID: user_id,
+      albumID: album_id
+    });
+
+    album.fetch({
+      error: function () {
+        window.location.href = "/album_sessions/new";
+      }
+    });
+
     var showView = new TwinkieSetApp.Views.PublicAlbumShow({
       album_owner: album_owner,
-      userID: user_id,
-      albumID: album_id,
+      album: album,
       setID: set_id
     });
     this._swapViewPublic(showView);
@@ -69,5 +80,6 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     this._currentViewPublic && this._currentViewPublic.remove();
     this._currentViewPublic = view;
     this.$rootElPublic.html(view.$el);
+    view.render();
   }
 });
