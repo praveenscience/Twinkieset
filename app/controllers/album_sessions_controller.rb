@@ -1,36 +1,41 @@
 class AlbumSessionsController < ApplicationController
   def create
-    albumID = Album.find(params[:id]);
     @album = Album.find_by_credentials(
-      albumID,
+      params[:album][:id],
       params[:album][:password]
     )
 
     if @album
       log_into_album!(@album)
       flash[:notice] = ["Successfully logged into album!"]
-      # redirect_to TODO
-      render text: "You have successfully logged in to #{album.title}"
+      redirect_to album_sessions_url
+      # render text: "You have successfully logged in to #{@album.title}"
     else
-      @album = Album.new(album_params)
+      @album = Album.new
       flash.now[:errors] = ["Invalid password"]
       render :new
     end
   end
 
-  def login
-    @album = Album.new(album_params)
+  def new
+    @album = Album.new
   end
 
-  def destroy
-    log_out_album!
-    flash.now[:notice] = ["Successfully logged out of album"]
-    render text: "logged out of album"
+  # def destroy
+  #   log_out_album!
+  #   flash.now[:notice] = ["Successfully logged out of album"]
+  #   render text: "logged out of album"
+  # end
+
+
+  def index
+
+    render :index
   end
 
   private
 
-    def album_params
-      params.require(:album).permit(:password)
-    end
+    # def album_params
+    #   params.require(:album).permit(:password)
+    # end
 end
