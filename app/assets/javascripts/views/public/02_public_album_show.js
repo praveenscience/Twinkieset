@@ -10,10 +10,11 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     this.listenTo(this.album_owner, "sync", this.findFirstSubalbum);
     // this.listenTo(this.album, "add", this.addSubalbum);
     // this.album.subalbums().each(this.addSubalbum.bind(this));
+
   },
 
   events: {
-    'click .album-open-button': 'scrollToBeginning'
+    'click .album-open-button': 'scrollToBeginning',
   },
 
   scrollToBeginning: function (event) {
@@ -29,6 +30,9 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     this.listenTo(this.album, "add", this.addSubalbum);
     this.album.subalbums().each(this.addSubalbum.bind(this));
 
+    this.listenTo(this.album, "add", this.addNextSubalbum);
+    this.album.subalbums().each(this.addNextSubalbum.bind(this));
+
     if (this.setID === null) {
       // if we don't have a route to determine our subalbum, we'll return the first one
       this.setID = this.album.get('first_subalbum_id');
@@ -36,8 +40,9 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
 
     this.render();
 
-    $('.list-of-subalbums li').removeClass("selected-subalbum");
+    $('.list-of-subalbums li, .view-more li').removeClass("selected-subalbum");
     $('.list-of-subalbums li.subalbum-' + this.setID).addClass("selected-subalbum");
+    $('.view-more li.subalbum-' + this.setID).hide();
 
     var subalbum = this.album.subalbums().get(this.setID);
     var photosInSubalbum = new TwinkieSetApp.Views.PublicSubalbumPhotos({
@@ -56,7 +61,17 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
       model: subalbum,
       user_id: this.userID
     });
+    this.addSubview('.view-more', subview);
     this.addSubview('.list-of-subalbums', subview);
+  },
+
+
+  addNextSubalbum: function (subalbum) {
+    var subview = new TwinkieSetApp.Views.PublicSubalbumItem({
+      model: subalbum,
+      user_id: this.userID
+    });
+    this.addSubview('.view-more', subview);
   },
 
   // fixNav: function () {
@@ -106,7 +121,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
 
     this.attachSubviews();
 
-
+    $('.view-more').hide();
     return this;
   },
 
