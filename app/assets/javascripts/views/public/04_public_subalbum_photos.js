@@ -10,16 +10,20 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
 
     this.limitedPhotos.forEach(this.addPhotoView.bind(this));
 
-    $(window).scroll(function () {
-      var docHeight = $(document).height();
-      var windowHeight = $(window).height();
-      var currentScroll = $(document).scrollTop();
-      if (currentScroll >= (docHeight - windowHeight - 100)) {
-        setTimeout(function () {
-          this.loadMorePhotos();
-        }.bind(this), 500);
-      }
+    $(window).resize(function () {
+      $(window).scroll(function () {
+        var docHeight = $(document).height();
+        var windowHeight = $(window).height();
+        var currentScroll = $(document).scrollTop();
+        if (currentScroll >= (docHeight - windowHeight - 100)) {
+          setTimeout(function () {
+            this.loadMorePhotos();
+          }.bind(this), 500);
+        }
+      }.bind(this));
     }.bind(this));
+
+    $(window).resize();
   },
 
   events: {
