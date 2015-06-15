@@ -611,6 +611,13 @@ a:link {
       width: 135px;
       margin: 37px auto;
       padding: 15px 0px;
+      -webkit-transition: background 200ms; /* Safari */
+      transition: background 200ms;
+      transition-timing-function: linear;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.3);
+      }
     }
   }
 
