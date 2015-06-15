@@ -5,7 +5,7 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     this.listenTo(this.model.photos(), 'add', this.addPhotoView);
 
     this.beginning = 0;
-    this.ending = 2;
+    this.ending = 10;
     this.limitedPhotos = this.limitPhotos(this.beginning, this.ending);
 
     this.limitedPhotos.forEach(this.addPhotoView.bind(this));
@@ -32,7 +32,7 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
 
   loadMorePhotos: function () {
     this.beginning = this.ending;
-    this.ending += 2;
+    this.ending += 10;
     this.limitedPhotos = this.limitPhotos(this.beginning, this.ending);
     this.limitedPhotos.forEach(this.addPhotoView.bind(this));
 
