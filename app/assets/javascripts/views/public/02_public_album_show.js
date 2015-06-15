@@ -64,6 +64,10 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     this.addSubview('.list-of-subalbums', subview);
   },
 
+  // fixNav: function () {
+  //   if
+  // },
+  //
   render: function () {
     var content = this.template({
       album: this.album,
@@ -77,10 +81,24 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     this.$el.find('.hero').css('background-position', "center center");
 
 
+
+
     $(window).resize(function () {
       var windowHeight = $(window).height();
       // console.log(windowHeight);
       this.$el.find('.hero').css('height', windowHeight);
+
+      // scrolling should fix nav
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= windowHeight) {
+          $('.information').addClass('lock-nav');
+          $('.gallery-section').css('top', $('.information').height()+60);
+        } else {
+          $('.information').removeClass('lock-nav');
+          $('.gallery-section').css('top', 0);
+        }
+      });
+
     }.bind(this));
 
     $(window).resize();
