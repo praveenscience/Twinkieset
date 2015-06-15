@@ -91,11 +91,17 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
       // scrolling should fix nav
       $(window).scroll(function () {
         if ($(window).scrollTop() >= windowHeight) {
-          $('.information').addClass('lock-nav');
-          $('.gallery-section').css('top', $('.information').height()+60);
-        } else {
-          $('.information').removeClass('lock-nav');
+          // scrolled past hero
+          $('.information').addClass('lock-nav').removeClass('reduce-padding');
+          $('.gallery-section').css('top', $('.information').height()+50);
+        } else if (($(window).scrollTop() <= windowHeight)) {
+          // before hero
+          $('.information').removeClass('lock-nav').removeClass('reduce-padding');
           $('.gallery-section').css('top', 0);
+        }
+        if (($(window).scrollTop() >= windowHeight+100)) {
+          // scrolled past hero + 100
+          $('.information').addClass('reduce-padding');
         }
       });
 
