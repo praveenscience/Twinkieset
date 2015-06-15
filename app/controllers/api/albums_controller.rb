@@ -25,6 +25,7 @@ class Api::AlbumsController < ApplicationController
       render :show
     else
       render json: "not your album", status: :forbidden
+      # TODO: move into a before_action
     end
   end
 
@@ -51,7 +52,11 @@ class Api::AlbumsController < ApplicationController
 
     def must_be_logged_in
       if !logged_in?
-        redirect_to new_session_url, status: :forbidden
+        render text: "Must be logged in.", status: :forbidden
       end
+    end
+
+    def must_be_album_owner
+
     end
 end
