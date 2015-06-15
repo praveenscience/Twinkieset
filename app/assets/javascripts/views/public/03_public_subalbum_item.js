@@ -15,8 +15,6 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
     // "testingThis": "changeSubalum"
   },
 
-
-
   changeSubalbum: function (event) {
 
     var currentSub = this.model;
@@ -39,6 +37,12 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
     Backbone.history.navigate("#public/" + user_id + "/collection/" + collection_id + "/set/" + set_id);
 
 
+    // $(document).ready(function() {
+
+    setTimeout(function () {
+      this.addMasonry.call(this);
+    }.bind(this), 10);
+    // }.bind(this));
   },
 
   render: function () {
@@ -50,5 +54,35 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
     this.$el.addClass('subalbum-' + this.model.id);
 
     return this;
-  }
+  },
+
+
+  addMasonry: function (event) {
+    var sizing = function () {
+      // console.log('something');
+      var windowWidth = $(window).width() - 48;
+      // console.log(windowWidth);
+
+      if (windowWidth > 1040) {
+        $('.grid-item').css('width', (windowWidth-18)/4);
+      } else if (windowWidth > 820) {
+        $('.grid-item').css('width', (windowWidth-12)/3);
+      } else if (windowWidth > 600) {
+        $('.grid-item').css('width', (windowWidth-6)/2);
+      } else {
+        $('.grid-item').css('width', (windowWidth));
+      }
+    };
+
+    $(window).resize(function () {
+      sizing();
+    });
+
+
+    sizing();
+    $('.public-subalbum-photos').masonry({
+      itemSelector: '.grid-item',
+      gutter: 6
+    });
+  },
 });

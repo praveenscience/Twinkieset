@@ -120,5 +120,13 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
       });
 
     }.bind(this)).trigger('resize');
+
+
+
+
+
+    // $('.public-subalbum-photos').masonry();
+
+
   },
 });
