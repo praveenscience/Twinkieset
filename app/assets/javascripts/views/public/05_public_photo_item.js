@@ -19,6 +19,11 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
       photo: this.model
     });
     this.$el.html(content);
+
+    if (TwinkieSetApp.Views.masonryGallery) {
+
+      TwinkieSetApp.Views.masonryGallery.masonry('appended', this.$el);
+    }
     return this;
   }
 });
