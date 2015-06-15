@@ -16,11 +16,6 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     'click .album-open-button': 'scrollToBeginning'
   },
 
-  ensureSubalbum: function () {
-
-    this.findFirstSubalbum();
-  },
-
   scrollToBeginning: function (event) {
     $('html, body').animate({
       scrollTop: $('.information').offset().top
