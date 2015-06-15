@@ -19,7 +19,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
   },
 
   scrollToBeginning: function (event) {
-    $('.view-more').hide();
+    $('.view-more').fadeOut();
     setTimeout(function () {
       $('html, body').animate({
         scrollTop: $('.information').offset().top
@@ -127,7 +127,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     this.attachSubviews();
     $('.loading-gif').hide();
 
-    $('.view-more').hide();
+    $('.view-more').fadeOut();
     return this;
   },
 
