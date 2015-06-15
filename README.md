@@ -17,7 +17,7 @@ TwinkieSetApp is a clone of PixieSet (a client photo gallery for modern photogra
 - [X] Delete albums, subalbums
 - [X] Edit albums, subalbums
 - [x] Create/upload and delete photos
-- [ ] Client side albums
+- [x] Client side albums
 - [ ] Authorize albums
 - [ ] Drag + drop to sort photos
 - [ ] Photos can be sorted by name, date, etc.
