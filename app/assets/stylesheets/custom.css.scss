@@ -661,6 +661,7 @@ a:link {
 
 .information {
   padding: 30px 24px;
+  width: 100%;
 
   &:after {
     content: "";
@@ -700,6 +701,14 @@ a:link {
     }
 
   }
+}
+
+.lock-nav {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  background: white;
 }
 .gallery-section {
   position: relative;
