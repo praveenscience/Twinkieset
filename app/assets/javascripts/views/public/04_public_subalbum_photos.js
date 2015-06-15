@@ -9,6 +9,8 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     this.limitedPhotos = this.limitPhotos(this.beginning, this.ending);
 
     this.limitedPhotos.forEach(this.addPhotoView.bind(this));
+
+
   },
 
   events: {
@@ -21,6 +23,9 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     this.limitedPhotos = this.limitPhotos(this.beginning, this.ending);
     this.limitedPhotos.forEach(this.addPhotoView.bind(this));
 
+    if (this.ending >= this.model.photos().length) {
+      $('.more').hide();
+    }
   },
 
   limitPhotos: function (beginning, ending) {
@@ -37,6 +42,9 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
 
   render: function () {
 
+    if (this.ending > this.model.photos().length) {
+      $('.more').hide();
+    }
     var content = this.template({
       subalbum: this.model
     });
