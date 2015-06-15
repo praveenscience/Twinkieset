@@ -93,9 +93,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
 
   addMasonry: function (event) {
     var sizing = function () {
-      // console.log('something');
       var windowWidth = $(window).width() - 48;
-      // console.log(windowWidth);
 
       if (windowWidth > 1040) {
         $('.grid-item').css('width', (windowWidth-18)/4);
@@ -120,13 +118,5 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
       });
 
     }.bind(this)).trigger('resize');
-
-
-
-
-
-    // $('.public-subalbum-photos').masonry();
-
-
   },
 });
