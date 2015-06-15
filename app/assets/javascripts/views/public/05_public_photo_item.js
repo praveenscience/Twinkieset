@@ -23,8 +23,10 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
     if (TwinkieSetApp.Views.masonryGallery) {
 
       TwinkieSetApp.Views.masonryGallery.masonry('appended', this.$el);
-      TwinkieSetApp.Views.masonryGallery.masonry();
-      TwinkieSetApp.Views.sizing();
+      setTimeout(function () {
+        TwinkieSetApp.Views.sizing();
+        TwinkieSetApp.Views.masonryGallery.masonry();
+      }, 100);
     }
 
 
