@@ -38,7 +38,7 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
 
 
     // $(document).ready(function() {
-
+    // TODO ugly setTimeout. WELPS
     setTimeout(function () {
       this.addMasonry.call(this);
     }.bind(this), 10);
