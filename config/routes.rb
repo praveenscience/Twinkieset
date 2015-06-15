@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root  'static_pages#root'
+  root  'static_pages#public_index'
 
-  get '/:user_id' => 'static_pages#public_index'
+  get '/admin' => 'static_pages#root'
   # get 'album' => 'albumsessions#login'
 
   # resources :album_sessions, only: [:new, :create, :destroy]
