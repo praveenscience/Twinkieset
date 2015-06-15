@@ -3,11 +3,28 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
 
   initialize: function () {
     this.listenTo(this.model.photos(), 'add', this.addPhotoView);
-    this.model.photos().each(this.addPhotoView.bind(this));
+
+    this.beginning = 0;
+    this.ending = 2;
+    this.limitedPhotos = this.limitPhotos(this.beginning, this.ending);
+
+    this.limitedPhotos.forEach(this.addPhotoView.bind(this));
   },
 
   events: {
-    // 'click .public-subalbum-photos': 'addMasonry'
+    'click .more': 'loadMorePhotos'
+  },
+
+  loadMorePhotos: function () {
+    this.beginning = this.ending;
+    this.ending += 2;
+    this.limitedPhotos = this.limitPhotos(this.beginning, this.ending);
+    this.limitedPhotos.forEach(this.addPhotoView.bind(this));
+
+  },
+
+  limitPhotos: function (beginning, ending) {
+    return this.model.photos().slice(beginning, ending);
   },
 
   addPhotoView: function (photo) {
@@ -19,6 +36,7 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
   },
 
   render: function () {
+
     var content = this.template({
       subalbum: this.model
     });
@@ -26,8 +44,5 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     this.attachSubviews();
 
     return this;
-  },
-
-
-
+  }
 });
