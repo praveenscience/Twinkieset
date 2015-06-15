@@ -27,6 +27,8 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
     $('.view-more li').show();
     $('.view-more li.subalbum-' + setID).hide();
 
+    
+
 
     // this.$el.addClass("selected-subalbum"); // this won't work for adding class to both top and bottom
     // alert('something!');
