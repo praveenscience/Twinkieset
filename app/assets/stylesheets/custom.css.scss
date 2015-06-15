@@ -157,6 +157,9 @@ a:link {
       position: relative;
       height: 100%;
       overflow: hidden;
+      background-size: cover;
+      background-position: center center;
+
     }
     .album-title {
       font: 12px 'ProximaNova-Regular';
