@@ -58,7 +58,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     var collectionID = this.album.id;
 
     // TODO find a way to get the owner from the album
-    Backbone.history.navigate('#public/'+ this.userID +'/collection/'+ this.albumID + '/set/'+ this.setID, { trigger: true });
+    Backbone.history.navigate('#'+ this.userID +'/collection/'+ this.albumID + '/set/'+ this.setID, { trigger: true });
   },
 
   addSubalbum: function (subalbum) {
@@ -125,6 +125,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     $(window).resize();
 
     this.attachSubviews();
+    $('.loading-gif').hide();
 
     $('.view-more').hide();
     return this;
