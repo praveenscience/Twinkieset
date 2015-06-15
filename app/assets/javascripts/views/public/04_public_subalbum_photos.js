@@ -9,8 +9,6 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     this.limitedPhotos = this.limitPhotos(this.beginning, this.ending);
 
     this.limitedPhotos.forEach(this.addPhotoView.bind(this));
-
-
   },
 
   events: {
@@ -23,9 +21,15 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     this.limitedPhotos = this.limitPhotos(this.beginning, this.ending);
     this.limitedPhotos.forEach(this.addPhotoView.bind(this));
 
-    if (this.ending >= this.model.photos().length) {
-      $('.more').hide();
-    }
+    this.hideLoadMoreButton();
+  },
+
+  hideLoadMoreButton: function () {
+    setTimeout(function () {
+      if (this.ending >= this.model.photos().length) {
+        $('.more').hide();
+      }
+    }.bind(this), 0);
   },
 
   limitPhotos: function (beginning, ending) {
@@ -41,22 +45,20 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
   },
 
   render: function () {
-
-    if (this.ending > this.model.photos().length) {
-      $('.more').hide();
-    }
     var content = this.template({
       subalbum: this.model
     });
     this.$el.html(content);
     this.attachSubviews();
 
+    this.hideLoadMoreButton();
+
     if (!TwinkieSetApp.Views.masonryGallery) {
       setTimeout(function () {
         this.addMasonry();
       }.bind(this), 0);
-
     }
+
     return this;
   },
 
@@ -84,7 +86,5 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
       itemSelector: '.grid-item',
       gutter: 6
     });
-
-
   },
 });
