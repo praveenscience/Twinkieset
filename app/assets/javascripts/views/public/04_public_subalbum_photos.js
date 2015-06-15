@@ -108,6 +108,15 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
       TwinkieSetApp.Views.sizing();
     });
 
+    // if arriving from index
+    setTimeout(function () {
+      TwinkieSetApp.Views.sizing();
+      TwinkieSetApp.Views.masonryGallery = $('.public-subalbum-photos').masonry({
+        itemSelector: '.grid-item',
+        gutter: 6
+      });
+    }, 0);
+    
     // need this for clicking other pages
     TwinkieSetApp.Views.sizing();
     TwinkieSetApp.Views.masonryGallery = $('.public-subalbum-photos').masonry({
