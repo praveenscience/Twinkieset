@@ -24,10 +24,10 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
     var setID = this.model.id;
     $('.list-of-subalbums li.subalbum-' + setID).addClass("selected-subalbum");
 
-    $('.view-more li').show();
+    $('.view-more li').fadeIn();
     $('.view-more li.subalbum-' + setID).hide();
 
-    
+
 
 
     // this.$el.addClass("selected-subalbum"); // this won't work for adding class to both top and bottom
@@ -46,7 +46,7 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
     var user_id = this.user_id;
     var collection_id = currentSub._album.id;
     var set_id = currentSub.id;
-    Backbone.history.navigate("#public/" + user_id + "/collection/" + collection_id + "/set/" + set_id);
+    Backbone.history.navigate("#" + user_id + "/collection/" + collection_id + "/set/" + set_id);
 
 
   },
