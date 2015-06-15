@@ -110,7 +110,7 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
         itemSelector: '.grid-item',
         gutter: 6
       });
-    }, 0);
+    }, 1000);
 
     // need this for clicking other pages
     TwinkieSetApp.Views.sizing();
