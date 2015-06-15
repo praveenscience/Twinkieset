@@ -8,15 +8,19 @@ Rails.application.routes.draw do
   # get 'user_album' => ':user_id/albums'
 
 
+  # get ":album_id/login", to: "album_sessions#login", as: "login_album"
   resources :users, only: [:new, :create, :show] do
     # resources :albums, only: [:index]
 
   end
+  resources :album_sessions, only: [:new, :create, :destroy, :index]
   resource :session, only: [:new, :create, :destroy]
 
   namespace :api, defaults: { format: :json } do
     # resources :public_albums, only: [:index, :show]
-    get '/:user_id/albums', to: 'public_albums#index', as: "user_albums"
+    get 'users/:user_id', to: 'public_users#index', as: "public_users"
+    get 'users/:user_id/albums', to: 'public_albums#index', as: 'public_albums'
+    get 'users/:user_id/albums/:id', to: 'public_albums#show', as: "public_album"
     resources :albums, except: [:new, :edit]
     resources :subalbums, only: [:create, :update, :destroy, :show]
     resources :photos, only: [:create, :update, :destroy]
