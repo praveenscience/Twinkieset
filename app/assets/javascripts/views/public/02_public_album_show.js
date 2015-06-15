@@ -116,7 +116,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
   },
 
   addMasonry: function (event) {
-    var sizing = function () {
+    TwinkieSetApp.Views.sizing = function () {
       var windowWidth = $(window).width() - 48;
 
       if (windowWidth > 1040) {
@@ -131,11 +131,11 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     };
 
     $(window).resize(function () {
-      sizing();
+      TwinkieSetApp.Views.sizing();
     });
 
     $(window).load(function () {
-      sizing();
+      TwinkieSetApp.Views.sizing();
       TwinkieSetApp.Views.masonryGallery = this.$el.find('.public-subalbum-photos').masonry({
         itemSelector: '.grid-item',
         gutter: 6
