@@ -67,9 +67,10 @@ class Album < ActiveRecord::Base
     BCrypt::Password.new(self.password_digest).is_password?(password)
   end
 
+
   def self.find_by_credentials(id, password)
     album = Album.find(id)
-    album && album.is_password?(password)
+    album && album.is_password?(password) ? album : nil
   end
 
   def create_highlights_subalbum
