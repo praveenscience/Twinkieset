@@ -37,11 +37,12 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
     Backbone.history.navigate("#public/" + user_id + "/collection/" + collection_id + "/set/" + set_id);
 
 
+
     // $(document).ready(function() {
     // TODO ugly setTimeout. WELPS
-    setTimeout(function () {
-      this.addMasonry.call(this);
-    }.bind(this), 10);
+    // setTimeout(function () {
+    //   this.addMasonry.call(this);
+    // }.bind(this), 10);
     // }.bind(this));
   },
 
