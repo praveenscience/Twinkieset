@@ -77,14 +77,25 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
       }
     };
 
+    // when resizing the window
     $(window).resize(function () {
       TwinkieSetApp.Views.sizing();
     });
 
+    // need this for clicking other pages
     TwinkieSetApp.Views.sizing();
     TwinkieSetApp.Views.masonryGallery = $('.public-subalbum-photos').masonry({
       itemSelector: '.grid-item',
       gutter: 6
+    });
+
+    // if the page hasn't loaded yet. need this for landing on undetermined set.
+    $(window).load(function () {
+      TwinkieSetApp.Views.sizing();
+      TwinkieSetApp.Views.masonryGallery = $('.public-subalbum-photos').masonry({
+        itemSelector: '.grid-item',
+        gutter: 6
+      });
     });
   },
 });
