@@ -19,8 +19,16 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
 
     var currentSub = this.model;
 
-    $('.list-of-subalbums li').removeClass("selected-subalbum");
-    this.$el.addClass("selected-subalbum");
+    $('.list-of-subalbums li, .view-more li').removeClass("selected-subalbum");
+
+    var setID = this.model.id;
+    $('.list-of-subalbums li.subalbum-' + setID).addClass("selected-subalbum");
+
+    $('.view-more li').show();
+    $('.view-more li.subalbum-' + setID).hide();
+
+
+    // this.$el.addClass("selected-subalbum"); // this won't work for adding class to both top and bottom
     // alert('something!');
     TwinkieSetApp.Views.masonryGallery.masonry('destroy');
     TwinkieSetApp.Views.masonryGallery = null;
