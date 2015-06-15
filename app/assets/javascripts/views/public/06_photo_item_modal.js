@@ -76,10 +76,28 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
 
     this.remove();
     photoItem.displayModal();
-
-
   },
 
+  galleryImagePositioning: function () {
+    var windowHeight = $(window).height();
+    var imageHeight = windowHeight - 100;
+
+    var windowWidth = $(window).width();
+    var maxImageWidth = windowWidth - 100;
+
+    this.$el.find('.active-image img').css('height', imageHeight);
+    this.$el.find('.active-image img').css('max-width', maxImageWidth);
+    // if ( this.$el.find('.active-image img').width() > maxImageWidth ) {
+    //   this.$el.find('.active-image img').css('height', "auto");
+    //   this.$el.find('.active-image img').css('width', maxImageWidth);
+    // } else {
+    //   this.$el.find('.active-image img').css('height', imageHeight);
+    //   this.$el.find('.active-image img').css('width', 'auto');
+    //   var marginTop = (windowHeight - this.$el.find('.active-image img').height())/2;
+    //   debugger;
+    //   this.$el.find('.active-image img').css('margin-top', marginTop);
+    // }
+  },
 
   render: function () {
     console.log('rendering');
@@ -88,34 +106,12 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     });
     this.$el.html(content);
 
-    var galleryImagePositioning = function () {
-      var windowHeight = $(window).height();
-      var imageHeight = windowHeight - 100;
-
-      var windowWidth = $(window).width();
-      var maxImageWidth = windowWidth - 100;
-
-      this.$el.find('.active-image img').css('height', imageHeight);
-      this.$el.find('.active-image img').css('max-width', maxImageWidth);
-      // if ( this.$el.find('.active-image img').width() > maxImageWidth ) {
-      //   this.$el.find('.active-image img').css('height', "auto");
-      //   this.$el.find('.active-image img').css('width', maxImageWidth);
-      // } else {
-      //   this.$el.find('.active-image img').css('height', imageHeight);
-      //   this.$el.find('.active-image img').css('width', 'auto');
-      //   var marginTop = (windowHeight - this.$el.find('.active-image img').height())/2;
-      //   debugger;
-      //   this.$el.find('.active-image img').css('margin-top', marginTop);
-      // }
-    }.bind(this);
-
-    galleryImagePositioning();
+    this.galleryImagePositioning();
 
     $(window).resize(function () {
-      galleryImagePositioning();
-    });
+      this.galleryImagePositioning();
+    }.bind(this));
 
-    $(window).resize();
     this.rendering = false;
     return this;
   }
