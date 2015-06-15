@@ -29,7 +29,8 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
       }, 100);
     }
 
-
     return this;
-  }
+  },
+
+
 });
