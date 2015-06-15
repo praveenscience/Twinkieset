@@ -40,16 +40,11 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
 
     setTimeout(function () {
       if (this.ending >= this.model.photos().length) {
-        this.showViewMoreButton();
+        $('.view-more').fadeIn();
       }
-    }.bind(this), 500);
-
-
+    }.bind(this), 1000);
   },
 
-  showViewMoreButton: function () {
-    $('.view-more').show();
-  },
   // hideLoadMoreButton: function () {
   //   setTimeout(function () {
   //     if (this.ending >= this.model.photos().length) {
@@ -116,7 +111,7 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
         gutter: 6
       });
     }, 0);
-    
+
     // need this for clicking other pages
     TwinkieSetApp.Views.sizing();
     TwinkieSetApp.Views.masonryGallery = $('.public-subalbum-photos').masonry({
