@@ -9,10 +9,21 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     this.limitedPhotos = this.limitPhotos(this.beginning, this.ending);
 
     this.limitedPhotos.forEach(this.addPhotoView.bind(this));
+
+    $(window).scroll(function () {
+      var docHeight = $(document).height();
+      var windowHeight = $(window).height();
+      var currentScroll = $(document).scrollTop();
+      if (currentScroll >= (docHeight - windowHeight - 100)) {
+        setTimeout(function () {
+          this.loadMorePhotos();
+        }.bind(this), 500);
+      }
+    }.bind(this));
   },
 
   events: {
-    'click .more': 'loadMorePhotos'
+    // 'click .more': 'loadMorePhotos',
   },
 
   loadMorePhotos: function () {
@@ -21,16 +32,27 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     this.limitedPhotos = this.limitPhotos(this.beginning, this.ending);
     this.limitedPhotos.forEach(this.addPhotoView.bind(this));
 
-    this.hideLoadMoreButton();
-  },
+    // this.hideLoadMoreButton();
 
-  hideLoadMoreButton: function () {
     setTimeout(function () {
       if (this.ending >= this.model.photos().length) {
-        $('.more').hide();
+        this.showViewMoreButton();
       }
-    }.bind(this), 0);
+    }.bind(this), 500);
+
+
   },
+
+  showViewMoreButton: function () {
+    $('.view-more').show();
+  },
+  // hideLoadMoreButton: function () {
+  //   setTimeout(function () {
+  //     if (this.ending >= this.model.photos().length) {
+  //       $('.more').hide();
+  //     }
+  //   }.bind(this), 0);
+  // },
 
   limitPhotos: function (beginning, ending) {
     return this.model.photos().slice(beginning, ending);
@@ -51,7 +73,7 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     this.$el.html(content);
     this.attachSubviews();
 
-    this.hideLoadMoreButton();
+    // this.hideLoadMoreButton();
 
     if (!TwinkieSetApp.Views.masonryGallery) {
       setTimeout(function () {
