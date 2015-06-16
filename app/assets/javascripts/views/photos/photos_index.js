@@ -19,6 +19,9 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     'sortstop': "saveOrds",
     'updateSort': "updateSort",
     // 'click .sort-photo-button': 'openSortOptions',
+    'click .hide-filenames': 'hideFilenames',
+    'click .show-filenames': 'showFilenames',
+
     'click .sort-a-z': 'sortByFilename',
     'click .sort-a-z-reverse': 'sortByFilenameReverse',
     'click .sort-upload': 'sortByUploadDate',
@@ -27,6 +30,18 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     'click .sort-date-taken-reverse': 'sortByDateTakenReverse',
     'click .sort-random': 'sortByRandom',
     // 'click .sort-photo-button': 'sortPhotos'
+  },
+
+  hideFilenames: function (event) {
+    $('.photo-filename').hide();
+    $('.hide-filenames').addClass('selected');
+    $('.show-filenames').removeClass('selected');
+  },
+
+  showFilenames: function (event) {
+    $('.photo-filename').show();
+    $('.hide-filenames').removeClass('selected');
+    $('.show-filenames').addClass('selected');
   },
 
   sortByFilename: function (event) {
