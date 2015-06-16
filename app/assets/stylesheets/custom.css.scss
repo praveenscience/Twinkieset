@@ -521,11 +521,17 @@ a:link {
       }
     }
     .sort-photo-button {
-      @include create-buttons(#e8e8e8, black)
+      @include create-buttons(#e8e8e8, black);
+      -webkit-transition: background 200ms; /* Safari */
+      transition: background 200ms;
+      transition-timing-function: linear;
+      &:hover {
+        background-color: #d8d8d8;
+      }
     }
 
     ul.sort-by-options {
-      // display: none;
+      display: none;
       font: 13px 'ProximaNova-Regular';
       position: absolute;
       top: 42px;
