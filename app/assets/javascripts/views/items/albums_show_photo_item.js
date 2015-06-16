@@ -11,12 +11,17 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
 
   events: {
     "click": "addSelectedPhoto",
+    "drop": "drop"
   },
 
   // addAllPhotos: function (event) {
   //   debugger;
   // },
 
+  drop: function (event, index) {
+    console.log('here');
+    this.$el.trigger('updateSort', [this.model, index]);
+  },
 
   addSelectedPhoto: function (event) {
     var photoItem = $(event.currentTarget);
