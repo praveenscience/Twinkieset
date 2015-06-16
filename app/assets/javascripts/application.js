@@ -17,6 +17,7 @@
 //= require cloudinary
 //= require composite_view
 //= require jquery.serializejson
+//= require jquery-ui/sortable
 //= require twinkie_set_app
 //= require masonry.pkgd
 //= require_tree ../templates
