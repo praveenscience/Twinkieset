@@ -606,8 +606,14 @@ a:link {
         height: 165px;
         width: 110px;
         background: #fff;
-
+        -webkit-transition: opacity 200ms; /* Safari */
+        transition: opacity 200ms;
+        transition-timing-function: linear;
+        &:hover {
+          opacity: 0.7;
+        }
         .photo-filename {
+          display: none;
           font: 9px 'ProximaNova-Regular';
           color: #666;
           position: absolute;

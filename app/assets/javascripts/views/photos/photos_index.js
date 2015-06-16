@@ -33,13 +33,13 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   },
 
   hideFilenames: function (event) {
-    $('.photo-filename').hide();
+    $('.photo-filename').fadeOut();
     $('.hide-filenames').addClass('selected');
     $('.show-filenames').removeClass('selected');
   },
 
   showFilenames: function (event) {
-    $('.photo-filename').show();
+    $('.photo-filename').fadeIn();
     $('.hide-filenames').removeClass('selected');
     $('.show-filenames').addClass('selected');
   },
