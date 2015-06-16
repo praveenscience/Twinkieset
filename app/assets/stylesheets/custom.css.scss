@@ -583,11 +583,15 @@ a:link {
         text-align: center;
         height: 165px;
         width: 110px;
+        background: #fff;
 
         .photo-filename {
+          font: 9px 'ProximaNova-Regular';
+          color: #666;
           position: absolute;
-          top: 0;
+          bottom: 4px;
           left: 0;
+          width: 100%;
         }
         .handle {
           font-size: 10px;
