@@ -502,6 +502,32 @@ a:link {
       @include create-buttons(#e8e8e8, black)
     }
 
+    ul.sort-by-options {
+      display: none;
+      font: 13px 'ProximaNova-Regular';
+      position: absolute;
+      top: 42px;
+      right: 35px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      list-style-type: none;
+      padding-left: 0;
+      z-index: 1;
+      -webkit-transition: background 200ms; /* Safari */
+      transition: background 200ms;
+      transition-timing-function: linear;
+
+      li {
+        padding: 4px 12px;
+
+        &:hover {
+          background: #f5f5f5;
+        }
+      }
+    }
+
 
 
     .photo-buttons-container {
