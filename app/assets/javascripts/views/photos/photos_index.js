@@ -14,7 +14,34 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     'click .new-photo-button': 'upload',
     "click .trash-photos-button": "showPhotoDeleteModal",
     'click .select-all': 'selectAllPhotos',
-    'click .clear-selection': 'clearSelection'
+    'click .clear-selection': 'clearSelection',
+    'sortstart': "addStyling", // add dragged class
+    'sortstop': "saveOrds",
+    'updateSort': "updateSort"
+  },
+
+  updateSort: function (event, droppedModel, position) {
+    console.log(droppedModel.attributes);
+    console.log("position " + position);
+    this.model.photos().remove(droppedModel, { silent: true});
+    this.model.photos().each(function (model, idx) {
+      var ordinal = idx;
+      if (idx >= position) {
+        ordinal += 1;
+      }
+      model.set('order', ordinal);
+      model.save();
+    });
+
+    droppedModel.set('order', position);
+    droppedModel.save();
+    this.model.photos().add(droppedModel, { silent: true });
+    this.model.photos().sort();
+
+  },
+
+  saveOrds: function (event, ui) {
+    ui.item.trigger('drop', ui.item.index()); // ui.item finds its own view
   },
 
   selectAllPhotos: function (event) {
