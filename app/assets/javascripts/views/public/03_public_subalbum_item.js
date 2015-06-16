@@ -1,6 +1,10 @@
 TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
   template: JST['public/03_public_subalbum_item'],
   tagName: 'li',
+  className: function () {
+    return 'subalbum-' + this.model.id;
+  },
+
   initialize: function (options) {
     this.user_id = options.user_id;
 
@@ -57,7 +61,7 @@ TwinkieSetApp.Views.PublicSubalbumItem = Backbone.View.extend({
     });
 
     this.$el.html(content);
-    this.$el.addClass('subalbum-' + this.model.id);
+    // this.$el.addClass('subalbum-' + this.model.id);
 
 
     return this;
