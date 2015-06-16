@@ -4,12 +4,11 @@ TwinkieSetApp.Views.PublicAlbumItem = Backbone.View.extend({
 
   initialize: function (options) {
     this.owner = options.owner;
-    // this.listenTo(this.model, "sync", this.render);
+    this.listenTo(this.owner, "sync", this.render);
   },
 
 
   render: function () {
-
     var content = this.template({
       album: this.model,
       owner: this.owner
@@ -18,9 +17,8 @@ TwinkieSetApp.Views.PublicAlbumItem = Backbone.View.extend({
     this.$el.html(content);
     var cover_image = this.model.get("cover_image_url");
 
-    this.$el.find('.album-image').css('background', 'url('+cover_image+')');
-    this.$el.find('.album-image').css('background-size', 'cover');
-    this.$el.find('.album-image').css('background-position', 'center center');
+    this.$el.find('.album-image').css('background-image', 'url('+cover_image+')');
+
     return this;
   }
 });
