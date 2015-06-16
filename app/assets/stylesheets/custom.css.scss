@@ -49,7 +49,7 @@
 }
 
 $teal: #1abc9c;
-$darkteal: #2a7869;
+$darkteal: #229f85;
 $darkred: #db0000;
 $blue: #3a99d9;
 
@@ -491,6 +491,12 @@ a:link {
     .new-photo-button {
       @include create-buttons($teal, #fff);
       margin-right: 3px;
+      -webkit-transition: background 200ms; /* Safari */
+      transition: background 200ms;
+      transition-timing-function: linear;
+      &:hover {
+        background-color: $darkteal;
+      }
     }
     .sort-photo-button {
       @include create-buttons(#e8e8e8, black)
