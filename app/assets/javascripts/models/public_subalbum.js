@@ -1,6 +1,6 @@
 TwinkieSetApp.Models.PublicSubalbum = Backbone.Model.extend({
   urlRoot: function () {
-    return "/api/" + this.userID + "/albums";
+    return "/api/users/" + this.userID + '/albums/' + this.albumID;
   },
 
   initialize: function (options) {
