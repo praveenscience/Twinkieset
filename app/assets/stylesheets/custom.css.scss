@@ -485,6 +485,28 @@ a:link {
       padding: 0px 20px 10px 20px;
     }
 
+    .file-name-options {
+      display: inline;
+      margin-left: 10px;
+      i {
+        font-size: 14px;
+        color: #666;
+        opacity: 0.5;
+        -webkit-transition: opacity 200ms; /* Safari */
+        transition: opacity 200ms;
+        transition-timing-function: linear;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .selected {
+        opacity: 1;
+      }
+    }
+
+
+
     .create-sort-buttons {
       float: right;
     }
