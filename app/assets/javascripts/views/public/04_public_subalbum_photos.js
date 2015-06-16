@@ -22,6 +22,7 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
         }
       }.bind(this));
     }.bind(this));
+    // TODO: possibly replace with callbacks from Kaminari demo
 
     $(window).resize();
   },
@@ -111,6 +112,7 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
         gutter: 6
       });
     }, 1000);
+    // TODO: put masonry logic in views' onRender functions
 
     // need this for clicking other pages
     TwinkieSetApp.Views.sizing();

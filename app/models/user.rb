@@ -50,4 +50,6 @@ class User < ActiveRecord::Base
     @password = password
     self.password_digest = BCrypt::Password.create(password)
   end
+
+  # TODO: extract to Authenticatable module
 end

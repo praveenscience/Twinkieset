@@ -3,14 +3,12 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
 
   initialize: function (options) {
     // model is album
-    this.userID = options.userID;
-    this.albumID = options.albumID;
     this.setID = options.setID;
     this.album_owner = options.album_owner;
-    this.listenTo(this.album_owner, "sync", this.findFirstSubalbum);
-    // this.listenTo(this.album, "add", this.addSubalbum);
-    // this.album.subalbums().each(this.addSubalbum.bind(this));
-
+    this.album = options.album;
+    this.listenTo(this.album, "sync", this.findFirstSubalbum);
+    this.listenTo(this.album.subalbums(), "add", this.addSubalbum);
+    this.album.subalbums().each(this.addSubalbum.bind(this));
   },
 
   events: {
@@ -29,14 +27,12 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
   },
 
   findFirstSubalbum: function () {
-    this.albums = this.album_owner.albums();
-    this.album = this.albums.get(this.albumID);
 
-    this.listenTo(this.album, "add", this.addSubalbum);
-    this.album.subalbums().each(this.addSubalbum.bind(this));
+    // this.listenTo(this.album, "add", this.addSubalbum);
+    // this.album.subalbums().each(this.addSubalbum.bind(this));
 
-    this.listenTo(this.album, "add", this.addNextSubalbum);
-    this.album.subalbums().each(this.addNextSubalbum.bind(this));
+    // this.listenTo(this.album, "add", this.addNextSubalbum);
+    // this.album.subalbums().each(this.addNextSubalbum.bind(this));
 
     if (this.setID === null) {
       // if we don't have a route to determine our subalbum, we'll return the first one
@@ -44,6 +40,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     }
 
     this.render();
+
 
     $('.list-of-subalbums li, .view-more li').removeClass("selected-subalbum");
     $('.list-of-subalbums li.subalbum-' + this.setID).addClass("selected-subalbum");
@@ -58,26 +55,34 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     var collectionID = this.album.id;
 
     // TODO find a way to get the owner from the album
-    Backbone.history.navigate('#'+ this.userID +'/collection/'+ this.albumID + '/set/'+ this.setID, { trigger: true });
+    // debugger;
+    var path = '#'+ this.album_owner.id +'/collection/'+ this.album.id + '/set/'+ this.setID;
+    Backbone.history.navigate(path);
+    // TODO: maybe window.address = ???
   },
 
   addSubalbum: function (subalbum) {
     var subview = new TwinkieSetApp.Views.PublicSubalbumItem({
       model: subalbum,
-      user_id: this.userID
+      user_id: this.album_owner.id
     });
     this.addSubview('.view-more', subview);
+
+    var subview = new TwinkieSetApp.Views.PublicSubalbumItem({
+      model: subalbum,
+      user_id: this.album_owner.id
+    });
     this.addSubview('.list-of-subalbums', subview);
   },
 
 
-  addNextSubalbum: function (subalbum) {
-    var subview = new TwinkieSetApp.Views.PublicSubalbumItem({
-      model: subalbum,
-      user_id: this.userID
-    });
-    this.addSubview('.view-more', subview);
-  },
+  // addNextSubalbum: function (subalbum) {
+  //   var subview = new TwinkieSetApp.Views.PublicSubalbumItem({
+  //     model: subalbum,
+  //     user_id: this.album_owner.id
+  //   });
+  //   this.addSubview('.view-more', subview);
+  // },
 
   // fixNav: function () {
   //   if
@@ -91,12 +96,10 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     // console.log(this.model);
     this.$el.html(content);
     var backgroundImage = this.album.get('cover_image_url');
-    this.$el.find('.hero').css('background', "url(" + backgroundImage + ")");
+    this.$el.find('.hero').css('background-image', "url(" + backgroundImage + ")");
     this.$el.find('.hero').css('background-size', "cover");
     this.$el.find('.hero').css('background-position', "center center");
-
-
-
+    //TODO: move last two lines to CSS
 
     $(window).resize(function () {
       var windowHeight = $(window).height();
