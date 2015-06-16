@@ -124,13 +124,19 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     }.bind(this));
   },
 
+
   successfulUpload: function (payload) {
     payload.forEach(function(image) {
+        var date_to_s = image.image_metadata.CreateDate.split("-")[0].split(" ").join(":").split(":");
+        var convertedDate = new Date(date_to_s[0], date_to_s[1], date_to_s[2], date_to_s[3], date_to_s[4], date_to_s[5]);
         var imageData = {
           "photo": {
             "image_url": image.url,
             "file_name": image.original_filename,
-            "subalbum_id": this.model.id
+            "subalbum_id": this.model.id,
+            "thumb_url": image.thumbnail_url,
+            "medium_url": image.eager[0].url,
+            "date_taken": convertedDate
           }
         };
         var photo = new TwinkieSetApp.Models.Photo(imageData);
