@@ -27,6 +27,6 @@ class Photo < ActiveRecord::Base
     source: :owner
   )
 
-
+  default_scope { order :order }
   validates :image_url, :order, :subalbum_id, presence: true
 end
