@@ -552,6 +552,11 @@ a:link {
         height: 165px;
         width: 110px;
 
+        .photo-filename {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
         .handle {
           font-size: 10px;
           position: absolute;
