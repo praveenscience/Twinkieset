@@ -142,8 +142,12 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
   successfulUpload: function (payload) {
     payload.forEach(function(image) {
-        var date_to_s = image.image_metadata.CreateDate.split("-")[0].split(" ").join(":").split(":");
-        var convertedDate = new Date(date_to_s[0], date_to_s[1], date_to_s[2], date_to_s[3], date_to_s[4], date_to_s[5]);
+        var convertedDate = new Date(Date.now());
+        if (image.image_metadata.CreateDate) {
+          date_to_s = image.image_metadata.CreateDate.split("-")[0].split(" ").join(":").split(":");
+          convertedDate = new Date(date_to_s[0], date_to_s[1], date_to_s[2], date_to_s[3], date_to_s[4], date_to_s[5]);
+        }
+
         var imageData = {
           "photo": {
             "image_url": image.url,
@@ -228,12 +232,12 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     }
 
     // use this to console log order
-    // var arr = [];
-    // this.subviews('.photo-items').each(function (photo, index, collection) {
-    //   // console.log(photo.model.get('created_at'));
-    //   arr.push(photo.model.get('created_at'));
-    // });
-    // console.log(arr);
+    var arr = [];
+    this.subviews('.photo-items').each(function (photo, index, collection) {
+      // console.log(photo.model.get('created_at'));
+      arr.push(photo.model.get('created_at'));
+    });
+    console.log(arr);
     // arr.splice(0);
   },
 
