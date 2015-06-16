@@ -16,10 +16,10 @@ class Api::PublicAlbumsController < ApplicationController
   private
     def must_be_logged_in
       if Album.find(params[:id]).password_digest
-        if current_album.id != params[:id]
+        if current_album.id.to_i != params[:id].to_i
           # render "Blah", status: :forbidden
+          # redirect_to new_album_session_url
             render text: "None!", status: :forbidden
-          return
         end
       end
 
