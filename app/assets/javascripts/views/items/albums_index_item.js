@@ -27,9 +27,9 @@ TwinkieSetApp.Views.AlbumsIndexView = Backbone.View.extend({
 
     var content = this.template({ album: this.model, cover_image: cover_image });
     this.$el.html(content);
-    this.$el.find('.cover_image_container').css('background', 'url('+cover_image+')');
-    this.$el.find('.cover_image_container').css('background-size', 'cover');
-    this.$el.find('.cover_image_container').css('background-position', 'center center');
+    this.$el.find('.cover-image-container').css('background', 'url('+cover_image+')');
+    this.$el.find('.cover-image-container').css('background-size', 'cover');
+    this.$el.find('.cover-image-container').css('background-position', 'center center');
 
     return this;
   }
