@@ -25,6 +25,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     'click .sort-upload-reverse': 'sortByUploadDateReverse',
     'click .sort-date-taken': 'sortByDateTaken',
     'click .sort-date-taken-reverse': 'sortByDateTakenReverse',
+    'click .sort-random': 'sortByRandom',
     // 'click .sort-photo-button': 'sortPhotos'
   },
 
@@ -50,6 +51,10 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
   sortByDateTakenReverse: function (event) {
     this.sortPhotos(event, 'date_taken', true);
+  },
+
+  sortByRandom: function (event) {
+    this.sortPhotos(event, 'random', true);
   },
 
 
@@ -174,7 +179,6 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   // },
 
   sortPhotos: function (event, value, reverse) {
-
     // delete this.subviews('.photo-items'); // remove the actual selector
     // $('.photo-items').html("");
 
@@ -182,6 +186,25 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
       photo.remove();
     });
 
+    if (value === 'random') {
+      var updatedCollection = [];
+      var lengthOfCollection = this.collection.length;
+      var randomized = this.shuffle(lengthOfCollection);
+      randomized.forEach(function(num) {
+        updatedCollection.push(this.collection.models[num]);
+      }.bind(this))
+
+      updatedCollection.forEach(function(photo, index, collection) {
+        this.addPhotoView(photo);
+      }.bind(this));
+
+      updatedCollection.forEach(function(photo, index, collection) {
+        photo.set('order', index);
+        photo.save();
+      });
+
+      return;
+    }
     // this.subviews('.photo-items').splice(0);
     // this.subviews('.photo-items').splice(0); // remove all photos there
     this.collection.comparator = value; // sort by id
@@ -205,15 +228,30 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     }
 
     // use this to console log order
-    var arr = [];
-    this.subviews('.photo-items').each(function (photo, index, collection) {
-      // console.log(photo.model.get('created_at'));
-      arr.push(photo.model.get('created_at'));
-    });
-    console.log(arr);
-    arr.splice(0);
+    // var arr = [];
+    // this.subviews('.photo-items').each(function (photo, index, collection) {
+    //   // console.log(photo.model.get('created_at'));
+    //   arr.push(photo.model.get('created_at'));
+    // });
+    // console.log(arr);
+    // arr.splice(0);
   },
 
+
+  // returns an random array of 0 to length
+  shuffle: function (length) {
+    var newArray = [];
+
+    while (newArray.length < length) {
+
+      var randomPos = Math.round(Math.random()*(length-1));
+      if (newArray.indexOf(randomPos) === -1) {
+        newArray.push(randomPos);
+      }
+    }
+
+    return newArray;
+  },
 
   addPhotoView: function (photo) {
     var subview = new TwinkieSetApp.Views.AlbumsShowPhotoItem({
