@@ -1,14 +1,18 @@
 class AlbumSessionsController < ApplicationController
   def create
+
     @album = Album.find_by_credentials(
       params[:album][:id],
       params[:album][:password]
     )
 
+
     if @album
       log_into_album!(@album)
       flash[:notice] = ["Successfully logged into album!"]
-      redirect_to album_sessions_url
+      redirect_to "##{params[:router]}"
+      # redirect_to album_sessions_url
+      # render json:
       # render text: "You have successfully logged in to #{@album.title}"
     else
       @album = Album.new
@@ -18,7 +22,8 @@ class AlbumSessionsController < ApplicationController
   end
 
   def new
-    @album = Album.new
+# fail
+    @album = Album.find(params[:album])
   end
 
   # def destroy
@@ -29,7 +34,6 @@ class AlbumSessionsController < ApplicationController
 
 
   def index
-
     render :index
   end
 
