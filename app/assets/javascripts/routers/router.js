@@ -10,8 +10,6 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     this.$rootEl = options.$rootEl;
     this.$rootElPublic = options.$rootElPublic;
     this.collection = new TwinkieSetApp.Collections.Albums();
-
-
   },
 
   index: function () {
@@ -63,8 +61,10 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     });
 
     album.fetch({
+      data: { "something": "something else"},
       error: function () {
-        window.location.href = "/album_sessions/new";
+        var path = window.location.hash.slice(1);
+        window.location.href = "/album_sessions/new?album=" + album_id + "&router=" + path;
       }
     });
 
