@@ -132,7 +132,6 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   // },
 
   sortPhotos: function () {
-
     // delete this.subviews('.photo-items'); // remove the actual selector
     // $('.photo-items').html("");
 
@@ -146,7 +145,8 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     this.collection.each(this.addPhotoView.bind(this));
 
     this.collection.each(function (photo, index, collection) {
-
+      photo.set('order', index);
+      photo.save();
     });
     console.log(this.collection.pluck('id'));
 
