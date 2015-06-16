@@ -28,5 +28,5 @@ class Photo < ActiveRecord::Base
   )
 
   default_scope { order :order }
-  validates :image_url, :order, :subalbum_id, presence: true
+  validates :image_url, :order, :subalbum_id, :thumb_url, :medium_url, :date_taken, presence: true
 end
