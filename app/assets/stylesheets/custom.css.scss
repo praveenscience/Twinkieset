@@ -617,7 +617,6 @@ a:link {
       -webkit-transition: background 200ms; /* Safari */
       transition: background 200ms;
       transition-timing-function: linear;
-
       &:hover {
         background: rgba(0, 0, 0, 0.3);
       }
@@ -824,6 +823,92 @@ ul.view-more {
 }
 
 
+
+/* public private album login */
+
+.private-album-login-main {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.private-album-login-main:after {
+  content: "";
+  display: block;
+  clear: both;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.private-album-login {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-top: -145px;
+  .title {
+    font: 25px 'ProximaNova-Semibold';
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.25em;
+  }
+  .owner {
+    font: 11px 'ProximaNova-Regular';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 32px;
+    margin-top: 11px;
+    line-height: 1.25em;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+  .info {
+    font: 11px 'ProximaNova-Regular';
+    color: #999;
+
+    .bold-guest {
+      font-family: 'ProximaNova-Bold';
+    }
+  }
+  input.guest-login-password {
+    padding: 9px 12px;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 450px;
+    font-size: 30px;
+    height: 60px;
+    color: black;
+
+  }
+  input.guest-login-enter {
+    margin-top: 10px;
+    padding: 15px 40px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font: 12px 'ProximaNova-Regular';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-transition: background 200ms; /* Safari */
+    transition: background 200ms;
+    transition-timing-function: linear;
+    &:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
 // /* for larger than 1040px */
 // @media screen and (min-width: 1040px) {
 //   /* 4 */
