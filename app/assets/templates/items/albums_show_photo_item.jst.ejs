@@ -2,6 +2,8 @@
   <i class="fa fa-arrows fa-sm"></i>
 </div>
 
-<div class="photo-filename"><%= photo.id %></div>
-
 <img class="image" src="<%= photo.get('image_url') %>">
+
+<div class="photo-filename">
+  <%= photo.get('file_name') %>
+</div>
