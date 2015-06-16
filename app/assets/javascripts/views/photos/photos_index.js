@@ -18,7 +18,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     'sortstart': "addStyling", // add dragged class
     'sortstop': "saveOrds",
     'updateSort': "updateSort",
-    // 'click .sort-photo-button': 'openSortOptions',
+    'click .sort-photo-button': 'openSortOptions',
     'click .hide-filenames': 'hideFilenames',
     'click .show-filenames': 'showFilenames',
 
@@ -200,7 +200,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   sortPhotos: function (event, value, reverse) {
     // delete this.subviews('.photo-items'); // remove the actual selector
     // $('.photo-items').html("");
-
+    $('.sort-by-options').hide(); // immediately hide the options list
     this.subviews('.photo-items').each(function (photo, index, collection) {
       photo.remove();
     });
