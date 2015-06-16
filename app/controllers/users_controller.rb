@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     if @user.save
       flash.now[:notice] = ['Created account!']
       log_in_user!(@user)
-      redirect_to root_url
+      redirect_to admin_url
     else
       flash.now[:errors] = @user.errors.full_messages
       render :new
