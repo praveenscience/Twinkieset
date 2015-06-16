@@ -23,6 +23,8 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     'click .sort-a-z-reverse': 'sortByFilenameReverse',
     'click .sort-upload': 'sortByUploadDate',
     'click .sort-upload-reverse': 'sortByUploadDateReverse',
+    'click .sort-date-taken': 'sortByDateTaken',
+    'click .sort-date-taken-reverse': 'sortByDateTakenReverse',
     // 'click .sort-photo-button': 'sortPhotos'
   },
 
@@ -40,6 +42,14 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
   sortByUploadDateReverse: function (event) {
     this.sortPhotos(event, 'created_at', true);
+  },
+
+  sortByDateTaken: function (event) {
+    this.sortPhotos(event, 'date_taken');
+  },
+
+  sortByDateTakenReverse: function (event) {
+    this.sortPhotos(event, 'date_taken', true);
   },
 
 
@@ -171,6 +181,8 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     this.subviews('.photo-items').each(function (photo, index, collection) {
       photo.remove();
     });
+
+    // this.subviews('.photo-items').splice(0);
     // this.subviews('.photo-items').splice(0); // remove all photos there
     this.collection.comparator = value; // sort by id
     this.collection.sort();
