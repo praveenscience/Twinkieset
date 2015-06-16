@@ -18,7 +18,12 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     'sortstart': "addStyling", // add dragged class
     'sortstop': "saveOrds",
     'updateSort': "updateSort",
-    'click .sort-photo-button': 'sortPhotos'
+    'click .sort-photo-button': 'openSortOptions'
+    // 'click .sort-photo-button': 'sortPhotos'
+  },
+
+  openSortOptions: function (event) {
+    $('.sort-by-options').toggle();
   },
 
   updateSort: function (event, droppedModel, position) {
