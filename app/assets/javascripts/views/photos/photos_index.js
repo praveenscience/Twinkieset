@@ -17,7 +17,8 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     'click .clear-selection': 'clearSelection',
     'sortstart': "addStyling", // add dragged class
     'sortstop': "saveOrds",
-    'updateSort': "updateSort"
+    'updateSort': "updateSort",
+    'click .sort-photo-button': 'sortPhotos'
   },
 
   updateSort: function (event, droppedModel, position) {
@@ -129,6 +130,28 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   //   this.collection.comparator = 'image_url';
   //   this.render();
   // },
+
+  sortPhotos: function () {
+
+    // delete this.subviews('.photo-items'); // remove the actual selector
+    // $('.photo-items').html("");
+
+    this.subviews('.photo-items').each(function (photo, index, collection) {
+      photo.remove();
+    });
+    // this.subviews('.photo-items').splice(0); // remove all photos there
+    this.collection.comparator = 'id'; // sort by id
+    this.collection.sort();
+
+    this.collection.each(this.addPhotoView.bind(this));
+
+    this.collection.each(function (photo, index, collection) {
+
+    });
+    console.log(this.collection.pluck('id'));
+
+  },
+
 
   addPhotoView: function (photo) {
     var subview = new TwinkieSetApp.Views.AlbumsShowPhotoItem({
