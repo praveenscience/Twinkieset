@@ -18,9 +18,30 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     'sortstart': "addStyling", // add dragged class
     'sortstop': "saveOrds",
     'updateSort': "updateSort",
-    'click .sort-photo-button': 'openSortOptions'
+    // 'click .sort-photo-button': 'openSortOptions',
+    'click .sort-a-z': 'sortByFilename',
+    'click .sort-a-z-reverse': 'sortByFilenameReverse',
+    'click .sort-upload': 'sortByUploadDate',
+    'click .sort-upload-reverse': 'sortByUploadDateReverse',
     // 'click .sort-photo-button': 'sortPhotos'
   },
+
+  sortByFilename: function (event) {
+    this.sortPhotos(event, 'file_name');
+  },
+
+  sortByFilenameReverse: function (event) {
+    this.sortPhotos(event, 'file_name', true);
+  },
+
+  sortByUploadDate: function (event) {
+    this.sortPhotos(event, 'created_at');
+  },
+
+  sortByUploadDateReverse: function (event) {
+    this.sortPhotos(event, 'created_at', true);
+  },
+
 
   openSortOptions: function (event) {
     $('.sort-by-options').toggle();
@@ -136,7 +157,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   //   this.render();
   // },
 
-  sortPhotos: function (event, reverse) {
+  sortPhotos: function (event, value, reverse) {
 
     // delete this.subviews('.photo-items'); // remove the actual selector
     // $('.photo-items').html("");
@@ -145,7 +166,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
       photo.remove();
     });
     // this.subviews('.photo-items').splice(0); // remove all photos there
-    this.collection.comparator = 'id'; // sort by id
+    this.collection.comparator = value; // sort by id
     this.collection.sort();
 
 
@@ -165,8 +186,14 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
       });
     }
 
-    console.log(this.collection.pluck('id'));
-
+    // use this to console log order
+    var arr = [];
+    this.subviews('.photo-items').each(function (photo, index, collection) {
+      // console.log(photo.model.get('created_at'));
+      arr.push(photo.model.get('created_at'));
+    });
+    console.log(arr);
+    arr.splice(0);
   },
 
 
