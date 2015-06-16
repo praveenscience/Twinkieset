@@ -121,11 +121,12 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     });
     this.$el.html(content);
     this.attachSubviews();
+    this.onRender();
     return this;
   },
 
   onRender: function(){
-    this.delegateEvents();
+    $('.photo-items').sortable();
   },
 
 });
