@@ -38,9 +38,7 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
     } else {
       cover_image = "http://images.karenling.net/2014/06/diane_angel_gomez_nadine_jose_048.jpg";
     }
-    this.$el.find('.collection-cover-image').css('background', 'url('+cover_image+')');
-    this.$el.find('.collection-cover-image').css('background-size', 'cover');
-    this.$el.find('.collection-cover-image').css('background-position', 'center center');
+    this.$el.find('.collection-cover-image').css('background-image', 'url('+cover_image+')');
 
     return this;
   }
