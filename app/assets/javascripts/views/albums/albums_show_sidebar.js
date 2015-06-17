@@ -86,6 +86,26 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
 
   onRender: function(){
     $('.album-show-subalbums').sortable();
+
+    if ($('#album-status').val() === 'Draft') {
+      $('.status-published').removeClass('selected');
+      $('.status-draft').addClass('selected');
+    } else {
+      $('.status-published').addClass('selected');
+      $('.status-draft').removeClass('selected');
+
+    }
+    $('.status-published').on('click', function () {
+      $('#album-status').val("Published");
+      $('.status-published').addClass('selected');
+      $('.status-draft').removeClass('selected');
+    }.bind(this));
+
+    $('.status-draft').on('click', function () {
+      $('#album-status').val("Draft");
+      $('.status-published').removeClass('selected');
+      $('.status-draft').addClass('selected');
+    })
   },
 
 });
