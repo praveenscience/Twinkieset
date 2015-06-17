@@ -24,6 +24,7 @@ class Subalbum < ActiveRecord::Base
     dependent: :destroy
   )
 
+  default_scope { order :order }
   validates :title, :order, :album_id, presence: true
   validates :title, uniqueness: { scope: :album_id,
     message: "This album already has a subalbum of the same name" }
