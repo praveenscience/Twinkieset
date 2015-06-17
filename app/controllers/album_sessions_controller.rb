@@ -15,9 +15,8 @@ class AlbumSessionsController < ApplicationController
       # render json:
       # render text: "You have successfully logged in to #{@album.title}"
     else
-      @album = Album.new
       flash.now[:errors] = ["Invalid password"]
-      render :new
+      redirect_to :back
     end
   end
 
