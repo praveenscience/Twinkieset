@@ -455,6 +455,13 @@ a:link {
     text-align: center;
   }
 
+  .form-container.delete-subalbum-form {
+    height: 190px;
+    width: 600px;
+    margin-top: -95px;
+    margin-left: -300px;
+    text-align: center;
+  }
   .form-container.delete-photos-form {
     height: 166px;
     width: 600px;
@@ -523,6 +530,16 @@ a:link {
       font: 18px 'ProximaNova-Semibold';
       text-transform: uppercase;
       padding-bottom: 5px;
+    }
+
+    .edit-album-button {
+      color: $teal;
+      -webkit-transition: color 600ms; /* Safari */
+      transition: color 600ms;
+      transition-timing-function: linear;
+      &:hover {
+        color: $darkteal;
+      }
     }
 
     .event_date, .status {
