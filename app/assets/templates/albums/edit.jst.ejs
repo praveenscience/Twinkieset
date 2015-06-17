@@ -1,16 +1,35 @@
-<div class="form-container album-form">
+<div class="form-container edit-album-form">
 
   <div class="title">Edit Collection</div>
 
   <form class="form-group">
+    <input id="album-status" class="form-control" type="hidden" name="album[status]" value="<%= album.get('status') %>">
+
     <label for="album-title">Collection Name</label>
     <input id="album-title" class="form-control" type="text" name="album[title]" value="<%= album.get('title') %>">
 
     <label for="album-event_date">Event Date</label>
     <input id="album-event_date" class="form-control" type="text" name="album[event_date]" value="<%= album.get('event_date')%>">
 
-    <button class="cancel-button cancel-edit-album">Cancel</button>
-    <input type="submit" class="submit-button submit-edit-album" value="Save">
+    <div class="edit-container group">
+      <div class="left-edit-form group">
+        <label for="album-status">Status</label>
+        <div class="status-options group">
+          <div class="status-published">Published</div> <div class="status-draft">Draft</div>
+        </div>
+      </div>
+
+      <div class="right-edit-form">
+        <label for="album-password">Password</label>
+        <input id="album-password" class="form-control" type="password" name="album[password]" value="">
+        <div class="optional-password">Leave password blank for public access of album.</div>
+      </div>
+    </div>
+
+    <div class="save-cancel group">
+      <button class="cancel-button cancel-edit-album">Cancel</button>
+      <input type="submit" class="submit-button submit-edit-album" value="Save">
+    </div>
   </form>
 
 
