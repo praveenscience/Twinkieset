@@ -42,6 +42,7 @@ class Album < ActiveRecord::Base
     foreign_key: 'cover_image_id'
   )
 
+  default_scope { order('event_date DESC') }
   validates :title, :event_date, :status, :user_id, :album_session_token, presence: true
   validates :title, uniqueness: { scope: :user_id,
     message: "You already have an album of the same name" }
