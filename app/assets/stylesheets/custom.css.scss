@@ -120,6 +120,7 @@ a:link {
 
   nav {
     margin-top: 40px;
+
     ul.options {
       list-style-type: none;
       padding-left: 0;
@@ -338,6 +339,12 @@ a:link {
   border-radius: 0;
   height: 60px;
   border-bottom: 1px solid #eeeeee;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 
   .albums-title {
     font: 14px 'ProximaNova-Semibold';
@@ -351,6 +358,9 @@ a:link {
   }
 }
 
+.main-container, .index-main {
+  margin-top: 60px;
+}
 .albums {
   margin: 30px auto;
 }
@@ -374,6 +384,7 @@ a:link {
   bottom: 0px;
   left: 0px;
   right: 0px;
+  z-index: 2;
 
 
   .form-container {
@@ -599,6 +610,11 @@ a:link {
   .album-show-sidebar {
     border-right: 1px solid #eee;
     padding-right: 30px;
+    width: 19%;
+    position: fixed;
+    left: 2%;
+    top: 100px;
+    bottom: 0px;
 
     .title {
       font: 18px 'ProximaNova-Semibold';
@@ -707,14 +723,40 @@ a:link {
       width: 100%;
       text-align: left;
     }
+
+    .view-album {
+      @include create-buttons(#e8e8e8, black);
+      border: 0px;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      margin-left: -50px;
+      -webkit-transition: opacity 200ms; /* Safari */
+      transition: opacity 200ms;
+      transition-timing-function: linear;
+
+      a:link, a:visited, a:active {
+        color: #000;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
   .album-show-items {
-    left: 50px;
+    position: absolute;
+    left: Calc(20% + 50px);
+    width: Calc(100% - 20% - 100px);
 
     .title {
       font: 26px 'ProximaNova-Regular';
       border-bottom: 1px solid #eee;
-      padding: 0px 20px 10px 20px;
+      padding: 40px 20px 10px 20px;
+      position: fixed;
+      top: 60px;
+      background: white;
+      width: Calc(100% - 20% - 100px);
+      z-index: 2;
     }
 
     .file-name-options {
@@ -816,8 +858,8 @@ a:link {
       display: none;
       font: 13px 'ProximaNova-Regular';
       position: absolute;
-      top: 42px;
-      right: 35px;
+      top: 82px;
+      right: 20px;
       background: #fff;
       border: 1px solid #eee;
       border-bottom-left-radius: 5px;
@@ -842,10 +884,15 @@ a:link {
 
 
     .photo-buttons-container {
-      width: 100%;
-      float: left;
       display: none;
       padding: 0 20px;
+      position: fixed;
+      top: 143px;
+      padding-bottom: 5px;
+      background: #fff;
+      width: Calc(100% - 20% - 100px);
+      z-index: 1;
+
     }
 
     .photo-selection-options {
@@ -1152,7 +1199,7 @@ ul.view-more {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  z-index: 1;
+  z-index: 2;
   color: #555;
 
   /* only for admin */
@@ -1294,6 +1341,9 @@ ul.view-more {
   }
 }
 
+ul.photo-items {
+  margin-top: 60px;
+}
 // /* for larger than 1040px */
 // @media screen and (min-width: 1040px) {
 //   /* 4 */
