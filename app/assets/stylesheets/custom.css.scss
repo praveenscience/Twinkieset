@@ -890,6 +890,7 @@ a:link {
           bottom: 4px;
           left: 0;
           width: 100%;
+          overflow: hidden;
         }
         .handle {
           font-size: 10px;
@@ -1134,6 +1135,18 @@ ul.view-more {
   right: 0px;
   z-index: 1;
   color: #555;
+
+  /* only for admin */
+
+  .file-name, .gallery-counter {
+    position: absolute;
+    color: #fff;
+    font: 11px 'ProximaNova-Regular';
+    bottom: 30px;
+  }
+
+  /* end */
+
 
   .close-gallery-modal {
     font: 20px 'ProximaNova-Regular';
