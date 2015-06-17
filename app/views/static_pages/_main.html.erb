@@ -1,0 +1,28 @@
+<div class="container-fluid splash">
+
+  <nav>
+    <img src="https://dl.dropboxusercontent.com/u/2330299/capstone/logo.png" height="18px" class="pull-left">
+
+    <ul class="options pull-right">
+      <li><%= render 'guest_login' %></li>
+      <li>Examples</li>
+
+      <% if logged_in? %>
+        <li class="open-dash">Open Dashboard</li>
+      <% else %>
+        <li class="open-login">Login</li>
+        <li class="open-signup">Sign Up</li>
+      <% end %>
+    </ul>
+  </nav>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="landing-title">BEAUTIFUL CLIENT PHOTO GALLERIES</h1>
+      <h2 class="tag-line">The better way for modern photographers to share, deliver, proof and sell online.</h2>
+      <!-- <div class="get-started">Register</div> -->
+      <div class="get-started-guest"><%= render 'guest_login' %></div>
+      <div class="check-out-demo">Register for a free account or try out the guest demo.</div>
+    </div>
+  </div>
+</div>
