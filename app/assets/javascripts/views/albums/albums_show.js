@@ -34,6 +34,7 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
       model: subalbum,
       collection: subalbum.photos()
     });
+
     subalbum.fetch();
     this.subAlbumViewCreated = true;
     // $('.album-show-items').html(photoIndexView.render().$el);
@@ -54,7 +55,13 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
     this.$el.html(content);
     this.attachSubviews();
     this.attachPhotoIndex();
+    this.onRender();
     return this;
+  },
+
+  onRender: function () {
+    var subalbumID = Backbone.history.getFragment()[Backbone.history.getFragment().length-1];
+    $('.subalbum-' + subalbumID).addClass('selected');
   }
 
 });
