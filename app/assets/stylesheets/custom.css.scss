@@ -60,6 +60,7 @@ $blue: #3a99d9;
   color: $color;
   padding: 7px 12px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 @mixin grey-border {
@@ -539,13 +540,21 @@ a:link {
 .album_index_item {
   float: left;
 
+    &:hover .delete-album-button {
+      opacity: 1;
+      -webkit-transition: opacity 600ms; /* Safari */
+      transition: opacity 600ms;
+      transition-timing-function: linear;
+
+
+    }
     a {
       color: #333;
       text-decoration: none;
     }
 
     div:hover, .title:hover {
-      opacity: 0.9;
+      opacity: 0.8;
     }
     .title {
       font: 14px 'ProximaNova-Semibold';
@@ -556,6 +565,10 @@ a:link {
     .delete-album-button {
       float: right;
       color: $teal;
+      opacity: 0;
+      -webkit-transition: opacity 0ms; /* Safari */
+      transition: opacity 0ms;
+      transition-timing-function: linear;
 
     }
 
@@ -574,6 +587,9 @@ a:link {
     overflow: hidden;
     background-size: cover;
     background-position: center center;
+    -webkit-transition: opacity 200ms; /* Safari */
+    transition: opacity 200ms;
+    transition-timing-function: linear;
   }
 }
 
@@ -643,6 +659,7 @@ a:link {
       font: 15px 'ProximaNova-Regular';
       color: #888;
       padding: 10px 14px;
+      cursor: pointer;
       -webkit-transition: background 200ms, color 200ms; /* Safari */
       transition: background 200ms, color 200ms;
       transition-timing-function: linear;
@@ -710,6 +727,7 @@ a:link {
         -webkit-transition: opacity 1ms; /* Safari */
         transition: opacity 1ms;
         transition-timing-function: linear;
+        cursor: pointer;
 
         &:hover {
           opacity: 1;
@@ -813,6 +831,7 @@ a:link {
 
       li {
         padding: 4px 12px;
+        cursor: pointer;
 
         &:hover {
           background: #f5f5f5;
