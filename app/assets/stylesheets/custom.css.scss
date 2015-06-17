@@ -593,9 +593,33 @@ a:link {
         background: #f8f8f8;
         color: #333;
       }
+      &:hover .delete-subalbum-button, &:hover .edit-subalbum-button {
+        opacity: 1;
+      }
 
       .sorting-arrows {
         padding-right: 10px;
+      }
+
+
+      .delete-subalbum-button, .edit-subalbum-button {
+        opacity: 0;
+        color: $teal;
+        -webkit-transition: opacity 600ms, color 200ms; /* Safari */
+        transition: opacity 600ms, color 200ms;
+        transition-timing-function: linear;
+
+        &:hover {
+          color: $darkteal;
+        }
+      }
+      .delete-subalbum-button {
+
+      }
+
+      .edit-subalbum-button {
+        margin-right: 5px;
+
       }
 
     }
