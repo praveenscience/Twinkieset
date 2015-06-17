@@ -16,6 +16,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     "click .trash-photos-button": "showPhotoDeleteModal",
     'click .select-all': 'selectAllPhotos',
     'click .clear-selection': 'clearSelection',
+    'click .view-photos-button': 'galleryModal',
     // 'sortstart': "addStyling", // add dragged class
     'sortstop': "saveOrds",
     'updateSort': "updateSort",
@@ -35,6 +36,15 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     // 'mouseover .show-filenames': 'showFilenameTip',
     // 'mouseout .hide-filenames, .show-filenames': 'hideAllTip'
     // 'click .sort-photo-button': 'sortPhotos'
+  },
+
+  galleryModal: function (event) {
+    var photoModal = new TwinkieSetApp.Views.PhotosModal({
+      model: TwinkieSetApp.selectedPhotosArr[0],
+      collection: TwinkieSetApp.selectedPhotosArr,
+      position: 0
+    });
+    $('body').append(photoModal.render().$el);
   },
 
   hideFilenameTip: function (event) {
