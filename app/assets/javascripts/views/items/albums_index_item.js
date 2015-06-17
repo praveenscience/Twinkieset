@@ -18,12 +18,8 @@ TwinkieSetApp.Views.AlbumsIndexView = Backbone.View.extend({
   },
 
   render: function () {
-    var cover_image;
-    if (this.model.get('cover_image_med')) {
-      cover_image = this.model.get('cover_image_med');
-    } else {
-      cover_image = "http://images.karenling.net/2014/06/diane_angel_gomez_nadine_jose_048.jpg";
-    }
+    var cover_image = this.model.get('cover_image_med');
+
 
     var content = this.template({ album: this.model, cover_image: cover_image });
     this.$el.html(content);
