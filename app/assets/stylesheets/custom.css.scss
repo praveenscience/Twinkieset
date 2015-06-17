@@ -441,6 +441,64 @@ a:link {
     margin-top: -173px;
     margin-left: -300px;
   }
+
+  .form-container.edit-album-form {
+    height: 465px;
+    width: 600px;
+    margin-top: -232px;
+    margin-left: -300px;
+
+
+    input {
+      margin-bottom: 25px;
+    }
+
+    .edit-container {
+
+    }
+
+    .left-edit-form {
+      float: left;
+      vertical-align: top;
+
+      .status-options {
+        margin-top: 10px;
+        .status-draft, .status-published {
+          float: left;
+          font-family: 'ProximaNova-Regular';
+          font-size: 14px;
+          background-color: #e8e8e8;
+          color: black;
+          padding: 15px 20px 14px 20px;
+          letter-spacing: 1px;
+          opacity: 0.3;
+
+
+        }
+
+        .status-draft.selected, .status-published.selected {
+          opacity: 1;
+        }
+        .status-draft {
+          margin-left: 5px;
+        }
+
+      }
+    }
+
+    .right-edit-form {
+      float: right;
+      #album-password {
+        width: 290px;
+        margin-bottom: 5px;
+      }
+      .optional-password {
+        font: 11px 'ProximaNova-Regular';
+        color: #999;
+      }
+    }
+
+  }
   .form-container.subalbum-form {
     height: 250px;
     width: 600px;
