@@ -293,7 +293,8 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   addPhotoView: function (photo) {
     $('.no-photos').hide();
     var subview = new TwinkieSetApp.Views.AlbumsShowPhotoItem({
-      model: photo
+      model: photo,
+      album: this.model._album
     });
     this.addSubview('.photo-items', subview);
   },
