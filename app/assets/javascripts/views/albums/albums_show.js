@@ -35,6 +35,8 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
       collection: subalbum.photos()
     });
 
+    var path = '#collection/' + this.model.id + '/set/' + subalbum.id;
+    Backbone.history.navigate(path);
     subalbum.fetch();
     this.subAlbumViewCreated = true;
     // $('.album-show-items').html(photoIndexView.render().$el);
