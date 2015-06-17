@@ -15,6 +15,8 @@
 #
 
 class Album < ActiveRecord::Base
+
+  STATUS_TYPES = %w(Draft Published)
   belongs_to(
     :owner,
     class_name: 'User',
@@ -44,6 +46,7 @@ class Album < ActiveRecord::Base
   validates :title, uniqueness: { scope: :user_id,
     message: "You already have an album of the same name" }
   validates :album_session_token, uniqueness: true
+  validates :status, inclusion: STATUS_TYPES
 
   after_initialize :ensure_album_session_token
   after_create :create_highlights_subalbum
