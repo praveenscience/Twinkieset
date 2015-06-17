@@ -60,7 +60,7 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
       return;
     }
     var photoID = TwinkieSetApp.selectedPhotosArr[0].id;
-    this.album.save({ "cover_image_id": photoID }, { patch: true });
+    this.album.save({"album": { "cover_image_id": photoID  } }, { patch: true });
   },
 
   render: function () {
