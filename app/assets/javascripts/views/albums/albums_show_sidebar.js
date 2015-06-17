@@ -17,8 +17,7 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
 
   openEditForm: function (event) {
     var subalbumForm = new TwinkieSetApp.Views.EditForm({
-      model: this.model,
-      collection: this.model.subalbums()
+      model: this.model
     });
     $('body').append(subalbumForm.render().$el);
   },
