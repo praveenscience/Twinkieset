@@ -12,6 +12,7 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
   },
 
   hideForm: function () {
+    event.preventDefault();
     this.$el.hide();
   },
 
@@ -19,7 +20,6 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
     event.preventDefault();
     var attrs = $(event.currentTarget).serializeJSON();
     var newAlbum = new TwinkieSetApp.Models.Album();
-
     newAlbum.save(attrs, {
       success: function () {
         this.collection.add(newAlbum);
