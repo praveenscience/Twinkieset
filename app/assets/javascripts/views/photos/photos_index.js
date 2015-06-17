@@ -16,7 +16,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     "click .trash-photos-button": "showPhotoDeleteModal",
     'click .select-all': 'selectAllPhotos',
     'click .clear-selection': 'clearSelection',
-    'sortstart': "addStyling", // add dragged class
+    // 'sortstart': "addStyling", // add dragged class
     'sortstop': "saveOrds",
     'updateSort': "updateSort",
     'click .sort-photo-button': 'openSortOptions',
