@@ -8,10 +8,16 @@
       <li>Examples</li>
 
       <% if logged_in? %>
-        <li class="open-dash">Open Dashboard</li>
+        <li class="open-dash">
+          <a href="/admin">Open Dashboard</a>
+        </li>
       <% else %>
-        <li class="open-login">Login</li>
-        <li class="open-signup">Sign Up</li>
+        <li class="open-login">
+          <%= link_to 'Login', new_session_url %>
+        </li>
+        <li class="open-signup">
+          <%= link_to 'Sign Up', new_user_url %>
+        </li>
       <% end %>
     </ul>
   </nav>
