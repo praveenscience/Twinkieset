@@ -11,7 +11,14 @@ TwinkieSetApp.Views.AlbumsShowSubalbumItem = Backbone.View.extend({
   },
 
   events: {
-    'click': 'changeSubalbums'
+    'click': 'changeSubalbums',
+    'dropSubalbum': 'dropSubalbum'
+  },
+
+
+  dropSubalbum: function (event, index) {
+    console.log('hereeee');
+    this.$el.trigger('updateSort', [this.model, index]);
   },
 
   changeSubalbums: function (event) {
