@@ -512,12 +512,51 @@ a:link {
         &:hover {
           opacity: 1;
         }
+
       }
       .selected {
         opacity: 1;
       }
     }
 
+    .hover-tip {
+      display: none;
+
+      .point {
+      	width: 0;
+      	height: 0;
+      	border-left: 5px solid transparent;
+      	border-right: 5px solid transparent;
+      	border-bottom: 5px solid black;
+        margin: auto auto;
+      }
+
+      .content {
+        background: black;
+        font-size: 11px;
+        padding: 3px 5px;
+        border-radius: 3px;
+        color: #fff;
+      }
+
+    }
+    .hover-tip.selected {
+      display: inline-block;
+    }
+
+
+    .hide-filename-tip {
+      position: absolute;
+      top: 25px;
+      left: 131px;
+    }
+
+    .show-filename-tip {
+      position: absolute;
+      top: 25px;
+      left: 150px;
+
+    }
 
 
     .create-sort-buttons {
@@ -1001,6 +1040,7 @@ ul.view-more {
     }
   }
 }
+
 // /* for larger than 1040px */
 // @media screen and (min-width: 1040px) {
 //   /* 4 */
