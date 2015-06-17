@@ -3,15 +3,24 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
 
   initialize: function () {
     this.listenTo(this.model, "sync", this.render);
-
     this.listenTo(this.model.subalbums(), "add", this.addSubAlbumView);
     this.model.subalbums().each(this.addSubAlbumView.bind(this));
+    this.listenTo(this.model.subalbums(), 'remove', this.removeSubAlbumView)
   },
 
   events: {
     'click .new-set-button': 'openSubalbumForm',
     'sortstop': "saveOrdsSubalbums",
     'updateSort': "updateSortSubalbums",
+    'click .edit-album-button': 'openEditForm'
+  },
+
+  openEditForm: function (event) {
+    var subalbumForm = new TwinkieSetApp.Views.EditForm({
+      model: this.model,
+      collection: this.model.subalbums()
+    });
+    $('body').append(subalbumForm.render().$el);
   },
 
   updateSortSubalbums: function (event, droppedModel, position) {
@@ -40,10 +49,15 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
 
   openSubalbumForm: function () {
     var subalbumForm = new TwinkieSetApp.Views.SubalbumForm({
-      model: this.model,
-      collection: this.model.subalbums()
+      header: "New Photo Set",
+      album: this.model,
+      subalbum: new TwinkieSetApp.Models.Subalbum()
     });
     $('body').append(subalbumForm.render().$el);
+  },
+
+  removeSubAlbumView: function (subalbum) {
+    this.removeModelSubview('.album-show-subalbums', subalbum);
   },
 
   addSubAlbumView: function (subalbum) {
