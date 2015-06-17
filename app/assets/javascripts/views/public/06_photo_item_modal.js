@@ -32,25 +32,28 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
   displayNextImage: function (event) {
     if (!this.rendering) {
       this.rendering = true;
-      this.displayImage("next");
+      this.displayImage(1);
     }
   },
 
   displayPreviousImage: function (event) {
     if (!this.rendering) {
       this.rendering = true;
-      this.displayImage("previous");
+      this.displayImage(-1);
     }
   },
 
-  displayImage: function (direction) {
+  displayImage: function (difference) {
+    if (!this.rendering) {
 
-    var difference = 0;
-    if (direction === "next") {
-      difference = 1;
-    } else if (direction === "previous") {
-      difference = -1;
     }
+    // var difference = 0;
+    // if (direction === "next") {
+    //   difference = 1;
+    // } else if (direction === "previous") {
+    //   difference = -1;
+    // }
+    this.rendering = true;
     var currentImage = this.model;
     var nextImage = this.model;
     this.collection.forEach(function(photo, idx, allPhotos) {
@@ -76,6 +79,7 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     });
 
     this.remove();
+    this.$el.html("");
     photoItem.displayModal();
   },
 
