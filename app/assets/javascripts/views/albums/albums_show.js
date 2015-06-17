@@ -62,7 +62,7 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
   },
 
   onRender: function () {
-    var subalbumID = Backbone.history.getFragment()[Backbone.history.getFragment().length-1];
+    var subalbumID = Backbone.history.getFragment().split("/")[3];
     $('.subalbum-' + subalbumID).addClass('selected');
   }
 
