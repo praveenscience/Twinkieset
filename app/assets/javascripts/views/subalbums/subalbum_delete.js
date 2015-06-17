@@ -18,6 +18,8 @@ TwinkieSetApp.Views.DeleteSubalbum = Backbone.View.extend({
   deleteSubalbum: function () {
     this.remove();
     this.subalbum.destroy();
+    var path = "#collection/" + Backbone.history.getFragment().split("/")[1];
+    Backbone.history.navigate(path, { trigger: true });
   },
 
   render: function () {
