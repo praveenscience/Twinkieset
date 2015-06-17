@@ -19,16 +19,13 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
   editAlbum: function (event) {
     event.preventDefault();
     var attrs = $('form').serializeJSON();
-    var newAlbum = this.model;
-    newAlbum.save(attrs, {
+    var editAlbum = this.model;
+    editAlbum.save(attrs, {
       success: function () {
-        this.collection.add(newAlbum);
-        newAlbum.fetch(); // do this to ensure string_date is rendered
+        this.collection.add(editAlbum);
+        editAlbum.fetch(); // do this to ensure string_date is rendered
         this.$el.hide();
       }.bind(this),
-      error: function (args) {
-        console.log('error');
-      }
     });
   },
 
