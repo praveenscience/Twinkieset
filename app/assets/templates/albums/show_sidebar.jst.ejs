@@ -9,3 +9,12 @@
 <ul class="album-show-subalbums"></ul>
 
 <button class="new-set-button"><i class="fa fa-plus"></i>&nbsp;&nbsp; Add Set</button>
+
+
+
+
+<button class="view-album">
+  <a href="<%= "/#" + CURRENT_USER.id + '/collection/' + album.id %>">
+    <i class="fa fa-eye"></i> View
+  </a>
+</button>
