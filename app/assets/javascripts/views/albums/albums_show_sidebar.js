@@ -73,8 +73,8 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
     this.$el.html(content);
     this.attachSubviews();
 
-    if (this.model.get('cover_image_url')) {
-      cover_image = this.model.get('cover_image_url');
+    if (this.model.get('cover_image_med')) {
+      cover_image = this.model.get('cover_image_med');
     } else {
       cover_image = "http://images.karenling.net/2014/06/diane_angel_gomez_nadine_jose_048.jpg";
     }
