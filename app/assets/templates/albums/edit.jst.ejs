@@ -1,0 +1,17 @@
+<div class="form-container album-form">
+
+  <div class="title">Edit Collection</div>
+
+  <form class="form-group">
+    <label for="album-title">Collection Name</label>
+    <input id="album-title" class="form-control" type="text" name="album[title]" value="<%= album.get('title') %>">
+
+    <label for="album-event_date">Event Date</label>
+    <input id="album-event_date" class="form-control" type="text" name="album[event_date]" value="<%= album.get('event_date')%>">
+
+    <button class="cancel-button cancel-edit-album">Cancel</button>
+    <input type="submit" class="submit-button submit-edit-album" value="Save">
+  </form>
+
+
+</div>
