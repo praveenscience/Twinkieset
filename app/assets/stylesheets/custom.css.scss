@@ -716,6 +716,15 @@ a:link {
 
   }
 
+  .no-photos {
+    font: 18px 'ProximaNova-Semibold';
+    text-align: center;
+    .new-photo-button {
+      position: relative;
+      top: 10px;
+    }
+  }
+
 }
 
 
