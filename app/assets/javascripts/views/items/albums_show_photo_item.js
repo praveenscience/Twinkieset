@@ -6,7 +6,8 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
   initialize: function (options) {
     // this.TwinkieSetApp.selectedPhotosArr = options.TwinkieSetApp.selectedPhotosArr;
     this.listenTo(this.model, "sync", this.render);
-    // this.listenTo(this.model, "selectAllPhotos", this.addAllPhotos);
+    this.album = options.album;
+        // this.listenTo(this.model, "selectAllPhotos", this.addAllPhotos);
   },
 
   events: {
@@ -59,10 +60,7 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
       return;
     }
     var photoID = TwinkieSetApp.selectedPhotosArr[0].id;
-    var album = this.model._subalbum._album;
-
-    album.save({ "cover_image_id": photoID }, { patch: true });
-
+    this.album.save({ "cover_image_id": photoID }, { patch: true });
   },
 
   render: function () {
