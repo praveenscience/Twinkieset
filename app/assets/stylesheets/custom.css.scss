@@ -105,6 +105,99 @@ a:link {
 .form-control:-ms-input-placeholder { color: #a9a9a9; }
 
 
+/* splash/landing */
+
+.splash {
+  text-align: center;
+  padding: 0 40px;
+  background-image: url('http://d3po2y9ogyd5ah.cloudfront.net/images/site/sales/index-intro-bg-v2.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+
+  nav {
+    margin-top: 40px;
+    ul.options {
+      list-style-type: none;
+      padding-left: 0;
+      font: 13px 'ProximaNova-Semibold';
+      text-transform: uppercase;
+      letter-spacing: 1.25px;
+
+      li {
+        display: inline-block;
+        margin: 0 0 0 30px;
+        -webkit-transition: color 200ms; /* Safari */
+        transition: color 200ms;
+        transition-timing-function: linear;
+
+        &:hover {
+          color: #999;
+        }
+      }
+      li.open-dash, li.open-login, li.open-signup {
+        border: 1px solid #111;
+        padding: 6px 18px;
+      }
+      li.open-signup {
+        margin-left: -5px;
+        border-left: 0;
+      }
+      li input.guest-login-button {
+        border: 0;
+        background: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1.25px;
+
+        &:focus{
+          outline: 0;
+        }
+      }
+    }
+  }
+  .landing-title {
+    font: 34px 'ProximaNova-Bold';
+    color: #111;
+    letter-spacing: 2px;
+    margin-top: 80px;
+  }
+  .tag-line {
+    font: 17px 'Adobe-Garamond-Pro', 'Garamond', 'Georgia', serif;
+    color: #333;
+  }
+  // .get-started {
+  //   @include create-buttons($teal, #fff);
+  //   padding: 10px 50px;
+  //   text-transform: uppercase;
+  //   display: inline-block;
+  //   margin: 15px 0 7px 0;
+  //   &:hover {
+  //     background: $darkteal;
+  //   }
+  //
+  // }
+  .get-started-guest {
+    display: inline-block;
+    .guest-login-button {
+      @include create-buttons($teal, #fff);
+      padding: 10px 50px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin: 15px 0 7px 0;
+      border: 0;
+      &:hover {
+        background: $darkteal;
+      }
+    }
+  }
+  .check-out-demo {
+    font: 12px 'ProximaNova-Regular';
+    line-height: 17px;
+    color: #999;
+  }
+}
 
 /* ALBUM GUEST VIEW */
 
