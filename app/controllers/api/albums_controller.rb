@@ -47,7 +47,7 @@ class Api::AlbumsController < ApplicationController
 
   private
     def album_params
-      params.require(:album).permit(:title, :event_date, :cover_image_id, :status)
+      params.require(:album).permit(:title, :event_date, :cover_image_id, :status, :password)
     end
 
     def must_be_logged_in
