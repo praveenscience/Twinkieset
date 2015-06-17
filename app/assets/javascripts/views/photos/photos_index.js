@@ -8,6 +8,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     this.listenTo(this.collection, "add", this.addPhotoView);
     this.listenTo(this.collection, 'remove', this.removePhotoView);
     this.collection.each(this.addPhotoView.bind(this));
+
   },
 
   events: {
@@ -290,6 +291,9 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   },
 
   addPhotoView: function (photo) {
+    if (this.collection.length > 0) {
+      $('.no-photos').hide();
+    }
     var subview = new TwinkieSetApp.Views.AlbumsShowPhotoItem({
       model: photo
     });
@@ -298,6 +302,14 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
   removePhotoView: function (photo) {
     this.removeModelSubview('.photo-items', photo);
+    if (this.collection.length === 0) {
+      $('.no-photos').show();
+      $('.photo-buttons-container').hide();
+    }
+  },
+
+  displayZeroPhotos: function () {
+    $('.photo-items').html("no photos!");
   },
 
   render: function () {
@@ -313,6 +325,11 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
   onRender: function(){
     $('.photo-items').sortable();
+    if (this.collection.length === 0) {
+      $('.no-photos').show();
+    } else {
+      $('.no-photos').hide();
+    }
   },
 
 });
