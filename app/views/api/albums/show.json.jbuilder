@@ -6,8 +6,10 @@ json.string_date time.strftime("%B #{time.day.ordinalize}, %Y")
 
 if @album.cover_image
   json.cover_image_url @album.cover_image.image_url
+  json.cover_image_med @album.cover_image.medium_url
 else
   json.cover_image_url nil
+  json.cover_image_med nil
 end
 
 json.first_subalbum_id @album.subalbum_ids.first
