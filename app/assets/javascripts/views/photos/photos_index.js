@@ -30,9 +30,9 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     'click .sort-date-taken-reverse': 'sortByDateTakenReverse',
     'click .sort-random': 'sortByRandom',
 
-    'mouseover .hide-filenames': 'hideFilenameTip',
-    'mouseover .show-filenames': 'showFilenameTip',
-    'mouseout .hide-filenames, .show-filenames': 'hideAllTip'
+    // 'mouseover .hide-filenames': 'hideFilenameTip',
+    // 'mouseover .show-filenames': 'showFilenameTip',
+    // 'mouseout .hide-filenames, .show-filenames': 'hideAllTip'
     // 'click .sort-photo-button': 'sortPhotos'
   },
 
