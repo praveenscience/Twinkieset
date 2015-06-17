@@ -6,13 +6,8 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
 
   },
 
-
-
-
-
-
   events: {
-    "click .submit-edit-album": "editAlbum",
+    "submit form": "editAlbum",
     "click .cancel-edit-album": "hideForm",
     'click .status-published': 'setStatusPublished',
     'click .status-draft': 'setStatusDraft'
@@ -41,7 +36,6 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
     var editAlbum = this.model;
     editAlbum.save(attrs, {
       success: function () {
-        this.collection.add(editAlbum);
         editAlbum.fetch(); // do this to ensure string_date is rendered
         this.$el.hide();
       }.bind(this),
