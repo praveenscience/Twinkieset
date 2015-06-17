@@ -2,25 +2,34 @@ TwinkieSetApp.Views.SubalbumForm = Backbone.View.extend({
   template: JST['subalbums/form'],
   className: 'form-modal',
 
+  initialize: function (options) {
+    this.header = options.header;
+    this.album = options.album;
+    this.subalbum = options.subalbum;
+  },
+
   render: function () {
-    var content = this.template({ album: this.model});
+    var content = this.template({
+      header: this.header,
+      album: this.album,
+      subalbum: this.subalbum
+    });
     this.$el.html(content);
     return this;
   },
 
   events: {
     'submit form': 'createSubalbum',
-    'click .cancel-new-subalbum': 'hideSubalbumForm'
+    'click .cancel-subalbum': 'hideSubalbumForm'
   },
 
   createSubalbum: function (event) {
     event.preventDefault();
     var attrs = $(event.currentTarget).serializeJSON();
-    var newSubalbum = new TwinkieSetApp.Models.Subalbum();
-
-    newSubalbum.save(attrs, {
+    var subalbum = this.subalbum;
+    subalbum.save(attrs, {
       success: function () {
-        this.collection.add(newSubalbum);
+        this.album.subalbums().add(subalbum);
         this.$el.hide();
       }.bind(this)
     });
@@ -28,6 +37,7 @@ TwinkieSetApp.Views.SubalbumForm = Backbone.View.extend({
   },
 
   hideSubalbumForm: function () {
+    event.preventDefault();
     this.$el.hide();
   }
 });
