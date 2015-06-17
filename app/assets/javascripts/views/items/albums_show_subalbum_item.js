@@ -12,9 +12,33 @@ TwinkieSetApp.Views.AlbumsShowSubalbumItem = Backbone.View.extend({
 
   events: {
     'click': 'changeSubalbums',
-    'dropSubalbum': 'dropSubalbum'
+    'dropSubalbum': 'dropSubalbum',
+    'click .edit-subalbum-button': 'editSubalbum',
+    'click .delete-subalbum-button': 'deleteSubalbumConfirmation'
   },
 
+  deleteSubalbumConfirmation: function () {
+    var deleteAlbumModal = new TwinkieSetApp.Views.DeleteSubalbum({
+      subalbum: this.model
+    });
+    $('body').append(deleteAlbumModal.render().$el);
+  },
+
+
+
+  // deleteSubalbum: function () {
+  //   this.remove();
+  //   this.model.destroy();
+  // },
+
+  editSubalbum: function () {
+    var subalbumForm = new TwinkieSetApp.Views.SubalbumForm({
+      header: "Edit Photo Set",
+      album: this.album,
+      subalbum: this.model,
+    });
+    $('body').append(subalbumForm.render().$el);
+  },
 
   dropSubalbum: function (event, index) {
     console.log('hereeee');
