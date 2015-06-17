@@ -133,10 +133,20 @@ a:link {
         transition: color 200ms;
         transition-timing-function: linear;
 
+        a:link, a:visited, a:active {
+          -webkit-transition: color 200ms; /* Safari */
+          transition: color 200ms;
+          transition-timing-function: linear;
+          color: #333;
+        }
+        a:hover {
+          color: #999;
+        }
         &:hover {
           color: #999;
         }
       }
+
       li.open-dash, li.open-login, li.open-signup {
         border: 1px solid #111;
         padding: 6px 18px;
