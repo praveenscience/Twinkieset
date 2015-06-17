@@ -2,6 +2,10 @@ TwinkieSetApp.Collections.Subalbums = Backbone.Collection.extend({
   url: '/api/subalbums',
   model: TwinkieSetApp.Models.Subalbum,
 
+  comparator: function (subalbum) {
+    return subalbum.get('order'); // doesn't do anything since we use CompositeView
+  },
+
   getOrFetch: function (id) {
     var subalbum = this.get(id);
 
@@ -17,7 +21,7 @@ TwinkieSetApp.Collections.Subalbums = Backbone.Collection.extend({
     }
 
     return subalbum;
-    
+
   }
 
 });
