@@ -236,14 +236,14 @@ a:link {
   border-bottom: 1px solid #eeeeee;
 
   .albums-title {
-    font-family: 'ProximaNova-Semibold';
+    font: 14px 'ProximaNova-Semibold';
     color: black;
-    font-weight: 12px;
     position: relative;
+    top: 3px;
     left: 50px;
     color: #333;
-    padding: 0 10px 19px 10px;
-    border-bottom: 3px solid $darkteal;
+    padding: 0 10px 15px 10px;
+    border-bottom: 4px solid $teal;
   }
 }
 
@@ -505,11 +505,14 @@ a:link {
         font-size: 14px;
         color: #666;
         opacity: 0.5;
-        -webkit-transition: opacity 200ms; /* Safari */
-        transition: opacity 200ms;
+        -webkit-transition: opacity 600ms; /* Safari */
+        transition: opacity 600ms;
         transition-timing-function: linear;
 
         &:hover {
+          opacity: 1;
+        }
+        &:hover .hover-tip {
           opacity: 1;
         }
 
@@ -520,7 +523,8 @@ a:link {
     }
 
     .hover-tip {
-      display: none;
+      display: inline-block;
+      opacity: 0;
 
       .point {
       	width: 0;
@@ -533,10 +537,11 @@ a:link {
 
       .content {
         background: black;
-        font-size: 11px;
-        padding: 3px 5px;
+        font: 11px 'ProximaNova-Semibold';
+        padding: 4px 6px;
         border-radius: 3px;
         color: #fff;
+        white-space: nowrap;
       }
 
     }
@@ -547,15 +552,14 @@ a:link {
 
     .hide-filename-tip {
       position: absolute;
-      top: 25px;
-      left: 131px;
+      top: 14px;
+      left: -37px;
     }
 
     .show-filename-tip {
       position: absolute;
-      top: 25px;
-      left: 150px;
-
+      top: 14px;
+      left: -39px;
     }
 
 
