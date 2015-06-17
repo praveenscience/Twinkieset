@@ -78,8 +78,7 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
       collection: this.collection
     });
 
-    this.remove();
-    this.$el.html("");
+    $('.gallery-modal').remove();
     photoItem.displayModal();
   },
 
