@@ -19,8 +19,8 @@
 //= require jquery.serializejson
 //= require jquery-ui/sortable
 //= require imagesloaded.pkgd
-//= require twinkie_set_app
 //= require masonry.pkgd
+//= require twinkie_set_app
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections
