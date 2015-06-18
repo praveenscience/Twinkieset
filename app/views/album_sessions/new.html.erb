@@ -18,6 +18,27 @@
 </div>
 <style type="text/css">
   .private-album-login-main {
-    background-image: url('http://d33tz7arw1d3eu.cloudfront.net/845368/b5368f4a92f56ab784900f648541ebe7-cover.jpg');
+    background-image: url('<%= @album.cover_image.image_url %>');
+    background-size: cover;
+    background-position: center center;
   }
 </style>
+
+<script type="text/javascript">
+  $(document).ready(function (){
+    if (window.location.search === "?album=2&router=1/collection/2/set/2") {
+      setTimeout(function () {
+        $('.guest-login-password').val("4");
+      }, 1000);
+      setTimeout(function () {
+        $('.guest-login-password').val("44");
+      }, 1500);
+      setTimeout(function () {
+        $('.guest-login-password').val("444");
+      }, 2000);
+      setTimeout(function () {
+        $('.guest-login-password').val("4444");
+      }, 2500);
+    }
+  })
+</script>
