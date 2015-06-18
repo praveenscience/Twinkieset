@@ -4,8 +4,19 @@ TwinkieSetApp.Views.NavBar = Backbone.View.extend({
 
 
   events: {
-    'click .logout': 'logoutUser'
+    'click .logout': 'logoutUser',
+    'click .user-buttons': 'openDropdown',
+    'mouseleave .user-dropdown': 'openDropdown'
   },
+
+  openDropdown: function (event) {
+    $('.user-buttons').toggleClass('selected-nav-option');
+    $('.albums-title').toggleClass('selected-nav-option');
+    $('.user-dropdown').toggle();
+  },
+
+
+
 
   logoutUser: function (event) {
     $('.logout-form').submit();
