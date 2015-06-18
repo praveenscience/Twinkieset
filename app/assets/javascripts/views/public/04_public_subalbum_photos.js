@@ -81,11 +81,22 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
   },
 
   onRender: function () {
-    if (!TwinkieSetApp.Views.masonryGallery) {
-      setTimeout(function () {
+
+    $('#container').imagesLoaded()
+      .always( function( instance ) {
+        console.log('all images loaded');
         this.addMasonry();
-      }.bind(this), 0);
-    }
+      }.bind(this))
+      .done( function( instance ) {
+        console.log('all images successfully loaded');
+      })
+      .fail( function() {
+        console.log('all images loaded, at least one is broken');
+      })
+      .progress( function( instance, image ) {
+        var result = image.isLoaded ? 'loaded' : 'broken';
+        console.log( 'image is ' + result + ' for ' + image.img.src );
+      });
   },
 
   addMasonry: function (event) {
@@ -103,35 +114,13 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
       }
     };
 
-    // when resizing the window
-    $(window).resize(function () {
-      TwinkieSetApp.Views.sizing();
-    });
 
-    // if arriving from index
-    setTimeout(function () {
       TwinkieSetApp.Views.sizing();
       TwinkieSetApp.Views.masonryGallery = $('.public-subalbum-photos').masonry({
         itemSelector: '.grid-item',
         gutter: 6
       });
-    }, 1000);
-    // // TODO: put masonry logic in views' onRender functions
-    //
-    // // need this for clicking other pages
-    // TwinkieSetApp.Views.sizing();
-    // TwinkieSetApp.Views.masonryGallery = $('.public-subalbum-photos').masonry({
-    //   itemSelector: '.grid-item',
-    //   gutter: 6
-    // });
-    //
-    // if the page hasn't loaded yet. need this for landing on undetermined set.
-    $(window).load(function () {
-      TwinkieSetApp.Views.sizing();
-      TwinkieSetApp.Views.masonryGallery = $('.public-subalbum-photos').masonry({
-        itemSelector: '.grid-item',
-        gutter: 6
-      });
-    });
+
+
   },
 });
