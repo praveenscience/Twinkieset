@@ -6,7 +6,15 @@
   <div class="owner"><%= @album.owner.business_name %></div>
 
   <div class="info">
-    <span class="bold-guest">Guest Access.</span> Enter password to view this collection.
+    <% if flash[:errors] %>
+      <% flash[:errors].each do |error| %>
+        <span class="error_message"><%= error %></span><br>
+      <% end %>
+    <% else %>
+      <span class="bold-guest">Guest Access.</span> Enter password to view this collection.
+    <% end %>
+
+
   </div>
 
   <form class="form-album" action="<%= album_sessions_url %>" method="POST">
