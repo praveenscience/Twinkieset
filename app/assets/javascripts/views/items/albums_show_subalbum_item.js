@@ -24,13 +24,6 @@ TwinkieSetApp.Views.AlbumsShowSubalbumItem = Backbone.View.extend({
     $('body').append(deleteAlbumModal.render().$el);
   },
 
-
-
-  // deleteSubalbum: function () {
-  //   this.remove();
-  //   this.model.destroy();
-  // },
-
   editSubalbum: function () {
     var subalbumForm = new TwinkieSetApp.Views.SubalbumForm({
       header: "Edit Photo Set",
@@ -41,7 +34,6 @@ TwinkieSetApp.Views.AlbumsShowSubalbumItem = Backbone.View.extend({
   },
 
   dropSubalbum: function (event, index) {
-    console.log('hereeee');
     this.$el.trigger('updateSort', [this.model, index]);
   },
 

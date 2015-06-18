@@ -47,12 +47,7 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     if (!this.rendering) {
 
     }
-    // var difference = 0;
-    // if (direction === "next") {
-    //   difference = 1;
-    // } else if (direction === "previous") {
-    //   difference = -1;
-    // }
+
     this.rendering = true;
     var currentImage = this.model;
     var nextImage = this.model;
@@ -68,13 +63,12 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
         }
         nextImage = allPhotos[newIndex];
 
-        console.log(newIndex);
         return;
       }
     });
 
     var photoItem = new TwinkieSetApp.Views.PhotoItem({
-      model: nextImage, // initialize with a new model
+      model: nextImage,
       collection: this.collection
     });
 
@@ -91,20 +85,10 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
 
     this.$el.find('.active-image img').css('height', imageHeight);
     this.$el.find('.active-image img').css('max-width', maxImageWidth);
-    // if ( this.$el.find('.active-image img').width() > maxImageWidth ) {
-    //   this.$el.find('.active-image img').css('height', "auto");
-    //   this.$el.find('.active-image img').css('width', maxImageWidth);
-    // } else {
-    //   this.$el.find('.active-image img').css('height', imageHeight);
-    //   this.$el.find('.active-image img').css('width', 'auto');
-    //   var marginTop = (windowHeight - this.$el.find('.active-image img').height())/2;
-    //   debugger;
-    //   this.$el.find('.active-image img').css('margin-top', marginTop);
-    // }
+
   },
 
   render: function () {
-    console.log('rendering');
     var content = this.template({
       photo: this.model
     });

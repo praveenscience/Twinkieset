@@ -4,10 +4,8 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
   tagName: 'li',
 
   initialize: function (options) {
-    // this.TwinkieSetApp.selectedPhotosArr = options.TwinkieSetApp.selectedPhotosArr;
     this.listenTo(this.model, "sync", this.render);
     this.album = options.album;
-        // this.listenTo(this.model, "selectAllPhotos", this.addAllPhotos);
   },
 
   events: {
@@ -15,12 +13,7 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
     "drop": "drop"
   },
 
-  // addAllPhotos: function (event) {
-  //   debugger;
-  // },
-
   drop: function (event, index) {
-    console.log('here');
     this.$el.trigger('updateSort', [this.model, index]);
   },
 
@@ -47,7 +40,6 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
     } else {
       $('.photo-buttons-container').hide();
     }
-    console.log(TwinkieSetApp.selectedPhotosArr);
     this.updateSelectedPhotoCounter();
   },
 

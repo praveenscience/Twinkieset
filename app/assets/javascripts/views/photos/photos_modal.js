@@ -48,12 +48,7 @@ TwinkieSetApp.Views.PhotosModal = Backbone.View.extend({
     if (!this.rendering) {
 
     }
-    // var difference = 0;
-    // if (direction === "next") {
-    //   difference = 1;
-    // } else if (direction === "previous") {
-    //   difference = -1;
-    // }
+
     this.rendering = true;
     var currentImage = this.model;
     var nextImage = this.model;
@@ -62,7 +57,6 @@ TwinkieSetApp.Views.PhotosModal = Backbone.View.extend({
       if (currentImage === photo) {
         newIndex = idx + difference;
 
-        // ensure photos wrap
         if (newIndex > allPhotos.length - 1) {
           newIndex = 0;
         } else if (newIndex < 0) {
@@ -70,13 +64,12 @@ TwinkieSetApp.Views.PhotosModal = Backbone.View.extend({
         }
         nextImage = allPhotos[newIndex];
 
-        console.log(newIndex);
         return;
       }
     });
 
     var photoItem = new TwinkieSetApp.Views.PhotosModal({
-      model: nextImage, // initialize with a new model
+      model: nextImage,
       collection: TwinkieSetApp.selectedPhotosArr,
       position: newIndex
 
@@ -96,20 +89,8 @@ TwinkieSetApp.Views.PhotosModal = Backbone.View.extend({
     var imagewidth = this.$el.find('.active-image img').width();
     var leftOfImage = (windowWidth - imagewidth)/2;
 
-    console.log(leftOfImage);
-
     this.$el.find('.active-image img').css('height', imageHeight);
     this.$el.find('.active-image img').css('max-width', maxImageWidth);
-    // if ( this.$el.find('.active-image img').width() > maxImageWidth ) {
-    //   this.$el.find('.active-image img').css('height', "auto");
-    //   this.$el.find('.active-image img').css('width', maxImageWidth);
-    // } else {
-    //   this.$el.find('.active-image img').css('height', imageHeight);
-    //   this.$el.find('.active-image img').css('width', 'auto');
-    //   var marginTop = (windowHeight - this.$el.find('.active-image img').height())/2;
-    //   debugger;
-    //   this.$el.find('.active-image img').css('margin-top', marginTop);
-    // }
 
     this.$el.find('.file-name').css('left', leftOfImage);
     this.$el.find('.gallery-counter').css('right', leftOfImage);

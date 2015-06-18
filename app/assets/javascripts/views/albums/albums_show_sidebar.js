@@ -23,8 +23,6 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
   },
 
   updateSortSubalbums: function (event, droppedModel, position) {
-    console.log(droppedModel.attributes);
-    console.log("position " + position);
     this.model.subalbums().remove(droppedModel, { silent: true});
     this.model.subalbums().each(function (model, idx) {
       var ordinal = idx;
