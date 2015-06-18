@@ -17,11 +17,18 @@
   </form>
 </div>
 <style type="text/css">
+
+  <% if @album.cover_image %>
+    <% bg_image = @album.cover_image.image_url %>
+  <% else %>
+    <% bg_image = 'http://res.cloudinary.com/twinkieset/image/upload/v1434583156/Screen_Shot_2015-06-17_at_4.18.43_PM_uptlhi.png' %>
+  <% end %>
+
   .private-album-login-main {
-    background-image: url('<%= @album.cover_image.image_url %>');
-    background-size: cover;
-    background-position: center center;
+    background-image: url('<%= bg_image %>');
   }
+
+
 </style>
 
 <script type="text/javascript">
