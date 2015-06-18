@@ -31,8 +31,10 @@ TwinkieSetApp.Views.AlbumsIndex = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    var model = this.collection.getOrFetch(1);
-    var content = this.template({ albums: this.collection, album: model });
+
+    // var model = this.collection.getOrFetch(1);
+    // var content = this.template({ albums: this.collection, album: model });
+    var content = this.template();
     this.$el.html(content);
     this.attachSubviews();
 
