@@ -604,6 +604,22 @@ a:link {
 
   }
 
+
+  .form-container.user-password-form {
+    height: 424px;
+    width: 600px;
+    margin-top: -212px;
+    margin-left: -300px;
+
+    .errors {
+      font: 11px 'ProximaNova-Regular';
+      color: $darkred;
+      position: relative;
+      top: -10px;
+      text-align: center;
+    }
+  }
+
   .form-container.user-form {
     height: 510px;
     width: 600px;
