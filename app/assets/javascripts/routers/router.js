@@ -36,7 +36,7 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   },
 
   publicIndex: function (id) {
-    this.owner = new TwinkieSetApp.Models.Owner({
+    this.owner = new TwinkieSetApp.Models.PublicOwner({
       userID: id
     });
     this.owner.fetch();
@@ -48,7 +48,7 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   },
 
   publicShow: function(user_id, album_id, set_id) {
-    var album_owner = new TwinkieSetApp.Models.Owner({
+    var album_owner = new TwinkieSetApp.Models.PublicOwner({
       userID: user_id
     });
     album_owner.fetch();
