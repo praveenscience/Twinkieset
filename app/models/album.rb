@@ -73,9 +73,6 @@ class Album < ActiveRecord::Base
 
 
   def self.find_by_credentials(id, password)
-    if password == ""
-      return nil
-    end
     album = Album.find(id)
     album && album.is_password?(password) ? album : nil
   end
