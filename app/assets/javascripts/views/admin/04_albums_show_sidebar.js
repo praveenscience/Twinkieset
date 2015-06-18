@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
-  template: JST['albums/show_sidebar'],
+  template: JST['admin/04_show_sidebar'],
 
   initialize: function () {
     this.listenTo(this.model, "sync", this.render);

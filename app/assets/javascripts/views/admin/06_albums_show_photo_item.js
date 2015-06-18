@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
-  template: JST['items/albums_show_photo_item'],
+  template: JST['admin/06_albums_show_photo_item'],
   className: 'photo-item not-selected',
   tagName: 'li',
 

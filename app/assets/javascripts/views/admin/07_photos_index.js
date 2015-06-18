@@ -1,6 +1,6 @@
 TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
-  template: JST['photos/index'],
+  template: JST['admin/07_index'],
 
   initialize: function () {
     TwinkieSetApp.selectedPhotosArr = [];

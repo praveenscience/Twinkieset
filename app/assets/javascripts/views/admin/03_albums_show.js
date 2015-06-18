@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
-  template: JST['albums/show'],
+  template: JST['admin/03_show'],
   className: 'album-show',
 
   initialize: function (options) {

@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.AlbumsShowSubalbumItem = Backbone.View.extend({
-  template: JST['items/albums_show_subalbum_item'],
+  template: JST['admin/05_albums_show_subalbum_item'],
   className: function () {
     return 'album-show-sidebar-subalbums-li subalbum-' + this.model.id;
   },

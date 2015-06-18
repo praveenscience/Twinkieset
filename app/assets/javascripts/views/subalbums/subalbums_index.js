@@ -1,4 +1,4 @@
-TwinkieSetApp.Views.SubalbumsIndex = Backbone.View.extend({
+TwinkieSetApp.Views.SubalbumIndexNOTINUSE = Backbone.View.extend({
 
   template: JST['subalbums/index']
 

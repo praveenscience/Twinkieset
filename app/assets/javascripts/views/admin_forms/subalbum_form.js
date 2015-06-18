@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.SubalbumForm = Backbone.View.extend({
-  template: JST['subalbums/form'],
+  template: JST['album_forms/subalbum_form'],
   className: 'form-modal',
 
   initialize: function (options) {

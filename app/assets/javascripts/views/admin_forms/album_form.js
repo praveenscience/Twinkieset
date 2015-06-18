@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.Form = Backbone.View.extend({
-  template: JST['albums/form'],
+  template: JST['admin_forms/alum_form'],
   className: 'form-modal',
 
   initialize: function () {

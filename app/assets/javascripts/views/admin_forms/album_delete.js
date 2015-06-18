@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.DeleteAlbum = Backbone.View.extend({
-  template: JST['albums/album_delete'],
+  template: JST['admin_forms/album_delete'],
   className: 'form-modal',
 
 

@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.AlbumsIndexView = Backbone.View.extend({
-  template: JST['items/albums_index_item'],
+  template: JST['admin/02_albums_index_item'],
   className: 'album_index_item col-xs-6 col-sm-3',
 
   initialize: function () {

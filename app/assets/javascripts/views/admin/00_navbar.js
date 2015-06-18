@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.NavBar = Backbone.View.extend({
-  template: JST['shared/navbar'],
+  template: JST['admin/00_navbar'],
   className: "navibar",
 
 

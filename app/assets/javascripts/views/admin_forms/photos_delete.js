@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.PhotosDelete = Backbone.View.extend({
-  template: JST['photos/photos_delete'],
+  template: JST['admin_forms/photos_delete'],
   className: 'form-modal',
 
   initialize: function (options) {

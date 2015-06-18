@@ -1,5 +1,5 @@
 TwinkieSetApp.Views.EditForm = Backbone.View.extend({
-  template: JST['albums/edit'],
+  template: JST['admin_forms/edit'],
   className: 'form-modal',
 
   initialize: function () {
