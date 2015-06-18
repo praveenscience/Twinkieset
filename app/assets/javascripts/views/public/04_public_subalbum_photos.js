@@ -81,10 +81,13 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
   },
 
   onRender: function () {
-    $('#container').imagesLoaded()
-      .always( function( instance ) {
-        this.addMasonry();
-      }.bind(this))
+    $('.grid-item').imagesLoaded(function () {
+      this.addMasonry();
+    }.bind(this))
+    // $('#container').imagesLoaded()
+    //   .always( function( instance ) {
+    //     this.addMasonry();
+    //   }.bind(this))
   },
 
   addMasonry: function (event) {
