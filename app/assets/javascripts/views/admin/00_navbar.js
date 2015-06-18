@@ -7,7 +7,13 @@ TwinkieSetApp.Views.NavBar = Backbone.View.extend({
     'click .logout': 'logoutUser',
     'click .user-buttons': 'openDropdown',
     'mouseleave .user-dropdown': 'openDropdown',
-    'click .user-profile': 'openUserForm'
+    'click .user-profile': 'openUserForm',
+    'click .change-password': 'changePassword'
+  },
+
+  changePassword: function (event) {
+    var userPassword = new TwinkieSetApp.Views.UserPassword();
+    $('body').append(userPassword.render().$el);
   },
 
   openDropdown: function (event) {
