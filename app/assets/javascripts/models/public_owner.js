@@ -1,10 +1,7 @@
 TwinkieSetApp.Models.Owner = Backbone.Model.extend({
-  urlRoot: function () {
-    return "/api/users/" + this.userID;
-  },
+  urlRoot: '/users/',
 
   initialize: function(options) {
-    this.userID = options.userID;
   },
 
   parse: function (response) {
