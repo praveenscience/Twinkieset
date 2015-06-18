@@ -111,7 +111,7 @@ a:link {
 .splash {
   text-align: center;
   padding: 0 40px;
-  background-image: url('http://d3po2y9ogyd5ah.cloudfront.net/images/site/sales/index-intro-bg-v2.jpg');
+  background-image: url('https://dl.dropboxusercontent.com/u/2330299/capstone/splash-bg.jpg');
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -345,6 +345,22 @@ a:link {
   left: 0;
   width: 100%;
   z-index: 1;
+
+  .logout-form {
+    display: none;
+  }
+  .logout {
+    position:absolute;
+    top: 22px;
+    right: 22px;
+    cursor: pointer;
+    -webkit-transition: opacity 200ms; /* Safari */
+    transition: opacity 200ms;
+    transition-timing-function: linear;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 
   .albums-title {
     font: 14px 'ProximaNova-Semibold';
