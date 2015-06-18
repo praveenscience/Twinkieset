@@ -34,6 +34,11 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
     $('.loading-gif').fadeIn('slow');
 
     setTimeout(function () {
+      // TwinkieSetApp.Views.masonryGallery.masonry();
+      // $('window').resize();
+    }, 3000);
+
+    setTimeout(function () {
       this.$el.css('opacity', 1);
       $('.loading-gif').fadeOut('slow');
     }.bind(this), 1000);
