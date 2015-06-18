@@ -10,7 +10,7 @@ TwinkieSetApp.Collections.PublicOwners = Backbone.Collection.extend({
     if (owner) {
       owner.fetch();
     } else {
-      owner = new TwinkieSetApp.Models.Owner({ id: id });
+      owner = new TwinkieSetApp.Models.PublicOwner({ id: id });
       owner.fetch({
         success: function () {
           this.add(owner);
