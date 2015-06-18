@@ -6,7 +6,8 @@ TwinkieSetApp.Views.NavBar = Backbone.View.extend({
   events: {
     'click .logout': 'logoutUser',
     'click .user-buttons': 'openDropdown',
-    'mouseleave .user-dropdown': 'openDropdown'
+    'mouseleave .user-dropdown': 'openDropdown',
+    'click .user-profile': 'openUserForm'
   },
 
   openDropdown: function (event) {
@@ -15,6 +16,10 @@ TwinkieSetApp.Views.NavBar = Backbone.View.extend({
     $('.user-dropdown').toggle();
   },
 
+  openUserForm: function (event) {
+    var userForm = new TwinkieSetApp.Views.UserForm();
+    $('body').append(userForm.render().$el);
+  },
 
 
 
