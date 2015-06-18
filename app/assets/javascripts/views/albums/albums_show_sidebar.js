@@ -73,8 +73,12 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
     this.attachSubviews();
 
 
+
     var cover_image = this.model.get('cover_image_med');
-    this.$el.find('.collection-cover-image').css('background-image', 'url('+cover_image+')');
+
+    if (cover_image) {
+      this.$el.find('.collection-cover-image').css('background-image', 'url('+cover_image+')');
+    }
 
     this.onRender();
     return this;
