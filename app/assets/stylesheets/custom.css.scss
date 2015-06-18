@@ -1313,6 +1313,9 @@ ul.view-more {
   background-size: cover;
   background-position: center center;
 
+  .error_message {
+    color: $darkred;
+  }
   .title {
     font: 25px 'ProximaNova-Semibold';
     text-transform: uppercase;
