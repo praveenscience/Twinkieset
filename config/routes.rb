@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
 
   # get ":album_id/login", to: "album_sessions#login", as: "login_album"
-  resources :users, only: [:new, :create, :show] do
+  resources :users, only: [:new, :create, :show, :update] do
     # resources :albums, only: [:index]
 
   end
