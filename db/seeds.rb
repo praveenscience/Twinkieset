@@ -433,7 +433,7 @@ User.create!(email: "erich@erichmcvey.com", password: "password", business_name:
                   medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Erich%20Mcvey/New%20Zealand/00_Highlights/0165-New-Zealand.jpg',
                   image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Erich%20Mcvey/New%20Zealand/00_Highlights/0165-New-Zealand.jpg')
 
-          Album.create!(title: "Geraldine Magazine", event_date: "2014-12-03 00:00:00 -0800", cover_image_id: 69, user_id: 1, status: 'Published') #Album3
+          Album.create!(title: "Geraldine Magazine", event_date: "2014-12-03 00:00:00 -0800", cover_image_id: 73, user_id: 1, status: 'Published') #Album3
 
           # Auto Highlights Subalbum #6
 
