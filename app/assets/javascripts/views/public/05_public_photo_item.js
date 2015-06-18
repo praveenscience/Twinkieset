@@ -19,30 +19,41 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
       photo: this.model
     });
     this.$el.html(content);
+    this.$el.css('opacity', 0.4);
 
     if (TwinkieSetApp.Views.masonryGallery) {
-
-      TwinkieSetApp.Views.masonryGallery.masonry('appended', this.$el);
-      setTimeout(function () {
+      $('.grid-item').imagesLoaded( function() {
         TwinkieSetApp.Views.sizing();
-        TwinkieSetApp.Views.masonryGallery.masonry();
-      }, 100);
+        TwinkieSetApp.Views.masonryGallery.masonry('appended', this.$el);
+        this.$el.css('opacity', 1);
+        // TwinkieSetApp.Views.masonryGallery.masonry('reloadItems')
+        TwinkieSetApp.Views.masonryGallery.masonry()
+      }.bind(this));
     }
+      //
+      // setTimeout(function () {
+      //   TwinkieSetApp.Views.sizing();
+      //   TwinkieSetApp.Views.masonryGallery.masonry();
+      // }, 100);
+      //
+      // setTimeout(function () {
+      //   TwinkieSetApp.Views.sizing();
+      //   TwinkieSetApp.Views.masonryGallery.masonry();
+      // }, 3000);
+      //
+      // setTimeout(function () {
+      //   TwinkieSetApp.Views.sizing();
+      //   TwinkieSetApp.Views.masonryGallery.masonry();
+      // }, 6000);
+      //
+      // setTimeout(function () {
+      //   TwinkieSetApp.Views.sizing();
+      //   TwinkieSetApp.Views.masonryGallery.masonry();
+      // }, 9000);
+
 
     this.$el.css('opacity',0);
     $('.loading-gif').fadeIn('slow');
-
-    setTimeout(function () {
-      TwinkieSetApp.Views.masonryGallery.masonry();
-    }, 3000);
-
-    setTimeout(function () {
-      TwinkieSetApp.Views.masonryGallery.masonry();
-    }, 6000);
-
-    setTimeout(function () {
-      TwinkieSetApp.Views.masonryGallery.masonry();
-    }, 9000);
 
     setTimeout(function () {
       this.$el.css('opacity', 1);
