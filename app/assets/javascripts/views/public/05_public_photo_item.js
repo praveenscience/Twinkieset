@@ -29,14 +29,20 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
       }, 100);
     }
 
-    // give a fade in effect
     this.$el.css('opacity',0);
     $('.loading-gif').fadeIn('slow');
 
     setTimeout(function () {
       TwinkieSetApp.Views.masonryGallery.masonry();
-      // $('window').resize();
     }, 3000);
+
+    setTimeout(function () {
+      TwinkieSetApp.Views.masonryGallery.masonry();
+    }, 6000);
+
+    setTimeout(function () {
+      TwinkieSetApp.Views.masonryGallery.masonry();
+    }, 9000);
 
     setTimeout(function () {
       this.$el.css('opacity', 1);
