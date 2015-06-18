@@ -17,8 +17,20 @@ class UsersController < ApplicationController
     end
   end
 
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update(user_params)
+      flash.now[:notice] = ['Successfully updated user!']
+      render json: @user
+    else
+      flash.now[:errors] = @user.errors.full_messages
+      render json: @user.errors.full_messages, status: :unprocessable_entity
+    end
+  end
+
   private
     def user_params
-      params.require(:user).permit(:business_name, :website, :email, :password)
+      params.require(:user).permit(:business_name, :website, :email, :password, :username)
     end
 end
