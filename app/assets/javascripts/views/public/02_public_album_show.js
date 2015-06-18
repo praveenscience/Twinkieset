@@ -57,7 +57,8 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     // TODO find a way to get the owner from the album
     // debugger;
     var path = '#'+ this.album_owner.id +'/collection/'+ this.album.id + '/set/'+ this.setID;
-    Backbone.history.navigate(path);
+    window.location.replace(path);
+    // Backbone.history.navigate(path);
     // TODO: maybe window.address = ???
   },
 
