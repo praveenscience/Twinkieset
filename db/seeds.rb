@@ -1119,9 +1119,6 @@ User.create!(email: "erich@erichmcvey.com", password: "password", business_name:
                   image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Erich%20Mcvey/Baton%20Rogue/Louisiana-Wedding-Photography-by-Erich-McVey-9.jpg')
 
 
-
-
-
 User.create!(email: "info@ktmerry.com", password: "password", business_name: "KT Merry", website: "https://www.ktmerry.com") # User2
         Album.create!(title: "Islamorada Engagement", event_date: "2015-06-10 00:00:00 -0800", cover_image_id: 179, user_id: 2, status: 'Published') # Album6
 
@@ -1654,175 +1651,676 @@ User.create!(email: "info@ktmerry.com", password: "password", business_name: "KT
 
 
 
+User.create!(email: "karen@example.com", password: "password", business_name: "Karen Ling", website: "https://www.karenling.net") # User3
+
+
+        Album.create!(title: "Stephanie and Cary", event_date: "2014-08-28 00:00:00 -0800", cover_image_id: 291, user_id: 3, status: 'Published') # Album9
+              # default subalbum #13
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-01.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-01.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-01.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-01.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-02.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-02.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-02.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-02.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-03.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-03.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-03.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-03.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-04.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-04.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-04.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-04.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-05.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-05.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-05.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-05.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-06.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-06.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-06.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-06.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-07.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-07.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-07.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-07.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-08.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-08.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-08.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-08.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-09.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-09.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-09.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-09.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-10.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-10.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-10.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-10.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-11.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-11.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-11.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-11.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-12.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-12.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-12.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-12.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-13.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-13.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-13.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-13.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-13.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-13.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-13.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-13.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-15.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-15.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-15.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-15.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-16.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-16.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-16.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-16.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-17.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-17.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-17.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-17.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-18.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-18.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-18.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-18.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-19.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-19.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-19.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-19.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-20.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-20.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-20.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-20.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-21.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-21.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-21.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-21.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-22.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-22.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-22.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-22.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-23.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-23.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-23.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-23.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-24.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-24.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-24.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-24.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-25.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-25.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-25.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-25.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-26.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-26.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-26.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-26.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-27.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-27.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-27.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-27.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-28.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-28.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-28.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-28.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-29.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-29.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-29.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-29.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-30.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-30.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-30.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-30.jpg')
+                Photo.create!(
+                  subalbum_id: 13, date_taken: Time.now,
+                  file_name: 'stephanie-cary-31.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-31.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-31.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/stephanie_cary_aug_28_2014/stephanie-cary-31.jpg')
 
 
 
 
-        Album.create!(title: "Anita and Jonathan", event_date: "2015-03-08 00:00:00 -0800", cover_image_id: 272, user_id: 2, status: 'Published') # Album8
+          Album.create!(title: "Florence, Hung, and Aurora", event_date: "2014-09-17 00:00:00 -0800", cover_image_id: 305, user_id: 3, status: 'Published')
 
-                # Auto Highlights Subalbum #13
+            # default subalbum #14
+
+                Photo.create!(
+                  subalbum_id: 14, date_taken: Time.now,
+                  file_name: 'florence-hung-01.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-01.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-01.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-01.jpg')
+                Photo.create!(
+                  subalbum_id: 14, date_taken: Time.now,
+                  file_name: 'florence-hung-02.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-02.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-02.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-02.jpg')
+                Photo.create!(
+                  subalbum_id: 14, date_taken: Time.now,
+                  file_name: 'florence-hung-03.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-03.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-03.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-03.jpg')
+                Photo.create!(
+                  subalbum_id: 14, date_taken: Time.now,
+                  file_name: 'florence-hung-04.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-04.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-04.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-04.jpg')
+                Photo.create!(
+                  subalbum_id: 14, date_taken: Time.now,
+                  file_name: 'florence-hung-05.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-05.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-05.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-05.jpg')
+                Photo.create!(
+                  subalbum_id: 14, date_taken: Time.now,
+                  file_name: 'florence-hung-06.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-06.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-06.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-06.jpg')
+                Photo.create!(
+                  subalbum_id: 14, date_taken: Time.now,
+                  file_name: 'florence-hung-07.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-07.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-07.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-07.jpg')
+                Photo.create!(
+                  subalbum_id: 14, date_taken: Time.now,
+                  file_name: 'florence-hung-08.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-08.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-08.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-08.jpg')
+                Photo.create!(
+                  subalbum_id: 14, date_taken: Time.now,
+                  file_name: 'florence-hung-09.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-09.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-09.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-09.jpg')
+                Photo.create!(
+                  subalbum_id: 14, date_taken: Time.now,
+                  file_name: 'florence-hung-10.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-10.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-10.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/florence_hung_aurora_sep_17/florence-hung-10.jpg')
+
+
+
+          Album.create!(title: "Nadine and Jose", event_date: "2014-08-26 00:00:00 -0800", cover_image_id: 350, user_id: 3, status: 'Published', password: '4444') #10
+
+          # Auto Highlights Subalbum #15
+          Subalbum.create!(title: "Preparation ", album_id: 10) #16
+          Subalbum.create!(title: "Ceremony ", album_id: 10) #17
+          Subalbum.create!(title: "Receiption", album_id: 10) #18
+
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_004.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_004.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_004.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_004.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_008.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_008.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_008.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_008.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_010.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_010.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_010.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_010.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_012.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_012.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_012.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_012.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_013.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_013.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_013.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_013.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_017.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_017.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_017.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_017.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_020.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_020.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_020.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_020.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_023.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_023.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_023.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_023.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_026.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_026.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_026.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_026.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_029.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_029.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_029.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_029.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_032.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_032.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_032.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_032.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_035.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_035.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_035.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_035.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_040.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_040.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_040.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_040.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_043.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_043.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_043.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_043.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_046.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_046.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_046.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_046.jpg')
+                Photo.create!(
+                  subalbum_id: 15, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_050.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_050.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_050.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Highlights/diane_angel_gomez_nadine_jose_050.jpg')
+
+
+
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajohn_001%20copy.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_001%20copy.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_001%20copy.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_001%20copy.jpg')
+                  subalbum_id: 16, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_002.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_002.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_002.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_002.jpg')
+                Photo.create!(
+                  subalbum_id: 16, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_003.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_003.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_003.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_003.jpg')
+                Photo.create!(
+                  subalbum_id: 16, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_004.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_004.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_004.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_004.jpg')
+                Photo.create!(
+                  subalbum_id: 16, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_005.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_005.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_005.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_005.jpg')
+                Photo.create!(
+                  subalbum_id: 16, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_006.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_006.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_006.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_006.jpg')
+                Photo.create!(
+                  subalbum_id: 16, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_007.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_007.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_007.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_007.jpg')
+                Photo.create!(
+                  subalbum_id: 16, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_008.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_008.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_008.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_008.jpg')
+                Photo.create!(
+                  subalbum_id: 16, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_009.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_009.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_009.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_009.jpg')
+                Photo.create!(
+                  subalbum_id: 16, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_010.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_010.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_010.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Preparation/diane_angel_gomez_nadine_jose_010.jpg')
+
+
+
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_001.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_001.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_001.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_001.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_011.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_011.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_011.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_011.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_012.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_012.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_012.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_012.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_013.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_013.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_013.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_013.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_014.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_014.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_014.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_014.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_015.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_015.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_015.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_015.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_017.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_017.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_017.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_017.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_018.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_018.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_018.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_018.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_019.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_019.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_019.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_019.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_020.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_020.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_020.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_020.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_021.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_021.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_021.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_021.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_022.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_022.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_022.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_022.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_023.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_023.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_023.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_023.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_024.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_024.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_024.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_024.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_025.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_025.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_025.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_025.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_026.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_026.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_026.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_026.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_027.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_027.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_027.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_027.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_028.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_028.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_028.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_028.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_029.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_029.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_029.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_029.jpg')
+                Photo.create!(
+                  subalbum_id: 17, date_taken: Time.now,
+                  file_name: 'diane_angel_gomez_nadine_jose_030.jpg',
+                  thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_030.jpg',
+                  medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_030.jpg',
+                  image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Ceremony/diane_angel_gomez_nadine_jose_030.jpg')
+
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajohn_001.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_001.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_001.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_001.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_031.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_031.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_031.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_031.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajohn_002%20copy.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_002%20copy.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_002%20copy.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_002%20copy.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_032.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_032.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_032.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_032.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajohn_002.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_002.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_002.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_002.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_033.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_033.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_033.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_033.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajohn_003.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_003.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_003.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_003.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_034.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_034.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_034.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_034.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajohn_004%20copy.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_004%20copy.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_004%20copy.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_004%20copy.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_035.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_035.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_035.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_035.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajohn_004.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_004.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_004.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajohn_004.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_036.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_036.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_036.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_036.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_005%20copy.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_005%20copy.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_005%20copy.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_005%20copy.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_037.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_037.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_037.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_037.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_005.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_005.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_005.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_005.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_038.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_038.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_038.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_038.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0061.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0061.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0061.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0061.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_039.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_039.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_039.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_039.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0071%20copy.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0071%20copy.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0071%20copy.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0071%20copy.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_040.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_040.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_040.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_040.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0071.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0071.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0071.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0071.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_041.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_041.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_041.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_041.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_008%20copy.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_008%20copy.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_008%20copy.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_008%20copy.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_042.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_042.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_042.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_042.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_008.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_008.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_008.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_008.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_043.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_043.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_043.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_043.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0091%20copy.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0091%20copy.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0091%20copy.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0091%20copy.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_044.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_044.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_044.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_044.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0091.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0091.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0091.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0091.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_045.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_045.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_045.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_045.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0101.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0101.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0101.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0101.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_046.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_046.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_046.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_046.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0111%20copy.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0111%20copy.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0111%20copy.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0111%20copy.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_047.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_047.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_047.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_047.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0111.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0111.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0111.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0111.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_048.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_048.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_048.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_048.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0121%20copy.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0121%20copy.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0121%20copy.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0121%20copy.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_049.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_049.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_049.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_049.jpg')
                   Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0121.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0121.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0121.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0121.jpg')
-                  Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0131.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0131.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0131.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0131.jpg')
-                  Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0141%20copy.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0141%20copy.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0141%20copy.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0141%20copy.jpg')
-                  Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0141.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0141.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0141.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0141.jpg')
-                  Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0151.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0151.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0151.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0151.jpg')
-                  Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0161%20copy.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0161%20copy.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0161%20copy.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0161%20copy.jpg')
-                  Photo.create!(
-                    subalbum_id: 13, date_taken: Time.now,
-                    file_name: 'vizcaya_wedding_anitajonathan_0161.jpg',
-                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0161.jpg',
-                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0161.jpg',
-                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/KT%20Merry/Anita%20and%20Jonathan%20March%2008/vizcaya_wedding_anitajonathan_0161.jpg')
+                    subalbum_id: 18, date_taken: Time.now,
+                    file_name: 'diane_angel_gomez_nadine_jose_050.jpg',
+                    thumb_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_050.jpg',
+                    medium_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_050.jpg',
+                    image_url: 'https://dl.dropboxusercontent.com/u/2330299/capstone/seed/Karen%20Ling/nadine_jose_aug_26_2014/Reception/diane_angel_gomez_nadine_jose_050.jpg')
+
+
+
+
 
 
 
