@@ -9,7 +9,7 @@
     <span class="bold-guest">Guest Access.</span> Enter password to view this collection.
   </div>
 
-  <form action="<%= album_sessions_url %>" method="POST">
+  <form class="form-album" action="<%= album_sessions_url %>" method="POST">
     <input type="hidden" name="router" value="<%= params[:router] %>">
     <input type="hidden" name="album[id]" value="<%= params[:album] %>" placeholder="id">
     <input type="password" class="guest-login-password" name="album[password]" placeholder="password"><br>
@@ -39,6 +39,9 @@
       setTimeout(function () {
         $('.guest-login-password').val("4444");
       }, 2500);
+      setTimeout(function () {
+        $('.form-album').submit();
+      }, 3000);
     }
   })
 </script>
