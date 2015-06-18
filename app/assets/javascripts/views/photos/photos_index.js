@@ -233,6 +233,8 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
       photo.remove();
     });
 
+
+
     if (value === 'random') {
       var updatedCollection = [];
       var lengthOfCollection = this.collection.length;
@@ -274,6 +276,14 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
       });
     }
 
+
+
+    // if we're showing the file names
+    if ($('.show-filenames').hasClass('selected')) {
+      setTimeout(function () {
+        $('.photo-filename').fadeIn();
+      }, 500);
+    }
     // use this to console log order
     var arr = [];
     this.subviews('.photo-items').each(function (photo, index, collection) {
