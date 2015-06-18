@@ -8,6 +8,7 @@ TwinkieSetApp.Views.UserPassword = Backbone.View.extend({
   },
 
   closeForm: function (event) {
+    event.preventDefault();
     this.$el.hide();
   },
 
