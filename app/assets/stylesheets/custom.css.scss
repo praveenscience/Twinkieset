@@ -112,7 +112,7 @@ a:link {
   text-align: center;
   padding: 0 40px;
   background-image: url('https://dl.dropboxusercontent.com/u/2330299/capstone/splash-bg.jpg');
-  background-position: center center;
+  background-position: bottom center;
   background-size: cover;
   position: absolute;
   top: 0px;
@@ -209,6 +209,74 @@ a:link {
     font: 12px 'ProximaNova-Regular';
     line-height: 17px;
     color: #999;
+  }
+}
+
+
+.design-examples {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  text-align: center;
+
+  .designed-to-impress {
+    margin-top: 50px;
+    font: 24px 'ProximaNova-Bold';
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: #111;
+    text-transform: uppercase;
+  }
+
+  .design-tagline {
+    font: 17px 'Adobe-Garamond-Pro', 'Garamond', 'Georgia', serif;
+    line-height: 24px;
+    color: #555;
+    margin-top: 10px;
+  }
+
+  div.desktop-options {
+    display: block;
+    padding: 10px 0;
+    list-style-type: none;
+    color: $teal;
+    width: 45%;
+    margin: 30px auto;
+    font: 12px 'ProximaNova-Regular';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    div {
+      float: left;
+      border-right: 1px solid #1abc9c;
+      border: 1px solid #1abc9c;
+      padding: 12px 0 11px 0;
+      margin-left: -1px;
+      width: 33.3333%;
+      cursor: pointer;
+
+      &.selected {
+        background: $teal;
+        color: #fff;
+      }
+    }
+  }
+
+  .desktop {
+    width: 58%;
+    position: relative;
+    margin: auto auto;
+    img.computer {
+      max-width: 100%;
+    }
+    img.desktop-screen {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      max-width: 100%;
+      padding: 5% 4%;
+      margin: auto auto;
+    }
   }
 }
 
