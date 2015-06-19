@@ -1,0 +1,48 @@
+<div class="container-fluid design-examples">
+  <div class="designed-to-impress">Designed To Impress</div>
+  <div class="design-tagline">Dedicated online photo gallery for each of your clients, with beautiful cover and layout right out of the box.</div>
+
+  <div class="desktop-options group">
+    <div class="selected beautiful-design">Beautiful Design</div>
+    <div class="gallery-design">The Gallery</div>
+    <div class="space-design">Your Space</div>
+  </div>
+
+  <div class="desktop">
+    <img src="https://dl.dropboxusercontent.com/u/2330299/capstone/desktop-image.png" class="computer">
+    <img src="https://dl.dropboxusercontent.com/u/2330299/capstone/desktop-beautiful.png" class="desktop-screen beautiful">
+    <img src="https://dl.dropboxusercontent.com/u/2330299/capstone/desktop-gallery.png" class="desktop-screen gallery">
+    <img src="https://dl.dropboxusercontent.com/u/2330299/capstone/desktop-your.png" class="desktop-screen your">
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    var windowHeight = $(window).height();
+    $('.design-examples').height(windowHeight);
+
+    $('.beautiful').hide();
+
+    $('.beautiful-design').on('click', function () {
+      $('.beautiful, .gallery, .your').hide();
+      $('.beautiful').fadeIn();
+      $('.desktop-options > div').removeClass('selected');
+      $('.beautiful-design').addClass('selected');
+    })
+
+    $('.gallery-design').on('click', function () {
+      $('.beautiful, .gallery, .your').hide();
+      $('.gallery').fadeIn();
+      $('.desktop-options > div').removeClass('selected');
+      $('.gallery-design').addClass('selected');
+    });
+
+    $('.space-design').on('click', function () {
+      $('.beautiful, .gallery, .your').hide();
+      $('.your').fadeIn();
+      $('.desktop-options > div').removeClass('selected');
+      $('.space-design').addClass('selected');
+    });
+
+  });
+</script>
