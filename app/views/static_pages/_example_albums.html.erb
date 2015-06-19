@@ -1,0 +1,6 @@
+<div class="container-fluid example-albums">
+
+  <% @users.each do |user| %>
+    <%= render 'example_album', user: user %>
+  <% end %>
+</div>
