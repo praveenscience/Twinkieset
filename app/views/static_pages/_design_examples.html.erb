@@ -25,6 +25,16 @@
       $('.example-albums').css('top', $('.design-examples').offset().bottom);
 
       $('.example-albums .header').height(windowHeight-350);
+      if ($(window).width() < 825) {
+        $('.screenshot').width('400px');
+        $('.user-item').addClass('collapse');
+        $('.example-albums').height(windowHeight + 400);
+      } else if ($(window).width() < 1043) {
+        $('.user-item').removeClass('collapse');
+        $('.screenshot').width('100%');
+      } else {
+        $('.screenshot').width('300px');
+      }
     });
     $(window).resize();
 
