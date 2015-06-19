@@ -109,15 +109,19 @@ a:link {
 /* splash/landing */
 
 .splash {
+
+
   text-align: center;
   padding: 0 40px;
-  background-image: url('https://dl.dropboxusercontent.com/u/2330299/capstone/splash-bg.jpg');
-  background-position: bottom center;
-  background-size: cover;
+  background-image: url("https://dl.dropboxusercontent.com/u/2330299/capstone/splash-bg.jpg");
+  background-position: 50% 85%;
+  background-repeat: no-repeat;
+  background-size: 100%;
   position: absolute;
   top: 0px;
   bottom: 0px;
   width: 100%;
+
 
   nav {
     margin-top: 40px;
@@ -179,6 +183,8 @@ a:link {
   .tag-line {
     font: 17px 'Adobe-Garamond-Pro', 'Garamond', 'Georgia', serif;
     color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
   // .get-started {
   //   @include create-buttons($teal, #fff);
