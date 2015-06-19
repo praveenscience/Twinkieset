@@ -22,7 +22,6 @@
       var windowHeight = $(window).height();
       $('.design-examples, .example-albums').height(windowHeight);
 
-      $('.example-albums').css('top', $('.design-examples').offset().bottom);
 
       $('.example-albums .header').height(windowHeight-350);
       if ($(window).width() < 825) {
@@ -35,26 +34,69 @@
       } else {
         $('.screenshot').width('300px');
       }
+
+      var topOfDesignExamples = $('.design-examples').offset().top;
+      var topOfAlbumExamples =  $('.example-albums').offset().top;
+
+      $(".welcome-link").click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 2000);
+      });
+
+      $(".design-link").click(function() {
+        $('html, body').animate({
+          scrollTop: topOfDesignExamples
+        }, 2000);
+      });
+
+
+      $(".examples-link").click(function() {
+        $('html, body').animate({
+          scrollTop: topOfAlbumExamples
+        }, 2000);
+      });
+
+
+      $(window).scroll(function () {
+        var currentPos = $('body').scrollTop();
+        if (currentPos > 0 && currentPos < topOfDesignExamples) {
+          $('.splash-navbar').fadeOut();
+          $('.options li').removeClass('current');
+          $('.welcome-link').addClass('current');
+        } else if (currentPos > topOfDesignExamples-100 && currentPos < topOfAlbumExamples) {
+          $('.splash-navbar').fadeIn();
+          $('.options li').removeClass('current');
+          $('.design-link').addClass('current');
+        } else if (currentPos >= topOfAlbumExamples-100) {
+          $('.options li').removeClass('current');
+          $('.examples-link').addClass('current');
+        }
+      })
+
+
+
+
     });
     $(window).resize();
 
     $('.beautiful').hide();
 
-    $('.beautiful-design').on('click', function () {
+    $('.beautiful-design').on('mouseover', function () {
       $('.beautiful, .gallery, .your').hide();
       $('.beautiful').fadeIn();
       $('.desktop-options > div').removeClass('selected');
       $('.beautiful-design').addClass('selected');
     })
 
-    $('.gallery-design').on('click', function () {
+    $('.gallery-design').on('mouseover', function () {
       $('.beautiful, .gallery, .your').hide();
       $('.gallery').fadeIn();
       $('.desktop-options > div').removeClass('selected');
       $('.gallery-design').addClass('selected');
     });
 
-    $('.space-design').on('click', function () {
+    $('.space-design').on('mouseover', function () {
       $('.beautiful, .gallery, .your').hide();
       $('.your').fadeIn();
       $('.desktop-options > div').removeClass('selected');
