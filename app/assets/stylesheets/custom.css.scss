@@ -338,6 +338,21 @@ a:link {
   position: absolute;
   top: 200%;
   text-align: center;
+  padding: 0;
+
+  .header {
+    background-image: url('https://dl.dropboxusercontent.com/u/2330299/capstone/example-intro-bg.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    &:after {
+      content: "";
+      clear: both;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 /* USER INDEX PUBLIC */
@@ -346,6 +361,8 @@ a:link {
   display: inline-block;
   width: 33%;
   text-align: center;
+  position: relative;
+  top: 78px;
 
   .screenshot {
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
