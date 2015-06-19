@@ -75,11 +75,6 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     this._swapViewPublic(showView);
   },
 
-  publicUsersIndex: function() {
-    var publicUsersIndexView = new TwinkieSetApp.Views.PublicUsersIndex();
-    this._swapViewPublic(publicUsersIndexView);
-  },
-
   _swapViewPublic: function (view) {
     this._currentViewPublic && this._currentViewPublic.remove();
     this._currentViewPublic = view;
