@@ -105,7 +105,6 @@ a:link {
 .form-control::-moz-placeholder { color: #a9a9a9; }
 .form-control:-ms-input-placeholder { color: #a9a9a9; }
 
-
 /* splash/landing */
 
 .splash {
@@ -116,11 +115,12 @@ a:link {
   background-image: url("https://dl.dropboxusercontent.com/u/2330299/capstone/splash-bg.jpg");
   background-position: 50% 85%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   position: absolute;
   top: 0px;
   bottom: 0px;
   width: 100%;
+  min-width: 660px;
 
 
   nav {
@@ -220,6 +220,7 @@ a:link {
 
 
 .design-examples {
+  min-width: 660px;
   width: 100%;
   position: absolute;
   top: 100%;
@@ -251,6 +252,7 @@ a:link {
     font: 12px 'ProximaNova-Regular';
     text-transform: uppercase;
     letter-spacing: 1px;
+    min-width: 450px;
 
     div {
       float: left;
