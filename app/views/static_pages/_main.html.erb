@@ -30,7 +30,8 @@
       <h1 class="landing-title">BEAUTIFUL CLIENT PHOTO GALLERIES</h1>
       <h2 class="tag-line">The better way for modern photographers to share, deliver, proof and sell online.</h2>
       <!-- <div class="get-started">Register</div> -->
-      <div class="get-started-guest"><%= render 'guest_login' %></div>
+      <!-- <div class="get-started-guest"><%= render 'guest_login' %></div> -->
+      <div class="get-started-guest"><%= link_to 'Guest Login', new_session_url(demo: "true"), { method: "get", class: "guest-login-button"} %></div>
       <div class="check-out-demo">Register for a free account or try out a guest account.</div>
     </div>
     <div class="down-arrow moved">
