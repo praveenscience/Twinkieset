@@ -1,13 +1,16 @@
 class StaticPagesController < ApplicationController
 
-  def root
+  def admin
     redirect_to new_session_url unless logged_in?
   end
 
+  def public
 
-  def public_index
+  end
+
+  def index
     @users = User.limit(3)
-    render :public_index
+    render :index
   end
 
 end
