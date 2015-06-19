@@ -136,6 +136,7 @@ a:link {
       li {
         display: inline-block;
         margin: 0 0 0 30px;
+        cursor: pointer;
         -webkit-transition: color 200ms; /* Safari */
         transition: color 200ms;
         transition-timing-function: linear;
