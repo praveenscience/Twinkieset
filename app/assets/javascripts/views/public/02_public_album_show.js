@@ -44,7 +44,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
 
     $('.public-photos-index').html(photosInSubalbum.render().$el);
     var collectionID = this.album.id;
-    var path = '#'+ this.album_owner.id +'/collection/'+ this.album.id + '/set/'+ this.setID;
+    var path = 'users#'+ this.album_owner.id +'/collection/'+ this.album.id + '/set/'+ this.setID;
     window.location.replace(path);
   },
 
