@@ -18,8 +18,13 @@
 
 <script type="text/javascript">
   $(document).ready(function () {
-    var windowHeight = $(window).height();
-    $('.design-examples').height(windowHeight);
+    $(window).resize(function () {
+      var windowHeight = $(window).height();
+      $('.design-examples, .example-albums').height(windowHeight);
+
+      $('.example-albums').css('top', $('.design-examples').offset().bottom);
+    });
+    $(window).resize();
 
     $('.beautiful').hide();
 
