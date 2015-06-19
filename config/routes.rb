@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     # resources :public_albums, only: [:index, :show]
-    get 'users/:user_id', to: 'public_users#index', as: "public_users"
+    get 'users/:user_id', to: 'public_users#show', as: "public_users"
     get 'users/:user_id/albums', to: 'public_albums#index', as: 'public_albums'
     get 'users/:user_id/albums/:id', to: 'public_albums#show', as: "public_album"
     resources :albums, except: [:new, :edit]
