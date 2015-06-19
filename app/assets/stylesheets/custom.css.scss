@@ -265,6 +265,8 @@ a:link {
   position: absolute;
   top: 100%;
   text-align: center;
+  overflow-y: hidden;
+
 
   .designed-to-impress {
     margin-top: 50px;
@@ -311,7 +313,8 @@ a:link {
   }
 
   .desktop {
-    width: 58%;
+    min-width: 660px;
+    width: 52%;
     position: relative;
     margin: auto auto;
     img.computer {
@@ -325,6 +328,34 @@ a:link {
       padding: 5% 4%;
       margin: auto auto;
     }
+  }
+}
+
+.example-albums {
+  background: #F6F6F6;
+  min-width: 660px;
+  width: 100%;
+  position: absolute;
+  top: 200%;
+  text-align: center;
+}
+
+/* USER INDEX PUBLIC */
+
+.user-item {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+
+  .screenshot {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  }
+  .user-name {
+    font: 14px 'ProximaNova-Semibold';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    margin-top: 10px;
   }
 }
 
