@@ -20,7 +20,9 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
     'sortstop': "saveOrds",
     'updateSort': "updateSort",
-    'click .sort-photo-button': 'openSortOptions',
+
+    'mouseleave .sort-by-options': 'openSortOptions',
+    'click .sort-photo-button, .sort-by-options': 'openSortOptions',
     'click .hide-filenames': 'hideFilenames',
     'click .show-filenames': 'showFilenames',
 
