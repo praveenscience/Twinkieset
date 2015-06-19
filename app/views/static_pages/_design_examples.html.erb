@@ -61,5 +61,10 @@
       $('.space-design').addClass('selected');
     });
 
+    $('.examples-link').on('click', function () {
+      $('html, body').animate({
+        scrollTop: $('.example-albums').offset().top
+      }, 2000)
+    })
   });
 </script>
