@@ -61,7 +61,7 @@
       $(window).scroll(function () {
         var currentPos = $('body').scrollTop();
         if (currentPos > 0 && currentPos < topOfDesignExamples) {
-          $('.splash-navbar').fadeOut();
+          $('.splash-navbar').fadeOut('fast');
           $('.options li').removeClass('current');
           $('.welcome-link').addClass('current');
         } else if (currentPos > topOfDesignExamples-100 && currentPos < topOfAlbumExamples) {
