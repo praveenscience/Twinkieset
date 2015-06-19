@@ -51,6 +51,7 @@
 $teal: #1abc9c;
 $darkteal: #229f85;
 $darkred: #db0000;
+$darkerred: #ab0000;
 $blue: #3a99d9;
 
 @mixin create-buttons($bg, $color) {
@@ -805,7 +806,10 @@ a:link {
     }
     .submit-button {
       margin-right: 3px;
-      background-color: #1abc9c;
+      background-color: $teal;
+      &:hover {
+        background-color: $darkteal;
+      }
     }
 
     .center-buttons {
@@ -817,11 +821,17 @@ a:link {
     .cancel-button {
       background-color: #e8e8e8;
       color: black;
+      &:hover {
+        background-color: #d8d8d8;
+      }
     }
 
     .delete-button {
       margin-right: 3px;
       background-color: $darkred;
+      &:hover {
+        background-color: $darkerred;
+      }
     }
 
 
@@ -1192,7 +1202,7 @@ a:link {
         }
         &:hover .hover-tip {
           opacity: 1;
-          transition-delay: 2s;
+          transition-delay: 100ms;
 
         }
 
