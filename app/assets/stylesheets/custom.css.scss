@@ -803,6 +803,9 @@ a:link {
       line-height: 19px;
       float: right;
       margin-top: 20px;
+      -webkit-transition: background 200ms; /* Safari */
+      transition: background 200ms;
+      transition-timing-function: linear;
     }
     .submit-button {
       margin-right: 3px;
