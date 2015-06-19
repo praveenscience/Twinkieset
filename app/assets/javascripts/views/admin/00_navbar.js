@@ -18,7 +18,6 @@ TwinkieSetApp.Views.NavBar = Backbone.View.extend({
 
   openDropdown: function (event) {
     $('.user-buttons').toggleClass('selected-nav-option');
-    $('.albums-title').toggleClass('selected-nav-option');
     $('.user-dropdown').toggle();
   },
 
