@@ -216,6 +216,46 @@ a:link {
     line-height: 17px;
     color: #999;
   }
+
+  .down-arrow {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -24px;
+    opacity: 0;
+    -webkit-transition: opacity 400ms, bottom 400ms;
+    transition: opacity 400ms, bottom 400ms;
+    transition-timing-function: linear;
+    width: 52px;
+    height: 30px;
+
+    &.moved {
+      opacity: 1;
+      bottom: 10px;
+    }
+    .left-side {
+      -ms-transform: rotate(40deg); /* IE 9 */
+      -webkit-transform: rotate(40deg); /* Chrome, Safari, Opera */
+      transform: rotate(40deg);
+      height: 3px;
+      background: #fff;
+      width: 30px;
+      position: relative;
+      top: 13px;
+    }
+
+    .right-side {
+      -ms-transform: rotate(-40deg); /* IE 9 */
+      -webkit-transform: rotate(-40deg);
+      transform: rotate(-40deg);
+      height: 3px;
+      background: #fff;
+      width: 30px;
+      position: relative;
+      left: 22px;
+      top: 9px;
+    }
+  }
 }
 
 
