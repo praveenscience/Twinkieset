@@ -6,7 +6,7 @@ class StaticPagesController < ApplicationController
 
 
   def public_index
-    @users = User.all
+    @users = User.limit(3)
     render :public_index
   end
 
