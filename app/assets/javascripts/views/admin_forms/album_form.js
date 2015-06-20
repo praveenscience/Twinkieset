@@ -3,7 +3,7 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
   className: 'form-modal',
 
   initialize: function () {
-
+    TwinkieSetApp.Views.defaultKeys.call(this);
   },
 
   events: {
@@ -13,7 +13,7 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
 
   hideForm: function () {
     event.preventDefault();
-    this.$el.hide();
+    this.remove();
   },
 
   createAlbum: function (event) {
@@ -24,9 +24,14 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
       success: function () {
         this.collection.add(newAlbum);
         newAlbum.fetch(); // do this to ensure string_date is rendered
-        this.$el.hide();
+        this.remove();
+      }.bind(this),
+      error: function (models, response) {
+        this.$el.find('.errors').html(response.responseJSON.join(". "));
       }.bind(this)
     });
+
+
   },
 
   render: function () {

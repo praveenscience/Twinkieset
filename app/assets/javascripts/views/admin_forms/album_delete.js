@@ -10,7 +10,7 @@ TwinkieSetApp.Views.DeleteAlbum = Backbone.View.extend({
   },
 
   cancelAlbum: function () {
-    this.$el.hide();
+    this.remove();
   },
 
   deleteAlbum: function () {

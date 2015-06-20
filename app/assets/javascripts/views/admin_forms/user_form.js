@@ -2,33 +2,42 @@ TwinkieSetApp.Views.UserForm = Backbone.View.extend({
   template: JST['admin_forms/user_form'],
   className: 'form-modal',
 
+  initialize: function () {
+    TwinkieSetApp.Views.defaultKeys.call(this);
+    this.user = new TwinkieSetApp.Models.Owner({ id: CURRENT_USER.id });
+    this.user.fetch();
+    this.listenTo(this.user, 'sync', this.render);
+  },
+
   events: {
     'click .cancel-user': 'closeForm',
     'submit form': 'updateUser'
   },
 
   closeForm: function () {
-    this.$el.hide();
+    event.preventDefault();
+    this.remove();
   },
 
   updateUser: function (event) {
     event.preventDefault();
     var attrs = $(event.currentTarget).serializeJSON();
-    var user = new TwinkieSetApp.Models.Owner({ id: CURRENT_USER.id });
+    var user = this.user;
     user.save(attrs, {
       success: function () {
-        console.log(user.attributes);
-        this.closeForm();
+        this.remove();
+        user.fetch();
       }.bind(this),
-      error: function (model, response) {
-        response.response
-        this.$el.find('.errors').html(response.responseJSON.join(",,") + ".");
+      error: function (models, response) {
+        this.$el.find('.errors').html(response.responseJSON.join(". "));
       }.bind(this)
     });
   },
 
   render: function () {
-    var content = this.template();
+    var content = this.template({
+      user: this.user
+    });
     this.$el.html(content);
     return this;
   }

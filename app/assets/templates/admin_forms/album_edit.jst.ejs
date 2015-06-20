@@ -3,6 +3,7 @@
   <div class="title">Edit Collection</div>
 
   <form class="form-group">
+    <div class="errors"></div>
     <input id="album-status" class="form-control" type="hidden" name="album[status]" value="<%= album.get('status') %>">
 
     <label for="album-title">Collection Name</label>
@@ -21,14 +22,14 @@
 
       <div class="right-edit-form">
         <label for="album-password">Password</label>
-        <input id="album-password" class="form-control" type="password" name="album[password]" value="">
+        <input id="album-password" class="form-control" type="text" name="album[password]" value="">
         <div class="optional-password">Leave password blank for public access of album.</div>
       </div>
     </div>
 
     <div class="save-cancel group">
-      <button class="cancel-button cancel-edit-album">Cancel</button>
       <input type="submit" class="submit-button submit-edit-album" value="Save">
+      <button class="cancel-button cancel-edit-album">Cancel</button>
     </div>
   </form>
 

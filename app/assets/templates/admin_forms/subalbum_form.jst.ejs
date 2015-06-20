@@ -3,6 +3,7 @@
   <div class="title"><%= header %></div>
 
   <form class="form-group">
+    <div class="errors"></div>
     <input type="hidden" name="subalbum[album_id]" value="<%= album.id %>">
 
     <label for="subalbum-title">Photo Set Name</label>
@@ -12,8 +13,10 @@
       value="<%= subalbum.get('title')%>"
       placeholder="e.g. Ceremony, Reception, Getting Ready">
 
-    <button class="cancel-button cancel-subalbum">Cancel</button>
-    <input type="submit" class="submit-button submit-subalbum" value="Save">
+    <div class="save-cancel group">
+      <input type="submit" class="submit-button submit-subalbum" value="Save">
+      <button class="cancel-button cancel-subalbum">Cancel</button>
+    </div>
   </form>
 
 

@@ -9,31 +9,32 @@
     <input id="user-username"
       class="form-control" type="text"
       name="user[username]"
-      value="<%= CURRENT_USER.username %>">
+      value="<%= user.get('username') %>">
 
 
     <label for="user-email">Email</label>
     <input id="user-email"
       class="form-control" type="text"
       name="user[email]"
-      value="<%= CURRENT_USER.email %>">
+      value="<%= user.get('email') %>">
 
     <label for="user-business_name">Business Name</label>
     <input id="user-business_name"
       class="form-control" type="text"
       name="user[business_name]"
-      value="<%= CURRENT_USER.business_name %>">
+      value="<%= user.get('business_name') %>">
 
       <label for="user-website">Website</label>
       <input id="user-website"
         class="form-control" type="text"
         name="user[website]"
-        value="<%= CURRENT_USER.website %>">
+        value="<%= user.get('website') %>">
 
 
-
-    <button class="cancel-button cancel-user">Cancel</button>
-    <input type="submit" class="submit-button submit-user" value="Save">
+    <div class="save-cancel group">
+      <input type="submit" class="submit-button submit-user" value="Save">
+      <button class="cancel-button cancel-user">Cancel</button>
+    </div>
   </form>
 
 

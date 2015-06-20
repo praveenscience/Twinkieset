@@ -2,6 +2,10 @@ TwinkieSetApp.Views.UserPassword = Backbone.View.extend({
   template: JST['admin_forms/user_password'],
   className: 'form-modal',
 
+  initialize: function () {
+    TwinkieSetApp.Views.defaultKeys.call(this);
+  },
+
   events: {
     'submit form': 'changePassword',
     'click .cancel-password': 'closeForm'
@@ -9,7 +13,7 @@ TwinkieSetApp.Views.UserPassword = Backbone.View.extend({
 
   closeForm: function (event) {
     event.preventDefault();
-    this.$el.hide();
+    this.remove();
   },
 
   changePassword: function (event) {
@@ -23,12 +27,11 @@ TwinkieSetApp.Views.UserPassword = Backbone.View.extend({
     var user = new TwinkieSetApp.Models.Owner({ id: CURRENT_USER.id });
     user.save(attrs, {
       success: function () {
-        this.closeForm();
+        this.remove();
       }.bind(this),
       error: function (models, response) {
-        debugger;
         if (response.responseJSON) {
-          this.$el.find('.errors').html(response.responseJSON.join(",,") + ".");
+          this.$el.find('.errors').html(response.responseJSON.join("."));
         } else {
           this.$el.find('.errors').html(response.responseText);
         }

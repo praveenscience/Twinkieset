@@ -6,6 +6,7 @@ TwinkieSetApp.Views.SubalbumForm = Backbone.View.extend({
     this.header = options.header;
     this.album = options.album;
     this.subalbum = options.subalbum;
+    TwinkieSetApp.Views.defaultKeys.call(this);
   },
 
   render: function () {
@@ -30,7 +31,10 @@ TwinkieSetApp.Views.SubalbumForm = Backbone.View.extend({
     subalbum.save(attrs, {
       success: function () {
         this.album.subalbums().add(subalbum);
-        this.$el.hide();
+        this.remove();
+      }.bind(this),
+      error: function (models, response) {
+        this.$el.find('.errors').html(response.responseJSON.join(". "));
       }.bind(this)
     });
 
@@ -38,6 +42,6 @@ TwinkieSetApp.Views.SubalbumForm = Backbone.View.extend({
 
   hideSubalbumForm: function () {
     event.preventDefault();
-    this.$el.hide();
+    this.remove();
   }
 });

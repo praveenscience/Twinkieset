@@ -100,7 +100,7 @@ TwinkieSetApp.Views.PhotosModal = Backbone.View.extend({
 
             this.$el.find('.file-name').css('left', leftOfImage);
             this.$el.find('.gallery-counter').css('right', leftOfImage);
-            
+
             console.log(this.$el.find('.active-image img').width() + "image loaded correctly");
 
             var imagewidth = this.$el.find('.active-image img').width();

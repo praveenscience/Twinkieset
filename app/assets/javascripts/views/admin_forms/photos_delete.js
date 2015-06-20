@@ -24,7 +24,7 @@ TwinkieSetApp.Views.PhotosDelete = Backbone.View.extend({
   },
 
   cancelDeletePhotos: function () {
-    this.$el.hide();
+    this.remove();
   },
 
   render: function () {

@@ -3,7 +3,7 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
   className: 'form-modal',
 
   initialize: function () {
-
+    TwinkieSetApp.Views.defaultKeys.call(this);
   },
 
   events: {
@@ -26,19 +26,26 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
   },
 
   hideForm: function () {
+    console.log("hide");
     event.preventDefault();
-    this.$el.hide();
+    this.remove();
   },
 
   editAlbum: function (event) {
+    console.log("edit fired");
     event.preventDefault();
-    var attrs = $('form').serializeJSON();
+    var attrs = $(event.currentTarget).serializeJSON();
     var editAlbum = this.model;
     editAlbum.save(attrs, {
       success: function () {
+        console.log("success");
         editAlbum.fetch(); // do this to ensure string_date is rendered
-        this.$el.hide();
+        this.remove();
       }.bind(this),
+      error: function (models, response) {
+        console.log('hit the error');
+        this.$el.find('.errors').html(response.responseJSON.join(". "));
+      }.bind(this)
     });
   },
 
