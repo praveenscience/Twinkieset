@@ -1186,6 +1186,7 @@ a:link {
       top: 60px;
       background: white;
       width: Calc(100% - 20% - 100px);
+      min-width: 520px;
       z-index: 2;
     }
 
@@ -1321,6 +1322,7 @@ a:link {
       padding-bottom: 5px;
       background: #fff;
       width: Calc(100% - 20% - 100px);
+      min-width: 520px;
       z-index: 1;
 
     }

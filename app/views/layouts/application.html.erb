@@ -20,7 +20,7 @@
     CLOUDINARY_SETTINGS = {
       "cloud_name": "<%= ENV['cloud_name'] %>",
       "upload_preset": "<%= ENV['upload_preset'] %>",
-      "stylesheet": "https://dl.dropboxusercontent.com/u/2330299/capstone/cloudinary_minimal.css",
+      "stylesheet": "<%= asset_url 'cloudinary_minimal.css' %>",
       "client_allowed_formats": ["png","gif", "jpeg"],
       "max_file_size": 50000000
     }
