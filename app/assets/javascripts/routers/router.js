@@ -11,6 +11,14 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     this.$rootEl = options.$rootEl;
     this.$rootElPublic = options.$rootElPublic;
     this.collection = new TwinkieSetApp.Collections.Albums();
+    TwinkieSetApp.Views.defaultKeys = function () {
+      $('body').keydown(function (e) {
+        if (e.keyCode === 27) {
+          e.preventDefault();
+          this.remove();
+        }
+      }.bind(this));
+    };
   },
 
   index: function () {
