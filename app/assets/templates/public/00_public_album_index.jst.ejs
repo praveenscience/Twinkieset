@@ -1,8 +1,15 @@
 <div class="container guest-album-index">
 
   <div class="row-fluid">
-    <div class="span12 title">
-      <a href="<%= owner.get('website') %>"><%= owner.get("business_name") %></a>
+    <div class="user-avatar-title">
+      <% if (owner.get('avatar')) { %>
+        <div class="user-avatar">
+          <img src="<%= owner.get('avatar') %>">
+        </div>
+      <% } %>
+      <div class="span12 title">
+        <a href="<%= owner.get('website') %>"><%= owner.get("business_name") %></a>
+      </div>
     </div>
 
 

@@ -659,15 +659,29 @@ input {
 .guest-album-index {
   text-align: center;
 
-  .title {
-    margin-top: 140px;
-  }
-  .title a:link, .title a:active, .title a:visited {
-    font: 24px 'ProximaNova-Bold';
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #333;
-  }
+ .user-avatar-title {
+   margin-top: 120px;
+   .user-avatar {
+     width: 75px;
+     height: 75px;
+     border-radius: 5px;
+     overflow: hidden;
+     margin: 0px auto  30px auto;
+     img {
+       width: 100%;
+     }
+   }
+   .title {
+     margin-top: 0px;
+   }
+   .title a:link, .title a:active, .title a:visited {
+     font: 24px 'ProximaNova-Bold';
+     text-transform: uppercase;
+     letter-spacing: 4px;
+     color: #333;
+   }
+ }
+
   a:link, a:active, a:visited {
     color: #333 !important;
     text-decoration: none;
@@ -723,6 +737,7 @@ input {
       margin-top: 2px;
     }
   }
+
   .footer {
     margin-top: 160px;
     font: 10px 'ProximaNova-Regular';

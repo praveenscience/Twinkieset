@@ -1,4 +1,4 @@
-json.extract! @owner, :id, :email, :username, :business_name, :website
+json.extract! @owner, :id, :email, :username, :business_name, :website, :avatar
 
 json.albums @albums.each do |album|
   json.extract!(album, :id, :title, :event_date, :status, :created_at, :updated_at)
