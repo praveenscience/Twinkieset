@@ -42,7 +42,9 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
   },
 
   openShareCollection: function () {
-    var shareView = new TwinkieSetApp.Views.Share();
+    var shareView = new TwinkieSetApp.Views.Share({
+      album: this.model
+    });
     $('body').append(shareView.render().$el);
   },
 
