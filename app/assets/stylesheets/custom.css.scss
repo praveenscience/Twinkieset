@@ -910,7 +910,7 @@ a:link {
 
       .status-options {
         margin-top: 10px;
-        .status-draft, .status-published {
+        .status-hidden, .status-published {
           float: left;
           font-family: 'ProximaNova-Regular';
           font-size: 14px;
@@ -923,10 +923,10 @@ a:link {
 
         }
 
-        .status-draft.selected, .status-published.selected {
+        .status-hidden.selected, .status-published.selected {
           opacity: 1;
         }
-        .status-draft {
+        .status-hidden {
           margin-left: 5px;
         }
 
@@ -1925,6 +1925,47 @@ ul.view-more {
 
 ul.photo-items {
   margin-top: 60px;
+}
+
+.unavailable {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background: #000;
+
+  a:link, a:visited, a:active, a:hover {
+    color: #fff;
+  }
+
+  .content {
+    width: 362px;
+    margin: 28% auto auto auto;
+    .business_name {
+      font: 16px 'ProximaNova-Regular';
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #fff;
+      text-align: center;
+    }
+    .intro {
+      font: 12px 'ProximaNova-Regular';
+      color: #999;
+      margin-top: 35px;
+      line-height: 17px;
+
+
+      a:link, a:visited, a:active {
+        color: #999;
+        -webkit-transition: color 200ms; /* Safari */
+        transition: color 200ms;
+        transition-timing-function: linear;
+      }
+      a:hover {
+        color: #fff;
+      }
+    }
+  }
 }
 // /* for larger than 1040px */
 // @media screen and (min-width: 1040px) {

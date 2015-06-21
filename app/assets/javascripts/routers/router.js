@@ -1,9 +1,10 @@
 TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   routes: {
-    "": "index",
-    "collection/:id(/set/:subalbumId)": "show",
-    ":user_id/collection/:album_id(/set/:set_id)": "publicShow",
-    ":id": "publicIndex",
+    "": "index", //  http://localhost:3000/admin#
+    "collection/:id(/set/:subalbumId)": "show", //  http://localhost:3000/admin#collection/1/
+    ":user_id/collection/:album_id(/set/:set_id)": "publicShow", // http://localhost:3000/users#3/collection/10
+    ":user_id": "publicIndex", // http://localhost:3000/users#3
+    ":user_id/unavailable": "publicUnavailable" // http://localhost:3000/users#3/unavailable
   },
 
   initialize: function (options) {
@@ -52,9 +53,20 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     newView.render();
   },
 
-  publicIndex: function (id) {
+  publicUnavailable: function (user_id) {
+    var owner = new TwinkieSetApp.Models.PublicOwner({
+      userID: user_id
+    });
+    owner.fetch();
+    var unavailableView = new TwinkieSetApp.Views.Unavailable({
+      owner: owner
+    });
+    this._swapViewPublic(unavailableView);
+  },
+
+  publicIndex: function (user_id) {
     this.owner = new TwinkieSetApp.Models.PublicOwner({
-      userID: id
+      userID: user_id
     });
     this.owner.fetch();
     var userIndex = new TwinkieSetApp.Views.PublicAlbumIndex({
@@ -68,27 +80,36 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
     var album_owner = new TwinkieSetApp.Models.PublicOwner({
       userID: user_id
     });
-    album_owner.fetch();
+    album_owner.fetch({
+      success: function (model) {
+        if (model.albums().get(album_id) === undefined) {
+          window.location.href = "/users#" + user_id + "/unavailable";
+          return
+        } else {
+          var album = new TwinkieSetApp.Models.PublicAlbum({
+            userID: user_id,
+            albumID: album_id
+          });
 
-    var album = new TwinkieSetApp.Models.PublicAlbum({
-      userID: user_id,
-      albumID: album_id
+          album.fetch({
+            data: { "something": "something else"},
+            error: function () {
+              var path = window.location.hash.slice(1);
+              window.location.href = "/album_sessions/new?album=" + album_id + "&router=" + path;
+            }
+          });
+
+          var showView = new TwinkieSetApp.Views.PublicAlbumShow({
+            album_owner: album_owner,
+            album: album,
+            setID: set_id
+          });
+          this._swapViewPublic(showView);
+        }
+      }.bind(this)
     });
 
-    album.fetch({
-      data: { "something": "something else"},
-      error: function () {
-        var path = window.location.hash.slice(1);
-        window.location.href = "/album_sessions/new?album=" + album_id + "&router=" + path;
-      }
-    });
 
-    var showView = new TwinkieSetApp.Views.PublicAlbumShow({
-      album_owner: album_owner,
-      album: album,
-      setID: set_id
-    });
-    this._swapViewPublic(showView);
   },
 
   _swapViewPublic: function (view) {
