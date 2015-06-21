@@ -23,33 +23,20 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
 
     if (TwinkieSetApp.Views.masonryGallery) {
       $('.grid-item').imagesLoaded( function() {
-        TwinkieSetApp.Views.sizing();
+        if (TwinkieSetApp.Views.sizing) {
+          TwinkieSetApp.Views.sizing();
+        }
         TwinkieSetApp.Views.masonryGallery.masonry('appended', this.$el);
         this.$el.css('opacity', 1);
-        // TwinkieSetApp.Views.masonryGallery.masonry('reloadItems')
-        TwinkieSetApp.Views.masonryGallery.masonry()
+
+
+
       }.bind(this));
     }
-      //
-      // setTimeout(function () {
-      //   TwinkieSetApp.Views.sizing();
-      //   TwinkieSetApp.Views.masonryGallery.masonry();
-      // }, 100);
-      //
-      // setTimeout(function () {
-      //   TwinkieSetApp.Views.sizing();
-      //   TwinkieSetApp.Views.masonryGallery.masonry();
-      // }, 3000);
-      //
-      // setTimeout(function () {
-      //   TwinkieSetApp.Views.sizing();
-      //   TwinkieSetApp.Views.masonryGallery.masonry();
-      // }, 6000);
-      //
-      // setTimeout(function () {
-      //   TwinkieSetApp.Views.sizing();
-      //   TwinkieSetApp.Views.masonryGallery.masonry();
-      // }, 9000);
+
+
+
+
 
 
     this.$el.css('opacity',0);
