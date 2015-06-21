@@ -12,9 +12,11 @@
 
 
 
-
-<button class="view-album">
-  <a href="<%= "/#" + CURRENT_USER.id + '/collection/' + album.id %>" target="new">
-    <i class="fa fa-eye"></i> View
-  </a>
-</button>
+<div class="view-share">
+  <button class="view-album">
+    <a href="<%= "/#" + CURRENT_USER.id + '/collection/' + album.id %>" target="new">
+      <i class="fa fa-eye"></i> View
+    </a>
+  </button>
+  <button class='share-collection-button'><i class="fa fa-share"></i> Share</button>
+</div>
