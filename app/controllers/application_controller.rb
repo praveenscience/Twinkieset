@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   helper_method :logged_in?, :current_user, :current_album, :logged_in_album?
 
   def current_album
-    album = Album.find_by(password: session[:album_password])
+    album = Album.find_by(id: session[:album_id])
   end
 
   def logged_in_album?
@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   end
 
   def log_into_album!(album)
-    session[:album_password] = album.password
+    session[:album_id] = album.id
   end
 
 

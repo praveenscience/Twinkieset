@@ -95,6 +95,7 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
             data: { "something": "something else"},
             error: function () {
               var path = window.location.hash.slice(1);
+
               window.location.href = "/album_sessions/new?album=" + album_id + "&router=" + path;
             }
           });

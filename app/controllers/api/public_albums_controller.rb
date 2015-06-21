@@ -16,11 +16,13 @@ class Api::PublicAlbumsController < ApplicationController
 
   private
     def must_be_logged_in
+
       @album = Album.find(params[:id]);
       if @album.password
         if @album.password == ""
           return
         elsif current_album.id.to_i != params[:id].to_i
+          fail
           # render "Blah", status: :forbidden
           # redirect_to new_album_session_url
             render text: "None!", status: :forbidden
