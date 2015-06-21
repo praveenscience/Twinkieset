@@ -9,6 +9,7 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
 <% if logged_in? %>
+<script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
   <script type="text/javascript">
     CURRENT_USER = {
       "id": "<%= current_user.id %>",
@@ -28,7 +29,8 @@
       "cloud_name": "<%= ENV['cloud_name'] %>",
       "upload_preset": "<%= ENV['upload_preset_avatar'] %>",
       "stylesheet": "<%= asset_url 'cloudinary_minimal.css' %>",
-      "client_allowed_formats": ["png","gif", "jpeg"]
+      "client_allowed_formats": ["png","gif", "jpeg"],
+      "multiple": false
     }
   </script>
 <% end %>
