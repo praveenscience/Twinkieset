@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  before_action :if_logged_in, only: [:new]
+
   def create
     @user = User.find_by_credentials(
       params[:user][:email],
@@ -28,7 +30,13 @@ class SessionsController < ApplicationController
   end
 
   private
-  def user_params
-    params.require(:user).permit(:username, :password)
-  end
+    def user_params
+      params.require(:user).permit(:username, :password)
+    end
+
+    def if_logged_in
+      if logged_in?
+        redirect_to "/admin"
+      end
+    end
 end
