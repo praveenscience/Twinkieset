@@ -47,14 +47,14 @@
 
       $(".design-link").click(function() {
         $('html, body').animate({
-          scrollTop: topOfDesignExamples
+          scrollTop: topOfDesignExamples - 25
         }, 2000);
       });
 
 
       $(".examples-link").click(function() {
         $('html, body').animate({
-          scrollTop: topOfAlbumExamples
+          scrollTop: topOfAlbumExamples - 25
         }, 2000);
       });
 
@@ -102,10 +102,10 @@
       $('.space-design').addClass('selected');
     });
 
-    $('.examples-link').on('click', function () {
-      $('html, body').animate({
-        scrollTop: $('.example-albums').offset().top
-      }, 2000)
-    })
+    // $('.examples-link').on('click', function () {
+    //   $('html, body').animate({
+    //     scrollTop: $('.example-albums').offset().top
+    //   }, 2000)
+    // })
   });
 </script>
