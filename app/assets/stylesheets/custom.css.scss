@@ -109,6 +109,9 @@ input.form-control {
     border: 1px solid #bbb;
   }
 }
+input {
+  font-family: 'ProximaNova-Light';
+}
 .form-control::-webkit-input-placeholder { color: #a9a9a9; }
 .form-control:-moz-placeholder { color: #a9a9a9; }
 .form-control::-moz-placeholder { color: #a9a9a9; }
@@ -158,6 +161,7 @@ input.form-control {
         display: inline-block;
         color: #888;
         margin-right: 30px;
+        cursor: pointer;
         a:link, a:active, a:visited {
           color: #888;
         }
