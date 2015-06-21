@@ -4,6 +4,11 @@
     <div class="album-event-date"><%= album.get('string_date') %></div>
     <div class="album-open-button">Open</a></div>
   </div>
+  <% if (owner.get('avatar')) { %>
+    <div class="user-avatar">
+      <img src="<%= owner.get('avatar') %>">
+    </div>
+  <% } %>
   <div class="owner-business-name">
     <a href="<%= owner.get('website') %>"><%= owner.get('business_name') %></div>
   </div>

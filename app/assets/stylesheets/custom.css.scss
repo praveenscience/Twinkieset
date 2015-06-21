@@ -1804,6 +1804,20 @@ input {
     }
   }
 
+  .user-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    bottom: 51px;
+    left: 50%;
+    margin-left: -23px;
+    img {
+      width: 100%;
+    }
+  }
   .owner-business-name {
 
     font: 10px 'ProximaNova-Regular';
