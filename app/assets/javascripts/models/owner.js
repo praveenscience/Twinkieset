@@ -1,5 +1,5 @@
 TwinkieSetApp.Models.Owner = Backbone.Model.extend({
-  urlRoot: '/users/',
+  urlRoot: 'api/owners/',
 
   initialize: function(options) {
   },
