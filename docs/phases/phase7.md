@@ -1,4 +1,4 @@
-# Phase 4: Create and upload Photos
+# Phase 7: Sorting photos by drag and drop, by name, date, etc.
 
 ## Rails
 ### Models
@@ -14,5 +14,7 @@
 
 ### Views
 
+
+
 ## Gems/Libraries
-* Cloudinary
+* jQuery UI Sortable

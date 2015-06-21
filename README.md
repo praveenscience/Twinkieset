@@ -56,7 +56,7 @@ For this phase I will create Backbone views for the guest users. Users will be a
 
 [Details][phase-five]
 
-### Phase 6: Editing Albums, Subalbums, and Photo Views (~2 days)
+### Phase 6: Delete and edit Albums, Subalbums, and Photo Views (~2 days)
 
 Admin users will be able to edit their albums, subalbums, and photos through Backbone.
 
@@ -68,6 +68,8 @@ Photos will be drag and droppable using jQuery UI Sortable.
 
 
 ### Bonus Features (TBD)
+- [x] Splash page with examples and demos
+- [x] Allow users to edit profile and change password
 - [ ] Friendly URL
 - [ ] Account Activation via email
 - [ ] Send password to clients via email

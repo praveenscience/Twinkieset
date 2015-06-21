@@ -4,11 +4,10 @@ class AlbumSessionsController < ApplicationController
     album = Album.find(params[:album][:id])
     @album = album && album.password == params[:album][:password] ? album : nil
 
-
     if @album
       log_into_album!(@album)
       flash[:notice] = ["Successfully logged into album!"]
-      
+
       redirect_to "/users##{params[:router]}"
       # redirect_to album_sessions_url
       # render json:
@@ -20,7 +19,6 @@ class AlbumSessionsController < ApplicationController
   end
 
   def new
-# fail
     @album = Album.find(params[:album])
   end
 

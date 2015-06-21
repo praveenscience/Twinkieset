@@ -2,6 +2,7 @@ class Api::SubalbumsController < ApplicationController
   def show
     @subalbum = Subalbum.find(params[:id])
   end
+  
   def create
     @subalbum = Subalbum.new(subalbum_params)
 

@@ -9,6 +9,7 @@
 * SessionsController (new, create, destroy)
 
 ### Views
+* layouts/application.html.erb
 * users/new.html.erb
 * session/new.html.erb
 

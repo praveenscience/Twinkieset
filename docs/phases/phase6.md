@@ -1,4 +1,4 @@
-# Phase 6: Editing Albums, Subalbums, and Photo Views
+# Phase 6: Delete and edit Albums, Subalbums, and Photo Views
 
 ## Rails
 ### Models
@@ -13,6 +13,9 @@
 ### Collections
 
 ### Views
+AlbumDelete
+AlbumEdit
+SubalbumDelete
+PhotosDelete
 
 ## Gems/Libraries
-* jQuery UI Sortable

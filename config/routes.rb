@@ -30,8 +30,8 @@ Rails.application.routes.draw do
   end
 
 
-  get '/:user_id/albums', to: 'albums#index', as: "user_albums"
-  get '/:user_id/albums/:id', to: 'albums#show', as: "user_album"
+  # get '/:user_id/albums', to: 'albums#index', as: "user_albums"
+  # get '/:user_id/albums/:id', to: 'albums#show', as: "user_album"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
