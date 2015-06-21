@@ -11,7 +11,13 @@ TwinkieSetApp.Views.UserForm = Backbone.View.extend({
 
   events: {
     'click .cancel-user': 'closeForm',
-    'submit form': 'updateUser'
+    'submit form': 'updateUser',
+    'click .user-avatar': 'uploadAvatar',
+    'click .no-photo': 'clearAvatar'
+  },
+
+  clearAvatar: function () {
+    this.user.save({ 'user': { 'avatar': null }});
   },
 
   closeForm: function () {
@@ -34,11 +40,33 @@ TwinkieSetApp.Views.UserForm = Backbone.View.extend({
     });
   },
 
+  uploadAvatar: function (event) {
+    cloudinary.openUploadWidget(CLOUDINARY_SETTINGS_AVATAR,
+      function(error, payload) {
+        if (!error) {
+          this.user.save({ 'user': { 'avatar': payload[0].url }}, {patch: true});
+        }
+    }.bind(this));
+  },
+
   render: function () {
     var content = this.template({
       user: this.user
     });
     this.$el.html(content);
+
+    this.onRender();
     return this;
+  },
+
+  onRender: function () {
+    if (this.user.get('avatar') === null) {
+      this.$el.find('.user-avatar-plus').show();
+      this.$el.find('.avatar-image').hide();
+    }
+
+    if (this.user.get('avatar')) {
+      this.$el.find('.no-photo').show();
+    }
   }
 });

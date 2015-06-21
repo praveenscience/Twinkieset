@@ -22,13 +22,10 @@ class Api::OwnersController < ApplicationController
       render json: @user.errors.full_messages, status: :unprocessable_entity
     end
 
-
-
-
   end
 
   private
     def user_params
-      params.require(:user).permit(:business_name, :website, :email, :password, :username)
+      params.require(:user).permit(:business_name, :website, :email, :password, :username, :avatar)
     end
 end

@@ -23,6 +23,12 @@
       "stylesheet": "<%= asset_url 'cloudinary_minimal.css' %>",
       "client_allowed_formats": ["png","gif", "jpeg"],
       "max_file_size": 50000000
+    };
+    CLOUDINARY_SETTINGS_AVATAR = {
+      "cloud_name": "<%= ENV['cloud_name'] %>",
+      "upload_preset": "<%= ENV['upload_preset_avatar'] %>",
+      "stylesheet": "<%= asset_url 'cloudinary_minimal.css' %>",
+      "client_allowed_formats": ["png","gif", "jpeg"]
     }
   </script>
 <% end %>
