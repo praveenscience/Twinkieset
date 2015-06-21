@@ -12,7 +12,8 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
     'click .new-set-button': 'openSubalbumForm',
     'sortstop': "saveOrdsSubalbums",
     'updateSort': "updateSortSubalbums",
-    'click .edit-album-button': 'openEditForm'
+    'click .edit-album-button': 'openEditForm',
+    'click .share-collection-button': 'openShareCollection'
   },
 
   openEditForm: function (event) {
@@ -38,6 +39,11 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
     this.model.subalbums().add(droppedModel, { silent: true });
     this.model.subalbums().sort();
 
+  },
+
+  openShareCollection: function () {
+    var shareView = new TwinkieSetApp.Views.Share();
+    $('body').append(shareView.render().$el);
   },
 
   saveOrdsSubalbums: function (event, ui) {
@@ -84,6 +90,8 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
 
   onRender: function(){
     $('.album-show-subalbums').sortable();
+
+
   },
 
 });
