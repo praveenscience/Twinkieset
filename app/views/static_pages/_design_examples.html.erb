@@ -61,21 +61,19 @@
 
       $(window).scroll(function () {
         var currentPos = $('body').scrollTop();
-        if (currentPos > 0 && currentPos < topOfDesignExamples - 100) {
+        if (currentPos < topOfDesignExamples -100) {
           $('.splash-navbar').fadeOut('fast');
           $('.options li').removeClass('current');
           $('.welcome-link').addClass('current');
-        } else if (currentPos > topOfDesignExamples-100 && currentPos < topOfAlbumExamples) {
+        } else if (currentPos < topOfAlbumExamples) {
           $('.splash-navbar').fadeIn();
           $('.options li').removeClass('current');
           $('.design-link').addClass('current');
-        } else if (currentPos >= topOfAlbumExamples-100) {
+        } else {
           $('.options li').removeClass('current');
           $('.examples-link').addClass('current');
         }
-      })
-
-
+      });
 
 
     });
