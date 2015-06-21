@@ -61,7 +61,7 @@
 
       $(window).scroll(function () {
         var currentPos = $('body').scrollTop();
-        if (currentPos > 0 && currentPos < topOfDesignExamples) {
+        if (currentPos > 0 && currentPos < topOfDesignExamples - 100) {
           $('.splash-navbar').fadeOut('fast');
           $('.options li').removeClass('current');
           $('.welcome-link').addClass('current');
