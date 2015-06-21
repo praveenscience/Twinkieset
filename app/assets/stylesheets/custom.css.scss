@@ -633,6 +633,7 @@ a:link {
 
 
   .user-buttons {
+    font: 13px 'ProximaNova-Semibold';
     position: absolute;
     top: 25px;
     right: 50px;
@@ -1186,7 +1187,7 @@ a:link {
       top: 60px;
       background: white;
       width: Calc(100% - 20% - 100px);
-      min-width: 520px;
+      min-width: 560px;
       z-index: 2;
     }
 
@@ -1322,7 +1323,7 @@ a:link {
       padding-bottom: 5px;
       background: #fff;
       width: Calc(100% - 20% - 100px);
-      min-width: 520px;
+      min-width: 560px;
       z-index: 1;
 
     }
@@ -1369,6 +1370,7 @@ a:link {
     ul.photo-items {
       list-style-type: none;
       padding: 45px 20px 40px 20px;
+      min-width: 560px;
 
       li.photo-item {
         position: relative;
