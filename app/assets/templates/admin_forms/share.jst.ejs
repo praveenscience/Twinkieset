@@ -4,12 +4,11 @@
 
 
   <div class="form-group">
-
     <label for="collection-url">Collection URL</label>
     <input id="collection-url"
       class="form-control" type="text"
       name="collection[email]"
-      value="blah"
+      value="<%= window.location.origin %>/users#<%= CURRENT_USER.id %>/collection/<%= album.id %>"
       readonly>
     <div class="input-info">
       This is the unique URL to the collection you have published. Share this with your client.
