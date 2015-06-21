@@ -3,11 +3,14 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
   className: 'album-show',
 
   initialize: function (options) {
+    this.user = options.user;
     this.subAlbumViewCreated = false;
     this.currentSubalbumId = options.subalbumID;
     this.listenTo(this.model, "sync", this.render);
     // this.listenTo(this.model,'subalbumSelected', this.renderSubalbum);
-    this.navBarView = new TwinkieSetApp.Views.NavBar();
+    this.navBarView = new TwinkieSetApp.Views.NavBar({
+      user: this.user
+    });
     this.addSubview("nav", this.navBarView);
     this.sidebar = new TwinkieSetApp.Views.AlbumsShowSidebar({
       model: this.model

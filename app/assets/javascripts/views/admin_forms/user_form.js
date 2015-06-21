@@ -2,9 +2,9 @@ TwinkieSetApp.Views.UserForm = Backbone.View.extend({
   template: JST['admin_forms/user_form'],
   className: 'form-modal',
 
-  initialize: function () {
+  initialize: function (options) {
     TwinkieSetApp.Views.defaultKeys.call(this);
-    this.user = new TwinkieSetApp.Models.Owner({ id: CURRENT_USER.id });
+    this.user = options.user;
     this.user.fetch();
     this.listenTo(this.user, 'sync', this.render);
   },

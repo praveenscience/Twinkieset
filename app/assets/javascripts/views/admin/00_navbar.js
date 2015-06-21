@@ -2,6 +2,10 @@ TwinkieSetApp.Views.NavBar = Backbone.View.extend({
   template: JST['admin/00_navbar'],
   className: "navibar",
 
+  initialize: function (options) {
+    this.user = options.user;
+    this.listenTo(this.user, 'sync', this.render);
+  },
 
   events: {
     'click .logout': 'logoutUser',
@@ -12,7 +16,9 @@ TwinkieSetApp.Views.NavBar = Backbone.View.extend({
   },
 
   changePassword: function (event) {
-    var userPassword = new TwinkieSetApp.Views.UserPassword();
+    var userPassword = new TwinkieSetApp.Views.UserPassword({
+      user: this.user
+    });
     $('body').append(userPassword.render().$el);
   },
 
@@ -22,7 +28,9 @@ TwinkieSetApp.Views.NavBar = Backbone.View.extend({
   },
 
   openUserForm: function (event) {
-    var userForm = new TwinkieSetApp.Views.UserForm();
+    var userForm = new TwinkieSetApp.Views.UserForm({
+      user: this.user
+    });
     $('body').append(userForm.render().$el);
   },
 
@@ -33,7 +41,9 @@ TwinkieSetApp.Views.NavBar = Backbone.View.extend({
   },
 
   render: function () {
-    var content = this.template();
+    var content = this.template({
+      user: this.user
+    });
     this.$el.html(content);
     return this;
   }

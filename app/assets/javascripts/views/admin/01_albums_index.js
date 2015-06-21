@@ -3,11 +3,17 @@ TwinkieSetApp.Views.AlbumsIndex = Backbone.CompositeView.extend({
   template: JST['admin/01_index'],
   className: "none",
 
-  initialize: function () {
+  initialize: function (options) {
     // this.listenTo(this.collection, "sync", this.render);
+    this.user = options.user;
     this.listenTo(this.collection, "add", this.addAlbumView);
     this.collection.each(this.addAlbumView.bind(this));
     this.listenTo(this.collection, 'remove', this.removeAlbumView);
+
+    var navBarView = new TwinkieSetApp.Views.NavBar({
+      user: this.user
+    });
+    this.addSubview('nav', navBarView);
   },
 
   events: {
@@ -37,11 +43,6 @@ TwinkieSetApp.Views.AlbumsIndex = Backbone.CompositeView.extend({
     var content = this.template();
     this.$el.html(content);
     this.attachSubviews();
-
-
-
-    var navBarView = new TwinkieSetApp.Views.NavBar();
-    this.$('nav').html(navBarView.render().$el);
 
     return this;
   }

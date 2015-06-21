@@ -22,17 +22,24 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   },
 
   index: function () {
-
+    var user = new TwinkieSetApp.Models.Owner({ id: CURRENT_USER.id });
+    user.fetch();
     this.collection.fetch();
-    var indexView = new TwinkieSetApp.Views.AlbumsIndex({ collection: this.collection });
+    var indexView = new TwinkieSetApp.Views.AlbumsIndex({
+      collection: this.collection,
+      user: user
+    });
     this._swapView(indexView);
   },
 
   show: function (id, subalbumID) {
+    var user = new TwinkieSetApp.Models.Owner({ id: CURRENT_USER.id });
+    user.fetch();
     var album = this.collection.getOrFetch(id);
     var showView = new TwinkieSetApp.Views.AlbumsShow({
       model: album,
-      subalbumID: subalbumID
+      subalbumID: subalbumID,
+      user: user
     });
     this._swapView(showView);
   },

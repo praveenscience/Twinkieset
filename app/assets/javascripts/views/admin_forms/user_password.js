@@ -2,7 +2,8 @@ TwinkieSetApp.Views.UserPassword = Backbone.View.extend({
   template: JST['admin_forms/user_password'],
   className: 'form-modal',
 
-  initialize: function () {
+  initialize: function (options) {
+    this.user = options.user
     TwinkieSetApp.Views.defaultKeys.call(this);
   },
 
