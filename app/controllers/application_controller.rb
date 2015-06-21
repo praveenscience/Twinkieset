@@ -5,7 +5,11 @@ class ApplicationController < ActionController::Base
   helper_method :logged_in?, :current_user, :current_album, :logged_in_album?
 
   def current_album
-    album = Album.find_by(id: session[:album_id])
+    if session[:expires_at] < Time.now
+      log_out_album!
+    else
+      album = Album.find_by(id: session[:album_id])
+    end
   end
 
   def logged_in_album?
@@ -14,6 +18,12 @@ class ApplicationController < ActionController::Base
 
   def log_into_album!(album)
     session[:album_id] = album.id
+    session[:expires_at] = Time.now + 1.days
+  end
+
+  def log_out_album!
+    session[:album_id] = nil
+    session[:expires_at] = nil
   end
 
 
