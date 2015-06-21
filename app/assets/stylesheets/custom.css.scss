@@ -806,6 +806,8 @@ a:link {
     padding: 40px;
 
 
+
+
     .title {
       font: 20px 'ProximaNova-Regular';
       text-align: center;
@@ -821,6 +823,11 @@ a:link {
     label {
       font: 14px 'ProximaNova-Semibold';
       margin-bottom: 0;
+    }
+
+    .input-info {
+      font: 11px 'ProximaNova-Regular';
+      color: #999;
     }
 
     .submit-button, .cancel-button, .delete-button {
@@ -947,6 +954,19 @@ a:link {
     top: -10px;
     text-align: center;
   }
+  .form-container.share-collection {
+    height: 330px;
+    width: 600px;
+    margin-top: -165px;
+    margin-left: -300px;
+
+    input {
+      border: 1px solid #DDD;
+    }
+    .input-info {
+      margin-bottom: 15px;
+    }
+  }
   .form-container.user-password-form {
     height: 424px;
     width: 600px;
@@ -959,10 +979,6 @@ a:link {
     width: 600px;
     margin-top: -312px;
     margin-left: -300px;
-    .input-info {
-      font: 11px 'ProximaNova-Regular';
-      color: #999;
-    }
     input {
       margin-bottom: 5px;
     }
@@ -1244,22 +1260,36 @@ a:link {
       text-align: left;
     }
 
-    .view-album {
-      @include create-buttons(#e8e8e8, black);
-      border: 0px;
+    .view-share {
       position: absolute;
       bottom: 20px;
       left: 50%;
-      margin-left: -50px;
-      -webkit-transition: opacity 200ms; /* Safari */
-      transition: opacity 200ms;
-      transition-timing-function: linear;
+      margin-left: -98px;
 
-      a:link, a:visited, a:active {
-        color: #000;
+      .view-album {
+        @include create-buttons(#e8e8e8, black);
+        border: 0px;
+        -webkit-transition: opacity 200ms; /* Safari */
+        transition: opacity 200ms;
+        transition-timing-function: linear;
+
+        a:link, a:visited, a:active {
+          color: #000;
+        }
+        &:hover {
+          opacity: 0.5;
+        }
       }
-      &:hover {
-        opacity: 0.5;
+
+      .share-collection-button {
+        @include create-buttons($teal, #fff);
+        border: 0px;
+        -webkit-transition: background 200ms; /* Safari */
+        transition: background 200ms;
+        transition-timing-function: linear;
+        &:hover {
+          background-color: $darkteal;
+        }
       }
     }
   }
