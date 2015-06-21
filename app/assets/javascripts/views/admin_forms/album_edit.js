@@ -10,7 +10,8 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
     "submit form": "editAlbum",
     "click .cancel-edit-album": "hideForm",
     'click .status-published': 'setStatusPublished',
-    'click .status-hidden': 'setStatusHidden'
+    'click .status-hidden': 'setStatusHidden',
+    'click .close-view': 'hideForm'
   },
 
   setStatusPublished: function () {

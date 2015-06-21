@@ -4,7 +4,8 @@ TwinkieSetApp.Views.DeleteSubalbum = Backbone.View.extend({
 
   events: {
     'click .delete-subalbum-confirm': 'deleteSubalbum',
-    'click .cancel-delete-subalbum': 'cancelSubalbum'
+    'click .cancel-delete-subalbum': 'cancelSubalbum',
+    'click .close-view': 'cancelSubalbum'
   },
 
   initialize: function (options) {

@@ -21,7 +21,8 @@ TwinkieSetApp.Views.SubalbumForm = Backbone.View.extend({
 
   events: {
     'submit form': 'createSubalbum',
-    'click .cancel-subalbum': 'hideSubalbumForm'
+    'click .cancel-subalbum': 'hideSubalbumForm',
+    'click .close-view': 'hideSubalbumForm'
   },
 
   createSubalbum: function (event) {

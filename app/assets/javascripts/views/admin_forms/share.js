@@ -7,6 +7,14 @@ TwinkieSetApp.Views.Share = Backbone.View.extend({
     this.album = options.album
   },
 
+  events: {
+    'click .close-view': 'closeView'
+  },
+
+  closeView: function () {
+    this.remove();
+  },
+
   render: function () {
     var content = this.template({
       album: this.album

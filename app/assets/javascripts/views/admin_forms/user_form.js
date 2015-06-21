@@ -13,7 +13,8 @@ TwinkieSetApp.Views.UserForm = Backbone.View.extend({
     'click .cancel-user': 'closeForm',
     'submit form': 'updateUser',
     'click .user-avatar': 'uploadAvatar',
-    'click .no-photo': 'clearAvatar'
+    'click .no-photo': 'clearAvatar',
+    'click .close-view': 'closeForm'
   },
 
   clearAvatar: function () {

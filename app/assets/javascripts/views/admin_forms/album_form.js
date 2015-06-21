@@ -9,7 +9,8 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
 
   events: {
     "submit form": "createAlbum",
-    "click .cancel-new-album": "hideForm"
+    "click .cancel-new-album": "hideForm",
+    'click .close-view': 'hideForm'
   },
 
   hideForm: function () {

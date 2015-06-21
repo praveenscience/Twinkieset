@@ -15,7 +15,8 @@ TwinkieSetApp.Views.PhotosDelete = Backbone.View.extend({
 
   events: {
     'click .delete-photos-confirm': 'deletePhotos',
-    'click .cancel-delete-photos': 'cancelDeletePhotos'
+    'click .cancel-delete-photos': 'cancelDeletePhotos',
+    'click .close-view': 'cancelDeletePhotos'
   },
 
   deletePhotos: function () {

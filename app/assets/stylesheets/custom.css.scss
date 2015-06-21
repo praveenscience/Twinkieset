@@ -979,7 +979,19 @@ input {
     padding: 40px;
 
 
-
+    button.close-view {
+      color: #888;
+      background: #fff;
+      border: 0;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      font: 28px 'Arial';
+      outline: none;
+      &:hover {
+        color: $teal;
+      }
+    }
 
     .title {
       font: 20px 'ProximaNova-Regular';

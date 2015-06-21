@@ -9,7 +9,8 @@ TwinkieSetApp.Views.UserPassword = Backbone.View.extend({
 
   events: {
     'submit form': 'changePassword',
-    'click .cancel-password': 'closeForm'
+    'click .cancel-password': 'closeForm',
+    'click .close-view': 'closeForm'
   },
 
   closeForm: function (event) {
