@@ -669,6 +669,29 @@ a:link {
     a:link, a:active, a:visited {
       color: #262626;
     }
+
+
+    .point-border {
+      width: 0;
+      height: 0;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 9px solid #eee;
+      position: absolute;
+      top: -9px;
+      right: 19px;
+    }
+    .point {
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid white;
+      position: absolute;
+      top: -8px;
+      right: 20px;
+    }
+
     li {
       padding: 10px 25px;
       cursor: pointer;
@@ -733,7 +756,7 @@ a:link {
   }
 
   .selected-nav-option {
-    background: rgba(0, 0, 0, 0.03);
+    // background: rgba(0, 0, 0, 0.03);
     &:hover {
       opacity: 1;
     }
