@@ -65,12 +65,11 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
     } else {
       this.$el.find('.status-published').addClass('selected');
       this.$el.find('.status-hidden').removeClass('selected');
-
     }
 
-
-
-
+    this.$el.find('#album-event_date').datepicker({
+      dateFormat: 'yy-mm-dd'
+    });
   }
 
 });

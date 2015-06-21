@@ -42,10 +42,12 @@ class Album < ActiveRecord::Base
   )
 
   default_scope { order('event_date DESC') }
-  validates :title, :event_date, :status, :user_id, presence: true
+  validates :title, :status, :user_id, presence: true
   validates :title, uniqueness: { scope: :user_id,
     message: "You already have an album of the same name" }
   validates :status, inclusion: STATUS_TYPES
+  validates :event_date, format: { with: /\d{4}-\d{1,2}-\d{1,2}/,
+    message: "needs to be in format of YY-MM-DD" }
 
   after_create :create_highlights_subalbum
 

@@ -117,6 +117,49 @@ input {
 .form-control::-moz-placeholder { color: #a9a9a9; }
 .form-control:-ms-input-placeholder { color: #a9a9a9; }
 
+
+#ui-datepicker-div {
+  background: white;
+  padding: 10px;
+  border: 1px solid #eee;
+
+  a:link, a:visited, a:active {
+    color: $teal;
+  }
+  a:hover {
+    color: $darkteal;
+  }
+  th {
+    text-align: right;
+    padding: 10px 0px;
+  }
+
+  .ui-datepicker-title {
+    text-align: center;
+    font-family: 'ProximaNova-Semibold';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .ui-icon-circle-triangle-w, .ui-icon-circle-triangle-e {
+    color: #888;
+    &:hover {
+      color: #333;
+    }
+  }
+  .ui-icon-circle-triangle-w {
+    float: left;
+  }
+  .ui-icon-circle-triangle-e {
+    float: right;
+  }
+  td {
+    font: 11px 'Verdana';
+    padding: 0;
+    width:  30px;
+    height: 22px;
+    text-align: right;
+  }
+}
 /* splash/landing */
 
 // .splash nav li.current {

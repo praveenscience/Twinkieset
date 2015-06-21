@@ -4,6 +4,7 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
 
   initialize: function () {
     TwinkieSetApp.Views.defaultKeys.call(this);
+
   },
 
   events: {
@@ -37,7 +38,14 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
   render: function () {
     var content = this.template();
     this.$el.html(content);
+    this.onRender();
     return this;
+  },
+
+  onRender: function () {
+    this.$el.find('#album-event_date').datepicker({
+      dateFormat: 'yy-mm-dd'
+    });
   }
 
 });

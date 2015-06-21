@@ -17,6 +17,7 @@
 //= require composite_view
 //= require jquery.serializejson
 //= require jquery-ui/sortable
+//= require jquery-ui/datepicker
 //= require imagesloaded.pkgd
 //= require masonry.pkgd
 //= require twinkie_set_app
