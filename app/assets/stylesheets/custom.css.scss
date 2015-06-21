@@ -192,7 +192,8 @@ input.form-control {
   top: 0px;
   bottom: 0px;
   width: 100%;
-  min-width: 660px;
+  min-width: 790px;
+  min-height: 590px;
 
 
   nav {
@@ -340,7 +341,7 @@ input.form-control {
 
 
 .design-examples {
-  min-width: 660px;
+  min-width: 790px;
   width: 100%;
   position: absolute;
   top: 100%;
@@ -393,7 +394,7 @@ input.form-control {
   }
 
   .desktop {
-    min-width: 660px;
+    min-width: 790px;
     width: 52%;
     position: relative;
     margin: auto auto;
@@ -413,7 +414,7 @@ input.form-control {
 
 .example-albums {
   background: #F6F6F6;
-  min-width: 660px;
+  min-width: 790px;
   width: 100%;
   position: absolute;
   top: 200%;
