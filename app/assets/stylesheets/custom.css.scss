@@ -133,25 +133,28 @@ input {
     text-align: right;
     padding: 10px 0px;
   }
-
-  .ui-datepicker-title {
-    text-align: center;
-    font-family: 'ProximaNova-Semibold';
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  .ui-icon-circle-triangle-w, .ui-icon-circle-triangle-e {
-    color: #888;
-    &:hover {
-      color: #333;
+  .ui-datepicker-header {
+    padding-top: 10px;
+    .ui-datepicker-title {
+      text-align: center;
+      font-family: 'ProximaNova-Semibold';
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .ui-icon-circle-triangle-w, .ui-icon-circle-triangle-e {
+      color: #888;
+      &:hover {
+        color: #333;
+      }
+    }
+    .ui-icon-circle-triangle-w {
+      float: left;
+    }
+    .ui-icon-circle-triangle-e {
+      float: right;
     }
   }
-  .ui-icon-circle-triangle-w {
-    float: left;
-  }
-  .ui-icon-circle-triangle-e {
-    float: right;
-  }
+
   td {
     font: 11px 'Verdana';
     padding: 0;
