@@ -10,6 +10,12 @@ TwinkieSetApp.Views.DeleteSubalbum = Backbone.View.extend({
   initialize: function (options) {
     TwinkieSetApp.Views.defaultKeys.call(this);
     this.subalbum = options.subalbum;
+    $('body').keydown(function (e) {
+      if (e.keyCode === 13) {
+        e.preventDefault();
+        this.$el.find('.delete-subalbum-confirm').click();
+      }
+    }.bind(this));
   },
 
   cancelSubalbum: function () {

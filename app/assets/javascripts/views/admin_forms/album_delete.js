@@ -4,11 +4,21 @@ TwinkieSetApp.Views.DeleteAlbum = Backbone.View.extend({
 
   initialize: function () {
     TwinkieSetApp.Views.defaultKeys.call(this);
+    $('body').keydown(function (e) {
+      if (e.keyCode === 13) {
+        e.preventDefault();
+        this.$el.find('.delete-album-confirm').click();
+      }
+    }.bind(this));
   },
 
   events: {
     'click .delete-album-confirm': 'deleteAlbum',
-    'click .cancel-new-album': 'cancelAlbum'
+    'click .cancel-new-album': 'cancelAlbum',
+  },
+
+  enterKey: function () {
+    alert('here');
   },
 
   cancelAlbum: function () {
