@@ -20,6 +20,7 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
   addSelectedPhoto: function (event) {
     var photoItem = $(event.currentTarget);
 
+    // deselect photo if it's already selected
     if (photoItem.hasClass('selected')) {
       photoItem.removeClass('selected').addClass('not-selected');
       var indexOfModel = TwinkieSetApp.selectedPhotosArr.indexOf(this.model);

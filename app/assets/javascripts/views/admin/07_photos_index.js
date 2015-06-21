@@ -20,7 +20,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
     'sortstop': "saveOrds",
     'updateSort': "updateSort",
-    
+
     'mouseleave .sort-by-options': 'openSortOptions',
     'click .sort-photo-button': 'openSortOptions',
     'click .hide-filenames': 'hideFilenames',
@@ -122,6 +122,17 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
   saveOrds: function (event, ui) {
     ui.item.trigger('drop', ui.item.index());
+  },
+
+  // may not need this?
+  myUniq: function (arr) {
+    uniqued = [];
+    arr.forEach(function(item, idx, originalArr) {
+      if (uniqued.indexOf(item) === -1) {
+        uniqued.push(item);
+      }
+    });
+    return uniqued;
   },
 
   selectAllPhotos: function (event) {
