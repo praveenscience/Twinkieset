@@ -30,7 +30,7 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
         this.$el.css('opacity', 1);
 
 
-
+        TwinkieSetApp.Views.masonryGallery.masonry();
       }.bind(this));
     }
 
