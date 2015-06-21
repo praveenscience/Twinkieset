@@ -3,6 +3,7 @@ json.extract! @owner, :id, :email, :username, :business_name, :website, :avatar
 json.albums @albums.each do |album|
   json.extract!(album, :id, :title, :event_date, :status, :created_at, :updated_at)
 
+  json.password album.password
   time = Time.parse(album.event_date.to_s)
   json.string_date time.strftime("%B #{time.day.ordinalize}, %Y")
 

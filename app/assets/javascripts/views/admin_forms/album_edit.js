@@ -36,6 +36,9 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
     console.log("edit fired");
     event.preventDefault();
     var attrs = $(event.currentTarget).serializeJSON();
+    if (attrs.album.password.length === 0) {
+      attrs.album.password = null;
+    }
     var editAlbum = this.model;
     editAlbum.save(attrs, {
       success: function () {
