@@ -4,16 +4,15 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
 
   initialize: function () {
     TwinkieSetApp.Views.defaultKeys.call(this);
-
   },
 
   events: {
     "submit form": "createAlbum",
     "click .cancel-new-album": "hideForm",
-    'click .close-view': 'hideForm'
+    'click .close-view': 'hideForm',
   },
 
-  hideForm: function () {
+  hideForm: function (event) {
     event.preventDefault();
     this.remove();
   },
