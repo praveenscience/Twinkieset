@@ -8,6 +8,7 @@ TwinkieSetApp.Views.DeleteSubalbum = Backbone.View.extend({
   },
 
   initialize: function (options) {
+    TwinkieSetApp.Views.defaultKeys.call(this);
     this.subalbum = options.subalbum;
   },
 

@@ -3,6 +3,7 @@ TwinkieSetApp.Views.PhotosDelete = Backbone.View.extend({
   className: 'form-modal',
 
   initialize: function (options) {
+    TwinkieSetApp.Views.defaultKeys.call(this);
     // this.TwinkieSetApp.selectedPhotosArray = options.TwinkieSetApp.selectedPhotosArray;
   },
 
