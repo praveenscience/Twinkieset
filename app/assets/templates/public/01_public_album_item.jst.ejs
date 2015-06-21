@@ -5,3 +5,9 @@
   <div class="album-title"><%= album.get('title') %></div>
   <div class="album-date"><%= album.get('string_date') %></div>
 </a>
+
+<% if (album.get('password')) { %>
+  <div class="password-protect">
+    <i class="fa fa-lock"></i>
+  </div>
+<% } %>
