@@ -2,16 +2,15 @@
 #
 # Table name: albums
 #
-#  id              :integer          not null, primary key
-#  title           :string           not null
-#  event_date      :date             not null
-#  cover_image_id  :integer
-#  status          :string           default("draft"), not null
-#  password_digest :string
-#  category        :string
-#  user_id         :integer          not null
-#  created_at      :datetime
-#  updated_at      :datetime
+#  id             :integer          not null, primary key
+#  title          :string           not null
+#  event_date     :date             not null
+#  cover_image_id :integer
+#  status         :string           default("Published"), not null
+#  password       :string
+#  user_id        :integer          not null
+#  created_at     :datetime
+#  updated_at     :datetime
 #
 
 class Album < ActiveRecord::Base

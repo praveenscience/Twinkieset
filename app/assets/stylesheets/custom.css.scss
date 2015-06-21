@@ -577,14 +577,21 @@ a:link {
 
 
 /* ADMIN VIEW */
+
+
+
 .sign-up-page, .log-in-page {
 
   .logo {
     margin-bottom: 30px;
   }
-
-
-
+  .errors {
+    font: 11px 'ProximaNova-Regular';
+    color: $darkred;
+    position: relative;
+    top: -10px;
+    text-align: center;
+  }
   .submit-user, .login-user {
     padding: 10px 40px;
     border: 0;

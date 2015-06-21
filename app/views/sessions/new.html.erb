@@ -3,6 +3,16 @@
     <div class="col-md-4 col-md-offset-4">
       <a href="/"><img class="logo" src="https://dl.dropboxusercontent.com/u/2330299/capstone/logo.png" width="274px"></a>
 
+
+      <% if flash[:errors] %>
+      <div class="errors">
+        <% flash[:errors].each do |error| %>
+          <%= error %>
+        <% end %>
+      </div>
+      <% end %>
+
+
       <form action="<%= session_url %>" method="post" class="form-group sign-in-form">
         <input type="hidden"
                name="authenticity_token"

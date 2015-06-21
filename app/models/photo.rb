@@ -8,6 +8,10 @@
 #  subalbum_id :integer          not null
 #  created_at  :datetime
 #  updated_at  :datetime
+#  file_name   :string           not null
+#  thumb_url   :string           not null
+#  medium_url  :string           not null
+#  date_taken  :datetime         not null
 #
 
 class Photo < ActiveRecord::Base
