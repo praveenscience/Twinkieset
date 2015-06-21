@@ -19,7 +19,7 @@
 
   <form class="form-album" action="<%= album_sessions_url %>" method="POST">
     <input type="hidden" name="router" value="<%= params[:router] %>">
-    <input type="hidden" name="album[id]" value="<%= params[:album] %>" placeholder="id">
+    <input type="hidden" name="album[id]" value="<%= params[:album] %>">
     <input type="password" class="guest-login-password" name="album[password]" placeholder="password"><br>
     <input type="Submit" class="guest-login-enter" value="Enter">
   </form>

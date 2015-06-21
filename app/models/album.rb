@@ -43,39 +43,12 @@ class Album < ActiveRecord::Base
   )
 
   default_scope { order('event_date DESC') }
-  validates :title, :event_date, :status, :user_id, :album_session_token, presence: true
+  validates :title, :event_date, :status, :user_id, presence: true
   validates :title, uniqueness: { scope: :user_id,
     message: "You already have an album of the same name" }
-  validates :album_session_token, uniqueness: true
   validates :status, inclusion: STATUS_TYPES
 
-  after_initialize :ensure_album_session_token
   after_create :create_highlights_subalbum
-
-  def ensure_album_session_token
-    self.album_session_token ||= SecureRandom::urlsafe_base64
-  end
-
-  def reset_album_session_token!
-    self.album_session_token = SecureRandom::urlsafe_base64
-    self.save!
-    self.session_token
-  end
-
-  def password=(password)
-    @password = password
-    self.password_digest = BCrypt::Password.create(password)
-  end
-
-  def is_password?(password)
-    BCrypt::Password.new(self.password_digest).is_password?(password)
-  end
-
-
-  def self.find_by_credentials(id, password)
-    album = Album.find(id)
-    album && album.is_password?(password) ? album : nil
-  end
 
   def create_highlights_subalbum
     @subalbum = self.subalbums.create(title: "Highlights")

@@ -1,4 +1,4 @@
-json.extract!(@album, :id, :title, :event_date, :status, :created_at, :updated_at)
+json.extract!(@album, :id, :title, :event_date, :status, :password, :created_at, :updated_at)
 
 time = Time.parse(@album.event_date.to_s)
 

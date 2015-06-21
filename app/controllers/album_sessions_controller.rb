@@ -1,11 +1,8 @@
 class AlbumSessionsController < ApplicationController
+
   def create
-
-    @album = Album.find_by_credentials(
-      params[:album][:id],
-      params[:album][:password]
-    )
-
+    album = Album.find(params[:album][:id])
+    @album = album && album.password == params[:album][:password] ? album : nil
 
     if @album
       log_into_album!(@album)
