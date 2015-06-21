@@ -5,7 +5,6 @@ class StaticPagesController < ApplicationController
   end
 
   def public
-
   end
 
   def index

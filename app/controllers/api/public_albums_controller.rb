@@ -16,8 +16,9 @@ class Api::PublicAlbumsController < ApplicationController
 
   private
     def must_be_logged_in
-      if Album.find(params[:id]).password
-        if Album.find(params[:id]).password == ""
+      @album = Album.find(params[:id]);
+      if @album.password
+        if @album.password == ""
           return
         elsif current_album.id.to_i != params[:id].to_i
           # render "Blah", status: :forbidden

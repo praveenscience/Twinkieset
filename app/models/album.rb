@@ -16,7 +16,7 @@
 
 class Album < ActiveRecord::Base
 
-  STATUS_TYPES = %w(Draft Published)
+  STATUS_TYPES = %w(Hidden Published)
   belongs_to(
     :owner,
     class_name: 'User',

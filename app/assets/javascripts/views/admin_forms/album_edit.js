@@ -10,19 +10,19 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
     "submit form": "editAlbum",
     "click .cancel-edit-album": "hideForm",
     'click .status-published': 'setStatusPublished',
-    'click .status-draft': 'setStatusDraft'
+    'click .status-hidden': 'setStatusHidden'
   },
 
   setStatusPublished: function () {
     this.$el.find('#album-status').val("Published");
     this.$el.find('.status-published').addClass('selected');
-    this.$el.find('.status-draft').removeClass('selected');
+    this.$el.find('.status-hidden').removeClass('selected');
   },
 
-  setStatusDraft: function () {
-    this.$el.find('#album-status').val("Draft");
+  setStatusHidden: function () {
+    this.$el.find('#album-status').val("Hidden");
     this.$el.find('.status-published').removeClass('selected');
-    this.$el.find('.status-draft').addClass('selected');
+    this.$el.find('.status-hidden').addClass('selected');
   },
 
   hideForm: function () {
@@ -59,12 +59,12 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
   },
 
   onRender: function () {
-    if (this.model.get('status') === 'Draft') {
+    if (this.model.get('status') === 'Hidden') {
       this.$el.find('.status-published').removeClass('selected');
-      this.$el.find('.status-draft').addClass('selected');
+      this.$el.find('.status-hidden').addClass('selected');
     } else {
       this.$el.find('.status-published').addClass('selected');
-      this.$el.find('.status-draft').removeClass('selected');
+      this.$el.find('.status-hidden').removeClass('selected');
 
     }
 
