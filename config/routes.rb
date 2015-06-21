@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
 
   # get ":album_id/login", to: "album_sessions#login", as: "login_album"
-  resources :users, only: [:new, :create, :show, :update] do
+  resources :users, only: [:new, :create] do
     # resources :albums, only: [:index]
 
   end
@@ -23,6 +23,7 @@ Rails.application.routes.draw do
     get 'users/:user_id', to: 'public_users#show', as: "public_user"
     get 'users/:user_id/albums', to: 'public_albums#index', as: 'public_albums'
     get 'users/:user_id/albums/:id', to: 'public_albums#show', as: "public_album"
+    resources :owners, only: [:show, :update]
     resources :albums, except: [:new, :edit]
     resources :subalbums, only: [:create, :update, :destroy, :show]
     resources :photos, only: [:create, :update, :destroy]
