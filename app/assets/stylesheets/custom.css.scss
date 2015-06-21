@@ -79,11 +79,14 @@ $blue: #3a99d9;
 }
 
 body {
-  font: 14px 'ProximaNova-Light';
+  font: 14px 'ProximaNova-Regular';
   font-weight: 300;
   margin: 0px;
 }
 
+b, strong {
+  font-family: 'ProximaNova-Bold';
+}
 a:link {
   text-decoration: none;
 }
@@ -101,6 +104,11 @@ a:link {
   box-shadow: none !important;
 }
 
+input.form-control {
+  &:focus {
+    border: 1px solid #bbb;
+  }
+}
 .form-control::-webkit-input-placeholder { color: #a9a9a9; }
 .form-control:-moz-placeholder { color: #a9a9a9; }
 .form-control::-moz-placeholder { color: #a9a9a9; }
@@ -621,6 +629,14 @@ a:link {
   margin-top: 100px;
   text-align: center;
 
+  .sign-up-free {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 18px;
+    b {
+      color: #333;
+    }
+  }
 
 
 }
