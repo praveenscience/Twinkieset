@@ -10,6 +10,10 @@ class Api::PublicAlbumsController < ApplicationController
 
   def show
     @album = Album.find(params[:id])
+    if @album.status == 'Hidden'
+      render json: "Album is not published.", status: :forbidden
+      return
+    end
     render :show
   end
 
