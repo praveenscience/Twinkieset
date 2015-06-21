@@ -413,7 +413,7 @@ input.form-control {
 }
 
 .example-albums {
-  background: #F6F6F6;
+  background: #fff;
   min-width: 790px;
   width: 100%;
   position: absolute;
@@ -476,6 +476,97 @@ input.form-control {
     padding: 0 30px;
   }
 
+}
+
+.bottom-info {
+  min-width: 790px;
+  width: 100%;
+  position: absolute;
+  top: 300%;
+  text-align: center;
+  padding: 0;
+  .create-first {
+    height: 65%;
+    background: #F3F3F3;
+    width: 100%;
+    .top {
+      position: absolute;
+      top: Calc((100% - 250px) / 2);
+      margin-top: -70px;
+      text-align: center;
+      width: 100%;
+
+      .header {
+        font: 32px 'ProximaNova-Bold';
+        color: #111;
+        letter-spacing: 2px;
+        line-height: 35px;
+        margin-bottom: 10px;
+      }
+      .free {
+        font: 27px 'Adobe-Garamond-Pro', 'Garamond', 'Georgia', serif;
+        color: #555;
+        line-height: 38px;
+        .underline {
+          border-bottom: 2px solid $teal;
+          padding-bottom: 3px;
+        }
+      }
+      .get-started-guest {
+        display: inline-block;
+        .guest-login-button {
+          @include create-buttons($teal, #fff);
+          padding: 10px 50px;
+          text-transform: uppercase;
+          display: inline-block;
+          margin: 15px 0 7px 0;
+          border: 0;
+          -webkit-transition: background 200ms; /* Safari */
+          transition: background 200ms;
+          transition-timing-function: linear;
+          &:hover {
+            background: $darkteal;
+          }
+        }
+      }
+    }
+  }
+  .info {
+    background: #222;
+    height: 230px;
+    width: 100%;
+
+    a:link, a:active, a:visited {
+      color: $teal;
+    }
+
+    .information {
+      color: #fff;
+      line-height: 28px;
+      padding: 50px 100px;
+      .github-link {
+        padding-top: 30px;
+        font-size: 40px;
+        & a {
+          color: #ddd;
+          -webkit-transition: color 200ms; /* Safari */
+          transition: color 200ms;
+          transition-timing-function: linear;
+        }
+        & a:hover {
+          color: $teal;
+        }
+      }
+    }
+    .copyright {
+      position: absolute;
+      bottom: 10px;
+      font-size: 11px;
+      color: #aaa;
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
 
 /* USER INDEX PUBLIC */

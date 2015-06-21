@@ -20,8 +20,9 @@
   $(document).ready(function () {
     $(window).resize(function () {
       var windowHeight = $(window).height();
-      $('.design-examples, .example-albums').height(windowHeight);
-
+      $('.design-examples, .example-albums, .bottom-info').height(windowHeight);
+      // $('.bottom-info').height(windowHeight);
+      $('.create-first').height(windowHeight-230);
 
       $('.example-albums .header').height(windowHeight-350);
       if ($(window).width() < 825) {
