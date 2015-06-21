@@ -1,7 +1,6 @@
 TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   routes: {
     "": "index",
-    "users": "publicUsersIndex",
     "collection/:id(/set/:subalbumId)": "show",
     ":user_id/collection/:album_id(/set/:set_id)": "publicShow",
     ":id": "publicIndex",
