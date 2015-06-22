@@ -84,10 +84,6 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     $('.grid-item').imagesLoaded(function () {
       this.addMasonry();
     }.bind(this))
-    // $('#container').imagesLoaded()
-    //   .always( function( instance ) {
-    //     this.addMasonry();
-    //   }.bind(this))
   },
 
   addMasonry: function (event) {
@@ -110,8 +106,6 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     });
 
     $('.grid-item').imagesLoaded(function () {
-      loaded = true;
-      console.log('finished loading');
       TwinkieSetApp.Views.sizing();
       TwinkieSetApp.Views.masonryGallery = $('.public-subalbum-photos').masonry({
         itemSelector: '.grid-item',
@@ -119,10 +113,5 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
       });
       TwinkieSetApp.Views.masonryGallery.masonry();
     });
-
-
-
-
-
   },
 });
