@@ -9,7 +9,12 @@
         </p>
         <%= button_to "Back to login", new_session_url, { method: 'get', class: "reset-password" } %>
 
+      <% elsif @check_mail %>
 
+        <p class="desc">
+          <%= @check_mail %>
+        </p>
+        <%= button_to "Back to login", new_session_url, { method: 'get', class: "reset-password" } %>
       <% elsif params[:activkey] %>
         <p class="desc">
           <b>Password reset.</b> Enter your new password.

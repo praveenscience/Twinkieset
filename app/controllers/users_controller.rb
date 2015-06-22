@@ -77,8 +77,8 @@ class UsersController < ApplicationController
     end
 
     UserMailer.reset_password(@user).deliver_now
-    flash[:notice] = ['Please check your email. An instruction was sent to your email address.']
-    redirect_to new_session_url
+    @check_mail = "Please check your email. An instruction was sent to your email address."
+    render :recovery
   end
 
   def create_new_password
