@@ -30,9 +30,13 @@ TwinkieSetApp.Views.SubalbumForm = Backbone.View.extend({
     var attrs = $(event.currentTarget).serializeJSON();
     var subalbum = this.subalbum;
     subalbum.save(attrs, {
-      success: function () {
+      success: function (models, response) {
         this.album.subalbums().add(subalbum);
         this.remove();
+        var notice = new TwinkieSetApp.Views.Notice({
+          notice: response.responseText
+        });
+        $('body').append(notice.render().$el);
       }.bind(this),
       error: function (models, response) {
         this.$el.find('.errors').html(response.responseJSON.join(". "));

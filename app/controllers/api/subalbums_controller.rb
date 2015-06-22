@@ -2,12 +2,12 @@ class Api::SubalbumsController < ApplicationController
   def show
     @subalbum = Subalbum.find(params[:id])
   end
-  
+
   def create
     @subalbum = Subalbum.new(subalbum_params)
 
     if @subalbum.save
-      render json: @subalbum
+      render json: {"responseText" => "Subalbum created successfully."}, status: :ok
     else
       render json: @subalbum.errors.full_messages, status: :unprocessable_entity
     end
@@ -17,7 +17,7 @@ class Api::SubalbumsController < ApplicationController
     @subalbum = Subalbum.find(params[:id])
 
     if @subalbum.update(subalbum_params)
-      render json: @subalbum
+      render json: {"responseText" => "Subalbum updated successfully."}, status: :ok
     else
       render json: @subalbum.errors.full_messages, status: :unprocessable_entity
     end

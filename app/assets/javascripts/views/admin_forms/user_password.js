@@ -28,9 +28,12 @@ TwinkieSetApp.Views.UserPassword = Backbone.View.extend({
     }
     var user = new TwinkieSetApp.Models.Owner({ id: CURRENT_USER.id });
     user.save(attrs, {
-      success: function () {
+      success: function (models, response) {
+        debugger;
         this.remove();
-        var notice = new TwinkieSetApp.Views.Notice();
+        var notice = new TwinkieSetApp.Views.Notice({
+          notice: response.responseText
+        });
         $('body').append(notice.render().$el);
       }.bind(this),
       error: function (models, response) {

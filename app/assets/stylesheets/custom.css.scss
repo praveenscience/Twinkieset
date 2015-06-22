@@ -853,6 +853,38 @@ input {
 }
 
 
+/* ADMIN */
+.notice-green {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  .content {
+    position: relative;
+    display: inline-block;
+    background-color: #e0f0d9;
+    color: #3e753f;
+    padding: 15px 50px;
+    .close-view {
+      outline: none;
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 1;
+      color: #000;
+      opacity: 0.2;
+      border: 0;
+      background: transparent;
+      &:hover {
+        color: $teal;
+      }
+    }
+  }
+}
 .navibar {
   background: #fafafa;
   border-radius: 0;

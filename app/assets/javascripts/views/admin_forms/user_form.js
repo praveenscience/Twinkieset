@@ -34,6 +34,10 @@ TwinkieSetApp.Views.UserForm = Backbone.View.extend({
       success: function () {
         this.remove();
         user.fetch();
+        var notice = new TwinkieSetApp.Views.Notice({
+          notice: "Profile updated successfully."
+        });
+        $('body').append(notice.render().$el);
       }.bind(this),
       error: function (models, response) {
         this.$el.find('.errors').html(response.responseJSON.join(". "));

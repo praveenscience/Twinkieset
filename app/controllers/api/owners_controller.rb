@@ -16,10 +16,8 @@ class Api::OwnersController < ApplicationController
     end
 
     if @user.update(user_params)
-      flash.now[:notice] = ['Successfully updated password!']
-      render json: @user
+      render json: {"responseText" => 'Successfully updated password!'}, status: :ok
     else
-      flash.now[:errors] = @user.errors.full_messages
       render json: @user.errors.full_messages, status: :unprocessable_entity
     end
 

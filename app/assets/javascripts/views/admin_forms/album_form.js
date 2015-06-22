@@ -26,6 +26,10 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
         this.collection.add(newAlbum);
         newAlbum.fetch(); // do this to ensure string_date is rendered
         this.remove();
+        var notice = new TwinkieSetApp.Views.Notice({
+          notice: "Album created successfully!"
+        });
+        $('body').append(notice.render().$el);
       }.bind(this),
       error: function (models, response) {
         this.$el.find('.errors').html(response.responseJSON.join(". "));
