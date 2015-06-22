@@ -16,7 +16,7 @@ class Api::OwnersController < ApplicationController
     end
 
     if @user.update(user_params)
-      flash.now[:notice] = ['Successfully updated user!']
+      flash.now[:notice] = ['Successfully updated password!']
       render json: @user
     else
       flash.now[:errors] = @user.errors.full_messages
