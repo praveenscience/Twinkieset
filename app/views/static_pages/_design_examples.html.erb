@@ -22,7 +22,15 @@
     var topOfAlbumExamples =  $('.example-albums').offset().top;
     $(window).resize(function () {
       var windowHeight = $(window).height();
+      var splashHeight = $('.splash').height();
       $('.design-examples, .example-albums, .bottom-info').height(windowHeight);
+
+      $('.design-examples').css('top', splashHeight);
+      $('.example-albums').css('top', splashHeight*2);
+      $('.bottom-info').css('top', splashHeight*3);
+
+      
+
       // $('.bottom-info').height(windowHeight);
       $('.create-first').height(windowHeight-230);
 
