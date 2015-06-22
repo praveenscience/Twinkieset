@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       params[:user][:password]
     )
 
-    if !@user.activated
+    if @user && !@user.activated
       flash[:errors] = ["Please check your email to activate your account."]
       redirect_to new_session_url
       return

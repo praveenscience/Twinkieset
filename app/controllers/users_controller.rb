@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :if_logged_in, only: [:new]
-  
+
   def new
     @user = User.new
     render :new
@@ -55,6 +55,20 @@ class UsersController < ApplicationController
       log_in_user!(@user)
       redirect_to admin_url
     end
+  end
+
+  def recovery
+
+  end
+
+
+  def reset_password
+    @user = User.find_by(email: params[:user][:email])
+    @new_password = (0...8).map { (65 + rand(26)).chr }.join
+    @user.update(password: @new_password)
+    UserMailer.reset_password(@user, @new_password).deliver_now
+    flash[:notice] = ['Please check your email. An instruction was sent to your email address.']
+    redirect_to new_session_url
   end
 
   private

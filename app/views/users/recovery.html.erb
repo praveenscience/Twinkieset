@@ -1,0 +1,7 @@
+Password reset. Please enter the email address you used to create your account. An email will be sent to you with further instructions on resetting your password.
+
+<form action="<%= reset_password_users_url %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="text" name="user[email]" placeholder="you@email.com">
+  <input type="submit" value="Send Email">
+</form>

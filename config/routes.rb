@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create] do
     collection do
       get 'activate'
+      get 'recovery'
+      post 'reset_password'
     end
   end
 
