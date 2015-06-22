@@ -70,10 +70,10 @@ Photos will be drag and droppable using jQuery UI Sortable.
 ### Bonus Features (TBD)
 - [x] Splash page with examples and demos
 - [x] Allow users to edit profile and change password
-- [ ] Friendly URL
-- [ ] Account Activation via email
-- [ ] Send password to clients via email
+- [x] Account Activation via email
+- [x] Send password to clients via email
 - [ ] Subdomain for users
+- [ ] Friendly URL
 - [ ] RMagick or MiniMagick to resize and watermark images
 - [ ] Choice of templates
 - [ ] Photo Lab Integration to order images using WHCC gem
