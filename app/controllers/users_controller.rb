@@ -64,6 +64,12 @@ class UsersController < ApplicationController
 
   def reset_password
     @user = User.find_by(email: params[:user][:email])
+    if !@user
+      flash.now[:errors] = ['Email is incorrect']
+      render :recovery
+      return
+    end
+
     @new_password = (0...8).map { (65 + rand(26)).chr }.join
     @user.update(password: @new_password)
     UserMailer.reset_password(@user, @new_password).deliver_now

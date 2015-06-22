@@ -82,6 +82,7 @@ body {
   font: 14px 'ProximaNova-Regular';
   font-weight: 300;
   margin: 0px;
+  line-height: 21px;
 }
 
 b, strong {
@@ -760,7 +761,7 @@ input {
 
 
 
-.sign-up-page, .log-in-page {
+.sign-up-page, .log-in-page, .recovery-page {
 
   .logo {
     margin-bottom: 30px;
@@ -818,6 +819,26 @@ input {
   }
 
 
+}
+
+.recovery-page {
+  margin-top: 100px;
+  text-align: center;
+
+  .desc {
+    color: #666;
+    margin-bottom: 18px;
+    b {
+      color: #333;
+    }
+  }
+  .recover-password {
+    @include create-buttons($teal, #fff);
+    text-transform: uppercase;
+    border: 0;
+    padding: 10px 40px;
+    margin-top: 20px;
+  }
 }
 
 

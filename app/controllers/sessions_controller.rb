@@ -13,7 +13,6 @@ class SessionsController < ApplicationController
       return
     end
 
-
     if @user
       log_in_user!(@user)
       flash[:notice] = ["You have successfully logged in"]
