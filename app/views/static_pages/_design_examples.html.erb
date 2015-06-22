@@ -23,22 +23,22 @@
     $(window).resize(function () {
       var windowHeight = $(window).height();
       var splashHeight = $('.splash').height();
-      $('.design-examples, .example-albums, .bottom-info').height(windowHeight);
+      $('.design-examples, .example-albums, .bottom-info').height(splashHeight);
 
       $('.design-examples').css('top', splashHeight);
       $('.example-albums').css('top', splashHeight*2);
       $('.bottom-info').css('top', splashHeight*3);
 
-      
+
 
       // $('.bottom-info').height(windowHeight);
-      $('.create-first').height(windowHeight-230);
+      $('.create-first').height(splashHeight-244);
 
-      $('.example-albums .header').height(windowHeight-350);
+      $('.example-albums .header').height(splashHeight-350);
       if ($(window).width() < 825) {
         $('.screenshot').width('400px');
         $('.user-item').addClass('collapse');
-        $('.example-albums').height(windowHeight + 700);
+        // $('.example-albums').height(splashHeight + 700);
       } else if ($(window).width() < 1043) {
         $('.user-item').removeClass('collapse');
         $('.screenshot').width('100%');
