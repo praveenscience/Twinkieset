@@ -7,6 +7,13 @@ class SessionsController < ApplicationController
       params[:user][:password]
     )
 
+    if !@user.activated
+      flash[:errors] = ["Please check your email to activate your account."]
+      redirect_to new_session_url
+      return
+    end
+
+
     if @user
       log_in_user!(@user)
       flash[:notice] = ["You have successfully logged in"]
