@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       get 'activate'
       get 'recovery'
       post 'reset_password'
+      post 'create_new_password'
     end
   end
 

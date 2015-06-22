@@ -50,7 +50,8 @@ class UsersController < ApplicationController
     @user = User.find_by(activation_token: params[:activation_token])
     if @user
       @user.activated = true
-
+      @user.activation_token = SecureRandom::urlsafe_base64
+      @user.save
       flash[:notice] = ["You have successfully activated your account!"]
       log_in_user!(@user)
       redirect_to admin_url
@@ -59,6 +60,11 @@ class UsersController < ApplicationController
 
   def recovery
 
+    @user = User.find_by(activation_token: params[:activkey])
+    if params[:activkey] && !@user # if we have an activkey but the user doesn't exist
+      @no_user = "Incorrect recovery link."
+      render :recovery
+    end
   end
 
 
@@ -70,11 +76,36 @@ class UsersController < ApplicationController
       return
     end
 
-    @new_password = (0...8).map { (65 + rand(26)).chr }.join
-    @user.update(password: @new_password)
-    UserMailer.reset_password(@user, @new_password).deliver_now
+    UserMailer.reset_password(@user).deliver_now
     flash[:notice] = ['Please check your email. An instruction was sent to your email address.']
     redirect_to new_session_url
+  end
+
+  def create_new_password
+    @user = User.find_by(activation_token: params[:activkey] )
+    if @user # if the user exists
+      if params[:user][:password] == params[:user][:retype_password] # if the passwords match
+        @user.password = params[:user][:password]
+        @user.activation_token = SecureRandom::urlsafe_base64
+        if @user.save
+          flash[:notice] = ["You have successfully updated your password."]
+          redirect_to new_session_url
+          return
+        else
+          flash[:errors] = @user.errors.full_messages
+          redirect_to action: :recovery, activkey: params[:activkey]
+          return
+        end
+      elsif params[:user][:password] != params[:user][:retype_password] # if the passwords don't match
+        flash[:errors] = ['Passwords do not match.']
+        redirect_to action: :recovery, activkey: params[:activkey]
+        return
+      end
+    elsif !@user
+      flash.now[:errors] = ['Account does not exist.']
+      render :recovery
+      return
+    end
   end
 
   private

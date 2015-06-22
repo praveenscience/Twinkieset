@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 20150622004024) do
     t.string   "activation_token",                 null: false
   end
 
+  add_index "users", ["activation_token"], name: "index_users_on_activation_token", unique: true, using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["session_token"], name: "index_users_on_session_token", unique: true, using: :btree
 

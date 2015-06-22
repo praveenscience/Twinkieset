@@ -3,33 +3,79 @@
     <div class="col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
       <a href="/"><img class="logo" src="https://dl.dropboxusercontent.com/u/2330299/capstone/logo.png" width="274px"></a>
 
-      <p class="desc">
-        <b>Password reset.</b> Please enter the email address you used to create your account. An email will be sent to you with further instructions on resetting your password.
-      </p>
-      <% if flash[:notice] %>
-      <div class="notice">
-        <% flash[:notice].each do |notice| %>
-          <%= notice %>
+      <% if @no_user %>
+        <p class="desc">
+          <%= @no_user %>
+        </p>
+        <%= button_to "Back to login", new_session_url, { method: 'get', class: "reset-password" } %>
+
+
+      <% elsif params[:activkey] %>
+        <p class="desc">
+          <b>Password reset.</b> Enter your new password.
+        </p>
+
+        <% if flash[:notice] %>
+        <div class="notice">
+          <% flash[:notice].each do |notice| %>
+            <%= notice %>
+          <% end %>
+        </div>
         <% end %>
-      </div>
-      <% end %>
 
-      <% if flash[:errors] %>
-      <div class="errors">
-        <% flash[:errors].each do |error| %>
-          <%= error %>
+        <% if flash[:errors] %>
+        <div class="errors">
+          <% flash[:errors].each do |error| %>
+            <%= error %>
+          <% end %>
+        </div>
         <% end %>
-      </div>
+
+        <form class="form-group" action="<%= create_new_password_users_url(activkey: params[:activkey]) %>" method="post">
+          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+          <input type="password" name="user[password]" id="user-password" class="form-control" placeholder="New password">
+          <input type="password" name="user[retype_password]" id="user-retype_password" class="form-control" placeholder="Retype new password">
+          <input type="submit" class="reset-password" value="Save">
+        </form>
+      <% elsif !params[:activkey] %>
+
+
+        <p class="desc">
+          <b>Password reset.</b> Please enter the email address you used to create your account. An email will be sent to you with further instructions on resetting your password.
+        </p>
+        <% if flash[:notice] %>
+        <div class="notice">
+          <% flash[:notice].each do |notice| %>
+            <%= notice %>
+          <% end %>
+        </div>
+        <% end %>
+
+        <% if flash[:errors] %>
+        <div class="errors">
+          <% flash[:errors].each do |error| %>
+            <%= error %>
+          <% end %>
+        </div>
+        <% end %>
+
+
+        <form class="form-group" action="<%= reset_password_users_url %>" method="post">
+          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+          <input type="text" name="user[email]" class="form-control" placeholder="you@email.com">
+          <input type="submit" class="recover-password" value="Send Email">
+        </form>
       <% end %>
-
-
-      <form class="form-group" action="<%= reset_password_users_url %>" method="post">
-        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-        <input type="text" name="user[email]" class="form-control" placeholder="you@email.com">
-        <input type="submit" class="recover-password" value="Send Email">
-      </form>
-
 
     </div>
   </div>
 </div>
+
+
+<script type="text/javascript">
+  // $('.reset-password').click(function (event) {
+  //   event.preventDefault();
+  //   if ($('.user-password').val() !== $('.user-retype_password'))
+  //     $('.errors').html("mismatch password");
+  // })
+</script>

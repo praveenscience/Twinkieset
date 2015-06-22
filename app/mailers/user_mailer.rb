@@ -7,10 +7,8 @@ class UserMailer < ApplicationMailer
     mail(to: user.email, subject: 'Welcome to My Awesome Site')
   end
 
-  def reset_password(user, password)
+  def reset_password(user)
     @user = user
-    @new_password = password
-    @url = new_session_url
     mail(to: user.email, subject: "Reset your password.")
   end
 
