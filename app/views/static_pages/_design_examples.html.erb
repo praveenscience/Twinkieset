@@ -18,6 +18,8 @@
 
 <script type="text/javascript">
   $(document).ready(function () {
+    var topOfDesignExamples = $('.design-examples').offset().top;
+    var topOfAlbumExamples =  $('.example-albums').offset().top;
     $(window).resize(function () {
       var windowHeight = $(window).height();
       $('.design-examples, .example-albums, .bottom-info').height(windowHeight);
@@ -36,8 +38,8 @@
         $('.screenshot').width('300px');
       }
 
-      var topOfDesignExamples = $('.design-examples').offset().top;
-      var topOfAlbumExamples =  $('.example-albums').offset().top;
+      topOfDesignExamples = $('.design-examples').offset().top;
+      topOfAlbumExamples =  $('.example-albums').offset().top;
 
       $(".welcome-link").click(function() {
         $('html, body').animate({
@@ -59,26 +61,29 @@
       });
 
 
-      $(window).scroll(function () {
-        var currentPos = $('body').scrollTop();
-        if (currentPos < topOfDesignExamples -100) {
-          $('.splash-navbar').fadeOut('fast');
-          $('.options li').removeClass('current');
-          $('.welcome-link').addClass('current');
-        } else if (currentPos < topOfAlbumExamples) {
-          $('.splash-navbar').fadeIn();
-          $('.options li').removeClass('current');
-          $('.design-link').addClass('current');
-        } else {
-          $('.options li').removeClass('current');
-          $('.examples-link').addClass('current');
-        }
-      });
 
-      $(window).scroll();
 
     });
     $(window).resize();
+
+    $(window).scroll(function () {
+
+      var currentPos = $('body').scrollTop();
+      if (currentPos < topOfDesignExamples - 100) {
+        $('.splash-navbar').fadeOut('fast');
+        $('.options li').removeClass('current');
+        $('.welcome-link').addClass('current');
+      } else if (currentPos < topOfAlbumExamples) {
+        $('.splash-navbar').fadeIn();
+        $('.options li').removeClass('current');
+        $('.design-link').addClass('current');
+      } else {
+        $('.options li').removeClass('current');
+        $('.examples-link').addClass('current');
+      }
+    });
+
+    $(window).scroll();
 
     $('.beautiful').hide();
 
