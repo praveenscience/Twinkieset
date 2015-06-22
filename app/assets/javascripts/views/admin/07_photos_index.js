@@ -147,7 +147,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
       var imageURL = $(photoli).find('img').attr("src");
 
       var photoModel = photosCollection.find(function(photo) {
-        return photo.get("image_url") === imageURL;
+        return photo.get("thumb_url") === imageURL;
       });
 
       TwinkieSetApp.selectedPhotosArr.push(photoModel);
