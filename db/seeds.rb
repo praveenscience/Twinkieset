@@ -17,72 +17,72 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 1,
      date_taken: Time.now,
       file_name: 'IMG_0741.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/thumb_IMG_0741.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/medium_IMG_0741.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/IMG_0741.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/thumb_IMG_0741.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/medium_IMG_0741.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/IMG_0741.jpg')
     Photo.create!(
       subalbum_id: 1,
      date_taken: Time.now,
       file_name: 'IMG_0828.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/thumb_IMG_0828.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/medium_IMG_0828.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/IMG_0828.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/thumb_IMG_0828.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/medium_IMG_0828.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/IMG_0828.jpg')
     Photo.create!(
       subalbum_id: 1,
      date_taken: Time.now,
       file_name: 'IMG_1069.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/thumb_IMG_1069.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/medium_IMG_1069.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/IMG_1069.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/thumb_IMG_1069.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/medium_IMG_1069.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/IMG_1069.jpg')
     Photo.create!(
       subalbum_id: 1,
      date_taken: Time.now,
       file_name: 'IMG_1090.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/thumb_IMG_1090.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/medium_IMG_1090.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/IMG_1090.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/thumb_IMG_1090.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/medium_IMG_1090.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/IMG_1090.jpg')
     Photo.create!(
       subalbum_id: 1,
      date_taken: Time.now,
       file_name: 'IMG_1154.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/thumb_IMG_1154.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/medium_IMG_1154.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/IMG_1154.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/thumb_IMG_1154.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/medium_IMG_1154.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/IMG_1154.jpg')
     Photo.create!(
       subalbum_id: 1,
      date_taken: Time.now,
       file_name: 'IMG_1184.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/thumb_IMG_1184.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/medium_IMG_1184.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/IMG_1184.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/thumb_IMG_1184.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/medium_IMG_1184.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/IMG_1184.jpg')
     Photo.create!(
       subalbum_id: 1,
      date_taken: Time.now,
       file_name: 'IMG_1244.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/thumb_IMG_1244.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/medium_IMG_1244.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/IMG_1244.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/thumb_IMG_1244.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/medium_IMG_1244.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/IMG_1244.jpg')
     Photo.create!(
       subalbum_id: 1,
      date_taken: Time.now,
       file_name: 'IMG_1249.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/thumb_IMG_1249.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/medium_IMG_1249.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/IMG_1249.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/thumb_IMG_1249.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/medium_IMG_1249.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/IMG_1249.jpg')
     Photo.create!(
       subalbum_id: 1,
      date_taken: Time.now,
       file_name: 'IMG_1580.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/thumb_IMG_1580.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/medium_IMG_1580.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/IMG_1580.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/thumb_IMG_1580.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/medium_IMG_1580.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/IMG_1580.jpg')
     Photo.create!(
       subalbum_id: 1,
      date_taken: Time.now,
       file_name: 'IMG_1851.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/thumb_IMG_1851.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/medium_IMG_1851.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/1_highlights/IMG_1851.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/thumb_IMG_1851.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/medium_IMG_1851.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/1_highlights/IMG_1851.jpg')
 
 
     Subalbum.create!(title: "Portraits ", album_id: 1) #2
@@ -91,121 +91,121 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1147.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1147.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1147.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1147.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1147.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1147.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1147.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1154.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1154.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1154.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1154.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1154.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1154.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1154.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1184.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1184.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1184.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1184.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1184.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1184.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1184.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1189.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1189.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1189.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1189.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1189.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1189.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1189.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1209.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1209.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1209.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1209.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1209.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1209.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1209.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1219.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1219.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1219.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1219.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1219.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1219.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1219.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1239.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1239.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1239.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1239.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1239.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1239.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1239.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1244.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1244.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1244.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1244.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1244.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1244.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1244.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1249.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1249.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1249.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1249.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1249.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1249.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1249.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1299.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1299.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1299.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1299.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1299.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1299.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1299.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1316.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1316.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1316.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1316.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1316.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1316.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1316.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1388.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1388.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1388.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1388.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1388.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1388.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1388.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1399.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1399.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1399.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1399.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1399.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1399.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1399.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1421.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1421.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1421.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1421.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1421.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1421.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1421.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1427.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1427.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1427.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1427.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1427.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1427.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1427.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1449.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1449.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1449.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1449.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1449.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1449.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1449.jpg')
     Photo.create!(
       subalbum_id: 2,
      date_taken: Time.now,
       file_name: 'IMG_1472.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/thumb_IMG_1472.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/medium_IMG_1472.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/2_portraits/IMG_1472.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/thumb_IMG_1472.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/medium_IMG_1472.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/2_portraits/IMG_1472.jpg')
 
 
 
@@ -216,100 +216,100 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_0695.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_0695.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_0695.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_0695.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_0695.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_0695.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_0695.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_0741.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_0741.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_0741.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_0741.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_0741.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_0741.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_0741.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_0753.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_0753.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_0753.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_0753.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_0753.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_0753.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_0753.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_0828.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_0828.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_0828.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_0828.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_0828.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_0828.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_0828.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_0837.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_0837.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_0837.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_0837.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_0837.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_0837.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_0837.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_0888.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_0888.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_0888.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_0888.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_0888.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_0888.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_0888.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_0917.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_0917.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_0917.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_0917.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_0917.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_0917.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_0917.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_0918.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_0918.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_0918.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_0918.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_0918.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_0918.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_0918.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_0932.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_0932.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_0932.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_0932.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_0932.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_0932.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_0932.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_0961.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_0961.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_0961.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_0961.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_0961.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_0961.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_0961.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_0984.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_0984.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_0984.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_0984.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_0984.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_0984.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_0984.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_1069.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_1069.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_1069.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_1069.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_1069.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_1069.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_1069.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_1090.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_1090.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_1090.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_1090.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_1090.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_1090.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_1090.jpg')
     Photo.create!(
       subalbum_id: 3,
      date_taken: Time.now,
       file_name: 'IMG_1108.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/thumb_IMG_1108.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/medium_IMG_1108.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/3_ceremony/IMG_1108.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/thumb_IMG_1108.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/medium_IMG_1108.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/3_ceremony/IMG_1108.jpg')
 
 
     Subalbum.create!(title: "Reception", album_id: 1) #4
@@ -318,16 +318,16 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 4,
      date_taken: Time.now,
       file_name: 'IMG_1580.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/4_reception/thumb_IMG_1580.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/4_reception/medium_IMG_1580.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/4_reception/IMG_1580.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/thumb_IMG_1580.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/medium_IMG_1580.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/IMG_1580.jpg')
     Photo.create!(
       subalbum_id: 4,
      date_taken: Time.now,
       file_name: 'IMG_1851.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/4_reception/thumb_IMG_1851.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/4_reception/medium_IMG_1851.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/julie_jose/4_reception/IMG_1851.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/thumb_IMG_1851.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/medium_IMG_1851.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/IMG_1851.jpg')
 
   Album.create!(title: "Nadine and Jose", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 1, status: 'Published', password: '4444') #2
 
@@ -337,107 +337,107 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_6431.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_6431.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_6431.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_6431.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_6431.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_6431.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_6431.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_6483.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_6483.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_6483.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_6483.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_6483.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_6483.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_6483.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_6546.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_6546.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_6546.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_6546.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_6546.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_6546.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_6546.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_6558.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_6558.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_6558.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_6558.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_6558.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_6558.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_6558.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_6777.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_6777.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_6777.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_6777.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_6777.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_6777.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_6777.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_6796.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_6796.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_6796.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_6796.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_6796.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_6796.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_6796.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_7013.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_7013.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_7013.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_7013.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_7013.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_7013.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_7013.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_7080.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_7080.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_7080.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_7080.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_7080.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_7080.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_7080.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_7099.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_7099.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_7099.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_7099.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_7099.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_7099.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_7099.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_7101.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_7101.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_7101.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_7101.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_7101.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_7101.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_7101.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_7133.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_7133.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_7133.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_7133.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_7133.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_7133.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_7133.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_7183.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_7183.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_7183.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_7183.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_7183.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_7183.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_7183.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_7215.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_7215.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_7215.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_7215.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_7215.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_7215.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_7215.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_7233.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_7233.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_7233.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_7233.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_7233.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_7233.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_7233.jpg')
     Photo.create!(
       subalbum_id: 5,
      date_taken: Time.now,
       file_name: 'IMG_7359.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/thumb_IMG_7359.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/medium_IMG_7359.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/1_highlights/IMG_7359.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/thumb_IMG_7359.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/medium_IMG_7359.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/1_highlights/IMG_7359.jpg')
 
 
 
@@ -448,79 +448,79 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 6,
      date_taken: Time.now,
       file_name: 'IMG_6377.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/thumb_IMG_6377.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/medium_IMG_6377.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/IMG_6377.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/thumb_IMG_6377.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/medium_IMG_6377.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/IMG_6377.jpg')
     Photo.create!(
       subalbum_id: 6,
      date_taken: Time.now,
       file_name: 'IMG_6379.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/thumb_IMG_6379.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/medium_IMG_6379.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/IMG_6379.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/thumb_IMG_6379.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/medium_IMG_6379.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/IMG_6379.jpg')
     Photo.create!(
       subalbum_id: 6,
      date_taken: Time.now,
       file_name: 'IMG_6387.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/thumb_IMG_6387.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/medium_IMG_6387.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/IMG_6387.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/thumb_IMG_6387.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/medium_IMG_6387.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/IMG_6387.jpg')
     Photo.create!(
       subalbum_id: 6,
      date_taken: Time.now,
       file_name: 'IMG_6407.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/thumb_IMG_6407.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/medium_IMG_6407.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/IMG_6407.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/thumb_IMG_6407.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/medium_IMG_6407.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/IMG_6407.jpg')
     Photo.create!(
       subalbum_id: 6,
      date_taken: Time.now,
       file_name: 'IMG_6426.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/thumb_IMG_6426.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/medium_IMG_6426.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/IMG_6426.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/thumb_IMG_6426.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/medium_IMG_6426.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/IMG_6426.jpg')
     Photo.create!(
       subalbum_id: 6,
      date_taken: Time.now,
       file_name: 'IMG_6431.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/thumb_IMG_6431.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/medium_IMG_6431.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/IMG_6431.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/thumb_IMG_6431.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/medium_IMG_6431.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/IMG_6431.jpg')
     Photo.create!(
       subalbum_id: 6,
      date_taken: Time.now,
       file_name: 'IMG_6471.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/thumb_IMG_6471.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/medium_IMG_6471.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/IMG_6471.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/thumb_IMG_6471.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/medium_IMG_6471.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/IMG_6471.jpg')
     Photo.create!(
       subalbum_id: 6,
      date_taken: Time.now,
       file_name: 'IMG_6483.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/thumb_IMG_6483.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/medium_IMG_6483.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/IMG_6483.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/thumb_IMG_6483.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/medium_IMG_6483.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/IMG_6483.jpg')
     Photo.create!(
       subalbum_id: 6,
      date_taken: Time.now,
       file_name: 'IMG_6546.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/thumb_IMG_6546.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/medium_IMG_6546.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/IMG_6546.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/thumb_IMG_6546.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/medium_IMG_6546.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/IMG_6546.jpg')
     Photo.create!(
       subalbum_id: 6,
      date_taken: Time.now,
       file_name: 'IMG_6558.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/thumb_IMG_6558.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/medium_IMG_6558.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/IMG_6558.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/thumb_IMG_6558.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/medium_IMG_6558.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/IMG_6558.jpg')
     Photo.create!(
       subalbum_id: 6,
      date_taken: Time.now,
       file_name: 'IMG_6562.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/thumb_IMG_6562.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/medium_IMG_6562.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/2_preparation/IMG_6562.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/thumb_IMG_6562.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/medium_IMG_6562.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/2_preparation/IMG_6562.jpg')
 
 
     Subalbum.create!(title: "Ceremony", album_id: 2) #7
@@ -529,51 +529,51 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 7,
      date_taken: Time.now,
       file_name: 'IMG_6777.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6777.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/medium_IMG_6777.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/IMG_6777.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6777.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/medium_IMG_6777.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/IMG_6777.jpg')
     Photo.create!(
       subalbum_id: 7,
      date_taken: Time.now,
       file_name: 'IMG_6780.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6780.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/medium_IMG_6780.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/IMG_6780.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6780.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/medium_IMG_6780.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/IMG_6780.jpg')
     Photo.create!(
       subalbum_id: 7,
      date_taken: Time.now,
       file_name: 'IMG_6796.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6796.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/medium_IMG_6796.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/IMG_6796.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6796.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/medium_IMG_6796.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/IMG_6796.jpg')
     Photo.create!(
       subalbum_id: 7,
      date_taken: Time.now,
       file_name: 'IMG_6799.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6799.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/medium_IMG_6799.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/IMG_6799.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6799.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/medium_IMG_6799.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/IMG_6799.jpg')
     Photo.create!(
       subalbum_id: 7,
      date_taken: Time.now,
       file_name: 'IMG_6872.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6872.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/medium_IMG_6872.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/IMG_6872.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6872.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/medium_IMG_6872.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/IMG_6872.jpg')
     Photo.create!(
       subalbum_id: 7,
      date_taken: Time.now,
       file_name: 'IMG_6883.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6883.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/medium_IMG_6883.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/IMG_6883.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6883.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/medium_IMG_6883.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/IMG_6883.jpg')
     Photo.create!(
       subalbum_id: 7,
      date_taken: Time.now,
       file_name: 'IMG_6970.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6970.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/medium_IMG_6970.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/3_ceremony/IMG_6970.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/thumb_IMG_6970.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/medium_IMG_6970.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/3_ceremony/IMG_6970.jpg')
 
 
     Subalbum.create!(title: "Portraits", album_id: 2) #8
@@ -582,100 +582,100 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_6989.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_6989.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_6989.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_6989.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_6989.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_6989.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_6989.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_6992.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_6992.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_6992.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_6992.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_6992.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_6992.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_6992.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7013.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7013.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7013.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7013.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7013.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7013.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7013.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7017.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7017.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7017.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7017.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7017.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7017.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7017.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7025.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7025.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7025.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7025.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7025.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7025.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7025.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7034.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7034.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7034.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7034.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7034.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7034.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7034.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7037.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7037.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7037.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7037.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7037.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7037.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7037.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7043.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7043.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7043.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7043.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7043.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7043.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7043.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7046.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7046.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7046.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7046.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7046.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7046.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7046.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7048.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7048.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7048.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7048.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7048.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7048.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7048.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7067.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7067.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7067.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7067.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7067.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7067.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7067.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7080.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7080.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7080.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7080.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7080.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7080.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7080.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7099.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7099.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7099.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7099.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7099.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7099.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7099.jpg')
     Photo.create!(
       subalbum_id: 8,
      date_taken: Time.now,
       file_name: 'IMG_7101.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/thumb_IMG_7101.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/medium_IMG_7101.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/4_portraits/IMG_7101.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/thumb_IMG_7101.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/medium_IMG_7101.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/4_portraits/IMG_7101.jpg')
 
 
     Subalbum.create!(title: "Reception", album_id: 2) #9
@@ -684,142 +684,142 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7104.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7104.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7104.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7104.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7104.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7104.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7104.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7129.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7129.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7129.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7129.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7129.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7129.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7129.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7133.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7133.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7133.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7133.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7133.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7133.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7133.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7149.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7149.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7149.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7149.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7149.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7149.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7149.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7183.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7183.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7183.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7183.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7183.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7183.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7183.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7185.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7185.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7185.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7185.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7185.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7185.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7185.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7215.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7215.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7215.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7215.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7215.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7215.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7215.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7233.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7233.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7233.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7233.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7233.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7233.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7233.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7234.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7234.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7234.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7234.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7234.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7234.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7234.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7248.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7248.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7248.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7248.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7248.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7248.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7248.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7257.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7257.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7257.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7257.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7257.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7257.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7257.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7259.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7259.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7259.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7259.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7259.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7259.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7259.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7263.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7263.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7263.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7263.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7263.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7263.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7263.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7314.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7314.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7314.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7314.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7314.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7314.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7314.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7319.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7319.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7319.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7319.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7319.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7319.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7319.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7342.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7342.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7342.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7342.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7342.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7342.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7342.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7359.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7359.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7359.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7359.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7359.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7359.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7359.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7452.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7452.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7452.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7452.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7452.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7452.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7452.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7459.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7459.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7459.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7459.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7459.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7459.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7459.jpg')
     Photo.create!(
       subalbum_id: 9,
      date_taken: Time.now,
       file_name: 'IMG_7469.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/thumb_IMG_7469.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/medium_IMG_7469.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/nadine_jose/5_reception/IMG_7469.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/thumb_IMG_7469.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7469.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7469.jpg')
 
   Album.create!(title: "Rosie and Philip", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 1, status: 'Published', password: '4444') #3
       # Auto Highlights Subalbum #10
@@ -828,107 +828,107 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_0092.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_0092.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_0092.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_0092.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_0092.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_0092.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_0092.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_0141.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_0141.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_0141.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_0141.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_0141.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_0141.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_0141.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_8124.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_8124.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_8124.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_8124.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_8124.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_8124.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_8124.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_8303.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_8303.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_8303.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_8303.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_8303.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_8303.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_8303.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_8388.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_8388.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_8388.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_8388.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_8388.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_8388.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_8388.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_8498.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_8498.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_8498.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_8498.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_8498.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_8498.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_8498.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_8899.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_8899.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_8899.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_8899.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_8899.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_8899.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_8899.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_8920.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_8920.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_8920.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_8920.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_8920.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_8920.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_8920.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_9063.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_9063.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_9063.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_9063.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_9063.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_9063.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_9063.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_9079.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_9079.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_9079.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_9079.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_9079.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_9079.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_9079.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_9116.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_9116.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_9116.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_9116.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_9116.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_9116.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_9116.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_9143.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_9143.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_9143.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_9143.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_9143.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_9143.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_9143.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_9199.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_9199.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_9199.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_9199.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_9199.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_9199.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_9199.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_9202.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_9202.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_9202.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_9202.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_9202.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_9202.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_9202.jpg')
     Photo.create!(
       subalbum_id: 10,
      date_taken: Time.now,
       file_name: 'IMG_9570.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/thumb_IMG_9570.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/medium_IMG_9570.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/1_highlights/IMG_9570.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/thumb_IMG_9570.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/medium_IMG_9570.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/1_highlights/IMG_9570.jpg')
 
 
 
@@ -938,79 +938,79 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 11,
      date_taken: Time.now,
       file_name: 'IMG_7967.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/thumb_IMG_7967.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/medium_IMG_7967.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/IMG_7967.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/thumb_IMG_7967.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/medium_IMG_7967.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/IMG_7967.jpg')
     Photo.create!(
       subalbum_id: 11,
      date_taken: Time.now,
       file_name: 'IMG_7980.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/thumb_IMG_7980.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/medium_IMG_7980.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/IMG_7980.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/thumb_IMG_7980.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/medium_IMG_7980.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/IMG_7980.jpg')
     Photo.create!(
       subalbum_id: 11,
      date_taken: Time.now,
       file_name: 'IMG_8087.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/thumb_IMG_8087.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/medium_IMG_8087.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/IMG_8087.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/thumb_IMG_8087.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/medium_IMG_8087.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/IMG_8087.jpg')
     Photo.create!(
       subalbum_id: 11,
      date_taken: Time.now,
       file_name: 'IMG_8124.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/thumb_IMG_8124.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/medium_IMG_8124.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/IMG_8124.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/thumb_IMG_8124.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/medium_IMG_8124.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/IMG_8124.jpg')
     Photo.create!(
       subalbum_id: 11,
      date_taken: Time.now,
       file_name: 'IMG_8175.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/thumb_IMG_8175.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/medium_IMG_8175.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/IMG_8175.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/thumb_IMG_8175.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/medium_IMG_8175.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/IMG_8175.jpg')
     Photo.create!(
       subalbum_id: 11,
      date_taken: Time.now,
       file_name: 'IMG_8303.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/thumb_IMG_8303.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/medium_IMG_8303.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/IMG_8303.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/thumb_IMG_8303.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/medium_IMG_8303.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/IMG_8303.jpg')
     Photo.create!(
       subalbum_id: 11,
      date_taken: Time.now,
       file_name: 'IMG_8372.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/thumb_IMG_8372.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/medium_IMG_8372.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/IMG_8372.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/thumb_IMG_8372.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/medium_IMG_8372.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/IMG_8372.jpg')
     Photo.create!(
       subalbum_id: 11,
      date_taken: Time.now,
       file_name: 'IMG_8388.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/thumb_IMG_8388.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/medium_IMG_8388.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/IMG_8388.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/thumb_IMG_8388.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/medium_IMG_8388.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/IMG_8388.jpg')
     Photo.create!(
       subalbum_id: 11,
      date_taken: Time.now,
       file_name: 'IMG_8450.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/thumb_IMG_8450.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/medium_IMG_8450.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/IMG_8450.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/thumb_IMG_8450.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/medium_IMG_8450.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/IMG_8450.jpg')
     Photo.create!(
       subalbum_id: 11,
      date_taken: Time.now,
       file_name: 'IMG_8454.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/thumb_IMG_8454.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/medium_IMG_8454.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/IMG_8454.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/thumb_IMG_8454.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/medium_IMG_8454.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/IMG_8454.jpg')
     Photo.create!(
       subalbum_id: 11,
      date_taken: Time.now,
       file_name: 'IMG_8463.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/thumb_IMG_8463.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/medium_IMG_8463.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/2_preparation/IMG_8463.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/thumb_IMG_8463.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/medium_IMG_8463.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/2_preparation/IMG_8463.jpg')
 
 
 
@@ -1020,121 +1020,121 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_0036.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_0036.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_0036.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_0036.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_0036.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_0036.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_0036.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_0047.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_0047.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_0047.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_0047.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_0047.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_0047.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_0047.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_0092.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_0092.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_0092.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_0092.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_0092.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_0092.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_0092.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_0141.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_0141.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_0141.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_0141.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_0141.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_0141.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_0141.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_0284.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_0284.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_0284.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_0284.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_0284.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_0284.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_0284.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_0379.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_0379.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_0379.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_0379.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_0379.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_0379.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_0379.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_0453.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_0453.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_0453.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_0453.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_0453.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_0453.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_0453.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_9199.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_9199.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_9199.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_9199.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_9199.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_9199.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_9199.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_9202.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_9202.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_9202.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_9202.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_9202.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_9202.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_9202.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_9228.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_9228.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_9228.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_9228.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_9228.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_9228.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_9228.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_9254.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_9254.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_9254.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_9254.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_9254.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_9254.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_9254.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_9259.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_9259.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_9259.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_9259.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_9259.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_9259.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_9259.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_9275.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_9275.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_9275.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_9275.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_9275.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_9275.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_9275.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_9523.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_9523.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_9523.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_9523.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_9523.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_9523.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_9523.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_9561.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_9561.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_9561.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_9561.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_9561.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_9561.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_9561.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_9565.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_9565.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_9565.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_9565.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_9565.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_9565.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_9565.jpg')
     Photo.create!(
       subalbum_id: 12,
      date_taken: Time.now,
       file_name: 'IMG_9570.jpg',
-      thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/thumb_IMG_9570.jpg',
-      medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/medium_IMG_9570.jpg',
-      image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/karen/rosie_philip/3_reception/IMG_9570.jpg')
+      thumb_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/thumb_IMG_9570.jpg',
+      medium_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/medium_IMG_9570.jpg',
+      image_url: 'http://images.karenling.net/aa/karen/rosie_philip/3_reception/IMG_9570.jpg')
 
 
 
@@ -2982,156 +2982,156 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0002-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0002-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0002-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0002-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0002-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0002-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0002-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0011-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0011-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0011-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0011-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0011-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0011-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0011-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0012-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0012-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0012-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0012-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0012-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0012-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0012-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0013-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0013-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0013-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0013-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0013-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0013-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0013-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0023-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0023-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0023-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0023-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0023-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0023-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0023-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0034-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0034-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0034-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0034-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0034-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0034-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0034-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0038-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0038-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0038-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0038-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0038-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0038-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0038-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0045-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0045-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0045-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0045-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0045-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0045-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0045-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0053-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0053-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0053-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0053-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0053-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0053-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0053-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0062-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0062-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0062-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0062-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0062-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0062-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0062-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0064-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0064-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0064-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0064-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0064-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0064-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0064-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0065-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0065-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0065-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0065-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0065-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0065-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0065-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0076-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0076-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0076-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0076-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0076-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0076-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0076-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0087-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0087-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0087-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0087-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0087-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0087-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0087-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0108-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0108-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0108-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0108-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0108-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0108-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0108-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0114-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0114-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0114-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0114-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0114-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0114-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0114-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0131-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0131-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0131-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0131-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0131-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0131-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0131-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0138-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0138-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0138-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0138-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0138-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0138-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0138-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0147-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0147-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0147-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0147-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0147-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0147-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0147-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0151-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0151-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0151-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0151-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0151-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0151-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0151-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0152-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0152-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0152-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0152-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0152-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0152-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0152-New-Zealand.jpg')
     Photo.create!(
     subalbum_id: 22,
     date_taken: Time.now,
     file_name: '0165-New-Zealand.jpg',
-    thumb_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0165-New-Zealand.jpg',
-    medium_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/medium_0165-New-Zealand.jpg',
-    image_url: 'http://images.karenling.net.s3.amazonaws.com/aa/erich_mcvey/new_zealand/00_Highlights/0165-New-Zealand.jpg')
+    thumb_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/thumb_0165-New-Zealand.jpg',
+    medium_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/medium_0165-New-Zealand.jpg',
+    image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0165-New-Zealand.jpg')
 
 
 User.create!(email: "ktmerry@example.com", password: "password", business_name: "KT Merry", website: "http://http://www.ktmerry.com/", activated: true)
