@@ -765,6 +765,13 @@ input {
   .logo {
     margin-bottom: 30px;
   }
+  .notice {
+    font: 11px 'ProximaNova-Regular';
+    color: $teal;
+    position: relative;
+    top: -10px;
+    text-align: center;
+  }
   .errors {
     font: 11px 'ProximaNova-Regular';
     color: $darkred;

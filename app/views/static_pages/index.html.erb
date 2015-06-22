@@ -1,3 +1,15 @@
+<% if flash[:notice] %>
+  <% flash[:notice].each do |notice| %>
+    <%= notice %>
+  <% end %>
+<% end %>
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <%= error %>
+  <% end %>
+<% end %>
+
+
 <div id="content-landing">
   <%= render 'splash_navbar' %>
   <%= render 'main' %>

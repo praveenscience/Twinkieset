@@ -8,6 +8,7 @@
     <p>
       You have successfully signed up to example.com,
       your username is: <%= @user.email %>.<br/>
+      <%= link_to "Activate Account", activate_users_url(activation_token: @user.activation_token) %>
     </p>
     <p>
       To login to the site, just follow this link: <%= @url %>.

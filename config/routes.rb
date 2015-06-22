@@ -11,9 +11,12 @@ Rails.application.routes.draw do
 
   # get ":album_id/login", to: "album_sessions#login", as: "login_album"
   resources :users, only: [:new, :create] do
-    # resources :albums, only: [:index]
-
+    collection do
+      get 'activate'
+    end
   end
+
+  # get 'users/activate', to: 'users#activate', as: 'activate_user'
   resources :album_sessions, only: [:new, :create, :destroy, :index]
   resource :session, only: [:new, :create, :destroy]
 

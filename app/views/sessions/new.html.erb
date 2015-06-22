@@ -4,6 +4,14 @@
       <a href="/"><img class="logo" src="https://dl.dropboxusercontent.com/u/2330299/capstone/logo.png" width="274px"></a>
 
 
+      <% if flash[:notice] %>
+      <div class="notice">
+        <% flash[:notice].each do |notice| %>
+          <%= notice %>
+        <% end %>
+      </div>
+      <% end %>
+
       <% if flash[:errors] %>
       <div class="errors">
         <% flash[:errors].each do |error| %>
