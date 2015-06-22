@@ -83,24 +83,22 @@ class UsersController < ApplicationController
 
   def create_new_password
     @user = User.find_by(activation_token: params[:activkey] )
-    if @user # if the user exists
-      if params[:user][:password] == params[:user][:retype_password] # if the passwords match
-        @user.password = params[:user][:password]
-        @user.activation_token = SecureRandom::urlsafe_base64
-        if @user.save
-          flash[:notice] = ["You have successfully updated your password."]
-          redirect_to new_session_url
-          return
-        else
-          flash[:errors] = @user.errors.full_messages
-          redirect_to action: :recovery, activkey: params[:activkey]
-          return
-        end
-      elsif params[:user][:password] != params[:user][:retype_password] # if the passwords don't match
-        flash[:errors] = ['Passwords do not match.']
+    if @user && params[:user][:password] == params[:user][:retype_password]
+      @user.password = params[:user][:password]
+      @user.activation_token = SecureRandom::urlsafe_base64
+      if @user.save
+        flash[:notice] = ["You have successfully updated your password."]
+        redirect_to new_session_url
+        return
+      else
+        flash[:errors] = @user.errors.full_messages
         redirect_to action: :recovery, activkey: params[:activkey]
         return
       end
+    elsif @user && params[:user][:password] != params[:user][:retype_password]
+      flash[:errors] = ['Passwords do not match.']
+      redirect_to action: :recovery, activkey: params[:activkey]
+      return
     elsif !@user
       flash.now[:errors] = ['Account does not exist.']
       render :recovery
