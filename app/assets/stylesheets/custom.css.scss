@@ -788,6 +788,12 @@ input {
     font-size: 14px;
     line-height: 19px;
     background: $teal;
+    &:hover {
+      background: $darkteal;
+    }
+  }
+  .login-user {
+    padding: 10px 67px;
   }
 
   input {

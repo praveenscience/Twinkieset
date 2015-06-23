@@ -39,6 +39,8 @@
         <input class="btn btn-primary login-user" type="submit" value="Login">
       </form>
 
+      <%= link_to 'Guest Login', new_session_url(demo: "true"), { method: "get", class: "guest-login-button"} %>
+
     </div>
   </div>
 </div>
