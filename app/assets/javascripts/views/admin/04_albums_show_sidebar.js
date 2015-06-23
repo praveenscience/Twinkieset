@@ -5,7 +5,7 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
     this.listenTo(this.model, "sync", this.render);
     this.listenTo(this.model.subalbums(), "add", this.addSubAlbumView);
     this.model.subalbums().each(this.addSubAlbumView.bind(this));
-    this.listenTo(this.model.subalbums(), 'remove', this.removeSubAlbumView)
+    this.listenTo(this.model.subalbums(), 'remove', this.removeSubAlbumView);
   },
 
   events: {
@@ -54,7 +54,7 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
   },
 
   saveOrdsSubalbums: function (event, ui) {
-    ui.item.trigger('dropSubalbum', ui.item.index()); // ui.item finds its own view
+    ui.item.trigger('dropSubalbum', ui.item.index());
   },
 
   openSubalbumForm: function () {
@@ -83,10 +83,7 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
     this.$el.html(content);
     this.attachSubviews();
 
-
-
     var cover_image = this.model.get('cover_image_med');
-
     if (cover_image) {
       this.$el.find('.collection-cover-image').css('background-image', 'url('+cover_image+')');
     }
@@ -97,8 +94,5 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
 
   onRender: function(){
     $('.album-show-subalbums').sortable();
-
-
   },
-
 });

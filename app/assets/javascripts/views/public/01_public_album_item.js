@@ -7,7 +7,6 @@ TwinkieSetApp.Views.PublicAlbumItem = Backbone.View.extend({
     this.listenTo(this.owner, "sync", this.render);
   },
 
-
   render: function () {
     var content = this.template({
       album: this.model,
@@ -16,9 +15,7 @@ TwinkieSetApp.Views.PublicAlbumItem = Backbone.View.extend({
 
     this.$el.html(content);
     var cover_image = this.model.get("cover_image_med");
-
     this.$el.find('.album-image').css('background-image', 'url('+cover_image+')');
-
     return this;
   }
 });

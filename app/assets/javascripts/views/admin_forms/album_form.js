@@ -35,8 +35,6 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
         this.$el.find('.errors').html(response.responseJSON.join(". "));
       }.bind(this)
     });
-
-
   },
 
   render: function () {
@@ -51,5 +49,4 @@ TwinkieSetApp.Views.Form = Backbone.View.extend({
       dateFormat: 'yy-mm-dd'
     });
   }
-
 });

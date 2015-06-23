@@ -1,5 +1,4 @@
 TwinkieSetApp.Views.AlbumsIndex = Backbone.CompositeView.extend({
-
   template: JST['admin/01_index'],
   className: "none",
 
@@ -37,9 +36,6 @@ TwinkieSetApp.Views.AlbumsIndex = Backbone.CompositeView.extend({
   },
 
   render: function () {
-
-    // var model = this.collection.getOrFetch(1);
-    // var content = this.template({ albums: this.collection, album: model });
     var content = this.template();
     this.$el.html(content);
     this.attachSubviews();

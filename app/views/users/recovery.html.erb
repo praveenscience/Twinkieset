@@ -8,9 +8,7 @@
           <%= @no_user %>
         </p>
         <%= button_to "Back to login", new_session_url, { method: 'get', class: "reset-password" } %>
-
       <% elsif @check_mail %>
-
         <p class="desc">
           <%= @check_mail %>
         </p>
@@ -20,21 +18,7 @@
           <b>Password reset.</b> Enter your new password.
         </p>
 
-        <% if flash[:notice] %>
-        <div class="notice">
-          <% flash[:notice].each do |notice| %>
-            <%= notice %>
-          <% end %>
-        </div>
-        <% end %>
-
-        <% if flash[:errors] %>
-        <div class="errors">
-          <% flash[:errors].each do |error| %>
-            <%= error %>
-          <% end %>
-        </div>
-        <% end %>
+        <%= render 'shared/notice_and_errors' %>
 
         <form class="form-group" action="<%= create_new_password_users_url(activkey: params[:activkey]) %>" method="post">
           <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
@@ -44,26 +28,11 @@
         </form>
       <% elsif !params[:activkey] %>
 
-
         <p class="desc">
           <b>Password reset.</b> Please enter the email address you used to create your account. An email will be sent to you with further instructions on resetting your password.
         </p>
-        <% if flash[:notice] %>
-        <div class="notice">
-          <% flash[:notice].each do |notice| %>
-            <%= notice %>
-          <% end %>
-        </div>
-        <% end %>
 
-        <% if flash[:errors] %>
-        <div class="errors">
-          <% flash[:errors].each do |error| %>
-            <%= error %>
-          <% end %>
-        </div>
-        <% end %>
-
+        <%= render 'shared/notice_and_errors' %>
 
         <form class="form-group" action="<%= reset_password_users_url %>" method="post">
           <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
@@ -75,12 +44,3 @@
     </div>
   </div>
 </div>
-
-
-<script type="text/javascript">
-  // $('.reset-password').click(function (event) {
-  //   event.preventDefault();
-  //   if ($('.user-password').val() !== $('.user-retype_password'))
-  //     $('.errors').html("mismatch password");
-  // })
-</script>

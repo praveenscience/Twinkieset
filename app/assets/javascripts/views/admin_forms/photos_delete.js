@@ -4,7 +4,6 @@ TwinkieSetApp.Views.PhotosDelete = Backbone.View.extend({
 
   initialize: function (options) {
     TwinkieSetApp.Views.defaultKeys.call(this);
-    // this.TwinkieSetApp.selectedPhotosArray = options.TwinkieSetApp.selectedPhotosArray;
     $('body').keydown(function (e) {
       if (e.keyCode === 13) {
         e.preventDefault();
@@ -40,5 +39,4 @@ TwinkieSetApp.Views.PhotosDelete = Backbone.View.extend({
     this.$el.html(content);
     return this;
   }
-
 });

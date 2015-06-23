@@ -42,7 +42,6 @@ TwinkieSetApp.Views.SubalbumForm = Backbone.View.extend({
         this.$el.find('.errors').html(response.responseJSON.join(". "));
       }.bind(this)
     });
-
   },
 
   hideSubalbumForm: function () {

@@ -26,7 +26,6 @@ class ApplicationController < ActionController::Base
     session[:expires_at] = nil
   end
 
-
   def current_user
     user = User.find_by(session_token: session[:session_token])
   end

@@ -1,4 +1,3 @@
-
 <div class="private-album-login-main"></div>
 <div class="private-album-login">
 
@@ -13,8 +12,6 @@
     <% else %>
       <span class="bold-guest">Guest Access.</span> Enter password to view this collection.
     <% end %>
-
-
   </div>
 
   <form class="form-album" action="<%= album_sessions_url %>" method="POST">
@@ -25,7 +22,6 @@
   </form>
 </div>
 <style type="text/css">
-
   <% if @album.cover_image %>
     <% bg_image = @album.cover_image.image_url %>
   <% else %>
@@ -35,8 +31,6 @@
   .private-album-login-main {
     background-image: url('<%= bg_image %>');
   }
-
-
 </style>
 
 <script type="text/javascript">

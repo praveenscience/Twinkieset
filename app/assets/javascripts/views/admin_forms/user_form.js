@@ -59,7 +59,6 @@ TwinkieSetApp.Views.UserForm = Backbone.View.extend({
       user: this.user
     });
     this.$el.html(content);
-
     this.onRender();
     return this;
   },
@@ -69,7 +68,6 @@ TwinkieSetApp.Views.UserForm = Backbone.View.extend({
       this.$el.find('.user-avatar-plus').show();
       this.$el.find('.avatar-image').hide();
     }
-
     if (this.user.get('avatar')) {
       this.$el.find('.no-photo').show();
     }

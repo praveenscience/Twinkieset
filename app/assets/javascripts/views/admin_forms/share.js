@@ -4,7 +4,7 @@ TwinkieSetApp.Views.Share = Backbone.View.extend({
 
   initialize: function (options) {
     TwinkieSetApp.Views.defaultKeys.call(this);
-    this.album = options.album
+    this.album = options.album;
   },
 
   events: {

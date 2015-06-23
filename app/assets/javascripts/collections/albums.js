@@ -2,17 +2,13 @@ TwinkieSetApp.Collections.Albums = Backbone.Collection.extend({
   url: '/api/albums',
   model: TwinkieSetApp.Models.Album,
 
-  // comparator: function (album) {
-  //   return album.get('title');
-  // },
-
   getOrFetch: function (id) {
     var album = this.get(id);
 
     if (album) {
       album.fetch({
         error: function () {
-          window.location.href = "/session/new"
+          window.location.href = "/session/new";
         }
       });
     } else {
@@ -22,12 +18,10 @@ TwinkieSetApp.Collections.Albums = Backbone.Collection.extend({
           this.add(album);
         }.bind(this),
         error: function () {
-          window.location.href = "/session/new"
+          window.location.href = "/session/new";
         }
       });
     }
-
     return album;
   }
-
 });

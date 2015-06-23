@@ -1,9 +1,5 @@
-
 json.array!(@albums) do |album|
   json.extract!(album, :id, :title, :event_date, :status, :created_at, :updated_at)
-
-
-#user id also
 
   time = Time.parse(album.event_date.to_s)
   json.string_date time.strftime("%B #{time.day.ordinalize}, %Y")

@@ -27,13 +27,11 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
   },
 
   hideForm: function () {
-    console.log("hide");
     event.preventDefault();
     this.remove();
   },
 
   editAlbum: function (event) {
-    console.log("edit fired");
     event.preventDefault();
     var attrs = $(event.currentTarget).serializeJSON();
     if (attrs.album.password.length === 0) {
@@ -50,7 +48,6 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
         $('body').append(notice.render().$el);
       }.bind(this),
       error: function (models, response) {
-        console.log('hit the error');
         this.$el.find('.errors').html(response.responseJSON.join(". "));
       }.bind(this)
     });

@@ -29,15 +29,9 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
         TwinkieSetApp.Views.masonryGallery.masonry('appended', this.$el);
         this.$el.css('opacity', 1);
 
-
         TwinkieSetApp.Views.masonryGallery.masonry();
       }.bind(this));
     }
-
-
-
-
-
 
     this.$el.css('opacity',0);
     $('.loading-gif').fadeIn('slow');
@@ -48,6 +42,4 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
     }.bind(this), 1000);
     return this;
   },
-
-
 });

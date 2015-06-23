@@ -34,8 +34,6 @@ TwinkieSetApp.Views.NavBar = Backbone.View.extend({
     $('body').append(userForm.render().$el);
   },
 
-
-
   logoutUser: function (event) {
     $('.logout-form').submit();
   },
@@ -47,4 +45,4 @@ TwinkieSetApp.Views.NavBar = Backbone.View.extend({
     this.$el.html(content);
     return this;
   }
-})
+});

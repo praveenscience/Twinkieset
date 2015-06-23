@@ -35,5 +35,4 @@ TwinkieSetApp.Views.DeleteSubalbum = Backbone.View.extend({
     this.$el.html(content);
     return this;
   }
-
 });

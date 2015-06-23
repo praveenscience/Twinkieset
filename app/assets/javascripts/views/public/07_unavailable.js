@@ -6,6 +6,7 @@ TwinkieSetApp.Views.Unavailable = Backbone.View.extend({
     this.owner = options.owner;
     this.listenTo(this.owner, 'sync', this.render);
   },
+
   render: function () {
     var content = this.template({
       owner: this.owner
@@ -13,4 +14,4 @@ TwinkieSetApp.Views.Unavailable = Backbone.View.extend({
     this.$el.html(content);
     return this;
   }
-})
+});

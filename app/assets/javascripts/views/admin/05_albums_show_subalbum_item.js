@@ -48,5 +48,4 @@ TwinkieSetApp.Views.AlbumsShowSubalbumItem = Backbone.View.extend({
 
     return this;
   }
-
 });

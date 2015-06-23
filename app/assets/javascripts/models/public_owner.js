@@ -1,6 +1,6 @@
 TwinkieSetApp.Models.PublicOwner = Backbone.Model.extend({
   urlRoot: function () {
-    return "/api/users/" + this.userID
+    return "/api/users/" + this.userID;
   },
 
   initialize: function(options) {
@@ -12,7 +12,6 @@ TwinkieSetApp.Models.PublicOwner = Backbone.Model.extend({
       this.albums().set(response.albums, { parse: true });
       delete response.albums;
 
-
       this.albums().forEach( function (album) {
         album._owner = this;
       }.bind(this));
@@ -20,9 +19,6 @@ TwinkieSetApp.Models.PublicOwner = Backbone.Model.extend({
 
     return response;
   },
-
-  // this.set(response)
-  // var json = this.toJSON();
 
   albums: function () {
     if (!this._albums) {
@@ -33,5 +29,4 @@ TwinkieSetApp.Models.PublicOwner = Backbone.Model.extend({
     }
     return this._albums;
   }
-
 });

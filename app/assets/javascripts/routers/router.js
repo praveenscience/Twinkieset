@@ -1,10 +1,10 @@
 TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   routes: {
-    "": "index", //  http://localhost:3000/admin#
-    "collection/:id(/set/:subalbumId)": "show", //  http://localhost:3000/admin#collection/1/
-    ":user_id/collection/:album_id(/set/:set_id)": "publicShow", // http://localhost:3000/users#3/collection/10
-    ":user_id": "publicIndex", // http://localhost:3000/users#3
-    ":user_id/unavailable": "publicUnavailable" // http://localhost:3000/users#3/unavailable
+    "": "index",
+    "collection/:id(/set/:subalbumId)": "show",
+    ":user_id/collection/:album_id(/set/:set_id)": "publicShow",
+    ":user_id": "publicIndex",
+    ":user_id/unavailable": "publicUnavailable"
   },
 
   initialize: function (options) {
@@ -22,7 +22,7 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
   },
 
   index: function () {
-    if (CURRENT_USER) { // this is important to prevent accessing current_user when it is null
+    if (CURRENT_USER) {
       var user = new TwinkieSetApp.Models.Owner({ id: CURRENT_USER.id });
       user.fetch();
       this.collection.fetch();
@@ -84,7 +84,7 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
       success: function (model) {
         if (model.albums().get(album_id) === undefined) {
           window.location.href = "/users#" + user_id + "/unavailable";
-          return
+          return;
         } else {
           var album = new TwinkieSetApp.Models.PublicAlbum({
             userID: user_id,
@@ -94,7 +94,6 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
           album.fetch({
             error: function () {
               var path = window.location.hash.slice(1);
-
               window.location.href = "/album_sessions/new?album=" + album_id + "&router=" + path;
             }
           });
@@ -108,8 +107,6 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
         }
       }.bind(this)
     });
-
-
   },
 
   _swapViewPublic: function (view) {

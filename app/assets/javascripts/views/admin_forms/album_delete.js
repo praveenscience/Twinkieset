@@ -36,5 +36,4 @@ TwinkieSetApp.Views.DeleteAlbum = Backbone.View.extend({
     this.$el.html(content);
     return this;
   }
-
 });

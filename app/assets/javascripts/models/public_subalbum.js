@@ -29,5 +29,4 @@ TwinkieSetApp.Models.PublicSubalbum = Backbone.Model.extend({
     }
     return this._photos;
   }
-
 });

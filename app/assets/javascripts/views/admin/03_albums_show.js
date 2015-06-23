@@ -7,7 +7,6 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
     this.subAlbumViewCreated = false;
     this.currentSubalbumId = options.subalbumID;
     this.listenTo(this.model, "sync", this.render);
-    // this.listenTo(this.model,'subalbumSelected', this.renderSubalbum);
     this.navBarView = new TwinkieSetApp.Views.NavBar({
       user: this.user
     });
@@ -42,7 +41,6 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
     Backbone.history.navigate(path);
     subalbum.fetch();
     this.subAlbumViewCreated = true;
-    // $('.album-show-items').html(photoIndexView.render().$el);
   },
 
   attachPhotoIndex: function(){
@@ -55,7 +53,6 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
 
   render: function () {
     this.createSubAlbumView();
-
     var content = this.template({ album: this.model });
     this.$el.html(content);
     this.attachSubviews();
@@ -68,5 +65,4 @@ TwinkieSetApp.Views.AlbumsShow = Backbone.CompositeView.extend({
     var subalbumID = Backbone.history.getFragment().split("/")[3];
     $('.subalbum-' + subalbumID).addClass('selected');
   }
-
 });

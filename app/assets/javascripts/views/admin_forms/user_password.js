@@ -3,7 +3,7 @@ TwinkieSetApp.Views.UserPassword = Backbone.View.extend({
   className: 'form-modal',
 
   initialize: function (options) {
-    this.user = options.user
+    this.user = options.userl
     TwinkieSetApp.Views.defaultKeys.call(this);
   },
 
@@ -50,5 +50,4 @@ TwinkieSetApp.Views.UserPassword = Backbone.View.extend({
     this.$el.html(content);
     return this;
   }
-
 });

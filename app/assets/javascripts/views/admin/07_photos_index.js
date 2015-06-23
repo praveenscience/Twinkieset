@@ -1,5 +1,4 @@
 TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
-
   template: JST['admin/07_index'],
 
   initialize: function () {
@@ -8,7 +7,6 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     this.listenTo(this.collection, "add", this.addPhotoView);
     this.listenTo(this.collection, 'remove', this.removePhotoView);
     this.collection.each(this.addPhotoView.bind(this));
-
   },
 
   events: {
@@ -98,7 +96,6 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     this.sortPhotos(event, 'random', true);
   },
 
-
   closeSortOptions: function (event) {
     $('.sort-by-options').hide();
   },
@@ -122,22 +119,10 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     droppedModel.save();
     this.model.photos().add(droppedModel, { silent: true });
     this.model.photos().sort();
-
   },
 
   saveOrds: function (event, ui) {
     ui.item.trigger('drop', ui.item.index());
-  },
-
-  // may not need this?
-  myUniq: function (arr) {
-    uniqued = [];
-    arr.forEach(function(item, idx, originalArr) {
-      if (uniqued.indexOf(item) === -1) {
-        uniqued.push(item);
-      }
-    });
-    return uniqued;
   },
 
   selectAllPhotos: function (event) {
@@ -158,21 +143,17 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     $('.number-of-selected').html(photosCollection.length + " selected");
   },
 
-
   clearSelection: function (event) {
-
     TwinkieSetApp.selectedPhotosArr = [];
     $('.photo-item').removeClass('selected').addClass('not-selected');
 
     $('.number-of-selected').html("0 selected");
   },
 
-
   showPhotoDeleteModal: function (event) {
     var deleteView = new TwinkieSetApp.Views.PhotosDelete();
     $('body').append(deleteView.render().$el);
   },
-
 
   upload: function (e) {
     TwinkieSetApp.selectedPhotosArr = [];
@@ -185,7 +166,6 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
         }
     }.bind(this));
   },
-
 
   successfulUpload: function (payload) {
     payload.forEach(function(image) {
@@ -205,6 +185,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
             "date_taken": convertedDate
           }
         };
+
         var photo = new TwinkieSetApp.Models.Photo(imageData);
         photo.save({}, {
           success: function () {
@@ -219,8 +200,6 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     this.subviews('.photo-items').each(function (photo, index, collection) {
       photo.remove();
     });
-
-
 
     if (value === 'random') {
       var updatedCollection = [];
@@ -247,7 +226,6 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
 
     if (reverse) {
       this.collection.models.reverse().forEach(this.addPhotoView.bind(this));
-
       this.collection.models.reverse().forEach(function(photo, index, collection) {
         photo.set('order', index);
         photo.save();
@@ -276,13 +254,11 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     var newArray = [];
 
     while (newArray.length < length) {
-
       var randomPos = Math.round(Math.random()*(length-1));
       if (newArray.indexOf(randomPos) === -1) {
         newArray.push(randomPos);
       }
     }
-
     return newArray;
   },
 
@@ -324,6 +300,5 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
     } else {
       $('.no-photos').hide();
     }
-  },
-
+  }
 });
