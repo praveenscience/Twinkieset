@@ -3,7 +3,7 @@ TwinkieSetApp.Collections.Subalbums = Backbone.Collection.extend({
   model: TwinkieSetApp.Models.Subalbum,
 
   comparator: function (subalbum) {
-    return subalbum.get('order'); 
+    return subalbum.get('order');
   },
 
   getOrFetch: function (id) {
@@ -21,5 +21,4 @@ TwinkieSetApp.Collections.Subalbums = Backbone.Collection.extend({
     }
     return subalbum;
   }
-
 });

@@ -9,7 +9,7 @@
 
 User.create!(email: "karen@example.com", password: "password", business_name: "Karen Ling", website: "http://twinkieandkaren.com/", screenshot: 'http://images.karenling.net/aa/user-cover-images/karen_ling.png', activated: true, avatar: 'http://images.karenling.net/aa/karen_ling.jpg')
 
-  Album.create!(title: "Julie and Jose", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 19, user_id: 1, status: 'Published', password: '4444') #1
+  Album.create!(title: "Julie and Jose", event_date: "2014-08-23 00:00:00 -0800", cover_image_id: 19, user_id: 1, status: 'Published', password: '4444') #1
 
     # Auto Highlights Subalbum #1
 
@@ -329,7 +329,7 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       medium_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/medium_IMG_1851.jpg',
       image_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/IMG_1851.jpg')
 
-  Album.create!(title: "Nadine and Jose", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 53, user_id: 1, status: 'Published') #2
+  Album.create!(title: "Nadine and Jose", event_date: "2014-06-21 00:00:00 -0800", cover_image_id: 53, user_id: 1, status: 'Published') #2
 
     # Auto Highlights Subalbum #5
 
@@ -821,7 +821,7 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7469.jpg',
       image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7469.jpg')
 
-  Album.create!(title: "Rosie and Philip", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 117, user_id: 1, status: 'Published') #3
+  Album.create!(title: "Rosie and Philip", event_date: "2014-07-12 00:00:00 -0800", cover_image_id: 117, user_id: 1, status: 'Published') #3
       # Auto Highlights Subalbum #10
 
     Photo.create!(
@@ -1140,7 +1140,7 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
 
 User.create!(email: "erich@example.com", password: "password", business_name: "Erich McVey", website: "http://www.erichmcvey.com/", screenshot: 'http://images.karenling.net/aa/user-cover-images/erich_mcvey.png', activated: true) #2
 
-  Album.create!(title: "Adele and David", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 159, user_id: 2, status: 'Published') #4
+  Album.create!(title: "Adele and David", event_date: "2015-01-08 00:00:00 -0800", cover_image_id: 159, user_id: 2, status: 'Published') #4
 
     # highlights is #13
     Photo.create!(
@@ -1581,7 +1581,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
 
 
 
-  Album.create!(title: "Baton Rogue", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 232, user_id: 2, status: 'Published') #5
+  Album.create!(title: "Baton Rouge", event_date: "2015-01-28 00:00:00 -0800", cover_image_id: 232, user_id: 2, status: 'Published') #5
 
     # highlights is #16
 
@@ -1727,7 +1727,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
       image_url: 'http://images.karenling.net/aa/erich_mcvey/baton_rogue/Louisiana-Wedding-Photography-by-Erich-McVey-9.jpg')
 
 
-  Album.create!(title: "Geraldine Magazine", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 239, user_id: 2, status: 'Published') #6
+  Album.create!(title: "Geraldine Magazine", event_date: "2015-01-14 00:00:00 -0800", cover_image_id: 239, user_id: 2, status: 'Published') #6
 
     # highlights is #17
     Photo.create!(
@@ -1943,7 +1943,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
 
 
 
-  Album.create!(title: "Kaela and Jonathan", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 297, user_id: 2, status: 'Published') #7
+  Album.create!(title: "Kaela and Jonathan", event_date: "2015-04-28 00:00:00 -0800", cover_image_id: 297, user_id: 2, status: 'Published') #7
 
     # highlight is 18
 
@@ -2301,7 +2301,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
 
 
 
-  Album.create!(title: "New Zealand", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 327, user_id: 2, status: 'Published') #8
+  Album.create!(title: "New Zealand", event_date: "2015-01-09 00:00:00 -0800", cover_image_id: 327, user_id: 2, status: 'Published') #8
 
     # highlights is 22
     Photo.create!(
@@ -2463,7 +2463,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
 User.create!(email: "ktmerry@example.com", password: "password", business_name: "KT Merry", website: "http://http://www.ktmerry.com/", screenshot: 'http://images.karenling.net/aa/user-cover-images/kt_merry.png', activated: true)
 
 
-  Album.create!(title: "Anita and Jonathan", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 342, user_id: 3, status: 'Published') #9
+  Album.create!(title: "Anita and Jonathan", event_date: "2013-03-08 00:00:00 -0800", cover_image_id: 342, user_id: 3, status: 'Published') #9
   # highlights is #23
 
   Photo.create!(
@@ -2659,7 +2659,7 @@ User.create!(email: "ktmerry@example.com", password: "password", business_name: 
 
 
 
-  Album.create!(title: "Flutter Magazine", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 363, user_id: 3, status: 'Published') #10
+  Album.create!(title: "Flutter Magazine", event_date: "2015-05-22 00:00:00 -0800", cover_image_id: 363, user_id: 3, status: 'Published') #10
   # highlights is #24
 
   Photo.create!(
@@ -3007,7 +3007,7 @@ User.create!(email: "ktmerry@example.com", password: "password", business_name: 
     image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/6163_05_KW_FLUTTER_MAG_S812_0001_V2.jpg')
 
 
-  Album.create!(title: "Islamorada Engagement for The Knot", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 447, user_id: 3, status: 'Published') #11
+  Album.create!(title: "Islamorada Engagement for The Knot", event_date: "2015-06-10 00:00:00 -0800", cover_image_id: 447, user_id: 3, status: 'Published') #11
   # highlights is #25
 
 
