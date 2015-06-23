@@ -48,6 +48,7 @@ class UsersController < ApplicationController
 
   def activate
     @user = User.find_by(activation_token: params[:activation_token])
+    
     if @user
       @user.activated = true
       @user.activation_token = SecureRandom::urlsafe_base64
@@ -55,6 +56,9 @@ class UsersController < ApplicationController
       flash[:notice] = ["You have successfully activated your account!"]
       log_in_user!(@user)
       redirect_to admin_url
+    else
+      flash[:errors] = ["Account does not exist."]
+      redirect_to new_user_url
     end
   end
 
