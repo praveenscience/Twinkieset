@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-User.create!(email: "karen@example.com", password: "password", business_name: "Karen Ling", website: "http://twinkieandkaren.com/", activated: true)
+User.create!(email: "karen@example.com", password: "password", business_name: "Karen Ling", website: "http://twinkieandkaren.com/", screenshot: 'http://images.karenling.net/aa/user-cover-images/karen_ling.png', activated: true, avatar: 'http://images.karenling.net/aa/karen_ling.jpg')
 
   Album.create!(title: "Julie and Jose", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 19, user_id: 1, status: 'Published', password: '4444') #1
 
@@ -329,7 +329,7 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       medium_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/medium_IMG_1851.jpg',
       image_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/IMG_1851.jpg')
 
-  Album.create!(title: "Nadine and Jose", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 52, user_id: 1, status: 'Published', password: '4444') #2
+  Album.create!(title: "Nadine and Jose", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 53, user_id: 1, status: 'Published') #2
 
     # Auto Highlights Subalbum #5
 
@@ -821,7 +821,7 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7469.jpg',
       image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7469.jpg')
 
-  Album.create!(title: "Rosie and Philip", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 117, user_id: 1, status: 'Published', password: '4444') #3
+  Album.create!(title: "Rosie and Philip", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 117, user_id: 1, status: 'Published') #3
       # Auto Highlights Subalbum #10
 
     Photo.create!(
@@ -1138,9 +1138,9 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
 
 
 
-User.create!(email: "erich@example.com", password: "password", business_name: "Erich McVey", website: "http://www.erichmcvey.com/", activated: true) #2
+User.create!(email: "erich@example.com", password: "password", business_name: "Erich McVey", website: "http://www.erichmcvey.com/", screenshot: 'http://images.karenling.net/aa/user-cover-images/erich_mcvey.png', activated: true) #2
 
-  Album.create!(title: "Adele and David", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 210, user_id: 2, status: 'Published', password: '4444') #4
+  Album.create!(title: "Adele and David", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 159, user_id: 2, status: 'Published') #4
 
     # highlights is #13
     Photo.create!(
@@ -1581,7 +1581,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
 
 
 
-  Album.create!(title: "Baton Rogue", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 232, user_id: 2, status: 'Published', password: '4444') #5
+  Album.create!(title: "Baton Rogue", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 232, user_id: 2, status: 'Published') #5
 
     # highlights is #16
 
@@ -1727,7 +1727,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
       image_url: 'http://images.karenling.net/aa/erich_mcvey/baton_rogue/Louisiana-Wedding-Photography-by-Erich-McVey-9.jpg')
 
 
-  Album.create!(title: "Geraldine Magazine", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 239, user_id: 2, status: 'Published', password: '4444') #6
+  Album.create!(title: "Geraldine Magazine", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 239, user_id: 2, status: 'Published') #6
 
     # highlights is #17
     Photo.create!(
@@ -1943,7 +1943,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
 
 
 
-  Album.create!(title: "Kaela and Jonathan", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 297, user_id: 2, status: 'Published', password: '4444') #7
+  Album.create!(title: "Kaela and Jonathan", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 297, user_id: 2, status: 'Published') #7
 
     # highlight is 18
 
@@ -2301,7 +2301,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
 
 
 
-  Album.create!(title: "New Zealand", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 327, user_id: 2, status: 'Published', password: '4444') #8
+  Album.create!(title: "New Zealand", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 327, user_id: 2, status: 'Published') #8
 
     # highlights is 22
     Photo.create!(
@@ -2460,820 +2460,820 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
     image_url: 'http://images.karenling.net/aa/erich_mcvey/new_zealand/00_Highlights/0165-New-Zealand.jpg')
 
 
-User.create!(email: "ktmerry@example.com", password: "password", business_name: "KT Merry", website: "http://http://www.ktmerry.com/", activated: true)
+User.create!(email: "ktmerry@example.com", password: "password", business_name: "KT Merry", website: "http://http://www.ktmerry.com/", screenshot: 'http://images.karenling.net/aa/user-cover-images/kt_merry.png', activated: true)
 
 
-Album.create!(title: "Anita and Jonathan", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 342, user_id: 3, status: 'Published', password: '4444') #9
-# highlights is #23
+  Album.create!(title: "Anita and Jonathan", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 342, user_id: 3, status: 'Published') #9
+  # highlights is #23
 
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajohn_001%20copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_001%20copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_001%20copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_001%20copy.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajohn_001.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_001.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_001.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_001.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajohn_002%20copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_002%20copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_002%20copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_002%20copy.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajohn_002.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_002.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_002.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_002.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajohn_003.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_003.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_003.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_003.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajohn_004%20copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_004%20copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_004%20copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_004%20copy.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajohn_004.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_004.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_004.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_004.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_005%20copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_005%20copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_005%20copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_005%20copy.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_005.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_005.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_005.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_005.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0061.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0061.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0061.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0061.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0071%20copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0071%20copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0071%20copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0071%20copy.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0071.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0071.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0071.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0071.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_008%20copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_008%20copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_008%20copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_008%20copy.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_008.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_008.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_008.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_008.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0091%20copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0091%20copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0091%20copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0091%20copy.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0091.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0091.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0091.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0091.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0101.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0101.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0101.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0101.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0111%20copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0111%20copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0111%20copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0111%20copy.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0111.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0111.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0111.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0111.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0121%20copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0121%20copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0121%20copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0121%20copy.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0121.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0121.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0121.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0121.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0131.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0131.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0131.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0131.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0141%20copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0141%20copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0141%20copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0141%20copy.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0141.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0141.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0141.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0141.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0151.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0151.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0151.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0151.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0161%20copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0161%20copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0161%20copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0161%20copy.jpg')
-Photo.create!(
-  subalbum_id: 23,
- date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0161.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0161.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0161.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0161.jpg')
-
-
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajohn_001%20copy.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_001%20copy.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_001%20copy.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_001%20copy.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajohn_001.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_001.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_001.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_001.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajohn_002%20copy.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_002%20copy.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_002%20copy.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_002%20copy.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajohn_002.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_002.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_002.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_002.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajohn_003.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_003.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_003.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_003.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajohn_004%20copy.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_004%20copy.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_004%20copy.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_004%20copy.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajohn_004.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_004.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_004.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_004.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_005%20copy.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_005%20copy.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_005%20copy.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_005%20copy.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_005.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_005.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_005.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_005.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0061.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0061.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0061.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0061.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0071%20copy.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0071%20copy.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0071%20copy.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0071%20copy.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0071.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0071.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0071.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0071.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_008%20copy.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_008%20copy.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_008%20copy.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_008%20copy.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_008.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_008.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_008.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_008.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0091%20copy.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0091%20copy.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0091%20copy.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0091%20copy.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0091.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0091.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0091.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0091.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0101.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0101.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0101.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0101.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0111%20copy.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0111%20copy.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0111%20copy.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0111%20copy.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0111.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0111.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0111.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0111.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0121%20copy.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0121%20copy.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0121%20copy.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0121%20copy.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0121.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0121.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0121.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0121.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0131.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0131.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0131.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0131.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0141%20copy.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0141%20copy.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0141%20copy.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0141%20copy.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0141.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0141.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0141.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0141.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0151.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0151.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0151.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0151.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0161%20copy.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0161%20copy.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0161%20copy.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0161%20copy.jpg')
+  Photo.create!(
+    subalbum_id: 23,
+   date_taken: Time.now,
+    file_name: 'vizcaya_wedding_anitajonathan_0161.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0161.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0161.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0161.jpg')
 
 
-Album.create!(title: "Flutter Magazine", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 378, user_id: 3, status: 'Published', password: '4444') #10
-# highlights is #24
-
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0015.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0015.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0015.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0015.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_00181.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_00181.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_00181.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_00181.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_00311.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_00311.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_00311.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_00311.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_00381.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_00381.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_00381.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_00381.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0080.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0080.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0080.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0080.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0106.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0106.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0106.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0106.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0119.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0119.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0119.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0119.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0123.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0123.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0123.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0123.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0129.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0129.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0129.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0129.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0134.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0134.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0134.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0134.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_01461.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_01461.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_01461.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_01461.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_01601.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_01601.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_01601.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_01601.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_01701.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_01701.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_01701.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_01701.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0178.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0178.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0178.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0178.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0185.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0185.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0185.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0185.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0204.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0204.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0204.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0204.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_02121.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_02121.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_02121.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_02121.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0257.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0257.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0257.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0257.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0279.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0279.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0279.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0279.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0288.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0288.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0288.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0288.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0314.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0314.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0314.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0314.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_03241.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_03241.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_03241.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_03241.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0327.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0327.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0327.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0327.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0338.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0338.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0338.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0338.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0346.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0346.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0346.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0346.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0359.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0359.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0359.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0359.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0362.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0362.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0362.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0362.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0369.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0369.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0369.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0369.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0371.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0371.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0371.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0371.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0379.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0379.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0379.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0379.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0389.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0389.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0389.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0389.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0393.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0393.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0393.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0393.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0419.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0419.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0419.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0419.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0420.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0420.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0420.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0420.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0429.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0429.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0429.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0429.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0464.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0464.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0464.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0464.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0465.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0465.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0465.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0465.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_04981.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_04981.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_04981.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_04981.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0504.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0504.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0504.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0504.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0506.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0506.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0506.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0506.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_05091.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_05091.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_05091.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_05091.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0514.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0514.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0514.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0514.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0520.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0520.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0520.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0520.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0534.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0534.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0534.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0534.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0573.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0573.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0573.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0573.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '2014_01_15_flutterastro_0574.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0574.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0574.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0574.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '6163_01_KW_FLUTTER_MAG_S000_0100_V2.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_6163_01_KW_FLUTTER_MAG_S000_0100_V2.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_6163_01_KW_FLUTTER_MAG_S000_0100_V2.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/6163_01_KW_FLUTTER_MAG_S000_0100_V2.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '6163_02_KW_FLUTTER_MAG_S000_0268_V2.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_6163_02_KW_FLUTTER_MAG_S000_0268_V2.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_6163_02_KW_FLUTTER_MAG_S000_0268_V2.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/6163_02_KW_FLUTTER_MAG_S000_0268_V2.jpg')
-Photo.create!(
-  subalbum_id: 24,
- date_taken: Time.now,
-  file_name: '6163_05_KW_FLUTTER_MAG_S812_0001_V2.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_6163_05_KW_FLUTTER_MAG_S812_0001_V2.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_6163_05_KW_FLUTTER_MAG_S812_0001_V2.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/6163_05_KW_FLUTTER_MAG_S812_0001_V2.jpg')
 
 
-Album.create!(title: "Islamorada Engagement for The Knot", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 447, user_id: 3, status: 'Published', password: '4444') #11
-# highlights is #25
+  Album.create!(title: "Flutter Magazine", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 363, user_id: 3, status: 'Published') #10
+  # highlights is #24
+
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0015.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0015.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0015.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0015.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_00181.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_00181.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_00181.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_00181.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_00311.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_00311.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_00311.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_00311.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_00381.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_00381.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_00381.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_00381.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0080.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0080.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0080.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0080.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0106.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0106.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0106.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0106.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0119.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0119.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0119.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0119.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0123.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0123.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0123.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0123.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0129.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0129.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0129.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0129.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0134.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0134.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0134.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0134.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_01461.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_01461.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_01461.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_01461.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_01601.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_01601.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_01601.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_01601.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_01701.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_01701.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_01701.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_01701.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0178.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0178.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0178.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0178.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0185.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0185.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0185.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0185.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0204.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0204.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0204.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0204.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_02121.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_02121.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_02121.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_02121.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0257.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0257.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0257.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0257.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0279.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0279.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0279.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0279.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0288.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0288.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0288.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0288.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0314.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0314.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0314.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0314.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_03241.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_03241.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_03241.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_03241.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0327.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0327.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0327.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0327.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0338.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0338.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0338.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0338.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0346.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0346.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0346.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0346.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0359.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0359.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0359.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0359.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0362.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0362.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0362.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0362.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0369.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0369.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0369.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0369.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0371.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0371.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0371.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0371.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0379.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0379.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0379.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0379.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0389.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0389.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0389.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0389.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0393.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0393.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0393.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0393.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0419.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0419.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0419.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0419.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0420.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0420.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0420.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0420.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0429.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0429.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0429.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0429.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0464.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0464.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0464.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0464.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0465.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0465.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0465.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0465.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_04981.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_04981.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_04981.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_04981.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0504.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0504.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0504.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0504.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0506.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0506.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0506.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0506.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_05091.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_05091.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_05091.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_05091.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0514.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0514.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0514.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0514.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0520.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0520.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0520.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0520.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0534.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0534.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0534.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0534.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0573.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0573.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0573.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0573.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '2014_01_15_flutterastro_0574.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_2014_01_15_flutterastro_0574.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_2014_01_15_flutterastro_0574.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/2014_01_15_flutterastro_0574.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '6163_01_KW_FLUTTER_MAG_S000_0100_V2.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_6163_01_KW_FLUTTER_MAG_S000_0100_V2.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_6163_01_KW_FLUTTER_MAG_S000_0100_V2.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/6163_01_KW_FLUTTER_MAG_S000_0100_V2.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '6163_02_KW_FLUTTER_MAG_S000_0268_V2.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_6163_02_KW_FLUTTER_MAG_S000_0268_V2.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_6163_02_KW_FLUTTER_MAG_S000_0268_V2.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/6163_02_KW_FLUTTER_MAG_S000_0268_V2.jpg')
+  Photo.create!(
+    subalbum_id: 24,
+   date_taken: Time.now,
+    file_name: '6163_05_KW_FLUTTER_MAG_S812_0001_V2.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/thumb_6163_05_KW_FLUTTER_MAG_S812_0001_V2.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/medium_6163_05_KW_FLUTTER_MAG_S812_0001_V2.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/6163_05_KW_FLUTTER_MAG_S812_0001_V2.jpg')
 
 
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0030.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0030.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0030.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0030.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0039.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0039.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0039.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0039.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_00471.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00471.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00471.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00471.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_00501.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00501.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00501.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00501.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_00551.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00551.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00551.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00551.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0058.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0058.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0058.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0058.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0059.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0059.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0059.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0059.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_00601.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00601.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00601.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00601.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_00631.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00631.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00631.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00631.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0064.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0064.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0064.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0064.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_00761.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00761.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00761.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00761.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_00841.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00841.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00841.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00841.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_00901.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00901.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00901.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00901.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0103.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0103.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0103.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0103.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_01041.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_01041.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_01041.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_01041.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0110.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0110.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0110.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0110.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0115.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0115.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0115.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0115.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0125.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0125.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0125.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0125.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_01261.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_01261.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_01261.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_01261.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0128.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0128.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0128.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0128.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0130.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0130.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0130.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0130.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0136.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0136.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0136.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0136.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_01421.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_01421.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_01421.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_01421.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0144.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0144.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0144.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0144.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0145.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0145.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0145.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0145.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0167.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0167.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0167.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0167.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0170.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0170.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0170.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0170.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0172.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0172.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0172.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0172.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0180.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0180.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0180.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0180.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0182.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0182.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0182.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0182.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0188.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0188.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0188.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0188.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0189.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0189.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0189.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0189.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_01961.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_01961.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_01961.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_01961.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_01981.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_01981.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_01981.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_01981.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0212.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0212.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0212.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0212.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_02191.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_02191.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_02191.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_02191.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_0228.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0228.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0228.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0228.jpg')
-Photo.create!(
-  subalbum_id: 25,
- date_taken: Time.now,
-  file_name: '2015_03_23_womenseditorial_02401.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_02401.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_02401.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_02401.jpg')
+  Album.create!(title: "Islamorada Engagement for The Knot", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 447, user_id: 3, status: 'Published') #11
+  # highlights is #25
+
+
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0030.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0030.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0030.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0030.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0039.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0039.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0039.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0039.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_00471.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00471.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00471.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00471.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_00501.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00501.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00501.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00501.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_00551.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00551.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00551.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00551.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0058.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0058.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0058.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0058.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0059.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0059.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0059.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0059.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_00601.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00601.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00601.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00601.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_00631.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00631.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00631.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00631.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0064.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0064.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0064.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0064.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_00761.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00761.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00761.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00761.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_00841.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00841.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00841.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00841.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_00901.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_00901.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_00901.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_00901.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0103.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0103.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0103.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0103.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_01041.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_01041.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_01041.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_01041.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0110.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0110.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0110.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0110.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0115.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0115.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0115.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0115.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0125.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0125.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0125.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0125.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_01261.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_01261.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_01261.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_01261.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0128.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0128.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0128.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0128.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0130.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0130.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0130.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0130.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0136.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0136.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0136.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0136.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_01421.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_01421.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_01421.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_01421.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0144.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0144.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0144.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0144.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0145.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0145.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0145.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0145.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0167.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0167.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0167.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0167.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0170.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0170.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0170.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0170.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0172.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0172.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0172.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0172.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0180.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0180.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0180.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0180.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0182.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0182.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0182.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0182.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0188.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0188.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0188.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0188.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0189.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0189.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0189.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0189.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_01961.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_01961.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_01961.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_01961.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_01981.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_01981.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_01981.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_01981.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0212.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0212.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0212.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0212.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_02191.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_02191.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_02191.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_02191.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_0228.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_0228.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_0228.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_0228.jpg')
+  Photo.create!(
+    subalbum_id: 25,
+   date_taken: Time.now,
+    file_name: '2015_03_23_womenseditorial_02401.jpg',
+    thumb_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/thumb_2015_03_23_womenseditorial_02401.jpg',
+    medium_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/medium_2015_03_23_womenseditorial_02401.jpg',
+    image_url: 'http://images.karenling.net/aa/kt_merry/islamorada_engagement/2015_03_23_womenseditorial_02401.jpg')
