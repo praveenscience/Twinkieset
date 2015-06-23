@@ -28,9 +28,6 @@
 ## Subalbum Form
 <img src="http://images.twinkieandkaren.com/aa/SubalbumForm.jpg" width="595px">
 
-## Photo Form
-<img src="http://images.twinkieandkaren.com/aa/PhotoForm.jpg" width="751px">
-
 ## Guest Index
 ![guest-index]
 

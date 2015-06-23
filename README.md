@@ -1,6 +1,24 @@
 # TwinkieSetApp
 
-[twinkieset.com](http://www.twinkieset.com/)
+Live: [twinkieset.com](http://www.twinkieset.com/)
+
+#### Splash/landing Page
+<img src="http://images.karenling.net/aa/readme/01.png" width="33%"><img src="http://images.karenling.net/aa/readme/02.png" width="33%"><img src="http://images.karenling.net/aa/readme/03.png" width="33%">
+
+#### Simple Admin Interface
+<img src="http://images.karenling.net/aa/readme/06.png" width="50%"><img src="http://images.karenling.net/aa/readme/07.png" width="50%">
+
+#### Clean Client Interface
+<img src="http://images.karenling.net/aa/readme/04.png" width="50%"><img src="http://images.karenling.net/aa/readme/05.png" width="50%">
+
+### Main Features
+* Admin and Client interface are asynchronous
+* Admin users can sort their photos by drag and drop, file name, date, or randomly. Subalbums are also sortable by drag and drop.
+* Admins can optionally hide and/or password protect albums
+* Admin accounts require activation via email
+* Admins can recover/reset their password via email
+* Client galleries are responsive using Masonry
+
 
 ## Minimum Viable Product
 TwinkieSetApp is a clone of PixieSet (a client photo gallery for modern photographers) built on Rails and Backbone. Users can:
