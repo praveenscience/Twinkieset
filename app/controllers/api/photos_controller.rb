@@ -1,5 +1,5 @@
 class Api::PhotosController < ApplicationController
-  before_action :must_be_logged_in, :must_be_photo_owner
+  before_action :must_be_logged_in, :must_be_photo_owner, except: [:index, :create]
 
   def create
     @photo = Photo.new(photo_params)
@@ -39,8 +39,8 @@ class Api::PhotosController < ApplicationController
     end
 
     def must_be_photo_owner
-      # if current_user != Photo.find_by(params[:id]).subalbum.album.owner
-      #   render text: "Must be logged in.", status: :forbidden
-      # end
+      if current_user != Photo.find_by(params[:id]).subalbum.album.owner
+        render text: "Must be logged in.", status: :forbidden
+      end
     end
 end
