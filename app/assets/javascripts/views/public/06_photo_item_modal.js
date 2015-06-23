@@ -17,6 +17,7 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
     if (e.keyCode === 27) {
       this.hideModal();
     }
+
     if (e.keyCode === 39) {
         this.displayNextImage();
     } else if (e.keyCode === 37) {
@@ -43,6 +44,10 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
   },
 
   displayImage: function (difference) {
+    if (!this.rendering) {
+
+    }
+
     this.rendering = true;
     var currentImage = this.model;
     var nextImage = this.model;
@@ -50,12 +55,14 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
       if (currentImage === photo) {
         var newIndex = idx + difference;
 
+        // ensure photos wrap
         if (newIndex > allPhotos.length - 1) {
           newIndex = 0;
         } else if (newIndex < 0) {
           newIndex = allPhotos.length - 1;
         }
         nextImage = allPhotos[newIndex];
+
         return;
       }
     });
@@ -78,6 +85,7 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
 
     this.$el.find('.active-image img').css('height', imageHeight);
     this.$el.find('.active-image img').css('max-width', maxImageWidth);
+
   },
 
   render: function () {

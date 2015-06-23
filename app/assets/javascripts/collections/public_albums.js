@@ -6,7 +6,7 @@ TwinkieSetApp.Collections.PublicAlbums = Backbone.Collection.extend({
 
   initialize: function (models, options) {
     this.owner = options.owner;
-    this.userID = options.userID;
+    this.userID = options.userID
   },
 
   getOrFetch: function (id) {
@@ -25,6 +25,8 @@ TwinkieSetApp.Collections.PublicAlbums = Backbone.Collection.extend({
         }.bind(this)
       });
     }
+
     return album;
   }
+
 });

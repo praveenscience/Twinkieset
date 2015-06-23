@@ -9,6 +9,7 @@ class Api::AlbumsController < ApplicationController
   def create
     @album = current_user.albums.new(album_params)
 
+
     if @album.save
       render json: @album
     else
@@ -18,6 +19,13 @@ class Api::AlbumsController < ApplicationController
 
   def show
     @album = Album.includes(:subalbums, :photos).find(params[:id])
+
+    if @album.user_id == current_user.id
+      render :show
+    else
+      render json: "not your album", status: :forbidden
+      # TODO: move into a before_action
+    end
   end
 
   def update

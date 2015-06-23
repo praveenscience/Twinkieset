@@ -1,4 +1,4 @@
-json.extract!(@album, :id, :title, :event_date, :status, :created_at, :updated_at)
+json.extract!(@album, :id, :title, :event_date, :status, :created_at, :updated_at, :user_id)
 time = Time.parse(@album.event_date.to_s)
 json.string_date time.strftime("%B #{time.day.ordinalize}, %Y")
 json.first_subalbum_id @album.subalbums.first.id

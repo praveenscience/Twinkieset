@@ -8,15 +8,17 @@ TwinkieSetApp.Models.Album = Backbone.Model.extend({
 
       this.subalbums().forEach( function (subalbum) {
         subalbum._album = this;
-      }.bind(this)); 
+      }.bind(this)); // TODO: maybe unnecessary
     }
     return jsonResponse;
   },
+
 
   subalbums: function () {
     if (!this._subalbums) {
       this._subalbums = new TwinkieSetApp.Collections.Subalbums([], { album: this } );
     }
+
     return this._subalbums;
   }
 });

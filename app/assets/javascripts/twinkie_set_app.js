@@ -9,6 +9,13 @@ window.TwinkieSetApp = {
       $rootElPublic: $('#content-public')
     });
 
+
     Backbone.history.start();
+
+
   }
 };
+
+// $(document).ready(function(){
+//   TwinkieSetApp.initialize();
+// });

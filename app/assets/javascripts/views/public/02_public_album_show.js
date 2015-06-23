@@ -21,13 +21,17 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
         scrollTop: $('.information').offset().top
       }, 1000);
     }, 500);
+
   },
 
   findFirstSubalbum: function () {
+
     if (this.setID === null) {
       this.setID = this.album.get('first_subalbum_id');
     }
+
     this.render();
+
 
     $('.list-of-subalbums li, .view-more li').removeClass("selected-subalbum");
     $('.list-of-subalbums li.subalbum-' + this.setID).addClass("selected-subalbum");
@@ -51,12 +55,13 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     });
     this.addSubview('.view-more', subview);
 
-    var bottomSubview = new TwinkieSetApp.Views.PublicSubalbumItem({
+    var subview = new TwinkieSetApp.Views.PublicSubalbumItem({
       model: subalbum,
       user_id: this.album_owner.id
     });
-    this.addSubview('.list-of-subalbums', bottomSubview);
+    this.addSubview('.list-of-subalbums', subview);
   },
+
 
   render: function () {
     var content = this.template({
@@ -98,5 +103,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
 
     $('.view-more').fadeOut();
     return this;
-  }
+  },
+
+
 });

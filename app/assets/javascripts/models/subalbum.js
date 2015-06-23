@@ -18,6 +18,7 @@ TwinkieSetApp.Models.Subalbum = Backbone.Model.extend({
     if (!this._photos) {
       this._photos = new TwinkieSetApp.Collections.Photos([], { subalbum: this } );
     }
+
     return this._photos;
   }
 });

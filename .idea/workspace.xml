@@ -2,12 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e61e45e-45d0-4de9-8d31-a0e92ba38ddf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/twinkie_set_app.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/models/public_photo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/subalbums/subalbums_index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/albums/indexDELETE.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/albums/loginDELETE.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/shared/_notice_and_errorsDELETE.html.erb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin/00_navbar.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin/00_navbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin/00_navbar.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin/00_navbar.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/public/00_public_album_index.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/public/00_public_album_index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/public/00_public_album_index.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/public/00_public_album_index.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin/01_albums_index.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin/01_albums_index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin/01_index.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin/01_index.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/public/01_public_album_item.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/public/01_public_album_item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin/02_albums_index_item.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin/02_albums_index_item.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/public/02_public_album_show.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/public/02_public_album_show.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/public/02_public_album_show.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/public/02_public_album_show.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin/03_albums_show.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin/03_albums_show.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/public/03_public_subalbum_item.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/public/03_public_subalbum_item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin/03_show.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin/03_show.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin/04_albums_show_sidebar.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin/04_albums_show_sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/public/04_public_subalbum_photos.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/public/04_public_subalbum_photos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/public/04_public_subalbum_photos.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/public/04_public_subalbum_photos.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin/04_show_sidebar.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin/04_show_sidebar.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin/05_albums_show_subalbum_item.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin/05_albums_show_subalbum_item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin/05_albums_show_subalbum_item.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin/05_albums_show_subalbum_item.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/public/05_public_photo_item.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/public/05_public_photo_item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin/06_albums_show_photo_item.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin/06_albums_show_photo_item.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/public/06_photo_item_modal.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/public/06_photo_item_modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin/07_index.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin/07_index.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin/07_photos_index.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin/07_photos_index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/public/07_unavailable.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/public/07_unavailable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_bottom_info.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_bottom_info.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_design_examples.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_design_examples.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_example_albums.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_example_albums.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_guest_login.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_guest_login.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_main.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_main.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_splash_navbar.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_splash_navbar.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/subalbums/_subalbum.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/subalbums/_subalbum.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/admin.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/admin.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/models/album.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/models/album.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/album_delete.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/album_delete.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin_forms/album_delete.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin_forms/album_delete.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/album_edit.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/album_edit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin_forms/album_edit.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin_forms/album_edit.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/album_form.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/album_form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin_forms/album_form.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin_forms/album_form.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/album_sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/album_sessions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/collections/albums.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/collections/albums.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/albums_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/albums_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/albums_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/albums_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/imagesloaded.pkgd.js" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/imagesloaded.pkgd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/albums/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/albums/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/album_sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/album_sessions/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/models/owner.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/models/owner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/owners_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/owners_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/collections/photos.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/collections/photos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/photos_delete.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/photos_delete.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin_forms/photos_delete.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin_forms/photos_delete.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/photos_modal.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/photos_modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin_forms/photos_modal.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin_forms/photos_modal.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/public.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/public.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/models/public_album.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/models/public_album.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/collections/public_albums.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/collections/public_albums.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/public_albums_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/public_albums_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/models/public_owner.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/models/public_owner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/collections/public_photos.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/collections/public_photos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/models/public_subalbum.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/models/public_subalbum.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/collections/public_subalbums.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/collections/public_subalbums.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/recovery.html.erb" afterPath="$PROJECT_DIR$/app/views/users/recovery.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_mailer/reset_password.html.erb" afterPath="$PROJECT_DIR$/app/views/user_mailer/reset_password.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_mailer/reset_password.text.erb" afterPath="$PROJECT_DIR$/app/views/user_mailer/reset_password.text.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/routers/router.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/routers/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/share.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/share.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin_forms/share.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin_forms/share.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/albums/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/albums/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/public_users/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/public_users/show.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/models/subalbum.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/models/subalbum.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/subalbum_delete.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/subalbum_delete.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin_forms/subalbum_delete.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin_forms/subalbum_delete.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/subalbum_form.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/subalbum_form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin_forms/subalbum_form.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin_forms/subalbum_form.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/collections/subalbums.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/collections/subalbums.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/twinkie_set_app.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/twinkie_set_app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/user_form.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/user_form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin_forms/user_form.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin_forms/user_form.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/user_password.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/views/admin_forms/user_password.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/templates/admin_forms/user_password.jst.ejs" afterPath="$PROJECT_DIR$/app/assets/templates/admin_forms/user_password.jst.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_mailer/welcome_email.html.erb" afterPath="$PROJECT_DIR$/app/views/user_mailer/welcome_email.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_mailer/welcome_email.text.erb" afterPath="$PROJECT_DIR$/app/views/user_mailer/welcome_email.text.erb" />
     </list>
     <ignored path="twinkie_set_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/models/album.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,8 +139,8 @@
       <file leaf-file-name="custom.css.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4904271">
-              <caret line="15" column="416" selection-start-line="15" selection-start-column="398" selection-end-line="15" selection-end-column="416" />
+            <state vertical-scroll-proportion="0.19121814">
+              <caret line="17" column="21" selection-start-line="15" selection-start-column="398" selection-end-line="15" selection-end-column="416" />
               <folding />
             </state>
           </provider>
@@ -68,6 +155,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/assets/javascripts/models/album.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
       </list>
     </option>
   </component>
@@ -107,6 +195,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -207,9 +296,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="RailsProjectView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,13 +443,13 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -390,6 +478,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/models/album.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/models/photo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/models/photo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -401,15 +505,15 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/models/album.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4904271">
-          <caret line="15" column="416" selection-start-line="15" selection-start-column="398" selection-end-line="15" selection-end-column="416" />
+        <state vertical-scroll-proportion="0.19121814">
+          <caret line="17" column="21" selection-start-line="15" selection-start-column="398" selection-end-line="15" selection-end-column="416" />
           <folding />
         </state>
       </provider>

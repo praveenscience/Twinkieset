@@ -12,9 +12,11 @@ class Api::PublicAlbumsController < ApplicationController
 
   private
     def must_be_logged_in
+
       @album = Album.find(params[:id]);
       if @album.password && current_album.id.to_i != params[:id].to_i
           render text: "None!", status: :forbidden
       end
+
     end
 end
