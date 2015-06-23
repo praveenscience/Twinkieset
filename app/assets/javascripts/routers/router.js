@@ -92,7 +92,6 @@ TwinkieSetApp.Routers.Router = Backbone.Router.extend({
           });
 
           album.fetch({
-            data: { "something": "something else"},
             error: function () {
               var path = window.location.hash.slice(1);
 

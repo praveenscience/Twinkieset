@@ -10,13 +10,20 @@ TwinkieSetApp.Collections.Albums = Backbone.Collection.extend({
     var album = this.get(id);
 
     if (album) {
-      album.fetch();
+      album.fetch({
+        error: function () {
+          window.location.href = "/session/new"
+        }
+      });
     } else {
       album = new TwinkieSetApp.Models.Album({ id: id });
       album.fetch({
         success: function () {
           this.add(album);
-        }.bind(this)
+        }.bind(this),
+        error: function () {
+          window.location.href = "/session/new"
+        }
       });
     }
 
