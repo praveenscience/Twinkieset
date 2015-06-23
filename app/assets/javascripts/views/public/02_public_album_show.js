@@ -80,7 +80,7 @@ TwinkieSetApp.Views.PublicAlbumShow = Backbone.CompositeView.extend({
     $(window).resize(function () {
       var windowHeight = $(window).height();
       this.$el.find('.hero').css('height', windowHeight);
-
+      this.$el.find('.gallery-section').css('min-height', windowHeight);
       $(window).scroll(function () {
         if ($(window).scrollTop() >= windowHeight) {
           $('.information').addClass('lock-nav').removeClass('reduce-padding');
