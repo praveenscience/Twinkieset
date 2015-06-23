@@ -1,4 +1,6 @@
 class Api::PhotosController < ApplicationController
+  before_action :must_be_logged_in, :must_be_photo_owner
+
   def create
     @photo = Photo.new(photo_params)
 
@@ -28,5 +30,18 @@ class Api::PhotosController < ApplicationController
   private
     def photo_params
       params.require(:photo).permit(:image_url, :order, :subalbum_id, :file_name, :thumb_url, :medium_url, :date_taken)
+    end
+
+    def must_be_logged_in
+      if !logged_in?
+        render text: "Must be logged in.", status: :forbidden
+      end
+    end
+
+    def must_be_photo_owner
+      fail
+      if current_user != Photo.find_by(params[:id]).subalbum.album.owner
+        render text: "Must be logged in.", status: :forbidden
+      end
     end
 end

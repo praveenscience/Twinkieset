@@ -1,5 +1,5 @@
 class Api::AlbumsController < ApplicationController
-  before_action :must_be_logged_in
+  before_action :must_be_logged_in, :must_be_album_owner
 
   def index
     @albums = current_user.albums
@@ -57,6 +57,8 @@ class Api::AlbumsController < ApplicationController
     end
 
     def must_be_album_owner
-
+      if current_user != Album.find(params[:id]).owner
+        render text: "Must be logged in.", status: :forbidden
+      end
     end
 end

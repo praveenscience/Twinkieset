@@ -1,4 +1,6 @@
 class Api::SubalbumsController < ApplicationController
+  before_action :must_be_logged_in, :must_be_subalbum_owner
+
   def show
     @subalbum = Subalbum.find(params[:id])
   end
@@ -32,5 +34,17 @@ class Api::SubalbumsController < ApplicationController
   private
     def subalbum_params
       params.require(:subalbum).permit(:title, :order, :album_id)
+    end
+
+    def must_be_logged_in
+      if !logged_in?
+        render text: "Must be logged in.", status: :forbidden
+      end
+    end
+
+    def must_be_subalbum_owner
+      if current_user != Subalbum.find(params[:id]).album.owner
+        render text: "Must be logged in.", status: :forbidden
+      end
     end
 end
