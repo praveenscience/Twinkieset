@@ -14,7 +14,8 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
     'updateSort': "updateSortSubalbums",
     'click .edit-album-button': 'openEditForm',
     'click .share-collection-button': 'openShareCollection',
-    'click .view-share': 'openPublicCollection'
+    'click .view-share': 'openPublicCollection',
+    
   },
 
   openPublicCollection: function (event) {
@@ -94,5 +95,6 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
 
   onRender: function(){
     $('.album-show-subalbums').sortable();
+
   },
 });

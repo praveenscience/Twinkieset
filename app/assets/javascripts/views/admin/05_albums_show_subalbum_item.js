@@ -8,13 +8,19 @@ TwinkieSetApp.Views.AlbumsShowSubalbumItem = Backbone.View.extend({
   initialize: function (options) {
     this.album = options.album;
     this.listenTo(this.model, "sync", this.render);
+    this.listenTo(this.model.photos(), "destroy remove", this.render);
   },
 
   events: {
     'click': 'changeSubalbums',
     'dropSubalbum': 'dropSubalbum',
     'click .edit-subalbum-button': 'editSubalbum',
-    'click .delete-subalbum-button': 'deleteSubalbumConfirmation'
+    'click .delete-subalbum-button': 'deleteSubalbumConfirmation',
+    'resetSubalbumPhotoCount': "resetNumber"
+  },
+
+  resetNumber: function () {
+    this.model.fetch();
   },
 
   deleteSubalbumConfirmation: function () {

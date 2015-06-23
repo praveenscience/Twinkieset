@@ -24,6 +24,7 @@ TwinkieSetApp.Views.PhotosDelete = Backbone.View.extend({
         success: function () {
           TwinkieSetApp.selectedPhotosArr = [];
           $('.number-of-selected').html("0 selected");
+          $('.album-show-sidebar-subalbums-li').trigger('resetSubalbumPhotoCount');
         }.bind(this),
       });
     }.bind(this));
