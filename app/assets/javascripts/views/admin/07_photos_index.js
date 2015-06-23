@@ -1,11 +1,16 @@
 TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   template: JST['admin/07_index'],
 
-  initialize: function () {
+  initialize: function (options) {
     TwinkieSetApp.selectedPhotosArr = [];
+    this.showView = options.show;
     this.listenTo(this.model, 'sync', this.render);
     this.listenTo(this.collection, "add", this.addPhotoView);
     this.listenTo(this.collection, 'remove', this.removePhotoView);
+    this.view = options.show;
+    this.listenTo(this.collection, 'remove', function () {
+      // this.addSubview(".album-show-sidebar", TwinkieSetApp.sidebar);
+    }.bind(this));
     this.collection.each(this.addPhotoView.bind(this));
   },
 

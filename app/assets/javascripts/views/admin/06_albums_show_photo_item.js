@@ -6,6 +6,7 @@ TwinkieSetApp.Views.AlbumsShowPhotoItem = Backbone.View.extend({
   initialize: function (options) {
     this.listenTo(this.model, "sync", this.render);
     this.album = options.album;
+
   },
 
   events: {
