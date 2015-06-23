@@ -21,7 +21,7 @@ Live: [twinkieset.com](http://www.twinkieset.com/)
 
 
 ## Minimum Viable Product
-TwinkieSetApp is a clone of PixieSet (a client photo gallery for modern photographers) built on Rails and Backbone. Users can:
+TwinkieSetApp is a clone of [Pixieset](http://pixieset.com/) (a client photo gallery for modern photographers) built on Rails and Backbone. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
