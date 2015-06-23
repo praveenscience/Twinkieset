@@ -55,14 +55,12 @@ TwinkieSetApp.Views.PhotoItemModal = Backbone.View.extend({
       if (currentImage === photo) {
         var newIndex = idx + difference;
 
-        // ensure photos wrap
         if (newIndex > allPhotos.length - 1) {
           newIndex = 0;
         } else if (newIndex < 0) {
           newIndex = allPhotos.length - 1;
         }
         nextImage = allPhotos[newIndex];
-
         return;
       }
     });

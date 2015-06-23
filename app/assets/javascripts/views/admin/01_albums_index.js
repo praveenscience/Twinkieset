@@ -3,7 +3,6 @@ TwinkieSetApp.Views.AlbumsIndex = Backbone.CompositeView.extend({
   className: "none",
 
   initialize: function (options) {
-    // this.listenTo(this.collection, "sync", this.render);
     this.user = options.user;
     this.listenTo(this.collection, "add", this.addAlbumView);
     this.collection.each(this.addAlbumView.bind(this));

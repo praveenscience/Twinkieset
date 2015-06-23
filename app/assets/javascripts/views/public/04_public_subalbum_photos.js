@@ -22,13 +22,8 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
         }
       }.bind(this));
     }.bind(this));
-    // TODO: possibly replace with callbacks from Kaminari demo
 
     $(window).resize();
-  },
-
-  events: {
-    // 'click .more': 'loadMorePhotos',
   },
 
   loadMorePhotos: function () {
@@ -37,22 +32,12 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     this.limitedPhotos = this.limitPhotos(this.beginning, this.ending);
     this.limitedPhotos.forEach(this.addPhotoView.bind(this));
 
-    // this.hideLoadMoreButton();
-
     setTimeout(function () {
       if (this.ending >= this.model.photos().length) {
         $('.view-more').fadeIn();
       }
     }.bind(this), 1000);
   },
-
-  // hideLoadMoreButton: function () {
-  //   setTimeout(function () {
-  //     if (this.ending >= this.model.photos().length) {
-  //       $('.more').hide();
-  //     }
-  //   }.bind(this), 0);
-  // },
 
   limitPhotos: function (beginning, ending) {
     return this.model.photos().slice(beginning, ending);
@@ -72,11 +57,7 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
     });
     this.$el.html(content);
     this.attachSubviews();
-
-    // this.hideLoadMoreButton();
     this.onRender();
-
-
     return this;
   },
 
@@ -86,7 +67,7 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
       setTimeout(function () {
         this.addMasonry();
       }.bind(this), 1000)
-    }.bind(this))
+    }.bind(this));
   },
 
   addMasonry: function (event) {

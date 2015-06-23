@@ -40,7 +40,7 @@ TwinkieSetApp.Views.EditForm = Backbone.View.extend({
     var editAlbum = this.model;
     editAlbum.save(attrs, {
       success: function () {
-        editAlbum.fetch(); // do this to ensure string_date is rendered
+        editAlbum.fetch();
         this.remove();
         var notice = new TwinkieSetApp.Views.Notice({
           notice: "Album updated successfully!"

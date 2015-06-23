@@ -23,7 +23,6 @@ class Api::AlbumsController < ApplicationController
       render :show
     else
       render json: "not your album", status: :forbidden
-      # TODO: move into a before_action
     end
   end
 
