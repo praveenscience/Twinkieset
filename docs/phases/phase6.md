@@ -13,9 +13,9 @@
 ### Collections
 
 ### Views
-AlbumDelete
-AlbumEdit
-SubalbumDelete
-PhotosDelete
+* AlbumDelete
+* AlbumEdit
+* SubalbumDelete
+* PhotosDelete
 
 ## Gems/Libraries

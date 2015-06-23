@@ -78,11 +78,13 @@ For this phase I will create Backbone views for the guest users. Users will be a
 
 Admin users will be able to edit their albums, subalbums, and photos through Backbone.
 
+[Details][phase-six]
+
 ### Phase 7: Sorting photos by drag and drop, by name, date, etc.
 
 Photos will be drag and droppable using jQuery UI Sortable.
 
-[Details][phase-six]
+[Details][phase-seven]
 
 
 ### Bonus Features (TBD)
@@ -103,3 +105,4 @@ Photos will be drag and droppable using jQuery UI Sortable.
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
 [phase-six]: ./docs/phases/phase6.md
+[phase-seven]: ./docs/phases/phase7.md

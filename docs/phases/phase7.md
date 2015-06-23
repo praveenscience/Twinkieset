@@ -14,7 +14,5 @@
 
 ### Views
 
-
-
 ## Gems/Libraries
 * jQuery UI Sortable
