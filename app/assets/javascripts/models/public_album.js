@@ -1,14 +1,11 @@
 TwinkieSetApp.Models.PublicAlbum = Backbone.Model.extend({
   urlRoot: function () {
     return "/api/users/" + this.userID + '/albums/' + this.albumID;
-    // TODO: de-nest this route
   },
 
   initialize: function (options) {
     this.userID = options.userID;
     this.albumID = options.albumID;
-    // this.set("albumID", options.albumID);
-    // TODO: consider whether to keep these in the attributes hash (maybe unnecessary)
   },
 
   parse: function (response) {
@@ -19,9 +16,7 @@ TwinkieSetApp.Models.PublicAlbum = Backbone.Model.extend({
       this.subalbums().forEach( function (subalbum) {
         subalbum._album = this;
       }.bind(this));
-
     }
-
     return response;
   },
 
@@ -34,5 +29,4 @@ TwinkieSetApp.Models.PublicAlbum = Backbone.Model.extend({
     }
     return this._subalbums;
   }
-
 });

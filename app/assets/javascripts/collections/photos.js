@@ -2,10 +2,8 @@ TwinkieSetApp.Collections.Photos = Backbone.Collection.extend({
   url: '/api/photos',
   model: TwinkieSetApp.Models.Photo,
 
-  // comparator: 'order',
-
   comparator: function (photo) {
-    return photo.get('order'); // doesn't do anything since we use CompositeView
+    return photo.get('order');
   },
 
   getOrFetch: function (id) {
@@ -21,9 +19,6 @@ TwinkieSetApp.Collections.Photos = Backbone.Collection.extend({
         }.bind(this)
       });
     }
-
     return photo;
-
   }
-
 });

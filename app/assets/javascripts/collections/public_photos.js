@@ -7,7 +7,5 @@ TwinkieSetApp.Collections.PublicPhotos = Backbone.Collection.extend({
   initialize: function (models, options) {
     this.subalbum = options.subalbum;
     this.userID = options.userID;
-
   }
-
 });
