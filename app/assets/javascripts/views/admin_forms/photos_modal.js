@@ -80,42 +80,37 @@ TwinkieSetApp.Views.PhotosModal = Backbone.View.extend({
   },
 
   galleryImagePositioning: function () {
-    var windowHeight = $(window).height();
-    var imageHeight = windowHeight - 100;
-
-    var windowWidth = $(window).width();
-    var maxImageWidth = windowWidth - 100;
-
-    // this.$el.find('.active-image img').imagesLoaded( function () {
 
 
 
-        this.$el.find('.active-image img')
-          .load(function() {
-            var imagewidth = this.$el.find('.active-image img').width();
-            var leftOfImage = (windowWidth - imagewidth)/2;
 
-            this.$el.find('.active-image img').css('height', imageHeight);
-            this.$el.find('.active-image img').css('max-width', maxImageWidth);
+      // this.$el.find('.active-image img').imagesLoaded( function () {
 
-            this.$el.find('.file-name').css('left', leftOfImage);
-            this.$el.find('.gallery-counter').css('right', leftOfImage);
 
-            console.log(this.$el.find('.active-image img').width() + "image loaded correctly");
 
-            var imagewidth = this.$el.find('.active-image img').width();
-            var leftOfImage = (windowWidth - imagewidth)/2;
+      this.$el.find('.active-image img')
+        .load(function() {
+
+          $(window).resize(function () {
+            var windowHeight = $(window).height();
+            var imageHeight = windowHeight - 100;
+
+            var windowWidth = $(window).width();
+            var maxImageWidth = windowWidth - 100;
 
             this.$el.find('.active-image img').css('height', imageHeight);
+            var imageWidth = this.$el.find('.active-image img').width();
+            var leftOfImage = (windowWidth - imageWidth)/2;
             this.$el.find('.active-image img').css('max-width', maxImageWidth);
-
             this.$el.find('.file-name').css('left', leftOfImage);
             this.$el.find('.gallery-counter').css('right', leftOfImage);
+          }.bind(this));
 
-          }.bind(this))
-          .error(function() { console.log("error loading image"); })
-;
-    // }.bind(this))
+
+            $(window).resize();
+        }.bind(this))
+
+
   },
 
   render: function () {
@@ -126,17 +121,9 @@ TwinkieSetApp.Views.PhotosModal = Backbone.View.extend({
     });
     this.$el.html(content);
 
-
     this.galleryImagePositioning();
 
-
-
-
-
-
-    $(window).resize(function () {
-      this.galleryImagePositioning();
-    }.bind(this));
+    $(window).resize();
 //
 //     setTimeout(function () {
 //       $('.active-image img').load(function () {
