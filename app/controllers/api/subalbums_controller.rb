@@ -2,14 +2,14 @@ class Api::SubalbumsController < ApplicationController
   before_action :must_be_logged_in, :must_be_subalbum_owner, except: [:index, :create]
 
   def show
-    @subalbum = Subalbum.find(params[:id])
+    @subalbum = Subalbum.includes(:photos).find(params[:id])
   end
 
   def create
     @subalbum = Subalbum.new(subalbum_params)
 
     if @subalbum.save
-      render json: {"responseText" => "Subalbum created successfully."}, status: :ok
+      render json: JSON::parse(@subalbum.to_json).merge({"responseText" => "Subalbum created successfully."}), status: :ok
     else
       render json: @subalbum.errors.full_messages, status: :unprocessable_entity
     end
@@ -19,7 +19,7 @@ class Api::SubalbumsController < ApplicationController
     @subalbum = Subalbum.find(params[:id])
 
     if @subalbum.update(subalbum_params)
-      render json: {"responseText" => "Subalbum updated successfully."}, status: :ok
+      render json: JSON::parse(@subalbum.to_json).merge({"responseText" => "Subalbum updated successfully."}), status: :ok
     else
       render json: @subalbum.errors.full_messages, status: :unprocessable_entity
     end
