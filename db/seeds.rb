@@ -9,7 +9,7 @@
 
 User.create!(email: "karen@example.com", password: "password", business_name: "Karen Ling", website: "http://twinkieandkaren.com/", activated: true)
 
-  Album.create!(title: "Julie and Jose", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 1, status: 'Published', password: '4444') #1
+  Album.create!(title: "Julie and Jose", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 19, user_id: 1, status: 'Published', password: '4444') #1
 
     # Auto Highlights Subalbum #1
 
@@ -329,7 +329,7 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       medium_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/medium_IMG_1851.jpg',
       image_url: 'http://images.karenling.net/aa/karen/julie_jose/4_reception/IMG_1851.jpg')
 
-  Album.create!(title: "Nadine and Jose", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 1, status: 'Published', password: '4444') #2
+  Album.create!(title: "Nadine and Jose", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 52, user_id: 1, status: 'Published', password: '4444') #2
 
     # Auto Highlights Subalbum #5
 
@@ -821,7 +821,7 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
       medium_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/medium_IMG_7469.jpg',
       image_url: 'http://images.karenling.net/aa/karen/nadine_jose/5_reception/IMG_7469.jpg')
 
-  Album.create!(title: "Rosie and Philip", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 1, status: 'Published', password: '4444') #3
+  Album.create!(title: "Rosie and Philip", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 117, user_id: 1, status: 'Published', password: '4444') #3
       # Auto Highlights Subalbum #10
 
     Photo.create!(
@@ -1140,7 +1140,7 @@ User.create!(email: "karen@example.com", password: "password", business_name: "K
 
 User.create!(email: "erich@example.com", password: "password", business_name: "Erich McVey", website: "http://www.erichmcvey.com/", activated: true) #2
 
-  Album.create!(title: "Adele and David", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 2, status: 'Published', password: '4444') #4
+  Album.create!(title: "Adele and David", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 210, user_id: 2, status: 'Published', password: '4444') #4
 
     # highlights is #13
     Photo.create!(
@@ -1581,7 +1581,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
 
 
 
-  Album.create!(title: "Baton Rogue", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 2, status: 'Published', password: '4444') #5
+  Album.create!(title: "Baton Rogue", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 232, user_id: 2, status: 'Published', password: '4444') #5
 
     # highlights is #16
 
@@ -1727,7 +1727,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
       image_url: 'http://images.karenling.net/aa/erich_mcvey/baton_rogue/Louisiana-Wedding-Photography-by-Erich-McVey-9.jpg')
 
 
-  Album.create!(title: "Geraldine Magazine", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 2, status: 'Published', password: '4444') #6
+  Album.create!(title: "Geraldine Magazine", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 239, user_id: 2, status: 'Published', password: '4444') #6
 
     # highlights is #17
     Photo.create!(
@@ -1943,7 +1943,7 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
 
 
 
-  Album.create!(title: "Kaela and Jonathan", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 2, status: 'Published', password: '4444') #7
+  Album.create!(title: "Kaela and Jonathan", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 297, user_id: 2, status: 'Published', password: '4444') #7
 
     # highlight is 18
 
@@ -1951,255 +1951,86 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg')
     Photo.create!(
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg')
     Photo.create!(
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg')
     Photo.create!(
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg')
     Photo.create!(
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg')
     Photo.create!(
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg')
     Photo.create!(
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg')
     Photo.create!(
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg')
     Photo.create!(
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg')
     Photo.create!(
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg')
     Photo.create!(
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg')
     Photo.create!(
       subalbum_id: 18,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg')
-    Photo.create!(
-      subalbum_id: 18,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00 Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg')
-
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/00%20Highlights/Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg')
 
     Subalbum.create!(title: "Preparation", album_id: 7) #19
 
@@ -2208,432 +2039,151 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg')
     Photo.create!(
       subalbum_id: 19,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-1.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-10.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-11.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-13.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-14.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-15.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-16.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-17.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-18.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-19.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-2.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-3.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-4.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-5.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-7.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-8.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01 Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/medium_Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/01%20Preparation/Elopement-Photography-on-film-by-Erich-Mcvey-9.jpg')
 
 
     Subalbum.create!(title: "Ceremony", album_id: 7) #20
 
 
     Photo.create!(
-      subalbum_id: 19,
+      subalbum_id: 20,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02%20Ceremony/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02%20Ceremony/medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02%20Ceremony/Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg')
     Photo.create!(
-      subalbum_id: 19,
+      subalbum_id: 20,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02%20Ceremony/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02%20Ceremony/medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02%20Ceremony/Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg')
     Photo.create!(
-      subalbum_id: 19,
+      subalbum_id: 20,
      date_taken: Time.now,
       file_name: 'Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-20.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-21.jpg')
-    Photo.create!(
-      subalbum_id: 19,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02 Ceremony/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg')
+      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02%20Ceremony/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
+      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02%20Ceremony/medium_Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg',
+      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/02%20Ceremony/Elopement-Photography-on-film-by-Erich-Mcvey-22.jpg')
 
 
 
-
-    Subalbum.create!(title: "Portraits", album_id: 3) #21
+    Subalbum.create!(title: "Portraits", album_id: 7) #21
 
     Photo.create!(
       subalbum_id: 21,
@@ -2747,235 +2297,11 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
       thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-38.jpg',
       medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-38.jpg',
       image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/Elopement-Photography-on-film-by-Erich-Mcvey-38.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-23.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-23.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-23.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-23.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-26.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-26.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-26.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-26.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-27.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-27.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-27.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-27.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-28.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-28.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-28.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-28.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-29.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-29.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-29.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-29.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-31.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-31.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-31.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-31.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-32.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-32.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-32.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-32.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-34.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-34.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-34.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-34.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-35.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-35.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-35.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-35.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-37.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-37.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-37.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-37.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'medium_Elopement-Photography-on-film-by-Erich-Mcvey-38.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_medium_Elopement-Photography-on-film-by-Erich-Mcvey-38.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_medium_Elopement-Photography-on-film-by-Erich-Mcvey-38.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_Elopement-Photography-on-film-by-Erich-Mcvey-38.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-23.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-23.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-23.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-23.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-24.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-25.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-26.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-26.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-26.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-26.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-27.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-27.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-27.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-27.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-28.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-28.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-28.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-28.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-29.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-29.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-29.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-29.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-30.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-31.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-31.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-31.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-31.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-32.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-32.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-32.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-32.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-33.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-34.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-34.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-34.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-34.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-35.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-35.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-35.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-35.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-36.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-37.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-37.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-37.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-37.jpg')
-    Photo.create!(
-      subalbum_id: 21,
-     date_taken: Time.now,
-      file_name: 'thumb_Elopement-Photography-on-film-by-Erich-Mcvey-38.jpg',
-      thumb_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-38.jpg',
-      medium_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/medium_thumb_Elopement-Photography-on-film-by-Erich-Mcvey-38.jpg',
-      image_url: 'http://images.karenling.net/aa/erich_mcvey/kaela_and_jonathan/03_Portraits/thumb_Elopement-Photography-on-film-by-Erich-Mcvey-38.jpg')
 
 
 
 
-  Album.create!(title: "New Zealand", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 2, status: 'Published', password: '4444') #8
+  Album.create!(title: "New Zealand", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 327, user_id: 2, status: 'Published', password: '4444') #8
 
     # highlights is 22
     Photo.create!(
@@ -3137,16 +2463,16 @@ User.create!(email: "erich@example.com", password: "password", business_name: "E
 User.create!(email: "ktmerry@example.com", password: "password", business_name: "KT Merry", website: "http://http://www.ktmerry.com/", activated: true)
 
 
-Album.create!(title: "Anita and Jonathan", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 3, status: 'Published', password: '4444') #9
+Album.create!(title: "Anita and Jonathan", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 342, user_id: 3, status: 'Published', password: '4444') #9
 # highlights is #23
 
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajohn_001 copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_001 copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_001 copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_001 copy.jpg')
+  file_name: 'vizcaya_wedding_anitajohn_001%20copy.jpg',
+  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_001%20copy.jpg',
+  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_001%20copy.jpg',
+  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_001%20copy.jpg')
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
@@ -3157,10 +2483,10 @@ Photo.create!(
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajohn_002 copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_002 copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_002 copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_002 copy.jpg')
+  file_name: 'vizcaya_wedding_anitajohn_002%20copy.jpg',
+  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_002%20copy.jpg',
+  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_002%20copy.jpg',
+  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_002%20copy.jpg')
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
@@ -3178,10 +2504,10 @@ Photo.create!(
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajohn_004 copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_004 copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_004 copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_004 copy.jpg')
+  file_name: 'vizcaya_wedding_anitajohn_004%20copy.jpg',
+  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajohn_004%20copy.jpg',
+  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajohn_004%20copy.jpg',
+  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajohn_004%20copy.jpg')
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
@@ -3192,10 +2518,10 @@ Photo.create!(
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_005 copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_005 copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_005 copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_005 copy.jpg')
+  file_name: 'vizcaya_wedding_anitajonathan_005%20copy.jpg',
+  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_005%20copy.jpg',
+  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_005%20copy.jpg',
+  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_005%20copy.jpg')
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
@@ -3213,10 +2539,10 @@ Photo.create!(
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0071 copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0071 copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0071 copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0071 copy.jpg')
+  file_name: 'vizcaya_wedding_anitajonathan_0071%20copy.jpg',
+  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0071%20copy.jpg',
+  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0071%20copy.jpg',
+  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0071%20copy.jpg')
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
@@ -3227,10 +2553,10 @@ Photo.create!(
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_008 copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_008 copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_008 copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_008 copy.jpg')
+  file_name: 'vizcaya_wedding_anitajonathan_008%20copy.jpg',
+  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_008%20copy.jpg',
+  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_008%20copy.jpg',
+  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_008%20copy.jpg')
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
@@ -3241,10 +2567,10 @@ Photo.create!(
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0091 copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0091 copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0091 copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0091 copy.jpg')
+  file_name: 'vizcaya_wedding_anitajonathan_0091%20copy.jpg',
+  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0091%20copy.jpg',
+  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0091%20copy.jpg',
+  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0091%20copy.jpg')
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
@@ -3262,10 +2588,10 @@ Photo.create!(
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0111 copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0111 copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0111 copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0111 copy.jpg')
+  file_name: 'vizcaya_wedding_anitajonathan_0111%20copy.jpg',
+  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0111%20copy.jpg',
+  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0111%20copy.jpg',
+  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0111%20copy.jpg')
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
@@ -3276,10 +2602,10 @@ Photo.create!(
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0121 copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0121 copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0121 copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0121 copy.jpg')
+  file_name: 'vizcaya_wedding_anitajonathan_0121%20copy.jpg',
+  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0121%20copy.jpg',
+  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0121%20copy.jpg',
+  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0121%20copy.jpg')
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
@@ -3297,10 +2623,10 @@ Photo.create!(
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0141 copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0141 copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0141 copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0141 copy.jpg')
+  file_name: 'vizcaya_wedding_anitajonathan_0141%20copy.jpg',
+  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0141%20copy.jpg',
+  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0141%20copy.jpg',
+  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0141%20copy.jpg')
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
@@ -3318,10 +2644,10 @@ Photo.create!(
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
-  file_name: 'vizcaya_wedding_anitajonathan_0161 copy.jpg',
-  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0161 copy.jpg',
-  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0161 copy.jpg',
-  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0161 copy.jpg')
+  file_name: 'vizcaya_wedding_anitajonathan_0161%20copy.jpg',
+  thumb_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/thumb_vizcaya_wedding_anitajonathan_0161%20copy.jpg',
+  medium_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/medium_vizcaya_wedding_anitajonathan_0161%20copy.jpg',
+  image_url: 'http://images.karenling.net/aa/kt_merry/anita_jonathan/vizcaya_wedding_anitajonathan_0161%20copy.jpg')
 Photo.create!(
   subalbum_id: 23,
  date_taken: Time.now,
@@ -3333,7 +2659,7 @@ Photo.create!(
 
 
 
-Album.create!(title: "Flutter Magazine", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 3, status: 'Published', password: '4444') #10
+Album.create!(title: "Flutter Magazine", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 378, user_id: 3, status: 'Published', password: '4444') #10
 # highlights is #24
 
 Photo.create!(
@@ -3681,7 +3007,7 @@ Photo.create!(
   image_url: 'http://images.karenling.net/aa/kt_merry/flutter_mag/6163_05_KW_FLUTTER_MAG_S812_0001_V2.jpg')
 
 
-Album.create!(title: "Islamorada Engagement for The Knot", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 1, user_id: 3, status: 'Published', password: '4444') #11
+Album.create!(title: "Islamorada Engagement for The Knot", event_date: "2015-05-03 00:00:00 -0800", cover_image_id: 447, user_id: 3, status: 'Published', password: '4444') #11
 # highlights is #25
 
 

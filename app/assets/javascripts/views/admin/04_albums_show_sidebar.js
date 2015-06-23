@@ -13,7 +13,12 @@ TwinkieSetApp.Views.AlbumsShowSidebar = Backbone.CompositeView.extend({
     'sortstop': "saveOrdsSubalbums",
     'updateSort': "updateSortSubalbums",
     'click .edit-album-button': 'openEditForm',
-    'click .share-collection-button': 'openShareCollection'
+    'click .share-collection-button': 'openShareCollection',
+    'click .view-share': 'openPublicCollection'
+  },
+
+  openPublicCollection: function (event) {
+    window.location.href = "/users#" + CURRENT_USER.id + '/collection/' + this.model.id;
   },
 
   openEditForm: function (event) {
