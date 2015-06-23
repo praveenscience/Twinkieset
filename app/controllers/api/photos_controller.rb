@@ -39,7 +39,6 @@ class Api::PhotosController < ApplicationController
     end
 
     def must_be_photo_owner
-      fail
       if current_user != Photo.find_by(params[:id]).subalbum.album.owner
         render text: "Must be logged in.", status: :forbidden
       end

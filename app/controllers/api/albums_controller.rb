@@ -1,9 +1,8 @@
 class Api::AlbumsController < ApplicationController
-  before_action :must_be_logged_in
+  before_action :must_be_logged_in, :must_be_album_owner, except: [:index]
 
   def index
     @albums = current_user.albums
-
     render :index
   end
 
