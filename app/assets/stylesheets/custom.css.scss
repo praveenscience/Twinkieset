@@ -830,6 +830,25 @@ input {
       color: $teal;
     }
   }
+
+  .submit-user {
+    margin-top: 20px;
+  }
+  .guest-login-button {
+    @include create-buttons(#e8e8e8, black);
+    padding: 10px 40px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 0 7px 0;
+    border: 0;
+    -webkit-transition: opacity 200ms; /* Safari */
+    transition: opacity 200ms;
+    transition-timing-function: linear;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
 }
 
 .recovery-page {

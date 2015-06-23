@@ -22,6 +22,8 @@
 
         <input class="btn btn-primary submit-user" type="submit" value="Get Started">
       </form>
+
+      <%= button_to 'Guest Login', new_session_url(demo: "true"), { method: "get", class: "guest-login-button"} %>
     </div>
   </div>
 </div>
