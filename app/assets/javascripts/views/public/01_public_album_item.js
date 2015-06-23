@@ -7,6 +7,13 @@ TwinkieSetApp.Views.PublicAlbumItem = Backbone.View.extend({
     this.listenTo(this.owner, "sync", this.render);
   },
 
+  events: {
+    'click .album-image, .album-title, .album-date': 'openAlbum'
+  },
+
+  openAlbum: function () {
+    window.location.href = "/users#" + this.owner.id + "/collection/" + this.model.id
+  },
 
   render: function () {
     var content = this.template({

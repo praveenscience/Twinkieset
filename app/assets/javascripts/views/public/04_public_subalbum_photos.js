@@ -83,6 +83,9 @@ TwinkieSetApp.Views.PublicSubalbumPhotos = Backbone.CompositeView.extend({
   onRender: function () {
     $('.grid-item').imagesLoaded(function () {
       this.addMasonry();
+      setTimeout(function () {
+        this.addMasonry();
+      }.bind(this), 1000)
     }.bind(this))
   },
 
