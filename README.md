@@ -13,11 +13,11 @@ Live: [twinkieset.com](http://www.twinkieset.com/)
 
 ### Main Features
 * Admin and Client interface are asynchronous
-* Admin users can sort their photos by drag and drop, file name, date, or randomly. Subalbums are also sortable by drag and drop. [Code](https://github.com/karenling/project-proposal/blob/master/app/assets/javascripts/views/admin/07_photos_index.js)
-* Admins can optionally hide and/or password protect albums [Code](https://github.com/karenling/project-proposal/blob/master/app/assets/javascripts/views/admin_forms/album_edit.js)
-* Admin accounts require activation via email [Code](https://github.com/karenling/project-proposal/blob/master/app/controllers/users_controller.rb)
-* Admins can recover/reset their password via email [Code](https://github.com/karenling/project-proposal/blob/master/app/controllers/users_controller.rb)
-* Client galleries are responsive using Masonry [Code](https://github.com/karenling/project-proposal/blob/master/app/assets/javascripts/views/public/04_public_subalbum_photos.js)
+* Admin users can sort their photos by drag and drop, file name, date, or randomly. Subalbums are also sortable by drag and drop. [[code]](https://github.com/karenling/project-proposal/blob/master/app/assets/javascripts/views/admin/07_photos_index.js)
+* Admins can optionally hide and/or password protect albums [[code]](https://github.com/karenling/project-proposal/blob/master/app/assets/javascripts/views/admin_forms/album_edit.js)
+* Admin accounts require activation via email [[code]](https://github.com/karenling/project-proposal/blob/master/app/controllers/users_controller.rb)
+* Admins can recover/reset their password via email [[code]](https://github.com/karenling/project-proposal/blob/master/app/controllers/users_controller.rb)
+* Client galleries are responsive using Masonry [[code]](https://github.com/karenling/project-proposal/blob/master/app/assets/javascripts/views/public/04_public_subalbum_photos.js)
 
 
 ## Minimum Viable Product
