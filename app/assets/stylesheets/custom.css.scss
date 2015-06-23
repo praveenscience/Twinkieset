@@ -2226,13 +2226,14 @@ ul.view-more {
     }
   }
   input.guest-login-password {
-    padding: 9px 12px;
+    padding: 22px 12px 8px 12px;
     margin: 15px 0;
     width: 100%;
     max-width: 450px;
     font-size: 30px;
     height: 60px;
     color: black;
+    outline: none;
 
   }
   input.guest-login-enter {
