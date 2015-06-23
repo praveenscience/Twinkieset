@@ -1,8 +1,10 @@
-<div class="album-image"></div>
-
-<div class="album-title"><%= album.get('title') %></div>
-<div class="album-date"><%= album.get('string_date') %></div>
-
+<a href="/users#<%= owner.get('id') %>/collection/<%= album.id %>">
+  <div class="album-image"></div>
+</a>
+<a href="/users#<%= owner.get('id') %>/collection/<%= album.id %>">
+  <div class="album-title"><%= album.get('title') %></div>
+  <div class="album-date"><%= album.get('string_date') %></div>
+</a>
 
 <% if (album.get('password')) { %>
   <div class="password-protect">
