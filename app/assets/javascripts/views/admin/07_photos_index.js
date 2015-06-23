@@ -191,6 +191,7 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
         photo.save({}, {
           success: function () {
             this.collection.add(photo);
+            $('.album-show-sidebar-subalbums-li').trigger('resetSubalbumPhotoCount');
           }.bind(this)
         });
     }.bind(this));
