@@ -1,6 +1,6 @@
-<div class="title"><%= album.get('title') %> &nbsp;<i class="fa fa-pencil edit-album-button"></i></div>
-<span class="event_date"><%= album.get('string_date') %></span>
-<span class="status"><%= album.get('status') %></span>
+<div class="title"><%= album.escape('title') %> &nbsp;<i class="fa fa-pencil edit-album-button"></i></div>
+<span class="event_date"><%= album.escape('string_date') %></span>
+<span class="status"><%= album.escape('status') %></span>
 
 <div class="collection-cover-image"></div>
 

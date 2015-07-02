@@ -18,7 +18,7 @@
     <input id="collection-password"
       class="form-control" type="text"
       name="collection[password]"
-      value="<%= album.get('password') %>"
+      value="<%= album.escape('password') %>"
       readonly>
     <div class="input-info">
       Your collection is password protected for all guests. Keep in mind that the password is case-sensitive.

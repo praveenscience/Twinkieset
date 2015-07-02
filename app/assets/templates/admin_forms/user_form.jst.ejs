@@ -8,7 +8,7 @@
       Profile Photo
       <div class="avatar-container">
         <div class="user-avatar">
-          <img class="avatar-image" src="<%= user.get('avatar') %>">
+          <img class="avatar-image" src="<%= user.escape('avatar') %>">
           <div class="user-avatar-plus"><i class="fa fa-plus-square-o fa-2x"></i></div>
         </div>
 
@@ -21,7 +21,7 @@
     <input id="user-email"
       class="form-control" type="text"
       name="user[email]"
-      value="<%= user.get('email') %>">
+      value="<%= user.escape('email') %>">
     <div class="input-info">
       You will receive important notifications at this email, and your client will see this email where applicable.
     </div>
@@ -30,7 +30,7 @@
     <input id="user-business_name"
       class="form-control" type="text"
       name="user[business_name]"
-      value="<%= user.get('business_name') %>">
+      value="<%= user.escape('business_name') %>">
     <div class="input-info">
       Your business name is shown on your homepage, collections, email notifications and more.
     </div>
@@ -39,7 +39,7 @@
       <input id="user-website"
         class="form-control" type="text"
         name="user[website]"
-        value="<%= user.get('website') %>">
+        value="<%= user.escape('website') %>">
     <div class="input-info">
       Your client will find links back to your website in many places throughout Twinkieset. It is important that you enter a valid website address.
     </div>

@@ -11,7 +11,7 @@
     <input id="subalbum-title"
       class="form-control" type="text"
       name="subalbum[title]"
-      value="<%= subalbum.get('title')%>"
+      value="<%= subalbum.escape('title')%>"
       placeholder="e.g. Ceremony, Reception, Getting Ready">
 
     <div class="save-cancel group">

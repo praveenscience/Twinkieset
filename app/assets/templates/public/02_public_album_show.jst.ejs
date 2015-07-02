@@ -1,16 +1,16 @@
 <div class="hero">
   <div class="details">
-    <div class="album-title"><%= album.get('title') %></div>
-    <div class="album-event-date"><%= album.get('string_date') %></div>
+    <div class="album-title"><%= album.escape('title') %></div>
+    <div class="album-event-date"><%= album.escape('string_date') %></div>
     <div class="album-open-button">Open</a></div>
   </div>
-  <% if (owner.get('avatar')) { %>
+  <% if (owner.escape('avatar')) { %>
     <div class="user-avatar">
-      <img src="<%= owner.get('avatar') %>">
+      <img src="<%= owner.escape('avatar') %>">
     </div>
   <% } %>
   <div class="owner-business-name">
-    <a href="<%= owner.get('website') %>"><%= owner.get('business_name') %></div>
+    <a href="<%= owner.escape('website') %>"><%= owner.escape('business_name') %></div>
   </div>
 </div>
 
@@ -18,12 +18,12 @@
   <div class="left-wrapper">
     <div class="album-title">
       <a href="#<%= Backbone.history.getFragment() %>">
-        <%= album.get('title') %>
+        <%= album.escape('title') %>
       </a>
     </div>
     <div class="album-event-date">
-      <a href="<%= owner.get('website') %>">
-        <%= owner.get('business_name') %>
+      <a href="<%= owner.escape('website') %>">
+        <%= owner.escape('business_name') %>
       </a>
     </div>
   </div>

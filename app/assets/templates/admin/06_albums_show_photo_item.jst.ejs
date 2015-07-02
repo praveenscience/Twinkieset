@@ -2,8 +2,8 @@
   <i class="fa fa-arrows fa-sm"></i>
 </div>
 
-<img class="image" src="<%= photo.get('thumb_url') %>">
+<img class="image" src="<%= photo.escape('thumb_url') %>">
 
 <div class="photo-filename">
-  <%= photo.get('file_name') %>
+  <%= photo.escape('file_name') %>
 </div>
