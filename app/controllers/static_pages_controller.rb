@@ -8,7 +8,7 @@ class StaticPagesController < ApplicationController
   end
 
   def index
-    @users = User.limit(3)
+    @users = User.order('created_at').limit(3)
     render :index
   end
 
