@@ -18,7 +18,9 @@ TwinkieSetApp.Views.UserForm = Backbone.View.extend({
   },
 
   clearAvatar: function () {
-    this.user.save({ 'user': { 'avatar': null }});
+    this.user.save({ 'user': { 'avatar': null }}, { patch: true });
+    this.user.fetch();
+
   },
 
   closeForm: function () {
@@ -50,6 +52,7 @@ TwinkieSetApp.Views.UserForm = Backbone.View.extend({
       function(error, payload) {
         if (!error) {
           this.user.save({ 'user': { 'avatar': payload[0].url }}, {patch: true});
+          this.user.fetch();
         }
     }.bind(this));
   },
