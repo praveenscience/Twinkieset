@@ -20,6 +20,7 @@
   $(document).ready(function () {
     var topOfDesignExamples = $('.design-examples').offset().top;
     var topOfAlbumExamples =  $('.example-albums').offset().top;
+    var topOfBottomInfo =  $('.bottom-info').offset().top;
     $(window).resize(function () {
       var windowHeight = $(window).height();
       var splashHeight = $('.splash').height();
@@ -44,6 +45,7 @@
 
       topOfDesignExamples = $('.design-examples').offset().top;
       topOfAlbumExamples =  $('.example-albums').offset().top;
+      topOfBottomInfo =  $('.bottom-info').offset().top;
 
       $(".welcome-link").click(function() {
         $('html, body').animate({
@@ -59,7 +61,7 @@
 
       $(".examples-link").click(function() {
         $('html, body').animate({
-          scrollTop: topOfAlbumExamples - 25
+          scrollTop: topOfAlbumExamples
         }, 2000);
       });
     });
