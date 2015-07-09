@@ -6,7 +6,7 @@
   <div class="album-date"><%= album.escape('string_date') %></div>
 </a>
 
-<% if (album.escape('password')) { %>
+<% if (album.get('password')) { %>
   <div class="password-protect">
     <i class="fa fa-lock"></i>
   </div>
