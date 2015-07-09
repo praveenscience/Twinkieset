@@ -49,6 +49,7 @@ TwinkieSetApp.Views.AlbumsShowSubalbumItem = Backbone.View.extend({
   },
 
   render: function () {
+    $('.photo-items').sortable();
     var content = this.template({ subalbum: this.model });
     this.$el.html(content);
 
