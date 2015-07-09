@@ -26,6 +26,7 @@ TwinkieSetApp.Views.PhotoItem = Backbone.View.extend({
         if (TwinkieSetApp.Views.sizing) {
           TwinkieSetApp.Views.sizing();
         }
+        TwinkieSetApp.Views.masonryGallery.masonry();
         TwinkieSetApp.Views.masonryGallery.masonry('appended', this.$el);
         this.$el.css('opacity', 1);
 
