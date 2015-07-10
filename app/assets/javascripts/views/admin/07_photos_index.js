@@ -296,10 +296,10 @@ TwinkieSetApp.Views.PhotosIndex = Backbone.CompositeView.extend({
   },
 
   triggerSortable: function(){
-    this.calledSortable = 0;
-    $('body').on('mouseover', function () {
-        if (this.calledSortable < 2) {
-        this.calledSortable += 1;
+    this.calledSortable = false;
+    $('.album-show-items').on('mouseover', function () {
+        if (!this.calledSortable) {
+        this.calledSortable = true;
         $('.photo-items').sortable();
       }
     }.bind(this))
