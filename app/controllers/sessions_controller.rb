@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
       flash[:notice] = ["You have successfully logged in"]
       redirect_to admin_url
     else
-      @user = User.new(user_params)
+      @user = User.new(email: params[:user][:email])
       flash.now[:errors] = ['Invalid email or password']
       render :new
     end

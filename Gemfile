@@ -41,7 +41,7 @@ gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'letter_opener'
-  
+
   gem 'rename'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -55,4 +55,9 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'pry-rails'
+
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
+  gem 'launchy'
 end

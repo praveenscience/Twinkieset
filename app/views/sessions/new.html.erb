@@ -31,7 +31,7 @@
                placeholder="Email">
 
         <input class="form-control"
-               type="password" id="user-password"
+               type="text" id="user-password"
                name="user[password]"
                placeholder="Password">
         <a href="<%= recovery_users_url %>" class="lost-password-link">Lost Password?</a>
@@ -49,34 +49,37 @@
 <% if params[:demo] %>
   <script type="text/javascript">
     $(document).ready(function () {
+      function fillInPassword () {
+        var email = "karen@example.com".split("");
+        var time = 100;
+        email.forEach(function (letter) {
+          time += 100;
+          setTimeout(function () {
+            var currentVal = $('#user-email').val();
+            $('#user-email').val(currentVal + letter);
+          }, time)
+        })
 
-      var email = "karen@example.com".split("");
-      var time = 100;
-      email.forEach(function (letter) {
-        time += 100;
+        var startTime = email.length * 100;
+
+        var pw = "password".split("");
+        var time2 = startTime;
+        pw.forEach(function (letter) {
+          time2 += 100;
+          setTimeout(function () {
+            var currentVal = $('#user-password').val();
+            $('#user-password').val(currentVal + letter);
+          }, time2)
+        })
+
+        var timeToSubmit = startTime + pw.length * 100;
+
         setTimeout(function () {
-          var currentVal = $('#user-email').val();
-          $('#user-email').val(currentVal + letter);
-        }, time)
-      })
+          $('.sign-in-form').submit();
+        }, timeToSubmit);
+      };
 
-      var startTime = email.length * 100;
-
-      var pw = "password".split("");
-      var time2 = startTime;
-      pw.forEach(function (letter) {
-        time2 += 100;
-        setTimeout(function () {
-          var currentVal = $('#user-password').val();
-          $('#user-password').val(currentVal + letter);
-        }, time2)
-      })
-
-      var timeToSubmit = startTime + pw.length * 100;
-
-      setTimeout(function () {
-        $('.sign-in-form').submit();
-      }, timeToSubmit)
+      fillInPassword();
     })
   </script>
 <% end %>
